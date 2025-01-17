@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C0572BB2B874EEB00DB32EB /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0572BA2B874EEB00DB32EB /* Helper.m */; };
+		1C14F2642B711C550080756E /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F2632B711C550080756E /* AlertHelper.swift */; };
+		1C14F2662B711C6D0080756E /* SaveDataToICloudAndShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14F2652B711C6D0080756E /* SaveDataToICloudAndShareSheet.swift */; };
+		1C94EF3C2B6BB6C8004842E4 /* PermitWorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C94EF3B2B6BB6C8004842E4 /* PermitWorkVC.swift */; };
+		1CB13BEE2B6B5EB40041E021 /* NitSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB13BED2B6B5EB40041E021 /* NitSB.storyboard */; };
+		1CB2F6782B6CC682002C0F53 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2F6772B6CC682002C0F53 /* Keys.swift */; };
+		1CB2F67A2B6CE7AE002C0F53 /* KeysPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2F6792B6CE7AE002C0F53 /* KeysPermitVC.swift */; };
+		1CBCA5452B6D0F910067C068 /* Extensions+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */; };
+		1CE2AA5A2B6BD9F400AE709A /* NitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2AA592B6BD9F400AE709A /* NitHelper.swift */; };
+		1CE8D4662B6B7FF100C77470 /* VehicleEquipmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE8D4652B6B7FF100C77470 /* VehicleEquipmentVC.swift */; };
+		8335E92F2BA4206100436FC6 /* EnergizedWorkPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335E92E2BA4206100436FC6 /* EnergizedWorkPermitVC.swift */; };
+		835058D92D0BFE5E004C28F3 /* JHAMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */; };
+		835058DB2D0C1AC8004C28F3 /* FPWPMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835058DA2D0C1AC8004C28F3 /* FPWPMenuVC.swift */; };
+		835058DD2D0C1AE3004C28F3 /* CSPMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835058DC2D0C1AE3004C28F3 /* CSPMenuVC.swift */; };
+		83618FD52B8DC307009E4945 /* SiteSpecificSafetyPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83618FD42B8DC306009E4945 /* SiteSpecificSafetyPlanVC.swift */; };
+		838B96B02D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */; };
+		8395C0EB2C116BE3000E920A /* GroundDisturbancePermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395C0EA2C116BE3000E920A /* GroundDisturbancePermitVC.swift */; };
+		839C89DB2B500062009220D3 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C89DA2B500062009220D3 /* MenuVC.swift */; };
+		839CDB9F2B564B7A00DDA920 /* JobHazardAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CDB9E2B564B7A00DDA920 /* JobHazardAnalysisVC.swift */; };
+		83AA928C2BA2C71C00F5236D /* HotWorkPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA928B2BA2C71C00F5236D /* HotWorkPermitVC.swift */; };
+		83B024252C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B024242C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift */; };
+		83B445972B4FC9E100AFA1F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */; };
+		83B445992B4FC9E100AFA1F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445982B4FC9E100AFA1F2 /* SceneDelegate.swift */; };
+		83B4459B2B4FC9E100AFA1F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4459A2B4FC9E100AFA1F2 /* ViewController.swift */; };
+		83B4459E2B4FC9E100AFA1F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B4459C2B4FC9E100AFA1F2 /* Main.storyboard */; };
+		83B445A02B4FC9E300AFA1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B4459F2B4FC9E300AFA1F2 /* Assets.xcassets */; };
+		83B445A32B4FC9E300AFA1F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B445A12B4FC9E300AFA1F2 /* LaunchScreen.storyboard */; };
+		83B445AE2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445AD2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift */; };
+		83B445B82B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445B72B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift */; };
+		83B445BA2B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445B92B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift */; };
+		83C7258F2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */; };
+		83C725A72D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */; };
+		83D101932B8700B400756AA9 /* ConfinedSpacePermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D101922B8700B400756AA9 /* ConfinedSpacePermitVC.swift */; };
+		83D66F702B5FE543004E8BDE /* SignatureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F6F2B5FE543004E8BDE /* SignatureVC.swift */; };
+		83D66F772B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F722B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift */; };
+		83D66F782B5FE82C004E8BDE /* PencilKitSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F732B5FE82C004E8BDE /* PencilKitSignatureView.swift */; };
+		83D66F792B5FE82C004E8BDE /* LegacySignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F742B5FE82C004E8BDE /* LegacySignatureView.swift */; };
+		83D66F7A2B5FE82C004E8BDE /* EPSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F752B5FE82C004E8BDE /* EPSignatureViewController.swift */; };
+		83D66F7B2B5FE82C004E8BDE /* SwiftSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F762B5FE82C004E8BDE /* SwiftSignatureView.swift */; };
+		83F3380D2BA30068007238C5 /* FallProtectionWorkPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3380C2BA30068007238C5 /* FallProtectionWorkPlanVC.swift */; };
+		83F3427F2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3427E2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift */; };
+		83F342812BB41338008D3F54 /* HazardousChemicalPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F342802BB41338008D3F54 /* HazardousChemicalPlanVC.swift */; };
+		83F87F722D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F87F712D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83B445AA2B4FC9E400AFA1F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B4458B2B4FC9E000AFA1F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B445922B4FC9E100AFA1F2;
+			remoteInfo = "Safety Solutions";
+		};
+		83B445B42B4FC9E400AFA1F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B4458B2B4FC9E000AFA1F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B445922B4FC9E100AFA1F2;
+			remoteInfo = "Safety Solutions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C0572BA2B874EEB00DB32EB /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = SOURCE_ROOT; };
+		1C0572BC2B874F2100DB32EB /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = SOURCE_ROOT; };
+		1C14F2632B711C550080756E /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		1C14F2652B711C6D0080756E /* SaveDataToICloudAndShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataToICloudAndShareSheet.swift; sourceTree = "<group>"; };
+		1C94EF3B2B6BB6C8004842E4 /* PermitWorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitWorkVC.swift; sourceTree = "<group>"; };
+		1CB13BED2B6B5EB40041E021 /* NitSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NitSB.storyboard; sourceTree = "<group>"; };
+		1CB2F6772B6CC682002C0F53 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		1CB2F6792B6CE7AE002C0F53 /* KeysPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysPermitVC.swift; sourceTree = "<group>"; };
+		1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UserDefaults.swift"; sourceTree = "<group>"; };
+		1CE2AA592B6BD9F400AE709A /* NitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitHelper.swift; sourceTree = "<group>"; };
+		1CE8D4652B6B7FF100C77470 /* VehicleEquipmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleEquipmentVC.swift; sourceTree = "<group>"; };
+		8335E92E2BA4206100436FC6 /* EnergizedWorkPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergizedWorkPermitVC.swift; sourceTree = "<group>"; };
+		833B13682B59531300CBBA89 /* Safety Solutions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Safety Solutions.entitlements"; sourceTree = "<group>"; };
+		83469EB12B5A8E3500D3F464 /* Safety Solutions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Safety Solutions-Bridging-Header.h"; sourceTree = "<group>"; };
+		835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAMenuVC.swift; sourceTree = "<group>"; };
+		835058DA2D0C1AC8004C28F3 /* FPWPMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPWPMenuVC.swift; sourceTree = "<group>"; };
+		835058DC2D0C1AE3004C28F3 /* CSPMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPMenuVC.swift; sourceTree = "<group>"; };
+		83618FD42B8DC306009E4945 /* SiteSpecificSafetyPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteSpecificSafetyPlanVC.swift; sourceTree = "<group>"; };
+		838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceRescuePlanVC.swift; sourceTree = "<group>"; };
+		8395C0EA2C116BE3000E920A /* GroundDisturbancePermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundDisturbancePermitVC.swift; sourceTree = "<group>"; };
+		839C89DA2B500062009220D3 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		839CDB9E2B564B7A00DDA920 /* JobHazardAnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHazardAnalysisVC.swift; sourceTree = "<group>"; };
+		83AA928B2BA2C71C00F5236D /* HotWorkPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWorkPermitVC.swift; sourceTree = "<group>"; };
+		83B024242C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoEnergyIsolationPermitVC.swift; sourceTree = "<group>"; };
+		83B445932B4FC9E100AFA1F2 /* TriMet Safety Solutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TriMet Safety Solutions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83B445982B4FC9E100AFA1F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83B4459A2B4FC9E100AFA1F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83B4459D2B4FC9E100AFA1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83B4459F2B4FC9E300AFA1F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B445A22B4FC9E300AFA1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B445A42B4FC9E300AFA1F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B445A92B4FC9E400AFA1F2 /* TriMet Safety SolutionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TriMet Safety SolutionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B445AD2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsTests.swift; sourceTree = "<group>"; };
+		83B445B32B4FC9E400AFA1F2 /* TriMet Safety SolutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TriMet Safety SolutionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B445B72B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsUITests.swift; sourceTree = "<group>"; };
+		83B445B92B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceAwarenessSkillSheetVC.swift; sourceTree = "<group>"; };
+		83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerSkillSheetVC.swift; sourceTree = "<group>"; };
+		83D101922B8700B400756AA9 /* ConfinedSpacePermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpacePermitVC.swift; sourceTree = "<group>"; };
+		83D101952B8726E800756AA9 /* ClassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClassKit.framework; path = System/Library/Frameworks/ClassKit.framework; sourceTree = SDKROOT; };
+		83D66F6F2B5FE543004E8BDE /* SignatureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureVC.swift; sourceTree = "<group>"; };
+		83D66F722B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSignatureViewDelegate.swift; sourceTree = "<group>"; };
+		83D66F732B5FE82C004E8BDE /* PencilKitSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilKitSignatureView.swift; sourceTree = "<group>"; };
+		83D66F742B5FE82C004E8BDE /* LegacySignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySignatureView.swift; sourceTree = "<group>"; };
+		83D66F752B5FE82C004E8BDE /* EPSignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPSignatureViewController.swift; sourceTree = "<group>"; };
+		83D66F762B5FE82C004E8BDE /* SwiftSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSignatureView.swift; sourceTree = "<group>"; };
+		83F3380C2BA30068007238C5 /* FallProtectionWorkPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtectionWorkPlanVC.swift; sourceTree = "<group>"; };
+		83F3427E2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingVerificationFormVC.swift; sourceTree = "<group>"; };
+		83F342802BB41338008D3F54 /* HazardousChemicalPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazardousChemicalPlanVC.swift; sourceTree = "<group>"; };
+		83F87F712D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceEvaluationAlternateEntryVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83B445902B4FC9E100AFA1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B445A62B4FC9E400AFA1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B445B02B4FC9E400AFA1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C14F2622B711C1D0080756E /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				1C14F2632B711C550080756E /* AlertHelper.swift */,
+				1CE2AA592B6BD9F400AE709A /* NitHelper.swift */,
+				1C14F2652B711C6D0080756E /* SaveDataToICloudAndShareSheet.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		1CBCA5432B6D0F790067C068 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1C14F2622B711C1D0080756E /* Singleton */,
+				1CB2F6772B6CC682002C0F53 /* Keys.swift */,
+				1CB2F6792B6CE7AE002C0F53 /* KeysPermitVC.swift */,
+				1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1CE8D4642B6B7FD200C77470 /* Nit Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CBCA5432B6D0F790067C068 /* Helper */,
+				1CE8D4652B6B7FF100C77470 /* VehicleEquipmentVC.swift */,
+				1C94EF3B2B6BB6C8004842E4 /* PermitWorkVC.swift */,
+			);
+			path = "Nit Controllers";
+			sourceTree = "<group>";
+		};
+		83B4458A2B4FC9E000AFA1F2 = {
+			isa = PBXGroup;
+			children = (
+				83B445952B4FC9E100AFA1F2 /* Safety Solutions */,
+				83B445AC2B4FC9E400AFA1F2 /* Safety SolutionsTests */,
+				83B445B62B4FC9E400AFA1F2 /* Safety SolutionsUITests */,
+				83B445942B4FC9E100AFA1F2 /* Products */,
+				83D101942B8726E800756AA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83B445942B4FC9E100AFA1F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B445932B4FC9E100AFA1F2 /* TriMet Safety Solutions.app */,
+				83B445A92B4FC9E400AFA1F2 /* TriMet Safety SolutionsTests.xctest */,
+				83B445B32B4FC9E400AFA1F2 /* TriMet Safety SolutionsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83B445952B4FC9E100AFA1F2 /* Safety Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				833B13682B59531300CBBA89 /* Safety Solutions.entitlements */,
+				83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */,
+				83B445982B4FC9E100AFA1F2 /* SceneDelegate.swift */,
+				83D66F712B5FE82C004E8BDE /* EPSignature */,
+				83D66F6E2B5FD822004E8BDE /* Model */,
+				83D66F6C2B5FD810004E8BDE /* Controller */,
+				83D66F6D2B5FD819004E8BDE /* View */,
+				83B4459F2B4FC9E300AFA1F2 /* Assets.xcassets */,
+				83B445A42B4FC9E300AFA1F2 /* Info.plist */,
+				83469EB12B5A8E3500D3F464 /* Safety Solutions-Bridging-Header.h */,
+				1C0572BC2B874F2100DB32EB /* Helper.h */,
+				1C0572BA2B874EEB00DB32EB /* Helper.m */,
+			);
+			path = "Safety Solutions";
+			sourceTree = "<group>";
+		};
+		83B445AC2B4FC9E400AFA1F2 /* Safety SolutionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				83B445AD2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift */,
+			);
+			path = "Safety SolutionsTests";
+			sourceTree = "<group>";
+		};
+		83B445B62B4FC9E400AFA1F2 /* Safety SolutionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83B445B72B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift */,
+				83B445B92B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift */,
+			);
+			path = "Safety SolutionsUITests";
+			sourceTree = "<group>";
+		};
+		83D101942B8726E800756AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83D101952B8726E800756AA9 /* ClassKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83D66F6C2B5FD810004E8BDE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83B4459A2B4FC9E100AFA1F2 /* ViewController.swift */,
+				839C89DA2B500062009220D3 /* MenuVC.swift */,
+				835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */,
+				835058DA2D0C1AC8004C28F3 /* FPWPMenuVC.swift */,
+				835058DC2D0C1AE3004C28F3 /* CSPMenuVC.swift */,
+				839CDB9E2B564B7A00DDA920 /* JobHazardAnalysisVC.swift */,
+				83D66F6F2B5FE543004E8BDE /* SignatureVC.swift */,
+				83D101922B8700B400756AA9 /* ConfinedSpacePermitVC.swift */,
+				83618FD42B8DC306009E4945 /* SiteSpecificSafetyPlanVC.swift */,
+				83AA928B2BA2C71C00F5236D /* HotWorkPermitVC.swift */,
+				83F3380C2BA30068007238C5 /* FallProtectionWorkPlanVC.swift */,
+				8335E92E2BA4206100436FC6 /* EnergizedWorkPermitVC.swift */,
+				83F3427E2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift */,
+				83F342802BB41338008D3F54 /* HazardousChemicalPlanVC.swift */,
+				83B024242C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift */,
+				8395C0EA2C116BE3000E920A /* GroundDisturbancePermitVC.swift */,
+				83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */,
+				83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */,
+				838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */,
+				83F87F712D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift */,
+				1CE8D4642B6B7FD200C77470 /* Nit Controllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83D66F6D2B5FD819004E8BDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83B4459C2B4FC9E100AFA1F2 /* Main.storyboard */,
+				83B445A12B4FC9E300AFA1F2 /* LaunchScreen.storyboard */,
+				1CB13BED2B6B5EB40041E021 /* NitSB.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83D66F6E2B5FD822004E8BDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83D66F712B5FE82C004E8BDE /* EPSignature */ = {
+			isa = PBXGroup;
+			children = (
+				83D66F722B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift */,
+				83D66F732B5FE82C004E8BDE /* PencilKitSignatureView.swift */,
+				83D66F742B5FE82C004E8BDE /* LegacySignatureView.swift */,
+				83D66F752B5FE82C004E8BDE /* EPSignatureViewController.swift */,
+				83D66F762B5FE82C004E8BDE /* SwiftSignatureView.swift */,
+			);
+			path = EPSignature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83B445922B4FC9E100AFA1F2 /* TriMet Safety Solutions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B445BD2B4FC9E400AFA1F2 /* Build configuration list for PBXNativeTarget "TriMet Safety Solutions" */;
+			buildPhases = (
+				83B4458F2B4FC9E100AFA1F2 /* Sources */,
+				83B445902B4FC9E100AFA1F2 /* Frameworks */,
+				83B445912B4FC9E100AFA1F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TriMet Safety Solutions";
+			productName = "Safety Solutions";
+			productReference = 83B445932B4FC9E100AFA1F2 /* TriMet Safety Solutions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83B445A82B4FC9E400AFA1F2 /* TriMet Safety SolutionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B445C02B4FC9E400AFA1F2 /* Build configuration list for PBXNativeTarget "TriMet Safety SolutionsTests" */;
+			buildPhases = (
+				83B445A52B4FC9E400AFA1F2 /* Sources */,
+				83B445A62B4FC9E400AFA1F2 /* Frameworks */,
+				83B445A72B4FC9E400AFA1F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B445AB2B4FC9E400AFA1F2 /* PBXTargetDependency */,
+			);
+			name = "TriMet Safety SolutionsTests";
+			productName = "Safety SolutionsTests";
+			productReference = 83B445A92B4FC9E400AFA1F2 /* TriMet Safety SolutionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83B445B22B4FC9E400AFA1F2 /* TriMet Safety SolutionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B445C32B4FC9E400AFA1F2 /* Build configuration list for PBXNativeTarget "TriMet Safety SolutionsUITests" */;
+			buildPhases = (
+				83B445AF2B4FC9E400AFA1F2 /* Sources */,
+				83B445B02B4FC9E400AFA1F2 /* Frameworks */,
+				83B445B12B4FC9E400AFA1F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B445B52B4FC9E400AFA1F2 /* PBXTargetDependency */,
+			);
+			name = "TriMet Safety SolutionsUITests";
+			productName = "Safety SolutionsUITests";
+			productReference = 83B445B32B4FC9E400AFA1F2 /* TriMet Safety SolutionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B4458B2B4FC9E000AFA1F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					83B445922B4FC9E100AFA1F2 = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
+					};
+					83B445A82B4FC9E400AFA1F2 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 83B445922B4FC9E100AFA1F2;
+					};
+					83B445B22B4FC9E400AFA1F2 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 83B445922B4FC9E100AFA1F2;
+					};
+				};
+			};
+			buildConfigurationList = 83B4458E2B4FC9E000AFA1F2 /* Build configuration list for PBXProject "TriMet Safety Solutions" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83B4458A2B4FC9E000AFA1F2;
+			productRefGroup = 83B445942B4FC9E100AFA1F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B445922B4FC9E100AFA1F2 /* TriMet Safety Solutions */,
+				83B445A82B4FC9E400AFA1F2 /* TriMet Safety SolutionsTests */,
+				83B445B22B4FC9E400AFA1F2 /* TriMet Safety SolutionsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83B445912B4FC9E100AFA1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B445A32B4FC9E300AFA1F2 /* LaunchScreen.storyboard in Resources */,
+				83B445A02B4FC9E300AFA1F2 /* Assets.xcassets in Resources */,
+				83B4459E2B4FC9E100AFA1F2 /* Main.storyboard in Resources */,
+				1CB13BEE2B6B5EB40041E021 /* NitSB.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B445A72B4FC9E400AFA1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B445B12B4FC9E400AFA1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83B4458F2B4FC9E100AFA1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D66F772B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift in Sources */,
+				83D101932B8700B400756AA9 /* ConfinedSpacePermitVC.swift in Sources */,
+				1CB2F6782B6CC682002C0F53 /* Keys.swift in Sources */,
+				1CBCA5452B6D0F910067C068 /* Extensions+UserDefaults.swift in Sources */,
+				835058D92D0BFE5E004C28F3 /* JHAMenuVC.swift in Sources */,
+				83D66F702B5FE543004E8BDE /* SignatureVC.swift in Sources */,
+				835058DB2D0C1AC8004C28F3 /* FPWPMenuVC.swift in Sources */,
+				8335E92F2BA4206100436FC6 /* EnergizedWorkPermitVC.swift in Sources */,
+				1C94EF3C2B6BB6C8004842E4 /* PermitWorkVC.swift in Sources */,
+				83C725A72D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift in Sources */,
+				83F3380D2BA30068007238C5 /* FallProtectionWorkPlanVC.swift in Sources */,
+				83D66F7A2B5FE82C004E8BDE /* EPSignatureViewController.swift in Sources */,
+				83B4459B2B4FC9E100AFA1F2 /* ViewController.swift in Sources */,
+				839C89DB2B500062009220D3 /* MenuVC.swift in Sources */,
+				838B96B02D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift in Sources */,
+				1C14F2642B711C550080756E /* AlertHelper.swift in Sources */,
+				83F3427F2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift in Sources */,
+				8395C0EB2C116BE3000E920A /* GroundDisturbancePermitVC.swift in Sources */,
+				83F87F722D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift in Sources */,
+				1CB2F67A2B6CE7AE002C0F53 /* KeysPermitVC.swift in Sources */,
+				1CE8D4662B6B7FF100C77470 /* VehicleEquipmentVC.swift in Sources */,
+				1CE2AA5A2B6BD9F400AE709A /* NitHelper.swift in Sources */,
+				1C14F2662B711C6D0080756E /* SaveDataToICloudAndShareSheet.swift in Sources */,
+				83D66F7B2B5FE82C004E8BDE /* SwiftSignatureView.swift in Sources */,
+				83AA928C2BA2C71C00F5236D /* HotWorkPermitVC.swift in Sources */,
+				839CDB9F2B564B7A00DDA920 /* JobHazardAnalysisVC.swift in Sources */,
+				83B445972B4FC9E100AFA1F2 /* AppDelegate.swift in Sources */,
+				83B445992B4FC9E100AFA1F2 /* SceneDelegate.swift in Sources */,
+				83F342812BB41338008D3F54 /* HazardousChemicalPlanVC.swift in Sources */,
+				83618FD52B8DC307009E4945 /* SiteSpecificSafetyPlanVC.swift in Sources */,
+				83B024252C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift in Sources */,
+				83D66F782B5FE82C004E8BDE /* PencilKitSignatureView.swift in Sources */,
+				1C0572BB2B874EEB00DB32EB /* Helper.m in Sources */,
+				835058DD2D0C1AE3004C28F3 /* CSPMenuVC.swift in Sources */,
+				83D66F792B5FE82C004E8BDE /* LegacySignatureView.swift in Sources */,
+				83C7258F2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B445A52B4FC9E400AFA1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B445AE2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B445AF2B4FC9E400AFA1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B445B82B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift in Sources */,
+				83B445BA2B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83B445AB2B4FC9E400AFA1F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B445922B4FC9E100AFA1F2 /* TriMet Safety Solutions */;
+			targetProxy = 83B445AA2B4FC9E400AFA1F2 /* PBXContainerItemProxy */;
+		};
+		83B445B52B4FC9E400AFA1F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B445922B4FC9E100AFA1F2 /* TriMet Safety Solutions */;
+			targetProxy = 83B445B42B4FC9E400AFA1F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83B4459C2B4FC9E100AFA1F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B4459D2B4FC9E100AFA1F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83B445A12B4FC9E300AFA1F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B445A22B4FC9E300AFA1F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83B445BB2B4FC9E400AFA1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83B445BC2B4FC9E400AFA1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B445BE2B4FC9E400AFA1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = Z5LBKJP9MP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Safety Solutions/Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triMetSafetySolutions.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Safety Solutions/Safety Solutions-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		83B445BF2B4FC9E400AFA1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = Z5LBKJP9MP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Safety Solutions/Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triMetSafetySolutions.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Safety Solutions/Safety Solutions-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		83B445C12B4FC9E400AFA1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koshal.Safety-SolutionsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriMet Safety Solutions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TriMet Safety Solutions";
+			};
+			name = Debug;
+		};
+		83B445C22B4FC9E400AFA1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koshal.Safety-SolutionsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriMet Safety Solutions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TriMet Safety Solutions";
+			};
+			name = Release;
+		};
+		83B445C42B4FC9E400AFA1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koshal.Safety-SolutionsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Safety Solutions";
+			};
+			name = Debug;
+		};
+		83B445C52B4FC9E400AFA1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "koshal.Safety-SolutionsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Safety Solutions";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B4458E2B4FC9E000AFA1F2 /* Build configuration list for PBXProject "TriMet Safety Solutions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B445BB2B4FC9E400AFA1F2 /* Debug */,
+				83B445BC2B4FC9E400AFA1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B445BD2B4FC9E400AFA1F2 /* Build configuration list for PBXNativeTarget "TriMet Safety Solutions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B445BE2B4FC9E400AFA1F2 /* Debug */,
+				83B445BF2B4FC9E400AFA1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B445C02B4FC9E400AFA1F2 /* Build configuration list for PBXNativeTarget "TriMet Safety SolutionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B445C12B4FC9E400AFA1F2 /* Debug */,
+				83B445C22B4FC9E400AFA1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B445C32B4FC9E400AFA1F2 /* Build configuration list for PBXNativeTarget "TriMet Safety SolutionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B445C42B4FC9E400AFA1F2 /* Debug */,
+				83B445C52B4FC9E400AFA1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B4458B2B4FC9E000AFA1F2 /* Project object */;
+}
