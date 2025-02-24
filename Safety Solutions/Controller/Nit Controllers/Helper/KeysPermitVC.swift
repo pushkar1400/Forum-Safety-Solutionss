@@ -2760,4 +2760,483 @@ enum KeysPermitVC {
         "img88o",
         "img89o",
         ]
+    
+    static let img1p = "img1p"
+    static let img2p = "img2p"
+    static let img3p = "img3p"
+    static let img4p = "img4p"
+    static let img5p = "img5p"
+    static let img6p = "img6p"
+    static let img7p = "img7p"
+    static let img8p = "img8p"
+    static let img9p = "img9p"
+    static let img10p = "img10p"
+    static let img11p = "img11p"
+    static let img12p = "img12p"
+    static let img13p = "img13p"
+    static let img14p = "img14p"
+    static let img15p = "img15p"
+    static let img16p = "img16p"
+    static let img17p = "img17p"
+    static let img18p = "img18p"
+    static let img19p = "img19p"
+    static let img20p = "img20p"
+    static let img21p = "img21p"
+    static let img22p = "img22p"
+    static let img23p = "img23p"
+    static let img24p = "img24p"
+    static let img25p = "img25p"
+    static let img26p = "img26p"
+    static let img27p = "img27p"
+    static let img28p = "img28p"
+    static let img29p = "img29p"
+    static let img30p = "img30p"
+    static let img31p = "img31p"
+    static let img32p = "img32p"
+    static let img33p = "img33p"
+    static let img34p = "img34p"
+    static let img35p = "img35p"
+    static let img36p = "img36p"
+    static let img37p = "img37p"
+    static let img38p = "img38p"
+    static let img39p = "img39p"
+    static let img40p = "img40p"
+    static let img41p = "img41p"
+    static let img42p = "img42p"
+    static let img43p = "img43p"
+    static let img44p = "img44p"
+    static let img45p = "img45p"
+    static let img46p = "img46p"
+    static let img47p = "img47p"
+    static let img48p = "img48p"
+    static let img49p = "img49p"
+    static let img50p = "img50p"
+    static let img51p = "img51p"
+    static let img52p = "img52p"
+    static let img53p = "img53p"
+    static let img54p = "img54p"
+    static let img55p = "img55p"
+    static let img56p = "img56p"
+    static let img57p = "img57p"
+    static let img58p = "img58p"
+    static let img59p = "img59p"
+    static let img60p = "img60p"
+    static let img61p = "img61p"
+    static let img62p = "img62p"
+    static let img63p = "img63p"
+    static let img64p = "img64p"
+    static let img65p = "img65p"
+    static let img66p = "img66p"
+    static let img67p = "img67p"
+    static let img68p = "img68p"
+    static let img69p = "img69p"
+    static let img70p = "img70p"
+    static let img71p = "img71p"
+    static let img72p = "img72p"
+    static let img73p = "img73p"
+    static let img74p = "img74p"
+    static let img75p = "img75p"
+    static let img76p = "img76p"
+    static let img77p = "img77p"
+    static let img78p = "img78p"
+    static let img79p = "img79p"
+    static let img80p = "img80p"
+    static let img81p = "img81p"
+    static let img82p = "img82p"
+    static let img83p = "img83p"
+    static let img84p = "img84p"
+    static let img85p = "img85p"
+    static let img86p = "img86p"
+    static let img87p = "img87p"
+    static let img88p = "img88p"
+    static let img89p = "img89p"
+    static let img90p = "img90p"
+    static let img91p = "img91p"
+    static let img92p = "img92p"
+    static let img93p = "img93p"
+    static let img94p = "img94p"
+    static let img95p = "img95p"
+    static let img96p = "img96p"
+    static let img97p = "img97p"
+    static let img98p = "img98p"
+    static let img99p = "img99p"
+    static let img100p = "img100p"
+    static let img101p = "img101p"
+    static let img102p = "img102p"
+    static let img103p = "img103p"
+    static let img104p = "img104p"
+    static let img105p = "img105p"
+    static let img106p = "img106p"
+    static let img107p = "img107p"
+    static let img108p = "img108p"
+    static let img109p = "img109p"
+    static let img110p = "img110p"
+    static let img111p = "img111p"
+    static let img112p = "img112p"
+    static let img113p = "img113p"
+    static let img114p = "img114p"
+    static let img115p = "img115p"
+    static let img116p = "img116p"
+    static let img117p = "img117p"
+    static let img118p = "img118p"
+    static let img119p = "img119p"
+    static let img120p = "img120p"
+    static let img121p = "img121p"
+    static let img122p = "img122p"
+    static let img123p = "img123p"
+    static let img124p = "img124p"
+    static let img125p = "img125p"
+    static let img126p = "img126p"
+    static let img127p = "img127p"
+    static let img128p = "img128p"
+    static let img129p = "img129p"
+    static let img130p = "img130p"
+    static let img131p = "img131p"
+    static let img132p = "img132p"
+    static let img133p = "img133p"
+    static let img134p = "img134p"
+    static let img135p = "img135p"
+    static let img136p = "img136p"
+    static let img137p = "img137p"
+    static let img138p = "img138p"
+    static let img139p = "img139p"
+    static let img140p = "img140p"
+    static let img141p = "img141p"
+    static let img142p = "img142p"
+    static let img143p = "img143p"
+    static let img144p = "img144p"
+    static let img145p = "img145p"
+    static let img146p = "img146p"
+    static let img147p = "img147p"
+    static let img148p = "img148p"
+    static let img149p = "img149p"
+    static let img150p = "img150p"
+    static let img151p = "img151p"
+    static let img152p = "img152p"
+    static let img153p = "img153p"
+    static let img154p = "img154p"
+    static let img155p = "img155p"
+    static let img156p = "img156p"
+    static let img157p = "img157p"
+    static let img158p = "img158p"
+    static let img159p = "img159p"
+    static let img160p = "img160p"
+    static let img161p = "img161p"
+    static let img162p = "img162p"
+    static let img163p = "img163p"
+    static let img164p = "img164p"
+    static let img165p = "img165p"
+    static let img166p = "img166p"
+    static let img167p = "img167p"
+    static let img168p = "img168p"
+    static let img169p = "img169p"
+    static let img170p = "img170p"
+    static let img171p = "img171p"
+    static let img172p = "img172p"
+    static let img173p = "img173p"
+    static let img174p = "img174p"
+    static let img175p = "img175p"
+    static let img176p = "img176p"
+    static let img177p = "img177p"
+    static let img178p = "img178p"
+    static let img179p = "img179p"
+    static let img180p = "img180p"
+    static let img181p = "img181p"
+    static let img182p = "img182p"
+    static let img183p = "img183p"
+    static let img184p = "img184p"
+    static let img185p = "img185p"
+    static let img186p = "img186p"
+    static let img187p = "img187p"
+    static let img188p = "img188p"
+    static let img189p = "img189p"
+    static let img190p = "img190p"
+    static let img191p = "img191p"
+    static let img192p = "img192p"
+    static let img193p = "img193p"
+    static let img194p = "img194p"
+    static let img195p = "img195p"
+    static let img196p = "img196p"
+    static let img197p = "img197p"
+    static let img198p = "img198p"
+    static let img199p = "img199p"
+    static let img200p = "img200p"
+    static let img201p = "img201p"
+    static let img202p = "img202p"
+    static let img203p = "img203p"
+    static let img204p = "img204p"
+    
+    static let selectUnselectAllKeys14 = [
+        
+        "img1p",
+        "img2p",
+        "img3p",
+        "img4p",
+        "img5p",
+        "img6p",
+        "img7p",
+        "img8p",
+        "img9p",
+        "img10p",
+        "img11p",
+        "img12p",
+        "img13p",
+        "img14p",
+        "img15p",
+        "img16p",
+        "img17p",
+        "img18p",
+        "img19p",
+        "img20p",
+        "img21p",
+        "img22p",
+        "img23p",
+        "img24p",
+        "img25p",
+        "img26p",
+        "img27p",
+        "img28p",
+        "img29p",
+        "img30p",
+        "img31p",
+        "img32p",
+        "img33p",
+        "img34p",
+        "img35p",
+        "img36p",
+        "img37p",
+        "img38p",
+        "img39p",
+        "img40p",
+        "img41p",
+        "img42p",
+        "img43p",
+        "img44p",
+        "img45p",
+        "img46p",
+        "img47p",
+        "img48p",
+        "img49p",
+        "img50p",
+        "img51p",
+        "img52p",
+        "img53p",
+        "img54p",
+        "img55p",
+        "img56p",
+        "img57p",
+        "img58p",
+        "img59p",
+        "img60p",
+        "img61p",
+        "img62p",
+        "img63p",
+        "img64p",
+        "img65p",
+        "img66p",
+        "img67p",
+        "img68p",
+        "img69p",
+        "img70p",
+        "img71p",
+        "img72p",
+        "img73p",
+        "img74p",
+        "img75p",
+        "img76p",
+        "img77p",
+        "img78p",
+        "img79p",
+        "img80p",
+        "img81p",
+        "img82p",
+        "img83p",
+        "img84p",
+        "img85p",
+        "img86p",
+        "img87p",
+        "img88p",
+        "img89p",
+        "img90p",
+        "img91p",
+        "img92p",
+        "img93p",
+        "img94p",
+        "img95p",
+        "img96p",
+        "img97p",
+        "img98p",
+        "img99p",
+        "img100p",
+        "img101p",
+        "img102p",
+        "img103p",
+        "img104p",
+        "img105p",
+        "img106p",
+        "img107p",
+        "img108p",
+        "img109p",
+        "img110p",
+        "img111p",
+        "img112p",
+        "img113p",
+        "img114p",
+        "img115p",
+        "img116p",
+        "img117p",
+        "img118p",
+        "img119p",
+        "img120p",
+        "img121p",
+        "img122p",
+        "img123p",
+        "img124p",
+        "img125p",
+        "img126p",
+        "img127p",
+        "img128p",
+        "img129p",
+        "img130p",
+        "img131p",
+        "img132p",
+        "img133p",
+        "img134p",
+        "img135p",
+        "img136p",
+        "img137p",
+        "img138p",
+        "img139p",
+        "img140p",
+        "img141p",
+        "img142p",
+        "img143p",
+        "img144p",
+        "img145p",
+        "img146p",
+        "img147p",
+        "img148p",
+        "img149p",
+        "img150p",
+        "img151p",
+        "img152p",
+        "img153p",
+        "img154p",
+        "img155p",
+        "img156p",
+        "img157p",
+        "img158p",
+        "img159p",
+        "img160p",
+        "img161p",
+        "img162p",
+        "img163p",
+        "img164p",
+        "img165p",
+        "img166p",
+        "img167p",
+        "img168p",
+        "img169p",
+        "img170p",
+        "img171p",
+        "img172p",
+        "img173p",
+        "img174p",
+        "img175p",
+        "img176p",
+        "img177p",
+        "img178p",
+        "img179p",
+        "img180p",
+        "img181p",
+        "img182p",
+        "img183p",
+        "img184p",
+        "img185p",
+        "img186p",
+        "img187p",
+        "img188p",
+        "img189p",
+        "img190p",
+        "img191p",
+        "img192p",
+        "img193p",
+        "img194p",
+        "img195p",
+        "img196p",
+        "img197p",
+        "img198p",
+        "img199p",
+        "img200p",
+        "img201p",
+        "img202p",
+        "img203p",
+        "img204p",
+        ]
+    
+    static let img1q = "img1q"
+    static let img2q = "img2q"
+    static let img3q = "img3q"
+    static let img4q = "img4q"
+    static let img5q = "img5q"
+    static let img6q = "img6q"
+    static let img7q = "img7q"
+    static let img8q = "img8q"
+    static let img9q = "img9q"
+    static let img10q = "img10q"
+    static let img11q = "img11q"
+    static let img12q = "img12q"
+    static let img13q = "img13q"
+    static let img14q = "img14q"
+    static let img15q = "img15q"
+    static let img16q = "img16q"
+    static let img17q = "img17q"
+    static let img18q = "img18q"
+    static let img19q = "img19q"
+    static let img20q = "img20q"
+    static let img21q = "img21q"
+    static let img22q = "img22q"
+    static let img23q = "img23q"
+    static let img24q = "img24q"
+    static let img25q = "img25q"
+    static let img26q = "img26q"
+    static let img27q = "img27q"
+    static let img28q = "img28q"
+    static let img29q = "img29q"
+    static let img30q = "img30q"
+    
+    static let selectUnselectAllKeys15 = [
+        
+        "img1q",
+        "img2q",
+        "img3q",
+        "img4q",
+        "img5q",
+        "img6q",
+        "img7q",
+        "img8q",
+        "img9q",
+        "img10q",
+        "img11q",
+        "img12q",
+        "img13q",
+        "img14q",
+        "img15q",
+        "img16q",
+        "img17q",
+        "img18q",
+        "img19q",
+        "img20q",
+        "img21q",
+        "img22q",
+        "img23q",
+        "img24q",
+        "img25q",
+        "img26q",
+        "img27q",
+        "img28q",
+        "img29q",
+        "img30q",
+        
+        ]
 }

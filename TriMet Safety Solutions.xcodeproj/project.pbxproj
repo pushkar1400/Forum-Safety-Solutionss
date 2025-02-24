@@ -37,8 +37,14 @@
 		83B445AE2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445AD2B4FC9E400AFA1F2 /* Safety_SolutionsTests.swift */; };
 		83B445B82B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445B72B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift */; };
 		83B445BA2B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445B92B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift */; };
+		83B7C2EB2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */; };
+		83B7C2EC2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */; };
+		83B7C2ED2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */; };
+		83B7C2EF2D645F89005C24A9 /* NewMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7C2EE2D645F89005C24A9 /* NewMenuVC.swift */; };
 		83C7258F2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */; };
 		83C725A72D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */; };
+		83C981892D5B5B2800BE5CCE /* JobBriefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */; };
+		83C981A52D5C7E8800BE5CCE /* SafetyObservationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C981A42D5C7E8800BE5CCE /* SafetyObservationVC.swift */; };
 		83D101932B8700B400756AA9 /* ConfinedSpacePermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D101922B8700B400756AA9 /* ConfinedSpacePermitVC.swift */; };
 		83D66F702B5FE543004E8BDE /* SignatureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F6F2B5FE543004E8BDE /* SignatureVC.swift */; };
 		83D66F772B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D66F722B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift */; };
@@ -107,8 +113,12 @@
 		83B445B32B4FC9E400AFA1F2 /* TriMet Safety SolutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TriMet Safety SolutionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B445B72B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsUITests.swift; sourceTree = "<group>"; };
 		83B445B92B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SAF-8091-SP-Fire Extinguisher.pdf"; sourceTree = "<group>"; };
+		83B7C2EE2D645F89005C24A9 /* NewMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMenuVC.swift; sourceTree = "<group>"; };
 		83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceAwarenessSkillSheetVC.swift; sourceTree = "<group>"; };
 		83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerSkillSheetVC.swift; sourceTree = "<group>"; };
+		83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobBriefVC.swift; sourceTree = "<group>"; };
+		83C981A42D5C7E8800BE5CCE /* SafetyObservationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyObservationVC.swift; sourceTree = "<group>"; };
 		83D101922B8700B400756AA9 /* ConfinedSpacePermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpacePermitVC.swift; sourceTree = "<group>"; };
 		83D101952B8726E800756AA9 /* ClassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClassKit.framework; path = System/Library/Frameworks/ClassKit.framework; sourceTree = SDKROOT; };
 		83D66F6F2B5FE543004E8BDE /* SignatureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureVC.swift; sourceTree = "<group>"; };
@@ -211,6 +221,7 @@
 				83D66F6C2B5FD810004E8BDE /* Controller */,
 				83D66F6D2B5FD819004E8BDE /* View */,
 				83B4459F2B4FC9E300AFA1F2 /* Assets.xcassets */,
+				83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */,
 				83B445A42B4FC9E300AFA1F2 /* Info.plist */,
 				83469EB12B5A8E3500D3F464 /* Safety Solutions-Bridging-Header.h */,
 				1C0572BC2B874F2100DB32EB /* Helper.h */,
@@ -257,8 +268,8 @@
 				83D101922B8700B400756AA9 /* ConfinedSpacePermitVC.swift */,
 				83618FD42B8DC306009E4945 /* SiteSpecificSafetyPlanVC.swift */,
 				83AA928B2BA2C71C00F5236D /* HotWorkPermitVC.swift */,
-				83F3380C2BA30068007238C5 /* FallProtectionWorkPlanVC.swift */,
 				8335E92E2BA4206100436FC6 /* EnergizedWorkPermitVC.swift */,
+				83F3380C2BA30068007238C5 /* FallProtectionWorkPlanVC.swift */,
 				83F3427E2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift */,
 				83F342802BB41338008D3F54 /* HazardousChemicalPlanVC.swift */,
 				83B024242C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift */,
@@ -267,6 +278,9 @@
 				83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */,
 				838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */,
 				83F87F712D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift */,
+				83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */,
+				83C981A42D5C7E8800BE5CCE /* SafetyObservationVC.swift */,
+				83B7C2EE2D645F89005C24A9 /* NewMenuVC.swift */,
 				1CE8D4642B6B7FD200C77470 /* Nit Controllers */,
 			);
 			path = Controller;
@@ -408,6 +422,7 @@
 			files = (
 				83B445A32B4FC9E300AFA1F2 /* LaunchScreen.storyboard in Resources */,
 				83B445A02B4FC9E300AFA1F2 /* Assets.xcassets in Resources */,
+				83B7C2EC2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */,
 				83B4459E2B4FC9E100AFA1F2 /* Main.storyboard in Resources */,
 				1CB13BEE2B6B5EB40041E021 /* NitSB.storyboard in Resources */,
 			);
@@ -417,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B7C2ED2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B7C2EB2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C981892D5B5B2800BE5CCE /* JobBriefVC.swift in Sources */,
 				83D66F772B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift in Sources */,
 				83D101932B8700B400756AA9 /* ConfinedSpacePermitVC.swift in Sources */,
 				1CB2F6782B6CC682002C0F53 /* Keys.swift in Sources */,
@@ -450,7 +468,9 @@
 				839C89DB2B500062009220D3 /* MenuVC.swift in Sources */,
 				838B96B02D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift in Sources */,
 				1C14F2642B711C550080756E /* AlertHelper.swift in Sources */,
+				83C981A52D5C7E8800BE5CCE /* SafetyObservationVC.swift in Sources */,
 				83F3427F2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift in Sources */,
+				83B7C2EF2D645F89005C24A9 /* NewMenuVC.swift in Sources */,
 				8395C0EB2C116BE3000E920A /* GroundDisturbancePermitVC.swift in Sources */,
 				83F87F722D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift in Sources */,
 				1CB2F67A2B6CE7AE002C0F53 /* KeysPermitVC.swift in Sources */,
@@ -654,7 +674,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";
@@ -693,7 +713,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";

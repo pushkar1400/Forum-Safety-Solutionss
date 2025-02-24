@@ -61,6 +61,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var signDicVehicle7 = UIImageView()
     var signDicVehicle8 = UIImageView()
     var signDicVehicle9 = UIImageView()
+    var signDicVehicle10 = UIImageView()
+    var signDicVehicle11 = UIImageView()
+    
     
     var imgSignExcavation = UIImageView()
     var imgSignExcavation2 = UIImageView()
@@ -113,7 +116,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var imgSignExcavation48 = UIImageView()
     var imgSignExcavation49 = UIImageView()
     var imgSignExcavation50 = UIImageView()
-    
+  
     
     var imgSign = UIImageView()
     var dicFPDOHSSkillSeet = NSMutableDictionary()

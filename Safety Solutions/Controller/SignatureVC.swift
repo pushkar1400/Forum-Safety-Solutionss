@@ -165,7 +165,12 @@ class SignatureVC: UIViewController,SwiftSignatureViewDelegate {
             appDelegate?.signDicVehicle8.image = signView.getCroppedSignature()
         }else if isWorkingOn == 182 {
             appDelegate?.signDicVehicle9.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 183 {
+            appDelegate?.signDicVehicle10.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 184 {
+            appDelegate?.signDicVehicle11.image = signView.getCroppedSignature()
         }
+        
         
         self.navigationController?.popViewController(animated: true)
     }
