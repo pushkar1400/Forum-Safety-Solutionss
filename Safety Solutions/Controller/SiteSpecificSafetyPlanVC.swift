@@ -1046,7 +1046,7 @@ class SiteSpecificSafetyPlanVC: UIViewController, MFMailComposeViewControllerDel
                     return
                 }
                SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Site Specific Safety Plan")
-               AlertHelper.shared.alertController(title: "Safety Solution", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+               AlertHelper.shared.alertController(title: "Safety Solution", message: "This form has saved save successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
             }
     }
     

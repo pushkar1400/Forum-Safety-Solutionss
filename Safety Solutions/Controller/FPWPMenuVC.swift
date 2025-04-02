@@ -12,7 +12,6 @@ class FPWPMenuVC: UIViewController {
     
     @IBOutlet weak var programPDFBackgroundView: UIView!
     @IBOutlet weak var programPDFBackgroundViewS: UIView!
-    
     @IBOutlet weak var fPWorkPlanBackgroundView: UIView!
     @IBOutlet weak var fPWorkPlanBackgroundViewS: UIView!
     @IBOutlet weak var fPWorkTestBackgroundView: UIView!
@@ -34,6 +33,21 @@ class FPWPMenuVC: UIViewController {
         fPWorkTestBackgroundViewS.layer.cornerRadius = 15
         fPWorkSkilBackgroundViewS.layer.cornerRadius = 15
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationItem.hidesBackButton = true
+    
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    @IBAction func loginMenuBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func fallProtectionWorkPlanBtn(_ sender: UIButton) {

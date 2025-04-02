@@ -2556,7 +2556,7 @@ class ConfinedSpacePermitVC: UIViewController, MFMailComposeViewControllerDelega
           }
           else{
               SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Permit")
-              AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+              AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
           }
       
     }

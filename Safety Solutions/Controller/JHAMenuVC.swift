@@ -10,11 +10,9 @@ import UIKit
 class JHAMenuVC: UIViewController {
 
     @IBOutlet weak var jhaBackgroundView: UIView!
-    @IBOutlet weak var daliyBriefView: UIView!
     @IBOutlet weak var jhaBackgroundViewS: UIView!
+    @IBOutlet weak var daliyBriefView: UIView!
     @IBOutlet weak var daliyBriefViewS: UIView!
-    @IBOutlet weak var jobBriefView: UIView!
-    @IBOutlet weak var jobBriefViewS: UIView!
     @IBOutlet weak var safetyObservationView: UIView!
     @IBOutlet weak var safetyObservationViewS: UIView!
     
@@ -23,23 +21,33 @@ class JHAMenuVC: UIViewController {
        
         jhaBackgroundView.layer.cornerRadius = 18
         daliyBriefView.layer.cornerRadius = 18
-        jobBriefView.layer.cornerRadius = 18
         safetyObservationView.layer.cornerRadius = 18
         
         jhaBackgroundViewS.layer.cornerRadius = 15
         daliyBriefViewS.layer.cornerRadius = 15
-        jobBriefViewS.layer.cornerRadius = 15
         safetyObservationViewS.layer.cornerRadius = 15
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationItem.hidesBackButton = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    @IBAction func loginMenuBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func jhaBtn(_ sender: UIButton) {
         let jobHazardAnalysisVC = self.storyboard?.instantiateViewController(withIdentifier: "JobHazardAnalysisVC") as! JobHazardAnalysisVC
         self.navigationController?.pushViewController(jobHazardAnalysisVC, animated: true)
     }
-    
-    @IBAction func daliyBriefBtn(_ sender: UIButton) {
-       
-        }
+
     @IBAction func jobBriefBtn(_ sender: UIButton) {
         let jobBriefVC = self.storyboard?.instantiateViewController(withIdentifier: "JobBriefVC") as! JobBriefVC
         self.navigationController?.pushViewController(jobBriefVC, animated: true)

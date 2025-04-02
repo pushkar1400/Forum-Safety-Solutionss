@@ -78,9 +78,9 @@ final class SaveDataToICloudAndShareSheet {
     func createFolderPath(txtStr: String) -> (URL, String) {
         UserDefaults.incrementIntegerForKey(key: txtStr)
         let int = UserDefaults.standard.integer(forKey: txtStr)
-        let filename = "\(appDelegate.todayDate)-\(appDelegate.department)-\(txtStr)-\(int)"
+        let filename = "\(appDelegate.todayDate)-\(appDelegate.name)-\(appDelegate.formVersion)-\(txtStr)-\(int)"
         let documentDirectoryPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let folderName = "\(appDelegate.todayDate) \(appDelegate.department)"
+        let folderName = "\(appDelegate.todayDate) \(appDelegate.name)"
         // create the custom folder path
         let FolderDirectoryPath = (documentDirectoryPath.path as NSString).appending("/\(folderName)")
         let fileManager = FileManager.default

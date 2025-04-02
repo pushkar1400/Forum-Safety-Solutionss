@@ -882,7 +882,7 @@ class VehicleEquipmentVC: UIViewController, MFMailComposeViewControllerDelegate,
         if dateOfInspection.text.isEmpty {
             AlertHelper.shared.alertController(title: "Alert", message: "Please Fill  Details Of Date Of Inspection.", okTitle: "Ok", controller: self, handler: { _ in })
             SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrlView, vie: self.view, txtStr: "Vehicle Equipment Site Access Permit")
-            AlertHelper.shared.alertController(title: "Safety Solution", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+            AlertHelper.shared.alertController(title: "Safety Solution", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
             return
        
         }
@@ -890,12 +890,10 @@ class VehicleEquipmentVC: UIViewController, MFMailComposeViewControllerDelegate,
     }
 
     func setInfoDefault() {
-        
         contractorOrDepartment.text             =    appDelegate.department
         competentPersonTextView.text            =     "\(appDelegate.department)-\(appDelegate.name)-\(appDelegate.email)"
         dateAllowedOnSite.text                  =    appDelegate.todayDate
         txtContractorDepartment1.text           =    appDelegate.department
-                         
     }
 
     func setImageOnBoxes() {

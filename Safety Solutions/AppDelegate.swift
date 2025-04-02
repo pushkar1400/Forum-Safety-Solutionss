@@ -12,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
     var window: UIWindow?
     //Date
+    var formVersion: String = "1.0"
     var todayDate = ""
     
     //Employer, Department
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var email = ""
     var name = ""
     var subgroup = ""
+    var facility = ""
     
     
     //Work Location / Site Address
@@ -63,6 +65,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var signDicVehicle9 = UIImageView()
     var signDicVehicle10 = UIImageView()
     var signDicVehicle11 = UIImageView()
+    var signDicVehicle12 = UIImageView()
+    var signDicVehicle13 = UIImageView()
     
     
     var imgSignExcavation = UIImageView()

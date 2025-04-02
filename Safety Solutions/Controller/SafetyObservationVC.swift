@@ -241,7 +241,7 @@ class SafetyObservationVC: UIViewController {
     
     @IBAction func clickOnSaveButton(_ sender: UIButton) {
         SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Safety Observation")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
 
     @IBAction func clickOnBackButton(_ sender: UIButton) {

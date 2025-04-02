@@ -2452,8 +2452,8 @@ enum KeysPermitVC {
     static let img3n = "img3n"
     static let img4n = "img4n"
     static let img5n = "img5n"
-    static let img6n = "img6n"
-    static let img7n = "img7n"
+//    static let img6n = "img6n"
+//    static let img7n = "img7n"
     static let img8n = "img8n"
     static let img9n = "img9n"
     static let img10n = "img10n"
@@ -2517,8 +2517,8 @@ enum KeysPermitVC {
         "img3n",
         "img4n",
         "img5n",
-        "img6n",
-        "img7n",
+//        "img6n",
+//        "img7n",
         "img8n",
         "img9n",
         "img10n",
@@ -2667,6 +2667,68 @@ enum KeysPermitVC {
     static let img87o = "img87o"
     static let img88o = "img88o"
     static let img89o = "img89o"
+    static let img90o = "img90o"
+    static let img91o = "img91o"
+    static let img92o = "img92o"
+    static let img93o = "img93o"
+    static let img94o = "img94o"
+    static let img95o = "img95o"
+    static let img96o = "img96o"
+    static let img97o = "img97o"
+    static let img98o = "img98o"
+    static let img99o = "img99o"
+    static let img100o = "img100o"
+    static let img101o = "img101o"
+    static let img102o = "img102o"
+    static let img103o = "img103o"
+    static let img104o = "img104o"
+    static let img105o = "img105o"
+    static let img106o = "img106o"
+    static let img107o = "img107o"
+    static let img108o = "img108o"
+    static let img109o = "img109o"
+    static let img110o = "img110o"
+    static let img111o = "img111o"
+    static let img112o = "img112o"
+    static let img113o = "img113o"
+    static let img114o = "img114o"
+    static let img115o = "img115o"
+    static let img116o = "img116o"
+    static let img117o = "img117o"
+    static let img118o = "img118o"
+    static let img119o = "img119o"
+    static let img120o = "img120o"
+    static let img121o = "img121o"
+    static let img122o = "img122o"
+    static let img123o = "img123o"
+    static let img124o = "img124o"
+    static let img125o = "img125o"
+    static let img126o = "img126o"
+    static let img127o = "img127o"
+    static let img128o = "img128o"
+    static let img129o = "img129o"
+    static let img130o = "img130o"
+    static let img131o = "img131o"
+    static let img132o = "img132o"
+    static let img133o = "img133o"
+    static let img134o = "img134o"
+    static let img135o = "img135o"
+    static let img136o = "img136o"
+    static let img137o = "img137o"
+    static let img138o = "img138o"
+    static let img139o = "img139o"
+    static let img140o = "img140o"
+    static let img141o = "img141o"
+    static let img142o = "img142o"
+    static let img143o = "img143o"
+    static let img144o = "img144o"
+    static let img145o = "img145o"
+    static let img146o = "img146o"
+    static let img147o = "img147o"
+    static let img148o = "img148o"
+    static let img149o = "img149o"
+   
+    
     
     
     static let selectUnselectAllKeys13 = [
@@ -2759,6 +2821,66 @@ enum KeysPermitVC {
         "img87o",
         "img88o",
         "img89o",
+        "img90o",
+        "img91o",
+        "img92o",
+        "img93o",
+        "img94o",
+        "img95o",
+        "img96o",
+        "img97o",
+        "img98o",
+        "img99o",
+        "img100o",
+        "img101o",
+        "img102o",
+        "img103o",
+        "img104o",
+        "img105o",
+        "img106o",
+        "img107o",
+        "img108o",
+        "img109o",
+        "img110o",
+        "img111o",
+        "img112o",
+        "img113o",
+        "img114o",
+        "img115o",
+        "img116o",
+        "img117o",
+        "img118o",
+        "img119o",
+        "img120o",
+        "img121o",
+        "img122o",
+        "img123o",
+        "img124o",
+        "img125o",
+        "img126o",
+        "img127o",
+        "img128o",
+        "img129o",
+        "img130o",
+        "img131o",
+        "img132o",
+        "img133o",
+        "img134o",
+        "img135o",
+        "img136o",
+        "img137o",
+        "img138o",
+        "img139o",
+        "img140o",
+        "img141o",
+        "img142o",
+        "img143o",
+        "img144o",
+        "img145o",
+        "img146o",
+        "img147o",
+        "img148o",
+        "img149o",
         ]
     
     static let img1p = "img1p"
@@ -3239,4 +3361,97 @@ enum KeysPermitVC {
         "img30q",
         
         ]
+    
+    
+    
+    static let img1r = "img1r"
+    static let img2r = "img2r"
+    static let img3r = "img3r"
+    static let img4r = "img4r"
+    static let img5r = "img5r"
+    static let img6r = "img6r"
+    static let img7r = "img7r"
+    static let img8r = "img8r"
+    static let img9r = "img9r"
+    static let img10r = "img10r"
+    static let img11r = "img11r"
+    static let img12r = "img12r"
+    static let img13r = "img13r"
+   
+    
+    
+    
+    static let selectUnselectAllKeys16 = [
+        "img1r",
+        "img2r",
+        "img3r",
+        "img4r",
+        "img5r",
+        "img6r",
+        "img7r",
+        "img8r",
+        "img9r",
+        "img10r",
+        "img11r",
+        "img12r",
+        "img13r",
+        ]
+    
+    static let img1j = "img1j"
+    static let img2j = "img2j"
+    static let img3j = "img3j"
+    static let img4j = "img4j"
+    static let img5j = "img5j"
+    static let img6j = "img6j"
+    static let img7j = "img7j"
+    static let img8j = "img8j"
+    static let img9j = "img9j"
+    static let img10j = "img10j"
+    static let img11j = "img11j"
+    static let img12j = "img12j"
+    static let img13j = "img13j"
+    static let img14j = "img14j"
+    static let img15j = "img15j"
+    static let img16j = "img16j"
+    static let img17j = "img17j"
+    static let img18j = "img18j"
+    static let img19j = "img19j"
+    static let img20j = "img20j"
+    static let img21j = "img21j"
+    static let img22j = "img22j"
+    static let img23j = "img23j"
+    static let img24j = "img24j"
+    static let img25j = "img25j"
+    static let img26j = "img26j"
+    
+    
+    static let selectUnselectAllKeys17 = [
+        "img1j",
+        "img2j",
+        "img3j",
+        "img4j",
+        "img5j",
+        "img6j",
+        "img7j",
+        "img8j",
+        "img9j",
+        "img10j",
+        "img11j",
+        "img12j",
+        "img13j",
+        "img14j",
+        "img15j",
+        "img16j",
+        "img17j",
+        "img18j",
+        "img19j",
+        "img20j",
+        "img21j",
+        "img22j",
+        "img23j",
+        "img24j",
+        "img25j",
+        "img26j",
+        ]
+    
 }

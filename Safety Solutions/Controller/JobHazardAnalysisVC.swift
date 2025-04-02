@@ -1041,7 +1041,7 @@ class JobHazardAnalysisVC: UIViewController, MFMailComposeViewControllerDelegate
         alert()
         appDelegate.imgSign = UIImageView()
         
-        let alert = UIAlertController(title: "Safety Solution", message: "This form has been save successfully", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Safety Solution", message: "This form has been saved successfully.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             self.navigationController?.popViewController(animated: false)
         }))

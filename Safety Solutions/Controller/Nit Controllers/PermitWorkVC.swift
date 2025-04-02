@@ -870,7 +870,7 @@ class PermitWorkVC: UIViewController, MFMailComposeViewControllerDelegate  {
                 return
             }
             SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrllView, vie: self.view, txtStr: "Permit to Work Request")
-            AlertHelper.shared.alertController(title: "Safety Solution", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+            AlertHelper.shared.alertController(title: "Safety Solution", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
         }
     }
     
@@ -883,7 +883,6 @@ class PermitWorkVC: UIViewController, MFMailComposeViewControllerDelegate  {
     func setInfoDefault() {
         contractorOrDepartment.text = appDelegate.department
         competentPerson.text = "\(appDelegate.subgroup)-\(appDelegate.name)-\(appDelegate.email)"
-//        authorisedPermitRequestor.text = "\(appDelegate.supervisorName)-\(appDelegate.badgeNumber)-\(appDelegate.workLocation)"
     }
     
     func checkSelectedImages() {

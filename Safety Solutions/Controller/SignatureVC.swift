@@ -169,6 +169,10 @@ class SignatureVC: UIViewController,SwiftSignatureViewDelegate {
             appDelegate?.signDicVehicle10.image = signView.getCroppedSignature()
         }else if isWorkingOn == 184 {
             appDelegate?.signDicVehicle11.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 185 {
+            appDelegate?.signDicVehicle12.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 186 {
+            appDelegate?.signDicVehicle13.image = signView.getCroppedSignature()
         }
         
         

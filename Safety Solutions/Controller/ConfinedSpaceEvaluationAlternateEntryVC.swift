@@ -111,8 +111,146 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
     @IBOutlet weak var timeTextField83: UITextField!
     @IBOutlet weak var timeTextField84: UITextField!
     
+    
+    //HAZARD
+    @IBOutlet weak var hazardBtn1: UIButton!
+    @IBOutlet weak var hazardBtn2: UIButton!
+    @IBOutlet weak var hazardBtn3: UIButton!
+    @IBOutlet weak var hazardBtn4: UIButton!
+    @IBOutlet weak var hazardBtn5: UIButton!
+    @IBOutlet weak var hazardBtn6: UIButton!
+    @IBOutlet weak var hazardBtn7: UIButton!
+    @IBOutlet weak var hazardBtn8: UIButton!
+    @IBOutlet weak var hazardBtn9: UIButton!
+    @IBOutlet weak var hazardBtn10: UIButton!
+    @IBOutlet weak var hazardBtn11: UIButton!
+    @IBOutlet weak var hazardBtn12: UIButton!
+    @IBOutlet weak var hazardBtn13: UIButton!
+    @IBOutlet weak var hazardBtn14: UIButton!
+    @IBOutlet weak var hazardBtn15: UIButton!
+    @IBOutlet weak var hazardBtn16: UIButton!
+    @IBOutlet weak var hazardBtn17: UIButton!
+    @IBOutlet weak var hazardBtn18: UIButton!
+    @IBOutlet weak var hazardBtn19: UIButton!
+    @IBOutlet weak var hazardBtn20: UIButton!
+    
+    
+    @IBOutlet weak var hazardImg1: UIImageView!
+    @IBOutlet weak var hazardImg2: UIImageView!
+    @IBOutlet weak var hazardImg3: UIImageView!
+    @IBOutlet weak var hazardImg4: UIImageView!
+    @IBOutlet weak var hazardImg5: UIImageView!
+    @IBOutlet weak var hazardImg6: UIImageView!
+    @IBOutlet weak var hazardImg7: UIImageView!
+    @IBOutlet weak var hazardImg8: UIImageView!
+    @IBOutlet weak var hazardImg9: UIImageView!
+    @IBOutlet weak var hazardImg10: UIImageView!
+    @IBOutlet weak var hazardImg11: UIImageView!
+    @IBOutlet weak var hazardImg12: UIImageView!
+    @IBOutlet weak var hazardImg13: UIImageView!
+    @IBOutlet weak var hazardImg14: UIImageView!
+    @IBOutlet weak var hazardImg15: UIImageView!
+    @IBOutlet weak var hazardImg16: UIImageView!
+    @IBOutlet weak var hazardImg17: UIImageView!
+    @IBOutlet weak var hazardImg18: UIImageView!
+    @IBOutlet weak var hazardImg19: UIImageView!
+    @IBOutlet weak var hazardImg20: UIImageView!
+    
+    
+    //ELIMINATION METHODS
+    @IBOutlet weak var eliminationMethodsBtn1: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn2: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn3: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn4: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn5: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn6: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn7: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn8: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn9: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn10: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn11: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn12: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn13: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn14: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn15: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn16: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn17: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn18: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn19: UIButton!
+    @IBOutlet weak var eliminationMethodsBtn20: UIButton!
+    
+    
+    @IBOutlet weak var eliminationMethodsImg1: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg2: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg3: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg4: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg5: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg6: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg7: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg8: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg9: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg10: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg11: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg12: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg13: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg14: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg15: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg16: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg17: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg18: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg19: UIImageView!
+    @IBOutlet weak var eliminationMethodsImg20: UIImageView!
+    
+    
+    //CONTROL METHODS
+    @IBOutlet weak var controlMethodsBtn1: UIButton!
+    @IBOutlet weak var controlMethodsBtn2: UIButton!
+    @IBOutlet weak var controlMethodsBtn3: UIButton!
+    @IBOutlet weak var controlMethodsBtn4: UIButton!
+    @IBOutlet weak var controlMethodsBtn5: UIButton!
+    @IBOutlet weak var controlMethodsBtn6: UIButton!
+    @IBOutlet weak var controlMethodsBtn7: UIButton!
+    @IBOutlet weak var controlMethodsBtn8: UIButton!
+    @IBOutlet weak var controlMethodsBtn9: UIButton!
+    @IBOutlet weak var controlMethodsBtn10: UIButton!
+    @IBOutlet weak var controlMethodsBtn11: UIButton!
+    @IBOutlet weak var controlMethodsBtn12: UIButton!
+    @IBOutlet weak var controlMethodsBtn13: UIButton!
+    @IBOutlet weak var controlMethodsBtn14: UIButton!
+    @IBOutlet weak var controlMethodsBtn15: UIButton!
+    @IBOutlet weak var controlMethodsBtn16: UIButton!
+    @IBOutlet weak var controlMethodsBtn17: UIButton!
+    @IBOutlet weak var controlMethodsBtn18: UIButton!
+    @IBOutlet weak var controlMethodsBtn19: UIButton!
+    @IBOutlet weak var controlMethodsBtn20: UIButton!
+    
+    
+    @IBOutlet weak var controlMethodsImg1: UIImageView!
+    @IBOutlet weak var controlMethodsImg2: UIImageView!
+    @IBOutlet weak var controlMethodsImg3: UIImageView!
+    @IBOutlet weak var controlMethodsImg4: UIImageView!
+    @IBOutlet weak var controlMethodsImg5: UIImageView!
+    @IBOutlet weak var controlMethodsImg6: UIImageView!
+    @IBOutlet weak var controlMethodsImg7: UIImageView!
+    @IBOutlet weak var controlMethodsImg8: UIImageView!
+    @IBOutlet weak var controlMethodsImg9: UIImageView!
+    @IBOutlet weak var controlMethodsImg10: UIImageView!
+    @IBOutlet weak var controlMethodsImg11: UIImageView!
+    @IBOutlet weak var controlMethodsImg12: UIImageView!
+    @IBOutlet weak var controlMethodsImg13: UIImageView!
+    @IBOutlet weak var controlMethodsImg14: UIImageView!
+    @IBOutlet weak var controlMethodsImg15: UIImageView!
+    @IBOutlet weak var controlMethodsImg16: UIImageView!
+    @IBOutlet weak var controlMethodsImg17: UIImageView!
+    @IBOutlet weak var controlMethodsImg18: UIImageView!
+    @IBOutlet weak var controlMethodsImg19: UIImageView!
+    @IBOutlet weak var controlMethodsImg20: UIImageView!
+    
+    
+    
     @IBOutlet weak var alternateEntryDateField: UITextField!
-   
+    @IBOutlet weak var timeField: UITextField!
+    
     @IBOutlet weak var permitDurationTextView: UITextView!
     @IBOutlet weak var permitStartTimeDateTextView: UITextView!
     @IBOutlet weak var occNotifiedTextField: UITextField!
@@ -125,7 +263,6 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
     @IBOutlet weak var rescueCommunicationsPhoneTextField: UITextField!
     @IBOutlet weak var sdsLinksTextField: UITextField!
 
-    @IBOutlet weak var rescueAttendantTextView: UITextView!
     @IBOutlet weak var rescueEntrantsNamTextView: UITextView!
     @IBOutlet weak var specialhazardsTextView: UITextView!
 
@@ -785,9 +922,9 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         if let savedText110p = UserDefaults.standard.string(forKey: "savedText110p") {
             sdsLinksTextField.text = savedText110p
         }
-        if let savedText111p = UserDefaults.standard.string(forKey: "savedText111p") {
-            rescueAttendantTextView.text = savedText111p
-        }
+//        if let savedText111p = UserDefaults.standard.string(forKey: "savedText111p") {
+//            rescueAttendantTextView.text = savedText111p
+//        }
         if let savedText112p = UserDefaults.standard.string(forKey: "savedText112p") {
             rescueEntrantsNamTextView.text = savedText112p
         }
@@ -889,6 +1026,9 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         }
         if let savedText145p = UserDefaults.standard.string(forKey: "savedText145p") {
             supervisorTextView4.text = savedText145p
+        }
+        if let savedText146p = UserDefaults.standard.string(forKey: "savedText146p") {
+            timeField.text = savedText146p
         }
         
     }
@@ -1005,7 +1145,7 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         UserDefaults.standard.set(rescueCommunicationsRadioeTextField.text, forKey: "savedText108p")
         UserDefaults.standard.set(rescueCommunicationsPhoneTextField.text, forKey: "savedText109p")
         UserDefaults.standard.set(sdsLinksTextField.text, forKey: "savedText110p")
-        UserDefaults.standard.set(rescueAttendantTextView.text, forKey: "savedText111p")
+//        UserDefaults.standard.set(rescueAttendantTextView.text, forKey: "savedText111p")
         UserDefaults.standard.set(rescueEntrantsNamTextView.text, forKey: "savedText112p")
         UserDefaults.standard.set(specialhazardsTextView.text, forKey: "savedText113p")
         UserDefaults.standard.set(hotWorkTextView.text, forKey: "savedText114p")
@@ -1040,12 +1180,26 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         UserDefaults.standard.set(supervisorTextView3.text, forKey: "savedText143p")
         UserDefaults.standard.set(supervisorTextView4.text, forKey: "savedText144p")
         UserDefaults.standard.set(supervisorTextView4.text, forKey: "savedText145p")
+        UserDefaults.standard.set(timeField.text, forKey: "savedText146p")
         
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
           setSignatures()
           checkSelectedImages()
+          setInfoDefault()
+    }
+    func setInfoDefault() {
+        dateTextView.text = appDelegate.todayDate
+        csSupervisorTextView.text = appDelegate.name
+        phoneTextView.text = appDelegate.phoneNumber
+        badgeTextView.text = appDelegate.badgeNumber
+        deptTextView.text = appDelegate.department
+        subTextView.text = appDelegate.subgroup
+        addressOrAreaTextView.text = appDelegate.workLocation
+        facilityTextView.text = appDelegate.facility
+        
+     
     }
     func setSignatures() {
         signatureOfCSSupervisorBtn.setImage(appDelegate.signDicVehicle8.image, for: .normal)
@@ -1059,7 +1213,7 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
     
     @IBAction func clickOnSaveButton(_ sender: UIButton) {
         SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Evaluation Alternate Entry")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
 
     @IBAction func clickOnBackButton(_ sender: UIButton) {
@@ -1071,6 +1225,194 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         
         self.navigationController?.popToRootViewController(animated: false)
     }
+    
+    //HAZARD
+    @IBAction func hazardTapBtn1(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg1, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img90o)
+        
+    }
+    @IBAction func hazardTapBtn2(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg2, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img91o)
+    }
+    @IBAction func hazardTapBtn3(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg3, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img92o)
+    }
+    @IBAction func hazardTapBtn4(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg4, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img93o)
+    }
+    @IBAction func hazardTapBtn5(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg5, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img94o)
+    }
+    @IBAction func hazardTapBtn6(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg6, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img95o)
+    }
+    @IBAction func hazardTapBtn7(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg7, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img96o)
+    }
+    @IBAction func hazardTapBtn8(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg8, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img97o)
+    }
+    @IBAction func hazardTapBtn9(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg9, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img98o)
+    }
+    @IBAction func hazardTapBtn10(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg10, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img99o)
+    }
+    @IBAction func hazardTapBtn11(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg11, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img100o)
+    }
+    @IBAction func hazardTapBtn12(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg12, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img101o)
+    }
+    @IBAction func hazardTapBtn13(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg13, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img102o)
+    }
+    @IBAction func hazardTapBtn14(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg14, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img103o)
+    }
+    @IBAction func hazardTapBtn15(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg15, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img104o)
+    }
+    @IBAction func hazardTapBtn16(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg16, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img105o)
+    }
+    @IBAction func hazardTapBtn17(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg17, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img106o)
+    }
+    @IBAction func hazardTapBtn18(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg18, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img107o)
+    }
+    @IBAction func hazardTapBtn19(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg19, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img108o)
+    }
+    @IBAction func hazardTapBtn20(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: hazardImg20, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img109o)
+    }
+    
+    //ELIMINATION METHODS
+    @IBAction func eliminationMethodsTapBtn1(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg1, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img110o)
+    }
+    @IBAction func eliminationMethodsTapBtn2(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg2, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img111o)
+    }
+    @IBAction func eliminationMethodsTapBtn3(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg3, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img112o)
+    }
+    @IBAction func eliminationMethodsTapBtn4(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg4, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img113o)
+    }
+    @IBAction func eliminationMethodsTapBtn5(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg5, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img114o)
+    }
+    @IBAction func eliminationMethodsTapBtn6(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg6, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img115o)
+    }
+    @IBAction func eliminationMethodsTapBtn7(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg7, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img116o)
+    }
+    @IBAction func eliminationMethodsTapBtn8(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg8, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img117o)
+    }
+    @IBAction func eliminationMethodsTapBtn9(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg9, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img118o)
+    }
+    @IBAction func eliminationMethodsTapBtn10(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg10, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img119o)
+    }
+    @IBAction func eliminationMethodsTapBtn11(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg11, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img120o)
+    }
+    @IBAction func eliminationMethodsTapBtn12(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg12, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img121o)
+    }
+    @IBAction func eliminationMethodsTapBtn13(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg13, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img122o)
+    }
+    @IBAction func eliminationMethodsTapBtn14(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg14, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img123o)
+    }
+    @IBAction func eliminationMethodsTapBtn15(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg15, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img124o)
+    }
+    @IBAction func eliminationMethodsTapBtn16(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg16, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img125o)
+    }
+    @IBAction func eliminationMethodsTapBtn17(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg17, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img126o)
+    }
+    @IBAction func eliminationMethodsTapBtn18(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg18, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img127o)
+    }
+    @IBAction func eliminationMethodsTapBtn19(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg19, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img128o)
+    }
+    @IBAction func eliminationMethodsTapBtn20(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: eliminationMethodsImg20, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img129o)
+    }
+   
+    //CONTROL METHODS
+    @IBAction func controlMethodsTapBtn1(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg1, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img130o)
+    }
+    @IBAction func controlMethodsTapBtn2(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg2, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img131o)
+    }
+    @IBAction func controlMethodsTapBtn3(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg3, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img132o)
+    }
+    @IBAction func controlMethodsTapBtn4(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg4, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img133o)
+    }
+    @IBAction func controlMethodsTapBtn5(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg5, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img134o)
+    }
+    @IBAction func controlMethodsTapBtn6(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg6, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img135o)
+    }
+    @IBAction func controlMethodsTapBtn7(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg7, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img136o)
+    }
+    @IBAction func controlMethodsTapBtn8(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg8, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img137o)
+    }
+    @IBAction func controlMethodsTapBtn9(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg9, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img138o)
+    }
+    @IBAction func controlMethodsTapBtn10(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg10, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img139o)
+    }
+    @IBAction func controlMethodsTapBtn11(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg11, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img140o)
+    }
+    @IBAction func controlMethodsTapBtn12(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg12, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img141o)
+    }
+    @IBAction func controlMethodsTapBtn13(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg13, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img142o)
+    }
+    @IBAction func controlMethodsTapBtn14(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg14, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img143o)
+    }
+    @IBAction func controlMethodsTapBtn15(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg15, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img144o)
+    }
+    @IBAction func controlMethodsTapBtn16(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg16, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img145o)
+    }
+    @IBAction func controlMethodsTapBtn17(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg17, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img146o)
+    }
+    @IBAction func controlMethodsTapBtn18(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg18, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img147o)
+    }
+    @IBAction func controlMethodsTapBtn19(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg19, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img148o)
+    }
+    @IBAction func controlMethodsTapBtn20(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: controlMethodsImg20, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img149o)
+    }
+   
     
     @IBAction func confinedTapBtn1(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: confinedimg1, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img1o)
@@ -1460,6 +1802,66 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
             supervisorImg2,
             supervisorImg3,
             supervisorImg4,
+            hazardImg1,
+            hazardImg2,
+            hazardImg3,
+            hazardImg4,
+            hazardImg5,
+            hazardImg6,
+            hazardImg7,
+            hazardImg8,
+            hazardImg9,
+            hazardImg10,
+            hazardImg11,
+            hazardImg12,
+            hazardImg13,
+            hazardImg14,
+            hazardImg15,
+            hazardImg16,
+            hazardImg17,
+            hazardImg18,
+            hazardImg19,
+            hazardImg20,
+            eliminationMethodsImg1,
+            eliminationMethodsImg2,
+            eliminationMethodsImg3,
+            eliminationMethodsImg4,
+            eliminationMethodsImg5,
+            eliminationMethodsImg6,
+            eliminationMethodsImg7,
+            eliminationMethodsImg8,
+            eliminationMethodsImg9,
+            eliminationMethodsImg10,
+            eliminationMethodsImg11,
+            eliminationMethodsImg12,
+            eliminationMethodsImg13,
+            eliminationMethodsImg14,
+            eliminationMethodsImg15,
+            eliminationMethodsImg16,
+            eliminationMethodsImg17,
+            eliminationMethodsImg18,
+            eliminationMethodsImg19,
+            eliminationMethodsImg20,
+            controlMethodsImg1,
+            controlMethodsImg2,
+            controlMethodsImg3,
+            controlMethodsImg4,
+            controlMethodsImg5,
+            controlMethodsImg6,
+            controlMethodsImg7,
+            controlMethodsImg8,
+            controlMethodsImg9,
+            controlMethodsImg10,
+            controlMethodsImg11,
+            controlMethodsImg12,
+            controlMethodsImg13,
+            controlMethodsImg14,
+            controlMethodsImg15,
+            controlMethodsImg16,
+            controlMethodsImg17,
+            controlMethodsImg18,
+            controlMethodsImg19,
+            controlMethodsImg20,
             
             
         ]
@@ -1648,6 +2050,126 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
                     supervisorBtn3.isSelected = false
                 case 90:
                     supervisorBtn4.isSelected = false
+                case 91:
+                    hazardBtn1.isSelected = false
+                case 92:
+                    hazardBtn2.isSelected = false
+                case 93:
+                    hazardBtn3.isSelected = false
+                case 94:
+                    hazardBtn4.isSelected = false
+                case 95:
+                    hazardBtn5.isSelected = false
+                case 96:
+                    hazardBtn6.isSelected = false
+                case 97:
+                    hazardBtn7.isSelected = false
+                case 98:
+                    hazardBtn8.isSelected = false
+                case 99:
+                    hazardBtn9.isSelected = false
+                case 100:
+                    hazardBtn10.isSelected = false
+                case 101:
+                    hazardBtn11.isSelected = false
+                case 102:
+                    hazardBtn12.isSelected = false
+                case 103:
+                    hazardBtn13.isSelected = false
+                case 104:
+                    hazardBtn14.isSelected = false
+                case 105:
+                    hazardBtn15.isSelected = false
+                case 106:
+                    hazardBtn16.isSelected = false
+                case 107:
+                    hazardBtn17.isSelected = false
+                case 108:
+                    hazardBtn18.isSelected = false
+                case 109:
+                    hazardBtn19.isSelected = false
+                case 110:
+                    hazardBtn20.isSelected = false
+                case 111:
+                    eliminationMethodsBtn1.isSelected = false
+                case 112:
+                    eliminationMethodsBtn2.isSelected = false
+                case 113:
+                    eliminationMethodsBtn3.isSelected = false
+                case 114:
+                    eliminationMethodsBtn4.isSelected = false
+                case 115:
+                    eliminationMethodsBtn5.isSelected = false
+                case 116:
+                    eliminationMethodsBtn6.isSelected = false
+                case 117:
+                    eliminationMethodsBtn7.isSelected = false
+                case 118:
+                    eliminationMethodsBtn8.isSelected = false
+                case 119:
+                    eliminationMethodsBtn9.isSelected = false
+                case 120:
+                    eliminationMethodsBtn10.isSelected = false
+                case 121:
+                    eliminationMethodsBtn11.isSelected = false
+                case 122:
+                    eliminationMethodsBtn12.isSelected = false
+                case 123:
+                    eliminationMethodsBtn13.isSelected = false
+                case 124:
+                    eliminationMethodsBtn14.isSelected = false
+                case 125:
+                    eliminationMethodsBtn15.isSelected = false
+                case 126:
+                    eliminationMethodsBtn16.isSelected = false
+                case 127:
+                    eliminationMethodsBtn17.isSelected = false
+                case 128:
+                    eliminationMethodsBtn18.isSelected = false
+                case 129:
+                    eliminationMethodsBtn19.isSelected = false
+                case 130:
+                    eliminationMethodsBtn20.isSelected = false
+                case 131:
+                    controlMethodsBtn1.isSelected = false
+                case 132:
+                    controlMethodsBtn2.isSelected = false
+                case 133:
+                    controlMethodsBtn3.isSelected = false
+                case 134:
+                    controlMethodsBtn4.isSelected = false
+                case 135:
+                    controlMethodsBtn5.isSelected = false
+                case 136:
+                    controlMethodsBtn6.isSelected = false
+                case 137:
+                    controlMethodsBtn7.isSelected = false
+                case 138:
+                    controlMethodsBtn8.isSelected = false
+                case 139:
+                    controlMethodsBtn9.isSelected = false
+                case 140:
+                    controlMethodsBtn10.isSelected = false
+                case 141:
+                    controlMethodsBtn11.isSelected = false
+                case 142:
+                    controlMethodsBtn12.isSelected = false
+                case 143:
+                    controlMethodsBtn13.isSelected = false
+                case 144:
+                    controlMethodsBtn14.isSelected = false
+                case 145:
+                    controlMethodsBtn15.isSelected = false
+                case 146:
+                    controlMethodsBtn16.isSelected = false
+                case 147:
+                    controlMethodsBtn17.isSelected = false
+                case 148:
+                    controlMethodsBtn18.isSelected = false
+                case 149:
+                    controlMethodsBtn19.isSelected = false
+                case 150:
+                    controlMethodsBtn20.isSelected = false
                     
                 default:
                     break
@@ -1835,7 +2357,126 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
                     supervisorBtn3.isSelected = true
                 case 90:
                     supervisorBtn4.isSelected = true
-                
+                case 91:
+                    hazardBtn1.isSelected = true
+                case 92:
+                    hazardBtn2.isSelected = true
+                case 93:
+                    hazardBtn3.isSelected = true
+                case 94:
+                    hazardBtn4.isSelected = true
+                case 95:
+                    hazardBtn5.isSelected = true
+                case 96:
+                    hazardBtn6.isSelected = true
+                case 97:
+                    hazardBtn7.isSelected = true
+                case 98:
+                    hazardBtn8.isSelected = true
+                case 99:
+                    hazardBtn9.isSelected = true
+                case 100:
+                    hazardBtn10.isSelected = true
+                case 101:
+                    hazardBtn11.isSelected = true
+                case 102:
+                    hazardBtn12.isSelected = true
+                case 103:
+                    hazardBtn13.isSelected = true
+                case 104:
+                    hazardBtn14.isSelected = true
+                case 105:
+                    hazardBtn15.isSelected = true
+                case 106:
+                    hazardBtn16.isSelected = true
+                case 107:
+                    hazardBtn17.isSelected = true
+                case 108:
+                    hazardBtn18.isSelected = true
+                case 109:
+                    hazardBtn19.isSelected = true
+                case 110:
+                    hazardBtn20.isSelected = true
+                case 111:
+                    eliminationMethodsBtn1.isSelected = true
+                case 112:
+                    eliminationMethodsBtn2.isSelected = true
+                case 113:
+                    eliminationMethodsBtn3.isSelected = true
+                case 114:
+                    eliminationMethodsBtn4.isSelected = true
+                case 115:
+                    eliminationMethodsBtn5.isSelected = true
+                case 116:
+                    eliminationMethodsBtn6.isSelected = true
+                case 117:
+                    eliminationMethodsBtn7.isSelected = true
+                case 118:
+                    eliminationMethodsBtn8.isSelected = true
+                case 119:
+                    eliminationMethodsBtn9.isSelected = true
+                case 120:
+                    eliminationMethodsBtn10.isSelected = true
+                case 121:
+                    eliminationMethodsBtn11.isSelected = true
+                case 122:
+                    eliminationMethodsBtn12.isSelected = true
+                case 123:
+                    eliminationMethodsBtn13.isSelected = true
+                case 124:
+                    eliminationMethodsBtn14.isSelected = true
+                case 125:
+                    eliminationMethodsBtn15.isSelected = true
+                case 126:
+                    eliminationMethodsBtn16.isSelected = true
+                case 127:
+                    eliminationMethodsBtn17.isSelected = true
+                case 128:
+                    eliminationMethodsBtn18.isSelected = true
+                case 129:
+                    eliminationMethodsBtn19.isSelected = true
+                case 130:
+                    eliminationMethodsBtn20.isSelected = true
+                case 131:
+                    controlMethodsBtn1.isSelected = true
+                case 132:
+                    controlMethodsBtn2.isSelected = true
+                case 133:
+                    controlMethodsBtn3.isSelected = true
+                case 134:
+                    controlMethodsBtn4.isSelected = true
+                case 135:
+                    controlMethodsBtn5.isSelected = true
+                case 136:
+                    controlMethodsBtn6.isSelected = true
+                case 137:
+                    controlMethodsBtn7.isSelected = true
+                case 138:
+                    controlMethodsBtn8.isSelected = true
+                case 139:
+                    controlMethodsBtn9.isSelected = true
+                case 140:
+                    controlMethodsBtn10.isSelected = true
+                case 141:
+                    controlMethodsBtn11.isSelected = true
+                case 142:
+                    controlMethodsBtn12.isSelected = true
+                case 143:
+                    controlMethodsBtn13.isSelected = true
+                case 144:
+                    controlMethodsBtn14.isSelected = true
+                case 145:
+                    controlMethodsBtn15.isSelected = true
+                case 146:
+                    controlMethodsBtn16.isSelected = true
+                case 147:
+                    controlMethodsBtn17.isSelected = true
+                case 148:
+                    controlMethodsBtn18.isSelected = true
+                case 149:
+                    controlMethodsBtn19.isSelected = true
+                case 150:
+                    controlMethodsBtn20.isSelected = true
                 default:
                     break
                 }

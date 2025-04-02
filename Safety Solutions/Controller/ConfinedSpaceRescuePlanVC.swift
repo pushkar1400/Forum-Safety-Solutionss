@@ -13,15 +13,24 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
 
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var otherTextField: UITextField!
-    @IBOutlet weak var confinedTextField: UITextField!
     @IBOutlet weak var csSupervisorTextView: UITextView!
-    @IBOutlet weak var dateOfPlanTextView: UITextView!
-    @IBOutlet weak var typeOfWorkTextView: UITextView!
+    @IBOutlet weak var phoneTextView: UITextView!
+    @IBOutlet weak var emailTextView: UITextView!
+    @IBOutlet weak var badgeTextView: UITextView!
+    @IBOutlet weak var deptTextView: UITextView!
+    @IBOutlet weak var subTextView: UITextView!
+    @IBOutlet weak var facilityTextView: UITextView!
+    @IBOutlet weak var buildingTextView: UITextView!
+    @IBOutlet weak var addressOrAreaTextView: UITextView!
+    @IBOutlet weak var ciCdaTextView: UITextView!
+    @IBOutlet weak var dateTextView: UITextView!
+    @IBOutlet weak var timeTextView: UITextView!
+    @IBOutlet weak var purposeOfEntryTextView: UITextView!
+   
+    
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var rodioChannelTextField: UITextField!
     @IBOutlet weak var specialHazaedsTextView: UITextView!
-    
     
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var btn1: UIButton!
@@ -35,14 +44,10 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
     @IBOutlet weak var img4: UIImageView!
     @IBOutlet weak var btn4: UIButton!
     
+    
     @IBOutlet weak var img5: UIImageView!
     @IBOutlet weak var btn5: UIButton!
     
-    @IBOutlet weak var img6: UIImageView!
-    @IBOutlet weak var btn6: UIButton!
-    
-    @IBOutlet weak var img7: UIImageView!
-    @IBOutlet weak var btn7: UIButton!
     
     @IBOutlet weak var img8: UIImageView!
     @IBOutlet weak var btn8: UIButton!
@@ -261,50 +266,95 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
         view1.addInteraction(dropInteraction)
         
         if let savedText1o = UserDefaults.standard.string(forKey: "savedText1o") {
-            otherTextField.text = savedText1o
+            csSupervisorTextView.text = savedText1o
         }
         if let savedText2o = UserDefaults.standard.string(forKey: "savedText2o") {
-            confinedTextField.text = savedText2o
+            phoneTextView.text = savedText2o
         }
         if let savedText3o = UserDefaults.standard.string(forKey: "savedText3o") {
-            csSupervisorTextView.text = savedText3o
+            emailTextView.text = savedText3o
         }
         if let savedText4o = UserDefaults.standard.string(forKey: "savedText4o") {
-            dateOfPlanTextView.text = savedText4o
+            badgeTextView.text = savedText4o
         }
         if let savedText5o = UserDefaults.standard.string(forKey: "savedText5o") {
-            typeOfWorkTextView.text = savedText5o
+            deptTextView.text = savedText5o
         }
         if let savedText6o = UserDefaults.standard.string(forKey: "savedText6o") {
-            phoneTextField.text = savedText6o
+            subTextView.text = savedText6o
         }
         if let savedText7o = UserDefaults.standard.string(forKey: "savedText7o") {
-            rodioChannelTextField.text = savedText7o
+            facilityTextView.text = savedText7o
         }
         if let savedText8o = UserDefaults.standard.string(forKey: "savedText8o") {
-            specialHazaedsTextView.text = savedText8o
+            buildingTextView.text = savedText8o
+        }
+        if let savedText9o = UserDefaults.standard.string(forKey: "savedText9o") {
+            addressOrAreaTextView.text = savedText9o
+        }
+        if let savedText10o = UserDefaults.standard.string(forKey: "savedText10o") {
+            ciCdaTextView.text = savedText10o
+        }
+        if let savedText11o = UserDefaults.standard.string(forKey: "savedText11o") {
+            dateTextView.text = savedText11o
+        }
+        if let savedText12o = UserDefaults.standard.string(forKey: "savedText12o") {
+            timeTextView.text = savedText12o
+        }
+        if let savedText13o = UserDefaults.standard.string(forKey: "savedText13o") {
+            purposeOfEntryTextView.text = savedText13o
+        }
+        if let savedText14o = UserDefaults.standard.string(forKey: "savedText14o") {
+            phoneTextField.text = savedText14o
+        }
+        if let savedText15o = UserDefaults.standard.string(forKey: "savedText15o") {
+            rodioChannelTextField.text = savedText15o
+        }
+        if let savedText16o = UserDefaults.standard.string(forKey: "savedText16o") {
+            specialHazaedsTextView.text = savedText16o
         }
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        UserDefaults.standard.set(otherTextField.text, forKey: "savedText1o")
-        UserDefaults.standard.set(confinedTextField.text, forKey: "savedText2o")
-        UserDefaults.standard.set(csSupervisorTextView.text, forKey: "savedText3o")
-        UserDefaults.standard.set(dateOfPlanTextView.text, forKey: "savedText4o")
-        UserDefaults.standard.set(typeOfWorkTextView.text, forKey: "savedText5o")
-        UserDefaults.standard.set(phoneTextField.text, forKey: "savedText6o")
-        UserDefaults.standard.set(rodioChannelTextField.text, forKey: "savedText7o")
-        UserDefaults.standard.set(specialHazaedsTextView.text, forKey: "savedText8o")
+        UserDefaults.standard.set(csSupervisorTextView.text, forKey: "savedText1o")
+        UserDefaults.standard.set(phoneTextView.text, forKey: "savedText2o")
+        UserDefaults.standard.set(emailTextView.text, forKey: "savedText3o")
+        UserDefaults.standard.set(badgeTextView.text, forKey: "savedText4o")
+        UserDefaults.standard.set(deptTextView.text, forKey: "savedText5o")
+        UserDefaults.standard.set(subTextView.text, forKey: "savedText6o")
+        UserDefaults.standard.set(facilityTextView.text, forKey: "savedText7o")
+        UserDefaults.standard.set(buildingTextView.text, forKey: "savedText8o")
+        UserDefaults.standard.set(addressOrAreaTextView.text, forKey: "savedText9o")
+        UserDefaults.standard.set(ciCdaTextView.text, forKey: "savedText10o")
+        UserDefaults.standard.set(dateTextView.text, forKey: "savedText11o")
+        UserDefaults.standard.set(timeTextView.text, forKey: "savedText12o")
+        UserDefaults.standard.set(purposeOfEntryTextView.text, forKey: "savedText13o")
+        UserDefaults.standard.set(phoneTextField.text, forKey: "savedText14o")
+        UserDefaults.standard.set(rodioChannelTextField.text, forKey: "savedText15o")
+        UserDefaults.standard.set(specialHazaedsTextView.text, forKey: "savedText16o")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
          
           checkSelectedImages()
+          setInfoDefault()
     }
     
+    func setInfoDefault() {
+        dateTextView.text = appDelegate.todayDate
+        csSupervisorTextView.text = appDelegate.name
+        phoneTextView.text = appDelegate.phoneNumber
+        badgeTextView.text = appDelegate.badgeNumber
+        deptTextView.text = appDelegate.department
+        subTextView.text = appDelegate.subgroup
+        addressOrAreaTextView.text = appDelegate.workLocation
+        facilityTextView.text = appDelegate.facility
+        
+     
+    }
     // Helper method to set up drag interaction
     private func setupDragInteraction(for imageView: UIImageView) {
         let dragInteraction = UIDragInteraction(delegate: self)
@@ -360,7 +410,7 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
     
     @IBAction func clickOnSaveButton(_ sender: UIButton) {
         SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Saer Skill Sheet")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been save successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
 
     @IBAction func clickOnBackButton(_ sender: UIButton) {
@@ -434,12 +484,7 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
     @IBAction func btnTap5(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img5n)
     }
-    @IBAction func btnTap6(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img6n)
-    }
-    @IBAction func btnTap7(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img7n)
-    }
+  
     @IBAction func btnTap8(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img8n)
     }
@@ -619,8 +664,6 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
             img3,
             img4,
             img5,
-            img6,
-            img7,
             img8,
             img9,
             img10,
@@ -694,120 +737,116 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
                 case 4:
                     btn5.isSelected = false
                 case 5:
-                    btn6.isSelected = false
-                case 6:
-                    btn7.isSelected = false
-                case 7:
                     btn8.isSelected = false
-                case 8:
+                case 6:
                     btn9.isSelected = false
-                case 9:
+                case 7:
                     btn10.isSelected = false
-                case 10:
+                case 8:
                     btn11.isSelected = false
-                case 11:
+                case 9:
                     btn12.isSelected = false
-                case 12:
+                case 10:
                     btn13.isSelected = false
-                case 13:
+                case 11:
                     btn14.isSelected = false
-                case 14:
+                case 12:
                     btn15.isSelected = false
-                case 15:
+                case 13:
                     btn16.isSelected = false
-                case 16:
+                case 14:
                     btn17.isSelected = false
-                case 17:
+                case 15:
                     btn18.isSelected = false
-                case 18:
+                case 16:
                     btn19.isSelected = false
-                case 19:
+                case 17:
                     btn20.isSelected = false
-                case 20:
+                case 18:
                     btn21.isSelected = false
-                case 21:
+                case 19:
                     btn22.isSelected = false
-                case 22:
+                case 20:
                     btn23.isSelected = false
-                case 23:
+                case 21:
                     btn24.isSelected = false
-                case 24:
+                case 22:
                     btn25.isSelected = false
-                case 25:
+                case 23:
                     btn26.isSelected = false
-                case 26:
+                case 24:
                     btn27.isSelected = false
-                case 27:
+                case 25:
                     btn28.isSelected = false
-                case 28:
+                case 26:
                     btn29.isSelected = false
-                case 29:
+                case 27:
                     btn30.isSelected = false
-                case 30:
+                case 28:
                     btn31.isSelected = false
-                case 31:
+                case 29:
                     btn32.isSelected = false
-                case 32:
+                case 30:
                     btn33.isSelected = false
-                case 33:
+                case 31:
                     btn34.isSelected = false
-                case 34:
+                case 32:
                     btn35.isSelected = false
-                case 35:
+                case 33:
                     btn36.isSelected = false
-                case 36:
+                case 34:
                     btn37.isSelected = false
-                case 37:
+                case 35:
                     equipmentNeededbtn1.isSelected = false
-                case 38:
+                case 36:
                     equipmentNeededbtn2.isSelected = false
-                case 39:
+                case 37:
                     equipmentNeededbtn3.isSelected = false
-                case 40:
+                case 38:
                     equipmentNeededbtn4.isSelected = false
-                case 41:
+                case 39:
                     equipmentNeededbtn5.isSelected = false
-                case 42:
+                case 40:
                     equipmentNeededbtn6.isSelected = false
-                case 43:
+                case 41:
                     equipmentNeededbtn7.isSelected = false
-                case 44:
+                case 42:
                     equipmentNeededbtn8.isSelected = false
-                case 45:
+                case 43:
                     equipmentNeededbtn9.isSelected = false
-                case 46:
+                case 44:
                     equipmentNeededbtn10.isSelected = false
-                case 47:
+                case 45:
                     equipmentNeededbtn11.isSelected = false
-                case 48:
+                case 46:
                     equipmentNeededbtn12.isSelected = false
-                case 49:
+                case 47:
                     equipmentNeededbtn13.isSelected = false
-                case 50:
+                case 48:
                     equipmentNeededbtn14.isSelected = false
-                case 51:
+                case 49:
                     equipmentNeededbtn15.isSelected = false
-                case 52:
+                case 50:
                     equipmentNeededbtn16.isSelected = false
-                case 53:
+                case 51:
                     equipmentNeededbtn17.isSelected = false
-                case 54:
+                case 52:
                     equipmentNeededbtn18.isSelected = false
-                case 55:
+                case 53:
                     equipmentNeededbtn19.isSelected = false
-                case 56:
+                case 54:
                     equipmentNeededbtn20.isSelected = false
-                case 57:
+                case 55:
                     equipmentNeededbtn21.isSelected = false
-                case 58:
+                case 56:
                     equipmentNeededbtn22.isSelected = false
-                case 59:
+                case 57:
                     equipmentNeededbtn23.isSelected = false
-                case 60:
+                case 58:
                     equipmentNeededbtn24.isSelected = false
-                case 61:
+                case 59:
                     equipmentNeededbtn25.isSelected = false
-                case 62:
+                case 60:
                     equipmentNeededbtn26.isSelected = false
                 default:
                     break
@@ -826,120 +865,116 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
                 case 4:
                     btn5.isSelected = true
                 case 5:
-                    btn6.isSelected = true
-                case 6:
-                    btn7.isSelected = true
-                case 7:
                     btn8.isSelected = true
-                case 8:
+                case 6:
                     btn9.isSelected = true
-                case 9:
+                case 7:
                     btn10.isSelected = true
-                case 10:
+                case 8:
                     btn11.isSelected = true
-                case 11:
+                case 9:
                     btn12.isSelected = true
-                case 12:
+                case 10:
                     btn13.isSelected = true
-                case 13:
+                case 11:
                     btn14.isSelected = true
-                case 14:
+                case 12:
                     btn15.isSelected = true
-                case 15:
+                case 13:
                     btn16.isSelected = true
-                case 16:
+                case 14:
                     btn17.isSelected = true
-                case 17:
+                case 15:
                     btn18.isSelected = true
-                case 18:
+                case 16:
                     btn19.isSelected = true
-                case 19:
+                case 17:
                     btn20.isSelected = true
-                case 20:
+                case 18:
                     btn21.isSelected = true
-                case 21:
+                case 19:
                     btn22.isSelected = true
-                case 22:
+                case 20:
                     btn23.isSelected = true
-                case 23:
+                case 21:
                     btn24.isSelected = true
-                case 24:
+                case 22:
                     btn25.isSelected = true
-                case 25:
+                case 23:
                     btn26.isSelected = true
-                case 26:
+                case 24:
                     btn27.isSelected = true
-                case 27:
+                case 25:
                     btn28.isSelected = true
-                case 28:
+                case 26:
                     btn29.isSelected = true
-                case 29:
+                case 27:
                     btn30.isSelected = true
-                case 30:
+                case 28:
                     btn31.isSelected = true
-                case 31:
+                case 29:
                     btn32.isSelected = true
-                case 32:
+                case 30:
                     btn33.isSelected = true
-                case 33:
+                case 31:
                     btn34.isSelected = true
-                case 34:
+                case 32:
                     btn35.isSelected = true
-                case 35:
+                case 33:
                     btn36.isSelected = true
-                case 36:
+                case 34:
                     btn37.isSelected = true
-                case 37:
+                case 35:
                     equipmentNeededbtn1.isSelected = true
-                case 38:
+                case 36:
                     equipmentNeededbtn2.isSelected = true
-                case 39:
+                case 37:
                     equipmentNeededbtn3.isSelected = true
-                case 40:
+                case 38:
                     equipmentNeededbtn4.isSelected = true
-                case 41:
+                case 39:
                     equipmentNeededbtn5.isSelected = true
-                case 42:
+                case 40:
                     equipmentNeededbtn6.isSelected = true
-                case 43:
+                case 41:
                     equipmentNeededbtn7.isSelected = true
-                case 44:
+                case 42:
                     equipmentNeededbtn8.isSelected = true
-                case 45:
+                case 43:
                     equipmentNeededbtn9.isSelected = true
-                case 46:
+                case 44:
                     equipmentNeededbtn10.isSelected = true
-                case 47:
+                case 45:
                     equipmentNeededbtn11.isSelected = true
-                case 48:
+                case 46:
                     equipmentNeededbtn12.isSelected = true
-                case 49:
+                case 47:
                     equipmentNeededbtn13.isSelected = true
-                case 50:
+                case 48:
                     equipmentNeededbtn14.isSelected = true
-                case 51:
+                case 49:
                     equipmentNeededbtn15.isSelected = true
-                case 52:
+                case 50:
                     equipmentNeededbtn16.isSelected = true
-                case 53:
+                case 51:
                     equipmentNeededbtn17.isSelected = true
-                case 54:
+                case 52:
                     equipmentNeededbtn18.isSelected = true
-                case 55:
+                case 53:
                     equipmentNeededbtn19.isSelected = true
-                case 56:
+                case 54:
                     equipmentNeededbtn20.isSelected = true
-                case 57:
+                case 55:
                     equipmentNeededbtn21.isSelected = true
-                case 58:
+                case 56:
                     equipmentNeededbtn22.isSelected = true
-                case 59:
+                case 57:
                     equipmentNeededbtn23.isSelected = true
-                case 60:
+                case 58:
                     equipmentNeededbtn24.isSelected = true
-                case 61:
+                case 59:
                     equipmentNeededbtn25.isSelected = true
-                case 62:
+                case 60:
                     equipmentNeededbtn26.isSelected = true
                 default:
                     break

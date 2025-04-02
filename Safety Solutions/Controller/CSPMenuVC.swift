@@ -6,95 +6,152 @@
 //
 
 import UIKit
+import PDFKit
 
-class CSPMenuVC: UIViewController {
+class CSPMenuVC: UIViewController, UIDocumentInteractionControllerDelegate {
 
-    @IBOutlet weak var programPDFBackgroundView: UIView!
-    @IBOutlet weak var programPDFBackgroundViewS: UIView!
+    @IBOutlet weak var saf8250BackgroundView: UIView!
+    @IBOutlet weak var saf8250BackgroundViewS: UIView!
     
-    @IBOutlet weak var mcsScenarioBackgroundView: UIView!
-    @IBOutlet weak var mcsScenarioBackgroundViewS: UIView!
+    @IBOutlet weak var saf8251BackgroundView: UIView!
+    @IBOutlet weak var saf8251BackgroundViewS: UIView!
     
-    @IBOutlet weak var csAssessmentPermitBackgroundView: UIView!
-    @IBOutlet weak var csAssessmentPermitBackgroundViewS: UIView!
+    @IBOutlet weak var saf8252BackgroundView: UIView!
+    @IBOutlet weak var saf8252BackgroundViewS: UIView!
     
-    @IBOutlet weak var csRescuePlanBackgroundView: UIView!
-    @IBOutlet weak var csRescuePlanBackgroundViewS: UIView!
+    @IBOutlet weak var saf8253BackgroundView: UIView!
+    @IBOutlet weak var saf8253BackgroundViewS: UIView!
     
-    @IBOutlet weak var csTestBackgroundView: UIView!
-    @IBOutlet weak var csTestBackgroundViewS: UIView!
+    @IBOutlet weak var saf8254BackgroundView: UIView!
+    @IBOutlet weak var saf8254BackgroundViewS: UIView!
     
-    @IBOutlet weak var csSkillSheetBackgroundView: UIView!
-    @IBOutlet weak var csSkillSheetBackgroundViewS: UIView!
+    @IBOutlet weak var saf8255BackgroundView: UIView!
+    @IBOutlet weak var saf8255BackgroundViewS: UIView!
     
-    @IBOutlet weak var csSaerSkillSheetBackgroundView: UIView!
-    @IBOutlet weak var csSaerSkillSheetBackgroundViewS: UIView!
+    @IBOutlet weak var saf8255CSAAwarenessBackgroundView: UIView!
+    @IBOutlet weak var saf8255CSAAwarenessBackgroundViewS: UIView!
     
-    @IBOutlet weak var csEvaluationBackgroundView: UIView!
-    @IBOutlet weak var csEvaluationBackgroundViewS: UIView!
+    @IBOutlet weak var saf8255SAERSkillSheetBackgroundView: UIView!
+    @IBOutlet weak var saf8255AERSkillSheetBackgroundViewS: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        programPDFBackgroundView.layer.cornerRadius = 18
-        mcsScenarioBackgroundView.layer.cornerRadius = 18
-        csAssessmentPermitBackgroundView.layer.cornerRadius = 18
-        csRescuePlanBackgroundView.layer.cornerRadius = 18
-        csTestBackgroundView.layer.cornerRadius = 18
-        csSkillSheetBackgroundView.layer.cornerRadius = 18
-        csSaerSkillSheetBackgroundView.layer.cornerRadius = 18
-        csEvaluationBackgroundView.layer.cornerRadius = 18
-        
-        programPDFBackgroundViewS.layer.cornerRadius = 15
-        mcsScenarioBackgroundViewS.layer.cornerRadius = 15
-        csAssessmentPermitBackgroundViewS.layer.cornerRadius = 15
-        csRescuePlanBackgroundViewS.layer.cornerRadius = 15
-        csTestBackgroundViewS.layer.cornerRadius = 15
-        csSkillSheetBackgroundViewS.layer.cornerRadius = 15
-        csSaerSkillSheetBackgroundViewS.layer.cornerRadius = 15
-        csEvaluationBackgroundViewS.layer.cornerRadius = 15
+        saf8250BackgroundView.layer.cornerRadius = 18
+        saf8250BackgroundViewS.layer.cornerRadius = 15
+
+        saf8251BackgroundView.layer.cornerRadius = 18
+        saf8251BackgroundViewS.layer.cornerRadius = 15
+
+        saf8252BackgroundView.layer.cornerRadius = 18
+        saf8252BackgroundViewS.layer.cornerRadius = 15
+
+        saf8253BackgroundView.layer.cornerRadius = 18
+        saf8253BackgroundViewS.layer.cornerRadius = 15
+
+        saf8254BackgroundView.layer.cornerRadius = 18
+        saf8254BackgroundViewS.layer.cornerRadius = 15
+
+        saf8255BackgroundView.layer.cornerRadius = 18
+        saf8255BackgroundViewS.layer.cornerRadius = 15
+
+        saf8255CSAAwarenessBackgroundView.layer.cornerRadius = 18
+        saf8255CSAAwarenessBackgroundViewS.layer.cornerRadius = 15
+
+        saf8255SAERSkillSheetBackgroundView.layer.cornerRadius = 18
+        saf8255AERSkillSheetBackgroundViewS.layer.cornerRadius = 15
+
+        navigationController?.isNavigationBarHidden = true
     }
 
-    
-    
-    @IBAction func csAssessmentPermitBtn(_ sender: UIButton) {
-        let confinedSpacePermitVC = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpacePermitVC") as! ConfinedSpacePermitVC
-        self.navigationController?.pushViewController(confinedSpacePermitVC, animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+  
     
     @IBAction func clickOnBackButton(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
         
     }
-    @IBAction func csRescuePlanVC(_ sender: UIButton) {
-        let confinedSpaceRescuePlanVC = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceRescuePlanVC") as! ConfinedSpaceRescuePlanVC
-        self.navigationController?.pushViewController(confinedSpaceRescuePlanVC, animated: true)
-    }
-    
-    @IBAction func csTestBtn(_ sender: UIButton) {
-    
-    }
-    
-    @IBAction func confinedSpaceAwarenessSkillSheetBtn(_ sender: UIButton) {
-        let confinedSpaceAwarenessSkillSheetVC = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceAwarenessSkillSheetVC") as! ConfinedSpaceAwarenessSkillSheetVC
-        self.navigationController?.pushViewController(confinedSpaceAwarenessSkillSheetVC, animated: true)
+    @IBAction func loginMenuBackButton(_ sender: UIButton) {
+        
+        self.navigationController?.popToRootViewController(animated: true)
+        
     }
     
     
-    @IBAction func ConfinedSpaceEvaluationAlternateEntryBtn(_ sender: UIButton) {
+    @IBAction func saf8250Btn(_ sender: UIButton) {
 
+        if let pdfUrl = Bundle.main.url(forResource: "SAF-8250-PROG-CS", withExtension: "pdf", subdirectory: nil, localization: nil) {
+            do {
+                DispatchQueue.main.async {
+                    let docOpener = UIDocumentInteractionController.init(url: pdfUrl)
+                    docOpener.delegate = self
+                    docOpener.presentPreview(animated: true)
+                }
+            }
+            return
+        }
+        
     }
     
-    @IBAction func csSaerSkillSheetBtn(_ sender: UIButton) {
-        let confinedSpaceSaerSkillSheetVC = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceSaerSkillSheetVC") as! ConfinedSpaceSaerSkillSheetVC
-        self.navigationController?.pushViewController(confinedSpaceSaerSkillSheetVC, animated: true)
+    
+    
+    
+    @IBAction func saf8251Btn(_ sender: UIButton) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceEvaluationAlternateEntryVC") as! ConfinedSpaceEvaluationAlternateEntryVC
+                self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func saf8252Btn(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceRescuePlanVC") as! ConfinedSpaceRescuePlanVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
-    @IBAction func csEvaluationBtn(_ sender: UIButton) {
-        let confinedSpaceEvaluationAlternateEntryVC = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceEvaluationAlternateEntryVC") as! ConfinedSpaceEvaluationAlternateEntryVC
-        self.navigationController?.pushViewController(confinedSpaceEvaluationAlternateEntryVC, animated: true)
+    @IBAction func saf8253Btn(_ sender: UIButton) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpceLogVC") as! ConfinedSpceLogVC
+                self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func saf8254Btn(_ sender: UIButton) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceAwarenessTestVC") as! ConfinedSpaceAwarenessTestVC
+                self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func saf8255Btn(_ sender: UIButton) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceSaerTestVC") as! ConfinedSpaceSaerTestVC
+                self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func saf8255CSAAwarenessBtn(_ sender: UIButton) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceSaerSkillSheetV") as! ConfinedSpaceSaerSkillSheetV
+                self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func saf8255SAERSkillSheetBtn(_ sender: UIButton) {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceSaerSkillSheetSecondVC") as! ConfinedSpaceSaerSkillSheetSecondVC
+                self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+
+    
+    
+    //MARK: - Document intercation controller
+    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
+        return self
+    }
+
+    func documentInteractionControllerViewForPreview(_ controller: UIDocumentInteractionController) -> UIView? {
+        return self.view
+    }
+
+    func documentInteractionControllerRectForPreview(_ controller: UIDocumentInteractionController) -> CGRect {
+        return self.view.frame
     }
     
 }
