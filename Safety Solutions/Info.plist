@@ -35,5 +35,7 @@
 	</dict>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow Camera</string>
 </dict>
 </plist>

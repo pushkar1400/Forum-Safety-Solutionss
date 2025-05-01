@@ -90,8 +90,8 @@ class ConfinedSpaceAwarenessMarksVC: UIViewController, UITableViewDelegate, UITa
         }
     }
     
-    @objc func correctTest() {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "Confined Space Awareness Test")
+    @objc func retakeTest() {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8254-Exam")
         AlertHelper.shared.alertController(title: "TriMet Safety Solutions",
                                          message: "Retake Test",
                                          okTitle: "OK",
@@ -101,7 +101,7 @@ class ConfinedSpaceAwarenessMarksVC: UIViewController, UITableViewDelegate, UITa
     }
 
     @objc func clickOnNext() {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "Confined Space Awareness Test")
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8254-Exam")
         AlertHelper.shared.alertController(title: "TriMet Safety Solutions",
                                          message: "This form has been saved successfully",
                                          okTitle: "OK",
@@ -111,23 +111,27 @@ class ConfinedSpaceAwarenessMarksVC: UIViewController, UITableViewDelegate, UITa
         }
     }
     
-    
 
-    
-    @IBAction func clickOnSaveBtn(_ sender: UIButton) {
-        clickOnNext()
-    }
-    @IBAction func correctTestBtn(_ sender: UIButton) {
-        correctTest()
-    }
-    @IBAction func programMenuBtn(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+//    @IBAction func shareTestBtn(_ sender: UIButton) {
+//        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8254-Exam", tim: true, controller: self)
+//    }
     @IBAction func loginMenuBtn(_ sender: UIButton) {
         self.navigationController?.popToRootViewController(animated: true)
     }
-  
+    @IBAction func programMenuBtn(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    @IBAction func clickOncorrectBtn(_ sender: UIButton) {
+        clickOnNext()
+    }
+    @IBAction func retakeTestBtn(_ sender: UIButton) {
+        retakeTest()
+    }
+    @IBAction func clickOnSaveBtn(_ sender: UIButton) {
+        clickOnNext()
+    }
     
     func createPDF(image: UIImage) -> NSData? {
         

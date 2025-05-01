@@ -134,7 +134,7 @@ class SafetyObservationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.isNavigationBarHidden = true
         checkSelectedImages()
         
         if let savedText1r = UserDefaults.standard.string(forKey: "savedText1r") {
@@ -232,9 +232,36 @@ class SafetyObservationVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
         checkSelectedImages()
+        setInfoDefault()
+    }
+    func setInfoDefault() {
+        nameTextView.text = appDelegate.name
+        phoneTextView.text = appDelegate.phoneNumber
+        emailTextView.text = appDelegate.email
+        badgeTextView.text = appDelegate.badgeNumber
+        deptTextView.text = appDelegate.department
+        subTextView.text = appDelegate.subgroup
+        addressOrAreaTextView.text = appDelegate.workLocation
+        dateTextView.text = appDelegate.todayDate
     }
     
+    @IBAction func clickOnBackButton(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+     
+    @IBAction func loginMenuButton(_ sender: UIButton) {
+        
+        self.navigationController?.popToRootViewController(animated: false)
+    }
+    
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
     @IBAction func clickOnShareTButton(_ sender: UIButton) {
         SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Safety Observation", tim: true, controller: self)
     }
@@ -243,17 +270,6 @@ class SafetyObservationVC: UIViewController {
         SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Safety Observation")
         AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
-
-    @IBAction func clickOnBackButton(_ sender: UIButton) {
-        
-        self.navigationController?.popViewController(animated: true)
-    }
-     
-    @IBAction func clickOnemployerInformationButton(_ sender: UIButton) {
-        
-        self.navigationController?.popToRootViewController(animated: false)
-    }
-    
     
     @IBAction func safeActTapBtn(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: safeActImg, sender: sender, vc: "SafetyObservationVC", key: KeysPermitVC.img1q)

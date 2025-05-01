@@ -1198,7 +1198,7 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         subTextView.text = appDelegate.subgroup
         addressOrAreaTextView.text = appDelegate.workLocation
         facilityTextView.text = appDelegate.facility
-        
+        emailTextView.text = appDelegate.email
      
     }
     func setSignatures() {
@@ -1206,26 +1206,29 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         csSupervisorSignatureBtn.setImage(appDelegate.signDicVehicle9.image, for: .normal)
 
     }
-    
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Evaluation Alternate Entry", tim: true, controller: self)
-    }
-    
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Evaluation Alternate Entry")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
-    }
-
     @IBAction func clickOnBackButton(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
     }
      
-    @IBAction func clickOnemployerInformationButton(_ sender: UIButton) {
+    @IBAction func loginMenuButton(_ sender: UIButton) {
         
         self.navigationController?.popToRootViewController(animated: false)
     }
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    @IBAction func clickOnShareTButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8251", tim: true, controller: self)
+    }
     
+    @IBAction func clickOnSaveButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8251")
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    }
+
     //HAZARD
     @IBAction func hazardTapBtn1(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: hazardImg1, sender: sender, vc: "ConfinedSpaceEvaluationAlternateEntry", key: KeysPermitVC.img90o)

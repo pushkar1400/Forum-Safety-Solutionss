@@ -87,7 +87,11 @@ class CSPMenuVC: UIViewController, UIDocumentInteractionControllerDelegate {
         self.navigationController?.popToRootViewController(animated: true)
         
     }
-    
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
     
     @IBAction func saf8250Btn(_ sender: UIButton) {
 
@@ -103,10 +107,7 @@ class CSPMenuVC: UIViewController, UIDocumentInteractionControllerDelegate {
         }
         
     }
-    
-    
-    
-    
+ 
     @IBAction func saf8251Btn(_ sender: UIButton) {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceEvaluationAlternateEntryVC") as! ConfinedSpaceEvaluationAlternateEntryVC
                 self.navigationController?.pushViewController(vc, animated: true)
@@ -136,22 +137,6 @@ class CSPMenuVC: UIViewController, UIDocumentInteractionControllerDelegate {
     @IBAction func saf8255SAERSkillSheetBtn(_ sender: UIButton) {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceSaerSkillSheetSecondVC") as! ConfinedSpaceSaerSkillSheetSecondVC
                 self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-
-    
-    
-    //MARK: - Document intercation controller
-    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
-        return self
-    }
-
-    func documentInteractionControllerViewForPreview(_ controller: UIDocumentInteractionController) -> UIView? {
-        return self.view
-    }
-
-    func documentInteractionControllerRectForPreview(_ controller: UIDocumentInteractionController) -> CGRect {
-        return self.view.frame
     }
     
 }

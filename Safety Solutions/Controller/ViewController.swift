@@ -40,14 +40,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
 //        subgroupTextField.text =  "Subgroup"
 //        facilityTextField.text = "Facility"
 //        workLocationTextField.text =  "jaipur99"
-        
+       
         subgroupTextField.delegate = self
         badgeNumberTextField.delegate = self
         workLocationTextField.delegate = self
-        
         nextBtn.layer.cornerRadius = 8
         dateTextField.text = appDelegate.todayDate
-        
         dimmingView?.removeFromSuperview()
         dimmingView = nil
         departmentSelectionView?.removeFromSuperview()
@@ -101,10 +99,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
             alert(message: "Please enter Department")
             return
         }
-        if subgroupTextField.text == "" {
-            alert(message: "Please enter Subgroup")
-            return
-        }
+//        if subgroupTextField.text == "" {
+//            alert(message: "Please enter Subgroup")
+//            return
+//        }
         if facilityTextField.text == "" {
             alert(message: "Please enter Facility")
             return
@@ -132,7 +130,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         DispatchQueue.main.async { [self] in
             let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuVC") as! MenuVC
             UserDefaults.standard.setValue(appDelegate.todayDate, forKey: "todayDate")
-            UserDefaults.standard.setValue(departmentTextField.text, forKey: "lastname")
+            UserDefaults.standard.setValue(nameTextField.text, forKey: "lastname")
             navigationController?.pushViewController(menuVC, animated: true)
         }
     }
@@ -208,6 +206,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Create subgroup data based on screenshot
         let subgroups = [
             ("ALL  All Divisions/Departments", [
+                ("NO", "SUB"),
                 ("AHR", "Administration High Risk"),
                 ("CNT", "Contractor"),
                 ("NH", "New Hires"),

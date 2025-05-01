@@ -21,6 +21,8 @@ class JobBriefVC: UIViewController {
     @IBOutlet weak var emergencyPlanTextView: UITextView!
     @IBOutlet weak var dateTextView: UITextView!
     
+    @IBOutlet weak var radioChannelTField: UITextField!
+    
     @IBOutlet weak var amTextView: UITextField!
     @IBOutlet weak var pmTextView: UITextField!
     
@@ -710,10 +712,8 @@ class JobBriefVC: UIViewController {
     
     @IBOutlet weak var posterPermitImg36: UIImageView!
     @IBOutlet weak var posterPermitButton36: UIButton!
-    
-   
+
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -918,7 +918,9 @@ class JobBriefVC: UIViewController {
         if let savedText66q = UserDefaults.standard.string(forKey: "savedText66q") {
             unlistedOrSafTextView16.text = savedText66q
         }
-        
+        if let savedText67q = UserDefaults.standard.string(forKey: "savedText67q") {
+            radioChannelTField.text = savedText67q
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -989,7 +991,7 @@ class JobBriefVC: UIViewController {
         UserDefaults.standard.set(unlistedOrSafTextView14.text, forKey: "savedText64q")
         UserDefaults.standard.set(unlistedOrSafTextView15.text, forKey: "savedText65q")
         UserDefaults.standard.set(unlistedOrSafTextView16.text, forKey: "savedText66q")
-        
+        UserDefaults.standard.set(radioChannelTField.text, forKey: "savedText67q")
         
     }
     
@@ -1012,26 +1014,28 @@ class JobBriefVC: UIViewController {
         signatureButton.setImage(appDelegate.signDicVehicle10.image, for: .normal)
         loneWorkerSignatureButton.setImage(appDelegate.signDicVehicle11.image, for: .normal)
     }
-    
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Job Brief", tim: true, controller: self)
-    }
-    
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Job Brief")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
-    }
-
     @IBAction func clickOnBackButton(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
     }
      
-    @IBAction func clickOnemployerInformationButton(_ sender: UIButton) {
+    @IBAction func loginMenuButton(_ sender: UIButton) {
         
         self.navigationController?.popToRootViewController(animated: false)
     }
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    @IBAction func clickOnShareTButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8016-JB-JobBrief", tim: true, controller: self)
+    }
     
+    @IBAction func clickOnSaveButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8016-JB-JobBrief")
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    }
     
     @IBAction func signatureTapBtn(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC

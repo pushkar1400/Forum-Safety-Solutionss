@@ -77,25 +77,33 @@ class ConfinedSpaceSaerMarksVC: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
+    @IBAction func programMenuBtn(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    @IBAction func loginMenuBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+//    @IBAction func shareBtn(_ sender: UIButton) {
+//        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8255-Exam", tim: true, controller: self)
+//    }
+    @IBAction func clickOncorrectBtn(_ sender: UIButton) {
+        clickOnNext()
+    }
+    @IBAction func retakeTestBtn(_ sender: UIButton) {
+        retakeTest()
+    }
     @IBAction func clickOnSaveBtn(_ sender: UIButton) {
         clickOnNext()
     }
     
-    @IBAction func correctTestBtn(_ sender: UIButton) {
-        correctTest()
-    }
+   
+   
     
-    @IBAction func programMenuBtn(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
     
-    @IBAction func loginMenuBtn(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    @objc func correctTest() {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "Confined Space Saer Exam")
+    @objc func retakeTest() {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8255-Exam")
         AlertHelper.shared.alertController(title: "TriMet Safety Solutions",
                                          message: "Retake Test",
                                          okTitle: "OK",
@@ -105,7 +113,7 @@ class ConfinedSpaceSaerMarksVC: UIViewController, UITableViewDelegate, UITableVi
     }
 
     @objc func clickOnNext() {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "Confined Space Saer Exam")
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8255-Exam")
         AlertHelper.shared.alertController(title: "TriMet Safety Solutions",
                                          message: "This form has been saved successfully.",
                                          okTitle: "OK",
@@ -258,3 +266,6 @@ extension String {
         return ceil(boundingBox.height)
     }
 }
+
+
+

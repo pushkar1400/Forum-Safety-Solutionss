@@ -78,7 +78,7 @@ class ConfinedSpaceAwarenessTestVC: UIViewController, UITableViewDelegate, UITab
         
         let dic6 = NSMutableDictionary()
         dic6.setValue("TrueFalse", forKey: "Type")
-        dic6.setValue("A confined space that only has a hazardous breathing atmosphere does not require any training to enter", forKey: "question")
+        dic6.setValue("A confined space that only has a hazardous breathing atmosphere does not require any training to enter.", forKey: "question")
         dic6.setValue(1, forKey: "Answer")
         arrDOSHTest.add(dic6)
         
@@ -194,14 +194,22 @@ class ConfinedSpaceAwarenessTestVC: UIViewController, UITableViewDelegate, UITab
     @IBAction func backBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    
+    @IBAction func loginMenuBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    @IBAction func programMenuBtn(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+//   
+//    @IBAction func shareTestBtn(_ sender: UIButton) {
+//        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8254-Exam-2", tim: true, controller: self)
+//    }
     @IBAction func clickOnNextBtn(_ sender: UIButton) {
         clickOnNext()
     }
-    
-    @IBAction func clickOnLoginMenuBtn(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
+   
     
     @objc func clickOnNext() {
         // Check if the form data is valid

@@ -173,8 +173,37 @@ class SignatureVC: UIViewController,SwiftSignatureViewDelegate {
             appDelegate?.signDicVehicle12.image = signView.getCroppedSignature()
         }else if isWorkingOn == 186 {
             appDelegate?.signDicVehicle13.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 187 {
+            appDelegate?.signDicVehicle14.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 188 {
+            appDelegate?.signDicVehicle15.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 189 {
+            appDelegate?.signDicVehicle16.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 190 {
+            appDelegate?.signDicVehicle17.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 191 {
+            appDelegate?.signDicVehicle18.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 192 {
+            appDelegate?.signDicVehicle19.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 193 {
+            appDelegate?.signDicVehicle20.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 194 {
+            appDelegate?.signDicVehicle21.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 195 {
+            appDelegate?.signDicVehicle22.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 196 {
+            appDelegate?.signDicVehicle23.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 197 {
+            appDelegate?.signDicVehicle24.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 198 {
+            appDelegate?.signDicVehicle25.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 199 {
+            appDelegate?.signDicVehicle26.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 200 {
+            appDelegate?.signDicVehicle27.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 201 {
+            appDelegate?.signDicVehicle28.image = signView.getCroppedSignature()
         }
-        
         
         self.navigationController?.popViewController(animated: true)
     }

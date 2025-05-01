@@ -67,6 +67,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var signDicVehicle11 = UIImageView()
     var signDicVehicle12 = UIImageView()
     var signDicVehicle13 = UIImageView()
+    var signDicVehicle14 = UIImageView()
+    var signDicVehicle15 = UIImageView()
+    var signDicVehicle16 = UIImageView()
+    var signDicVehicle17 = UIImageView()
+    var signDicVehicle18 = UIImageView()
+    var signDicVehicle19 = UIImageView()
+    var signDicVehicle20 = UIImageView()
+    var signDicVehicle21 = UIImageView()
+    var signDicVehicle22 = UIImageView()
+    var signDicVehicle23 = UIImageView()
+    var signDicVehicle24 = UIImageView()
+    var signDicVehicle25 = UIImageView()
+    var signDicVehicle26 = UIImageView()
+    var signDicVehicle27 = UIImageView()
+    var signDicVehicle28 = UIImageView()
+    
     
     
     var imgSignExcavation = UIImageView()

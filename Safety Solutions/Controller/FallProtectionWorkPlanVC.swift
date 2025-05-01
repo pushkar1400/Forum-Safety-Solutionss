@@ -831,6 +831,22 @@ class FallProtectionWorkPlanVC: UIViewController, MFMailComposeViewControllerDel
         self.sendMail()
     }
     
+    @IBAction func clickOnBackButton(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+     
+    @IBAction func loginMenuButton(_ sender: UIButton) {
+        
+        self.navigationController?.popToRootViewController(animated: false)
+        
+    }
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
     @IBAction func clickOnShareTButton(_ sender: UIButton) {
         alert()
         SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Fall Protection Work Plan", tim: true, controller: self)
@@ -839,18 +855,6 @@ class FallProtectionWorkPlanVC: UIViewController, MFMailComposeViewControllerDel
     @IBAction func clickOnSaveButton(_ sender: UIButton) {
         alert()
        
-    }
-
-    @IBAction func clickOnBackButton(_ sender: UIButton) {
-        
-        self.navigationController?.popViewController(animated: true)
-        
-    }
-     
-    @IBAction func clickOnemployerInformationButton(_ sender: UIButton) {
-        
-        self.navigationController?.popToRootViewController(animated: false)
-        
     }
     
     

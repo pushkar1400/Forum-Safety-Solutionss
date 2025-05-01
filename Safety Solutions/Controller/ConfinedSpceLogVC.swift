@@ -12,15 +12,15 @@ class ConfinedSpceLogVC: UIViewController {
     @IBOutlet weak var scrollViewN: UIScrollView!
     
     @IBOutlet weak var cPeronsontextView: UITextView!
-    @IBOutlet weak var emailView: UITextView!
     @IBOutlet weak var phoneView: UITextView!
+    @IBOutlet weak var emailView: UITextView!
     @IBOutlet weak var badgetView: UITextView!
     @IBOutlet weak var depttextView: UITextView!
     @IBOutlet weak var subtextView: UITextView!
     
     @IBOutlet weak var mManagertextView: UITextView!
-    @IBOutlet weak var emailtextView2: UITextView!
     @IBOutlet weak var phonetextView2: UITextView!
+    @IBOutlet weak var emailtextView2: UITextView!
     @IBOutlet weak var badgetView2: UITextView!
     @IBOutlet weak var depttextView2: UITextView!
     @IBOutlet weak var subtextView2: UITextView!
@@ -572,40 +572,39 @@ class ConfinedSpceLogVC: UIViewController {
     }
     func setInfoDefault() {
         cPeronsontextView.text = appDelegate.name
-        emailView.text = appDelegate.email
-        emailtextView2.text = appDelegate.email
         phoneView.text = appDelegate.phoneNumber
+        emailView.text = appDelegate.email
         badgetView.text = appDelegate.badgeNumber
         depttextView.text = appDelegate.department
         subtextView.text = appDelegate.subgroup
-        subtextView.text = appDelegate.subgroup
-        badgetView2.text = appDelegate.badgeNumber
-        depttextView2.text = appDelegate.department
-        subtextView2.text = appDelegate.subgroup
         facilitytextView.text = appDelegate.facility
         addresstextView.text = "\(appDelegate.workLocation) \(appDelegate.facility)"
         datetextView.text = appDelegate.todayDate
     }
     
-    
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollViewN, vie: self.view, txtStr: "Confined Space Log", tim: true, controller: self)
-    }
-    
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollViewN, vie: self.view, txtStr: "Confined Space Log")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
-    }
-
     @IBAction func clickOnBackButton(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
     }
      
-    @IBAction func clickOnemployerInformationButton(_ sender: UIButton) {
+    @IBAction func loginMenuButton(_ sender: UIButton) {
         
         self.navigationController?.popToRootViewController(animated: false)
     }
     
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    
+    @IBAction func clickOnShareTButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollViewN, vie: self.view, txtStr: "8253-CSLOG", tim: true, controller: self)
+    }
+    
+    @IBAction func clickOnSaveButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollViewN, vie: self.view, txtStr: "8253-CSLOG")
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    }
 
 }

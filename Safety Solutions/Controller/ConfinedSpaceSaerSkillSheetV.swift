@@ -112,27 +112,29 @@ class ConfinedSpaceSaerSkillSheetV: UIViewController {
         sSignBtn.setImage(appDelegate.signDicVehicle12.image, for: .normal)
     }
     
-    
-    
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Space Saer Skill Sheet", tim: true, controller: self)
-    }
-    
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Space Saer Skill Sheet")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
-    }
-
     @IBAction func clickOnBackButton(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
     }
      
-    @IBAction func clickOnemployerInformationButton(_ sender: UIButton) {
+    @IBAction func loginMenuButton(_ sender: UIButton) {
         
         self.navigationController?.popToRootViewController(animated: false)
     }
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    @IBAction func clickOnShareTButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8254-SS", tim: true, controller: self)
+    }
     
+    @IBAction func clickOnSaveButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8254-SS")
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    }
+
     
     @IBAction func sSignTapBtn(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC

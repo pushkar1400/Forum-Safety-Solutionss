@@ -76,11 +76,11 @@ class ConfinedSpaceSaerTestVC: UIViewController, UITableViewDelegate, UITableVie
         dic5.setValue("TrueFalse", forKey: "Type")
         dic5.setValue("The confined space entry permit must be posted at the entrance of the space, warning of the hazards present, listing the members of the entry team and detailing the scope of work.", forKey: "question")
         dic5.setValue(0, forKey: "Answer")
-        arrExcavationTest.add(dic3)
+        arrExcavationTest.add(dic5)
         
         let dic6 = NSMutableDictionary()
         dic6.setValue("Option", forKey: "Type")
-        dic6.setValue("Confined Space Permits must be kept on file for.", forKey: "question")
+        dic6.setValue("Confined Space Permits must be kept on file for:", forKey: "question")
         dic6.setValue("A. 2 years", forKey: "option1")
         dic6.setValue("B. 2 weeks", forKey: "option2")
         dic6.setValue("C. 1 year", forKey: "option3")
@@ -118,7 +118,7 @@ class ConfinedSpaceSaerTestVC: UIViewController, UITableViewDelegate, UITableVie
         
         let dic11 = NSMutableDictionary()
         dic11.setValue("Option", forKey: "Type")
-        dic11.setValue("To eliminate an electrical hazard in the space the following must be in place.", forKey: "question")
+        dic11.setValue("To eliminate an electrical hazard in the space the following must be in place:", forKey: "question")
         dic11.setValue("A. Power must be off", forKey: "option1")
         dic11.setValue("B. The system must be locked and tagged out", forKey: "option2")
         dic11.setValue("C. The system must be at least tagged out", forKey: "option3")
@@ -320,14 +320,23 @@ class ConfinedSpaceSaerTestVC: UIViewController, UITableViewDelegate, UITableVie
     @IBAction func backBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func loginMenuBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    @IBAction func programMenuBtn(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+
+//    @IBAction func shareBtn(_ sender: UIButton) {
+//        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: tblView, vie: self.view, txtStr: "8255-Exam-2", tim: true, controller: self)
+//     }
     
     @IBAction func clickOnNextBtn(_ sender: UIButton) {
         clickOnNext()
     }
-    
-    @IBAction func clickOnLoginMenuBtn(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
+   
     
     @objc func clickOnNext() {
         // Check if the form data is valid
@@ -381,10 +390,10 @@ class ConfinedSpaceSaerTestVC: UIViewController, UITableViewDelegate, UITableVie
         if testType == "TrueFalse"{
             
             if indexPath.row == 0{
-                TFCell.lblOption.text = "A. Yes"
+                TFCell.lblOption.text = "A. True"
             }
             else{
-                TFCell.lblOption.text = "B. No"
+                TFCell.lblOption.text = "B. False"
             }
             
             if dicSelectedAnswer.object(forKey: indexPath.section) != nil{
@@ -452,9 +461,8 @@ class ConfinedSpaceSaerTestVC: UIViewController, UITableViewDelegate, UITableVie
         let strQuestion = dicTest.value(forKey: "question") as? String
         headerView.lblQuestionNo.text = "\(section+1)."
         if testType == "TrueFalse"{
-
-            headerView.lblQuestion.text = strQuestion
-
+            
+            headerView.lblQuestion.text = "True or False \n \(strQuestion!)"
         }
         else{
             headerView.lblQuestion.text = strQuestion

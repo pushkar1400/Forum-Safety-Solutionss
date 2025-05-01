@@ -139,6 +139,9 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
     @IBOutlet weak var img37: UIImageView!
     @IBOutlet weak var btn37: UIButton!
     
+    @IBOutlet weak var img38: UIImageView!
+    @IBOutlet weak var btn38: UIButton!
+    
     @IBOutlet weak var equipmentNeededimg1: UIImageView!
     @IBOutlet weak var equipmentNeededbtn1: UIButton!
     
@@ -351,7 +354,9 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
         deptTextView.text = appDelegate.department
         subTextView.text = appDelegate.subgroup
         addressOrAreaTextView.text = appDelegate.workLocation
+        //addressOrAreaTextView.text = "\(appDelegate.workLocation) \(appDelegate.facility)"
         facilityTextView.text = appDelegate.facility
+        emailTextView.text = appDelegate.email
         
      
     }
@@ -403,16 +408,6 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
             present(alert, animated: true, completion: nil)
         }
     }
-    
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Saer Skill Sheet", tim: true, controller: self)
-    }
-    
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "Confined Space Saer Skill Sheet")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
-    }
-
     @IBAction func clickOnBackButton(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
@@ -423,6 +418,22 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
         self.navigationController?.popToRootViewController(animated: false)
     }
     
+    @IBAction func programMenuButton(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
+               navigationController?.popToViewController(menuVC, animated: true)
+           }
+    }
+    
+    @IBAction func clickOnShareTButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8252", tim: true, controller: self)
+    }
+    
+    @IBAction func clickOnSaveButton(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8252")
+        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully.", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    }
+
+  
     @IBAction func sendEmailButton(_ sender: UIButton) {
         if !MFMailComposeViewController.canSendMail()  {
             let alert = UIAlertController(title: "Error", message: "Mail sevices are not available", preferredStyle: .alert)
@@ -576,6 +587,11 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
         NitHelper.shared.selectedUnseleted(img: img37, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img37n)
     }
     
+    @IBAction func btnTap38(_ sender: UIButton) {
+        NitHelper.shared.selectedUnseleted(img: img38, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img64n)
+    }
+    
+    
     @IBAction func equipmentNeededbtnTap1(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: equipmentNeededimg1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img38n)
     }
@@ -637,16 +653,16 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
         NitHelper.shared.selectedUnseleted(img: equipmentNeededimg20, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img57n)
     }
     @IBAction func equipmentNeededbtnTap21(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img58n)
+        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg21, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img58n)
     }
     @IBAction func equipmentNeededbtnTap22(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg21, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img59n)
+        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg22, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img59n)
     }
     @IBAction func equipmentNeededbtnTap23(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg22, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img60n)
+        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg23, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img60n)
     }
     @IBAction func equipmentNeededbtnTap24(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg23, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img61n)
+        NitHelper.shared.selectedUnseleted(img: equipmentNeededimg24, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img61n)
     }
     @IBAction func equipmentNeededbtnTap25(_ sender: UIButton) {
         NitHelper.shared.selectedUnseleted(img: equipmentNeededimg25, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img62n)
@@ -694,6 +710,7 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
             img35,
             img36,
             img37,
+            img38,
             equipmentNeededimg1,
             equipmentNeededimg2,
             equipmentNeededimg3,
@@ -848,6 +865,8 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
                     equipmentNeededbtn25.isSelected = false
                 case 60:
                     equipmentNeededbtn26.isSelected = false
+                case 61:
+                    btn38.isSelected = false
                 default:
                     break
                 }
@@ -976,6 +995,8 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
                     equipmentNeededbtn25.isSelected = true
                 case 60:
                     equipmentNeededbtn26.isSelected = true
+                case 61:
+                    btn38.isSelected = true
                 default:
                     break
                 }

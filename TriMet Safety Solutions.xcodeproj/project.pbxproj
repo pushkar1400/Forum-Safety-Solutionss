@@ -17,11 +17,17 @@
 		1CBCA5452B6D0F910067C068 /* Extensions+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */; };
 		1CE2AA5A2B6BD9F400AE709A /* NitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2AA592B6BD9F400AE709A /* NitHelper.swift */; };
 		1CE8D4662B6B7FF100C77470 /* VehicleEquipmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE8D4652B6B7FF100C77470 /* VehicleEquipmentVC.swift */; };
+		8305D7F52DA7E617007CB5C8 /* FallProtecionCompetentPersonExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305D7F42DA7E617007CB5C8 /* FallProtecionCompetentPersonExam.swift */; };
+		8305D7F72DA7E6BD007CB5C8 /* FallProtecionCompetentPersonExamMarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305D7F62DA7E6BD007CB5C8 /* FallProtecionCompetentPersonExamMarksVC.swift */; };
 		831A43B72D97FC5500BDA4DF /* ConfinedSpaceSaerTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A43B62D97FC5500BDA4DF /* ConfinedSpaceSaerTestVC.swift */; };
 		831A43BA2D97FCF300BDA4DF /* ConfinedSpaceSaerMarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A43B92D97FCF300BDA4DF /* ConfinedSpaceSaerMarksVC.swift */; };
 		831A43E72D981ABD00BDA4DF /* ConfinedSpaceSaerSkillSheetV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A43E62D981ABD00BDA4DF /* ConfinedSpaceSaerSkillSheetV.swift */; };
 		831A43EB2D981E2700BDA4DF /* ConfinedSpaceSaerSkillSheetSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A43EA2D981E2700BDA4DF /* ConfinedSpaceSaerSkillSheetSecondVC.swift */; };
 		831A43EF2D98241300BDA4DF /* ConfinedSpceLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A43EE2D98241300BDA4DF /* ConfinedSpceLogVC.swift */; };
+		831BD6E92D9E8F9100FBAE63 /* FallProtectionAuthorizedUserSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BD6E82D9E8F9100FBAE63 /* FallProtectionAuthorizedUserSkillSheetVC.swift */; };
+		831BD6EC2D9E8FCE00FBAE63 /* FallProtectionCompetentPersonSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BD6EB2D9E8FCE00FBAE63 /* FallProtectionCompetentPersonSkillSheetVC.swift */; };
+		831BD6EE2D9E8FD500FBAE63 /* FallProtectionWorkPlanVCFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BD6ED2D9E8FD500FBAE63 /* FallProtectionWorkPlanVCFP.swift */; };
+		831BD6F02D9E8FD900FBAE63 /* FPMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831BD6EF2D9E8FD900FBAE63 /* FPMenuVC.swift */; };
 		832609F12D97CB91003FE65E /* ConfinedSpaceAwarenessTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832609F02D97CB91003FE65E /* ConfinedSpaceAwarenessTestVC.swift */; };
 		832609F32D97CC1D003FE65E /* ConfinedSpaceAwarenessMarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832609F22D97CC1D003FE65E /* ConfinedSpaceAwarenessMarksVC.swift */; };
 		83260A092D97CCF6003FE65E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83260A082D97CCF6003FE65E /* Toast.swift */; };
@@ -33,15 +39,28 @@
 		835058D92D0BFE5E004C28F3 /* JHAMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */; };
 		835058DB2D0C1AC8004C28F3 /* FPWPMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835058DA2D0C1AC8004C28F3 /* FPWPMenuVC.swift */; };
 		835058DD2D0C1AE3004C28F3 /* CSPMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835058DC2D0C1AE3004C28F3 /* CSPMenuVC.swift */; };
+		835DE2F62DAD1B8100354EF5 /* TrimetFallProtectionCompetentPersonTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE2F52DAD1B8100354EF5 /* TrimetFallProtectionCompetentPersonTestVC.swift */; };
+		835DE2F92DAD1BCD00354EF5 /* TrimetFallProtectionCompetentPersonTestMarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE2F82DAD1BCD00354EF5 /* TrimetFallProtectionCompetentPersonTestMarksVC.swift */; };
+		835DE3302DAFBF4F00354EF5 /* PersonalFallProtectionEquipmentInspectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE32F2DAFBF4F00354EF5 /* PersonalFallProtectionEquipmentInspectionVC.swift */; };
 		83618FD52B8DC307009E4945 /* SiteSpecificSafetyPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83618FD42B8DC306009E4945 /* SiteSpecificSafetyPlanVC.swift */; };
 		8362FEC22D97E033002F749F /* Screenshots in Frameworks */ = {isa = PBXBuildFile; productRef = 8362FEC12D97E033002F749F /* Screenshots */; };
 		83653E5D2D9BA8CF0094A977 /* FacilitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83653E5C2D9BA8CF0094A977 /* FacilitySelectionView.swift */; };
+		8366E67F2DA7C1F500EE114C /* FallProtecionSystemsInspectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8366E67E2DA7C1F500EE114C /* FallProtecionSystemsInspectionVC.swift */; };
+		83757E9C2DC2093C0036792B /* TrimetControlsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83757E9B2DC2093C0036792B /* TrimetControlsVC.swift */; };
+		83757E9E2DC2340F0036792B /* PPEVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83757E9D2DC2340F0036792B /* PPEVC.swift */; };
+		83757EA02DC334300036792B /* HazardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83757E9F2DC334300036792B /* HazardVC.swift */; };
 		838B96B02D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */; };
+		83902A462DB67295005A7800 /* GoodFaithaChallengeAndResolutionFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83902A452DB67295005A7800 /* GoodFaithaChallengeAndResolutionFormVC.swift */; };
 		8395C0EB2C116BE3000E920A /* GroundDisturbancePermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395C0EA2C116BE3000E920A /* GroundDisturbancePermitVC.swift */; };
 		839C89DB2B500062009220D3 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C89DA2B500062009220D3 /* MenuVC.swift */; };
 		839CDB9F2B564B7A00DDA920 /* JobHazardAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CDB9E2B564B7A00DDA920 /* JobHazardAnalysisVC.swift */; };
+		83A83F2B2DA7F96200C5D57C /* FallProtecionAuthorizedUserExamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A83F2A2DA7F96200C5D57C /* FallProtecionAuthorizedUserExamVC.swift */; };
+		83A83F2D2DA7F97E00C5D57C /* FallProtecionAuthorizedUserExamMarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A83F2C2DA7F97E00C5D57C /* FallProtecionAuthorizedUserExamMarksVC.swift */; };
 		83AA928C2BA2C71C00F5236D /* HotWorkPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA928B2BA2C71C00F5236D /* HotWorkPermitVC.swift */; };
 		83B024252C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B024242C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift */; };
+		83B0371E2DBF69DF00747C6B /* JobHazardAnalysisNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0371D2DBF69DF00747C6B /* JobHazardAnalysisNewVC.swift */; };
+		83B037242DBF8E6900747C6B /* HazardSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B037232DBF8E6900747C6B /* HazardSelectionView.swift */; };
+		83B36A1A2DB3962900E9215A /* JobBriefMowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B36A192DB3962900E9215A /* JobBriefMowVC.swift */; };
 		83B445972B4FC9E100AFA1F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */; };
 		83B445992B4FC9E100AFA1F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445982B4FC9E100AFA1F2 /* SceneDelegate.swift */; };
 		83B4459B2B4FC9E100AFA1F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4459A2B4FC9E100AFA1F2 /* ViewController.swift */; };
@@ -54,9 +73,9 @@
 		83B7C2EB2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */; };
 		83B7C2EC2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */; };
 		83B7C2ED2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */; };
-		83B7C2EF2D645F89005C24A9 /* NewMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7C2EE2D645F89005C24A9 /* NewMenuVC.swift */; };
 		83BBC5402D98539B00E3BD2B /* SAF-8250-PROG-CS.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83BBC53F2D98539B00E3BD2B /* SAF-8250-PROG-CS.pdf */; };
 		83BBC56B2D9857B900E3BD2B /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BBC56A2D9857B900E3BD2B /* PDFViewController.swift */; };
+		83BE1FFE2DAFF91F001F3601 /* 8170-PROG.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83BE1FFD2DAFF91F001F3601 /* 8170-PROG.pdf */; };
 		83C7258F2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */; };
 		83C725A72D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */; };
 		83C981892D5B5B2800BE5CCE /* JobBriefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */; };
@@ -108,11 +127,17 @@
 		1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UserDefaults.swift"; sourceTree = "<group>"; };
 		1CE2AA592B6BD9F400AE709A /* NitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitHelper.swift; sourceTree = "<group>"; };
 		1CE8D4652B6B7FF100C77470 /* VehicleEquipmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleEquipmentVC.swift; sourceTree = "<group>"; };
+		8305D7F42DA7E617007CB5C8 /* FallProtecionCompetentPersonExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtecionCompetentPersonExam.swift; sourceTree = "<group>"; };
+		8305D7F62DA7E6BD007CB5C8 /* FallProtecionCompetentPersonExamMarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtecionCompetentPersonExamMarksVC.swift; sourceTree = "<group>"; };
 		831A43B62D97FC5500BDA4DF /* ConfinedSpaceSaerTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerTestVC.swift; sourceTree = "<group>"; };
 		831A43B92D97FCF300BDA4DF /* ConfinedSpaceSaerMarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerMarksVC.swift; sourceTree = "<group>"; };
 		831A43E62D981ABD00BDA4DF /* ConfinedSpaceSaerSkillSheetV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerSkillSheetV.swift; sourceTree = "<group>"; };
 		831A43EA2D981E2700BDA4DF /* ConfinedSpaceSaerSkillSheetSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerSkillSheetSecondVC.swift; sourceTree = "<group>"; };
 		831A43EE2D98241300BDA4DF /* ConfinedSpceLogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpceLogVC.swift; sourceTree = "<group>"; };
+		831BD6E82D9E8F9100FBAE63 /* FallProtectionAuthorizedUserSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtectionAuthorizedUserSkillSheetVC.swift; sourceTree = "<group>"; };
+		831BD6EB2D9E8FCE00FBAE63 /* FallProtectionCompetentPersonSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtectionCompetentPersonSkillSheetVC.swift; sourceTree = "<group>"; };
+		831BD6ED2D9E8FD500FBAE63 /* FallProtectionWorkPlanVCFP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtectionWorkPlanVCFP.swift; sourceTree = "<group>"; };
+		831BD6EF2D9E8FD900FBAE63 /* FPMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPMenuVC.swift; sourceTree = "<group>"; };
 		832609F02D97CB91003FE65E /* ConfinedSpaceAwarenessTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceAwarenessTestVC.swift; sourceTree = "<group>"; };
 		832609F22D97CC1D003FE65E /* ConfinedSpaceAwarenessMarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceAwarenessMarksVC.swift; sourceTree = "<group>"; };
 		83260A082D97CCF6003FE65E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
@@ -126,14 +151,27 @@
 		835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAMenuVC.swift; sourceTree = "<group>"; };
 		835058DA2D0C1AC8004C28F3 /* FPWPMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPWPMenuVC.swift; sourceTree = "<group>"; };
 		835058DC2D0C1AE3004C28F3 /* CSPMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSPMenuVC.swift; sourceTree = "<group>"; };
+		835DE2F52DAD1B8100354EF5 /* TrimetFallProtectionCompetentPersonTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimetFallProtectionCompetentPersonTestVC.swift; sourceTree = "<group>"; };
+		835DE2F82DAD1BCD00354EF5 /* TrimetFallProtectionCompetentPersonTestMarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimetFallProtectionCompetentPersonTestMarksVC.swift; sourceTree = "<group>"; };
+		835DE32F2DAFBF4F00354EF5 /* PersonalFallProtectionEquipmentInspectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFallProtectionEquipmentInspectionVC.swift; sourceTree = "<group>"; };
 		83618FD42B8DC306009E4945 /* SiteSpecificSafetyPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteSpecificSafetyPlanVC.swift; sourceTree = "<group>"; };
 		83653E5C2D9BA8CF0094A977 /* FacilitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitySelectionView.swift; sourceTree = "<group>"; };
+		8366E67E2DA7C1F500EE114C /* FallProtecionSystemsInspectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtecionSystemsInspectionVC.swift; sourceTree = "<group>"; };
+		83757E9B2DC2093C0036792B /* TrimetControlsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimetControlsVC.swift; sourceTree = "<group>"; };
+		83757E9D2DC2340F0036792B /* PPEVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEVC.swift; sourceTree = "<group>"; };
+		83757E9F2DC334300036792B /* HazardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazardVC.swift; sourceTree = "<group>"; };
 		838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceRescuePlanVC.swift; sourceTree = "<group>"; };
+		83902A452DB67295005A7800 /* GoodFaithaChallengeAndResolutionFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodFaithaChallengeAndResolutionFormVC.swift; sourceTree = "<group>"; };
 		8395C0EA2C116BE3000E920A /* GroundDisturbancePermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundDisturbancePermitVC.swift; sourceTree = "<group>"; };
 		839C89DA2B500062009220D3 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		839CDB9E2B564B7A00DDA920 /* JobHazardAnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHazardAnalysisVC.swift; sourceTree = "<group>"; };
+		83A83F2A2DA7F96200C5D57C /* FallProtecionAuthorizedUserExamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtecionAuthorizedUserExamVC.swift; sourceTree = "<group>"; };
+		83A83F2C2DA7F97E00C5D57C /* FallProtecionAuthorizedUserExamMarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallProtecionAuthorizedUserExamMarksVC.swift; sourceTree = "<group>"; };
 		83AA928B2BA2C71C00F5236D /* HotWorkPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotWorkPermitVC.swift; sourceTree = "<group>"; };
 		83B024242C10591500DD0C62 /* LotoEnergyIsolationPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoEnergyIsolationPermitVC.swift; sourceTree = "<group>"; };
+		83B0371D2DBF69DF00747C6B /* JobHazardAnalysisNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHazardAnalysisNewVC.swift; sourceTree = "<group>"; };
+		83B037232DBF8E6900747C6B /* HazardSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazardSelectionView.swift; sourceTree = "<group>"; };
+		83B36A192DB3962900E9215A /* JobBriefMowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobBriefMowVC.swift; sourceTree = "<group>"; };
 		83B445932B4FC9E100AFA1F2 /* TriMet Safety Solutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TriMet Safety Solutions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B445982B4FC9E100AFA1F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,9 +186,9 @@
 		83B445B72B4FC9E400AFA1F2 /* Safety_SolutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsUITests.swift; sourceTree = "<group>"; };
 		83B445B92B4FC9E400AFA1F2 /* Safety_SolutionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety_SolutionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SAF-8091-SP-Fire Extinguisher.pdf"; sourceTree = "<group>"; };
-		83B7C2EE2D645F89005C24A9 /* NewMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMenuVC.swift; sourceTree = "<group>"; };
 		83BBC53F2D98539B00E3BD2B /* SAF-8250-PROG-CS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SAF-8250-PROG-CS.pdf"; sourceTree = "<group>"; };
 		83BBC56A2D9857B900E3BD2B /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		83BE1FFD2DAFF91F001F3601 /* 8170-PROG.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "8170-PROG.pdf"; sourceTree = "<group>"; };
 		83C7258E2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceAwarenessSkillSheetVC.swift; sourceTree = "<group>"; };
 		83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfinedSpaceSaerSkillSheetVC.swift; sourceTree = "<group>"; };
 		83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobBriefVC.swift; sourceTree = "<group>"; };
@@ -240,12 +278,36 @@
 			path = "Confined Space Saer Test";
 			sourceTree = "<group>";
 		};
+		831BD6EA2D9E8F9A00FBAE63 /* Fall Protection */ = {
+			isa = PBXGroup;
+			children = (
+				831BD6E82D9E8F9100FBAE63 /* FallProtectionAuthorizedUserSkillSheetVC.swift */,
+				831BD6EB2D9E8FCE00FBAE63 /* FallProtectionCompetentPersonSkillSheetVC.swift */,
+				831BD6ED2D9E8FD500FBAE63 /* FallProtectionWorkPlanVCFP.swift */,
+				8366E67E2DA7C1F500EE114C /* FallProtecionSystemsInspectionVC.swift */,
+				835DE32F2DAFBF4F00354EF5 /* PersonalFallProtectionEquipmentInspectionVC.swift */,
+				831BD6EF2D9E8FD900FBAE63 /* FPMenuVC.swift */,
+				83A83F2E2DA7FA3900C5D57C /* Fall Protecion Competent Person */,
+				83A83F292DA7F93600C5D57C /* Fall Protecion Authorized User */,
+			);
+			path = "Fall Protection";
+			sourceTree = "<group>";
+		};
 		832609F62D97CCC1003FE65E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				83260A082D97CCF6003FE65E /* Toast.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		835DE2F72DAD1B9700354EF5 /* Trimet Fall Protection Competent */ = {
+			isa = PBXGroup;
+			children = (
+				835DE2F52DAD1B8100354EF5 /* TrimetFallProtectionCompetentPersonTestVC.swift */,
+				835DE2F82DAD1BCD00354EF5 /* TrimetFallProtectionCompetentPersonTestMarksVC.swift */,
+			);
+			path = "Trimet Fall Protection Competent";
 			sourceTree = "<group>";
 		};
 		8362FEC32D97F899002F749F /* Confined Space Awareness Test */ = {
@@ -259,6 +321,40 @@
 				83CCA4362D97DD33003949ED /* ConfinedSpaceHeaderView.xib */,
 			);
 			path = "Confined Space Awareness Test";
+			sourceTree = "<group>";
+		};
+		83A83F292DA7F93600C5D57C /* Fall Protecion Authorized User */ = {
+			isa = PBXGroup;
+			children = (
+				83A83F2A2DA7F96200C5D57C /* FallProtecionAuthorizedUserExamVC.swift */,
+				83A83F2C2DA7F97E00C5D57C /* FallProtecionAuthorizedUserExamMarksVC.swift */,
+			);
+			path = "Fall Protecion Authorized User";
+			sourceTree = "<group>";
+		};
+		83A83F2E2DA7FA3900C5D57C /* Fall Protecion Competent Person */ = {
+			isa = PBXGroup;
+			children = (
+				8305D7F42DA7E617007CB5C8 /* FallProtecionCompetentPersonExam.swift */,
+				8305D7F62DA7E6BD007CB5C8 /* FallProtecionCompetentPersonExamMarksVC.swift */,
+			);
+			path = "Fall Protecion Competent Person";
+			sourceTree = "<group>";
+		};
+		83B36A1B2DB3962D00E9215A /* Job Brief */ = {
+			isa = PBXGroup;
+			children = (
+				83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */,
+				83B36A192DB3962900E9215A /* JobBriefMowVC.swift */,
+				83C981A42D5C7E8800BE5CCE /* SafetyObservationVC.swift */,
+				83902A452DB67295005A7800 /* GoodFaithaChallengeAndResolutionFormVC.swift */,
+				83B0371D2DBF69DF00747C6B /* JobHazardAnalysisNewVC.swift */,
+				83757E9F2DC334300036792B /* HazardVC.swift */,
+				83757E9B2DC2093C0036792B /* TrimetControlsVC.swift */,
+				83757E9D2DC2340F0036792B /* PPEVC.swift */,
+				835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */,
+			);
+			path = "Job Brief";
 			sourceTree = "<group>";
 		};
 		83B4458A2B4FC9E000AFA1F2 = {
@@ -296,6 +392,7 @@
 				83B4459F2B4FC9E300AFA1F2 /* Assets.xcassets */,
 				83BBC53F2D98539B00E3BD2B /* SAF-8250-PROG-CS.pdf */,
 				83B7C2EA2D5C958E005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf */,
+				83BE1FFD2DAFF91F001F3601 /* 8170-PROG.pdf */,
 				83B445A42B4FC9E300AFA1F2 /* Info.plist */,
 				83469EB12B5A8E3500D3F464 /* Safety Solutions-Bridging-Header.h */,
 				1C0572BC2B874F2100DB32EB /* Helper.h */,
@@ -334,7 +431,6 @@
 			children = (
 				83B4459A2B4FC9E100AFA1F2 /* ViewController.swift */,
 				839C89DA2B500062009220D3 /* MenuVC.swift */,
-				835058D82D0BFE5E004C28F3 /* JHAMenuVC.swift */,
 				835058DA2D0C1AC8004C28F3 /* FPWPMenuVC.swift */,
 				835058DC2D0C1AE3004C28F3 /* CSPMenuVC.swift */,
 				839CDB9E2B564B7A00DDA920 /* JobHazardAnalysisVC.swift */,
@@ -352,12 +448,12 @@
 				83C725A62D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift */,
 				838B96AF2D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift */,
 				83F87F712D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift */,
-				83C981882D5B5B2800BE5CCE /* JobBriefVC.swift */,
-				83C981A42D5C7E8800BE5CCE /* SafetyObservationVC.swift */,
-				83B7C2EE2D645F89005C24A9 /* NewMenuVC.swift */,
 				831A43E62D981ABD00BDA4DF /* ConfinedSpaceSaerSkillSheetV.swift */,
 				831A43EA2D981E2700BDA4DF /* ConfinedSpaceSaerSkillSheetSecondVC.swift */,
 				831A43EE2D98241300BDA4DF /* ConfinedSpceLogVC.swift */,
+				83B36A1B2DB3962D00E9215A /* Job Brief */,
+				831BD6EA2D9E8F9A00FBAE63 /* Fall Protection */,
+				835DE2F72DAD1B9700354EF5 /* Trimet Fall Protection Competent */,
 				831A43B82D97FC5E00BDA4DF /* Confined Space Saer Test */,
 				8362FEC32D97F899002F749F /* Confined Space Awareness Test */,
 				1CE8D4642B6B7FD200C77470 /* Nit Controllers */,
@@ -381,6 +477,7 @@
 				8329DB522D96DBAB00EDF1CF /* DepartmentSelectionView.swift */,
 				83BBC56A2D9857B900E3BD2B /* PDFViewController.swift */,
 				83653E5C2D9BA8CF0094A977 /* FacilitySelectionView.swift */,
+				83B037232DBF8E6900747C6B /* HazardSelectionView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,6 +604,7 @@
 			files = (
 				83B445A32B4FC9E300AFA1F2 /* LaunchScreen.storyboard in Resources */,
 				83B445A02B4FC9E300AFA1F2 /* Assets.xcassets in Resources */,
+				83BE1FFE2DAFF91F001F3601 /* 8170-PROG.pdf in Resources */,
 				83BBC5402D98539B00E3BD2B /* SAF-8250-PROG-CS.pdf in Resources */,
 				83B7C2EC2D5C958F005C24A9 /* SAF-8091-SP-Fire Extinguisher.pdf in Resources */,
 				83B4459E2B4FC9E100AFA1F2 /* Main.storyboard in Resources */,
@@ -540,33 +638,47 @@
 			files = (
 				83C981892D5B5B2800BE5CCE /* JobBriefVC.swift in Sources */,
 				83D66F772B5FE82C004E8BDE /* SwiftSignatureViewDelegate.swift in Sources */,
+				8366E67F2DA7C1F500EE114C /* FallProtecionSystemsInspectionVC.swift in Sources */,
+				831BD6F02D9E8FD900FBAE63 /* FPMenuVC.swift in Sources */,
+				83757EA02DC334300036792B /* HazardVC.swift in Sources */,
 				831A43E72D981ABD00BDA4DF /* ConfinedSpaceSaerSkillSheetV.swift in Sources */,
 				83BBC56B2D9857B900E3BD2B /* PDFViewController.swift in Sources */,
 				83D101932B8700B400756AA9 /* ConfinedSpacePermitVC.swift in Sources */,
 				1CB2F6782B6CC682002C0F53 /* Keys.swift in Sources */,
 				1CBCA5452B6D0F910067C068 /* Extensions+UserDefaults.swift in Sources */,
+				835DE2F92DAD1BCD00354EF5 /* TrimetFallProtectionCompetentPersonTestMarksVC.swift in Sources */,
 				835058D92D0BFE5E004C28F3 /* JHAMenuVC.swift in Sources */,
 				83D66F702B5FE543004E8BDE /* SignatureVC.swift in Sources */,
+				83902A462DB67295005A7800 /* GoodFaithaChallengeAndResolutionFormVC.swift in Sources */,
+				831BD6EC2D9E8FCE00FBAE63 /* FallProtectionCompetentPersonSkillSheetVC.swift in Sources */,
 				835058DB2D0C1AC8004C28F3 /* FPWPMenuVC.swift in Sources */,
 				8335E92F2BA4206100436FC6 /* EnergizedWorkPermitVC.swift in Sources */,
 				1C94EF3C2B6BB6C8004842E4 /* PermitWorkVC.swift in Sources */,
 				83C725A72D13112600E675F6 /* ConfinedSpaceSaerSkillSheetVC.swift in Sources */,
+				83757E9E2DC2340F0036792B /* PPEVC.swift in Sources */,
 				83F3380D2BA30068007238C5 /* FallProtectionWorkPlanVC.swift in Sources */,
 				83D66F7A2B5FE82C004E8BDE /* EPSignatureViewController.swift in Sources */,
 				83B4459B2B4FC9E100AFA1F2 /* ViewController.swift in Sources */,
+				8305D7F52DA7E617007CB5C8 /* FallProtecionCompetentPersonExam.swift in Sources */,
+				83757E9C2DC2093C0036792B /* TrimetControlsVC.swift in Sources */,
 				839C89DB2B500062009220D3 /* MenuVC.swift in Sources */,
 				838B96B02D13DBA300720E96 /* ConfinedSpaceRescuePlanVC.swift in Sources */,
+				83B0371E2DBF69DF00747C6B /* JobHazardAnalysisNewVC.swift in Sources */,
+				835DE2F62DAD1B8100354EF5 /* TrimetFallProtectionCompetentPersonTestVC.swift in Sources */,
 				1C14F2642B711C550080756E /* AlertHelper.swift in Sources */,
 				83C981A52D5C7E8800BE5CCE /* SafetyObservationVC.swift in Sources */,
 				83F3427F2BB3CD0B008D3F54 /* TrainingVerificationFormVC.swift in Sources */,
 				83260A0D2D97CEE6003FE65E /* ConfinedSpaceTestABCDCell.swift in Sources */,
 				83653E5D2D9BA8CF0094A977 /* FacilitySelectionView.swift in Sources */,
-				83B7C2EF2D645F89005C24A9 /* NewMenuVC.swift in Sources */,
 				8395C0EB2C116BE3000E920A /* GroundDisturbancePermitVC.swift in Sources */,
+				83A83F2B2DA7F96200C5D57C /* FallProtecionAuthorizedUserExamVC.swift in Sources */,
 				832609F32D97CC1D003FE65E /* ConfinedSpaceAwarenessMarksVC.swift in Sources */,
 				83F87F722D11AB71009B6767 /* ConfinedSpaceEvaluationAlternateEntryVC.swift in Sources */,
+				831BD6EE2D9E8FD500FBAE63 /* FallProtectionWorkPlanVCFP.swift in Sources */,
 				1CB2F67A2B6CE7AE002C0F53 /* KeysPermitVC.swift in Sources */,
+				835DE3302DAFBF4F00354EF5 /* PersonalFallProtectionEquipmentInspectionVC.swift in Sources */,
 				1CE8D4662B6B7FF100C77470 /* VehicleEquipmentVC.swift in Sources */,
+				83A83F2D2DA7F97E00C5D57C /* FallProtecionAuthorizedUserExamMarksVC.swift in Sources */,
 				1CE2AA5A2B6BD9F400AE709A /* NitHelper.swift in Sources */,
 				1C14F2662B711C6D0080756E /* SaveDataToICloudAndShareSheet.swift in Sources */,
 				83D66F7B2B5FE82C004E8BDE /* SwiftSignatureView.swift in Sources */,
@@ -574,6 +686,7 @@
 				839CDB9F2B564B7A00DDA920 /* JobHazardAnalysisVC.swift in Sources */,
 				832609F12D97CB91003FE65E /* ConfinedSpaceAwarenessTestVC.swift in Sources */,
 				831A43EF2D98241300BDA4DF /* ConfinedSpceLogVC.swift in Sources */,
+				831BD6E92D9E8F9100FBAE63 /* FallProtectionAuthorizedUserSkillSheetVC.swift in Sources */,
 				83260A0F2D97CF4C003FE65E /* ConfinedSpaceHeaderView.swift in Sources */,
 				8329DB532D96DBAB00EDF1CF /* DepartmentSelectionView.swift in Sources */,
 				83B445972B4FC9E100AFA1F2 /* AppDelegate.swift in Sources */,
@@ -585,11 +698,14 @@
 				83D66F782B5FE82C004E8BDE /* PencilKitSignatureView.swift in Sources */,
 				1C0572BB2B874EEB00DB32EB /* Helper.m in Sources */,
 				835058DD2D0C1AE3004C28F3 /* CSPMenuVC.swift in Sources */,
+				83B037242DBF8E6900747C6B /* HazardSelectionView.swift in Sources */,
 				83260A092D97CCF6003FE65E /* Toast.swift in Sources */,
 				831A43B72D97FC5500BDA4DF /* ConfinedSpaceSaerTestVC.swift in Sources */,
+				83B36A1A2DB3962900E9215A /* JobBriefMowVC.swift in Sources */,
 				83260A0B2D97CD31003FE65E /* ConfinedSpaceTestTFCell.swift in Sources */,
 				83D66F792B5FE82C004E8BDE /* LegacySignatureView.swift in Sources */,
 				831A43EB2D981E2700BDA4DF /* ConfinedSpaceSaerSkillSheetSecondVC.swift in Sources */,
+				8305D7F72DA7E6BD007CB5C8 /* FallProtecionCompetentPersonExamMarksVC.swift in Sources */,
 				83C7258F2D12C47B00E675F6 /* ConfinedSpaceAwarenessSkillSheetVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,7 +891,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.8;
+				CURRENT_PROJECT_VERSION = 5.5;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";
@@ -814,7 +930,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.8;
+				CURRENT_PROJECT_VERSION = 5.5;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";
