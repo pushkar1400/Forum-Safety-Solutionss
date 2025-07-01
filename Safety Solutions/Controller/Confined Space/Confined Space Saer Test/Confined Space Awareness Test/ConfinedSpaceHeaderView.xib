@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ConfinedSpaceHeaderView" id="iN0-l3-epB" customClass="ConfinedSpaceHeaderView" customModule="Forum_Safety_Solutions" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yih-Q2-5Ql">
+                    <rect key="frame" x="10" y="10" width="27" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="JO4-en-3Qw"/>
+                        <constraint firstAttribute="width" constant="27" id="RHT-An-ZK1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEE-l8-mlM">
+                    <rect key="frame" x="41" y="10" width="298" height="86"/>
+                    <string key="text">The ______________ is responsible to terminate the permit when all work is done or conditions change based on the original hazards or assessments.</string>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FEE-l8-mlM" secondAttribute="bottom" constant="4" id="RaJ-Kh-4mi"/>
+                <constraint firstAttribute="trailing" secondItem="FEE-l8-mlM" secondAttribute="trailing" constant="75" id="VXJ-co-v16"/>
+                <constraint firstItem="FEE-l8-mlM" firstAttribute="leading" secondItem="Yih-Q2-5Ql" secondAttribute="trailing" constant="4" id="Vaj-wS-KdL"/>
+                <constraint firstItem="Yih-Q2-5Ql" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Zba-gz-8RL"/>
+                <constraint firstItem="FEE-l8-mlM" firstAttribute="top" secondItem="Yih-Q2-5Ql" secondAttribute="top" id="d1r-Ip-aSV"/>
+                <constraint firstItem="Yih-Q2-5Ql" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="k83-JS-e0s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblQuestion" destination="FEE-l8-mlM" id="7hQ-A6-PZ9"/>
+                <outlet property="lblQuestionNo" destination="Yih-Q2-5Ql" id="OE5-o2-X8d"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

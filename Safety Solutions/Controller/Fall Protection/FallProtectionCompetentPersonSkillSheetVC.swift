@@ -1,20 +1,18 @@
 //
-//  FallProtectionCompetentPersonSkillSheetVC.swift
+//  ConfinedSpaceSaerSkillSheetSecondVC.swift
 //  New
 //
-//  Created by koshal singh shekhawat on 03/04/25.
+//  Created by koshal singh shekhawat on 29/03/25.
 //
 
 import UIKit
 
-class FallProtectionCompetentPersonSkillSheetVC: UIViewController {
-
+class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var sNmaetextView: UITextView!
     @IBOutlet weak var jobtextView: UITextView!
-    @IBOutlet weak var badgetextView: UITextView!
     @IBOutlet weak var depttextView: UITextView!
-    @IBOutlet weak var subtextView: UITextView!
     @IBOutlet weak var instructortextView: UITextView!
     @IBOutlet weak var datetextView: UITextView!
     
@@ -36,8 +34,14 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController {
     @IBOutlet weak var img13: UIImageView!
     @IBOutlet weak var img14: UIImageView!
     @IBOutlet weak var img15: UIImageView!
-    
+    @IBOutlet weak var img16: UIImageView!
+    @IBOutlet weak var img17: UIImageView!
+    @IBOutlet weak var img18: UIImageView!
+    @IBOutlet weak var img19: UIImageView!
+    @IBOutlet weak var img20: UIImageView!
 
+    
+   
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -53,162 +57,221 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController {
     @IBOutlet weak var btn13: UIButton!
     @IBOutlet weak var btn14: UIButton!
     @IBOutlet weak var btn15: UIButton!
+    @IBOutlet weak var btn16: UIButton!
+    @IBOutlet weak var btn17: UIButton!
+    @IBOutlet weak var btn18: UIButton!
+    @IBOutlet weak var btn19: UIButton!
+    @IBOutlet weak var btn20: UIButton!
 
-  
+   
+    
+    
+    @IBOutlet weak var studentPhotoImageView: UIImageView!
+    @IBOutlet weak var studentPhotoButton: UIButton!
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var countN: Int = 0
+    var isFromJHA = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let textViewsToLoad = [
-            sNmaetextView: "savedText1x",
-            jobtextView: "savedText2x",
-            badgetextView: "savedText3x",
-            depttextView: "savedText4x",
-            subtextView: "savedText5x",
-            instructortextView: "savedText6x",
-            datetextView: "savedText7x",
-        ]
-        textViewsToLoad.forEach { textView, key in
-            textView?.text = UserDefaults.standard.string(forKey: key)
+        if let savedText1bbb = UserDefaults.standard.string(forKey: "savedText1bbb") {
+            sNmaetextView.text = savedText1bbb
+        }
+        if let savedText2bbb = UserDefaults.standard.string(forKey: "savedText2bbb") {
+            jobtextView.text = savedText2bbb
+        }
+        if let savedText4bbb = UserDefaults.standard.string(forKey: "savedText4bbb") {
+            depttextView.text = savedText4bbb
+        }
+        if let savedText6bb = UserDefaults.standard.string(forKey: "savedText6bb") {
+            instructortextView.text = savedText6bb
+        }
+        if let savedText7bbb = UserDefaults.standard.string(forKey: "savedText7bbb") {
+            datetextView.text = savedText7bbb
         }
         
+        
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        let textViewsToSave = [
-            sNmaetextView: "savedText1x",
-            jobtextView: "savedText2x",
-            badgetextView: "savedText3x",
-            depttextView: "savedText4x",
-            subtextView: "savedText5x",
-            instructortextView: "savedText6x",
-            datetextView: "savedText7x",
-        ]
-        textViewsToSave.forEach { textView, key in
-            UserDefaults.standard.set(textView?.text, forKey: key)
-        }
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
           setInfoDefault()
           setSignatures()
           checkSelectedImages()
     }
-   
     func setInfoDefault() {
         sNmaetextView.text = appDelegate.name
-        badgetextView.text = appDelegate.badgeNumber
-        depttextView.text = appDelegate.department
-        subtextView.text = appDelegate.subgroup
         datetextView.text = appDelegate.todayDate
+        depttextView.text = appDelegate.company
     }
     
     func setSignatures() {
-        sSignBtn.setImage(appDelegate.signDicVehicle15.image, for: .normal)
+        sSignBtn.setImage(appDelegate.imgSign10.image, for: .normal)
     }
     
-    @IBAction func clickOnBackButton(_ sender: UIButton) {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UserDefaults.standard.set(sNmaetextView.text, forKey: "savedText1bbb")
+        UserDefaults.standard.set(jobtextView.text, forKey: "savedText2bbb")
+        UserDefaults.standard.set(depttextView.text, forKey: "savedText4bbb")
+        UserDefaults.standard.set(instructortextView.text, forKey: "savedText6bbb")
+        UserDefaults.standard.set(datetextView.text, forKey: "savedText7bbb")
         
+        appDelegate.dicFPDOHSSkillSeet.setValue(studentPhotoImageView.image, forKey: "studentPhotoImageView")
+    }
+    
+    func setData(){
+        if appDelegate.dicFPDOHSSkillSeet.value(forKey: "studentPhotoImageView") != nil {
+            self.studentPhotoImageView.image = appDelegate.dicFPDOHSSkillSeet.value(forKey: "studentPhotoImageView") as? UIImage
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if countN == 1{
+            let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+            studentPhotoImageView.image = image
+            
+            if isFromJHA {
+                appDelegate.dicFPDOHSSkillSeet.setValue(studentPhotoImageView.image, forKey: "studentPhotoImageView")
+            } else {
+                appDelegate.dicFPDOHSSkillSeet.setValue(studentPhotoImageView.image, forKey: "studentPhotoImageView")
+            }
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func backTapBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    @IBAction func loginMenuBtn(_ sender: UIButton) {
-        
-        self.navigationController?.popToRootViewController(animated: false)
+    @IBAction func loginMenuTapBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
-    
-    @IBAction func programMenuButton(_ sender: UIButton) {
-        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
-               navigationController?.popToViewController(menuVC, animated: true)
+    @IBAction func programMenuTapBtn(_ sender: UIButton) {
+        if let programMenuVC = navigationController?.viewControllers.first(where: { $0 is ProgramMenuVC }) {
+               navigationController?.popToViewController(programMenuVC, animated: true)
            }
     }
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8174", tim: true, controller: self)
+    @IBAction func shareTapBtn(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1513-SS-FP", tim: true, controller: self)
     }
     
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8174")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    @IBAction func saveTapBtn(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1513-SS-FP")
+        AlertHelper.shared.alertController(title: "Forum Safety Solutions", message: "This form has been saved successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
 
-    
+   
     @IBAction func sSignTapBtn(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC
-        vc.isWorkingOn = 188
+        vc.isWorkingOn = 10
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func studentPhotoTapBtn(_ sender: UIButton) {
+        countN = 1
+        let imgpicker = UIImagePickerController()
+        imgpicker.delegate = self
+        imgpicker.allowsEditing = true
+        
+        let alert = UIAlertController(title: "Select Image", message: "", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in
+            imgpicker.sourceType = .camera
+            self.present(imgpicker, animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { (action) in
+            imgpicker.sourceType = .photoLibrary
+            self.present(imgpicker, animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.popoverPresentationController?.sourceView = (sender as AnyObject).superview!
+        alert.popoverPresentationController?.sourceRect = (sender as AnyObject).frame
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
     
     @IBAction func btnTap1(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img1l)
+        KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img1f)
     }
     @IBAction func btnTap2(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img2l)
+        KosHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img2f)
     }
     @IBAction func btnTap3(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img3l)
+        KosHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img3f)
     }
     @IBAction func btnTap4(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img4l)
+        KosHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img4f)
     }
     @IBAction func btnTap5(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img5l)
+        KosHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img5f)
     }
     @IBAction func btnTap6(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img6l)
+        KosHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img6f)
     }
     @IBAction func btnTap7(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img7l)
+        KosHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img7f)
     }
     @IBAction func btnTap8(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img8l)
+        KosHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img8f)
     }
     @IBAction func btnTap9(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img9l)
+        KosHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img9f)
     }
     @IBAction func btnTap10(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img10l)
+        KosHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img10f)
     }
     @IBAction func btnTap11(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img11l)
+        KosHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img11f)
     }
     @IBAction func btnTap12(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img12l)
+        KosHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img12f)
     }
     @IBAction func btnTap13(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img13l)
+        KosHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img13f)
     }
     @IBAction func btnTap14(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img14l)
+        KosHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img14f)
     }
     @IBAction func btnTap15(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "FallProtectionCompetentPersonSkillSheetVC", key: KeysPermitVC.img15l)
+        KosHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img15f)
     }
-  
-    func checkSelectedImages(){
+    @IBAction func btnTap16(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img16, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img16f)
+    }
+    @IBAction func btnTap17(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img17, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img17f)
+    }
+    @IBAction func btnTap18(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img18, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img18f)
+    }
+    @IBAction func btnTap19(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img19, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img19f)
+    }
+    @IBAction func btnTap20(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img20, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img20f)
+    }
 
-        let nR = [
-            img1,
-            img2,
-            img3,
-            img4,
-            img5,
-            img6,
-            img7,
-            img8,
-            img9,
-            img10,
-            img11,
-            img12,
-            img13,
-            img14,
-            img15,
-            
-        ]
+   
+    
+    func checkSelectedImages(){
         
-        for key in 0..<KeysPermitVC.selectUnselectAllKeys19.count {
-            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys19[key]) as? Int ?? -1 {
+        
+        let nR = [
+            img1, img2, img3, img4, img5,
+            img6, img7, img8, img9, img10,
+            img11, img12, img13, img14, img15,
+            img16, img17, img18, img19, img20
+        ]
+
+        
+        for key in 0..<KeysPermitVC.selectUnselectAllKeys7.count {
+            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys7[key]) as? Int ?? -1 {
             case 0:
                 switch key {
                 case 0:
@@ -241,8 +304,17 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController {
                     btn14.isSelected = false
                 case 14:
                     btn15.isSelected = false
-                
-               
+                case 15:
+                    btn16.isSelected = false
+                case 16:
+                    btn17.isSelected = false
+                case 17:
+                    btn18.isSelected = false
+                case 18:
+                    btn19.isSelected = false
+                case 19:
+                    btn20.isSelected = false
+                    
                 default:
                     break
                 }
@@ -280,8 +352,16 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController {
                     btn14.isSelected = true
                 case 14:
                     btn15.isSelected = true
-               
-               
+                case 15:
+                    btn16.isSelected = true
+                case 16:
+                    btn17.isSelected = true
+                case 17:
+                    btn18.isSelected = true
+                case 18:
+                    btn19.isSelected = true
+                case 19:
+                    btn20.isSelected = true
                 default:
                     break
                 }
@@ -292,4 +372,5 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController {
             }
         }
     }
+    
 }

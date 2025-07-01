@@ -11,13 +11,12 @@ class FallProtectionWorkPlanVCFP: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var competentPTextView: UITextView!
-    @IBOutlet weak var phoneOrEmaliTextView: UITextView!
-    @IBOutlet weak var badgeTextView: UITextView!
-    @IBOutlet weak var deptTextView: UITextView!
-    @IBOutlet weak var subTextView: UITextView!
+    @IBOutlet weak var companyTextView: UITextView!
+    @IBOutlet weak var phoneTextView: UITextView!
+    @IBOutlet weak var emailTextView: UITextView!
+    @IBOutlet weak var planTextView: UITextView!
     @IBOutlet weak var addressOrArerTextView: UITextView!
     @IBOutlet weak var dateTextView: UITextView!
-    @IBOutlet weak var durationTextView: UITextView!
     @IBOutlet weak var describeFallHazardsTextView: UITextView!
     @IBOutlet weak var employeeAndBadTextView1: UITextView!
     @IBOutlet weak var employeeAndBadTextView2: UITextView!
@@ -36,6 +35,7 @@ class FallProtectionWorkPlanVCFP: UIViewController {
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
     @IBOutlet weak var textField4: UITextField!
+    @IBOutlet weak var textField5: UITextField!
     
     @IBOutlet weak var cpSingbtn: UIButton!
     
@@ -162,6 +162,11 @@ class FallProtectionWorkPlanVCFP: UIViewController {
     @IBOutlet weak var btn58: UIButton!
     @IBOutlet weak var btn59: UIButton!
     
+    @IBOutlet weak var textView1: UITextView!
+    @IBOutlet weak var textView2: UITextView!
+    @IBOutlet weak var textView3: UITextView!
+    
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
@@ -169,38 +174,40 @@ class FallProtectionWorkPlanVCFP: UIViewController {
 
         let textViewsToLoad = [
             
-            competentPTextView: "savedText1vv",
-            phoneOrEmaliTextView: "savedText2vv",
-            badgeTextView: "savedText3vv",
-            deptTextView: "savedText4vv",
-            subTextView: "savedText5vv",
-            addressOrArerTextView: "savedText6vv",
-            dateTextView: "savedText7vv",
-            durationTextView: "savedText8vv",
-            describeFallHazardsTextView: "savedText9vv",
-            employeeAndBadTextView1: "savedText10vv",
-            employeeAndBadTextView2: "savedText11vv",
-            employeeAndBadTextView3: "savedText12vv",
-            employeeAndBadTextView4: "savedText13vv",
-            employeeAndBadTextView5: "savedText14vv",
-            employeeAndBadTextView6: "savedText15vv",
-            employeeAndBadTextView7: "savedText16vv",
-            employeeAndBadTextView8: "savedText17vv",
-            employeeAndBadTextView9: "savedText18vv",
-            employeeAndBadTextView10: "savedText19vv",
-            employeeAndBadTextView11: "savedText20vv",
-            employeeAndBadTextView12: "savedText21vv",
-            
+            competentPTextView: "savedText1jjj",
+            companyTextView: "savedText2jjj",
+            phoneTextView: "savedText3jjj",
+            emailTextView: "savedText4jjj",
+            planTextView: "savedText5jjj",
+            addressOrArerTextView: "savedText6jjj",
+            dateTextView: "savedText7jjj",
+            describeFallHazardsTextView: "savedText9jjj",
+            employeeAndBadTextView1: "savedText10jjj",
+            employeeAndBadTextView2: "savedText11jjj",
+            employeeAndBadTextView3: "savedText12jjj",
+            employeeAndBadTextView4: "savedText13jjj",
+            employeeAndBadTextView5: "savedText14jjj",
+            employeeAndBadTextView6: "savedText15jjj",
+            employeeAndBadTextView7: "savedText16jjj",
+            employeeAndBadTextView8: "savedText17jjj",
+            employeeAndBadTextView9: "savedText18jjj",
+            employeeAndBadTextView10: "savedText19jjj",
+            employeeAndBadTextView11: "savedText20jjj",
+            employeeAndBadTextView12: "savedText21jjj",
+            textView1: "savedText22jjj",
+            textView2: "savedText23jjj",
+            textView3: "savedText24jjj",
         ]
         textViewsToLoad.forEach { textView, key in
             textView?.text = UserDefaults.standard.string(forKey: key)
         }
         
         let textFieldKeyPairs = [
-            textField1: "savedText1vv",
-            textField2: "savedText2vv",
-            textField3: "savedText3vv",
-            textField4: "savedText4vv",
+            textField1: "savedText1kkk",
+            textField2: "savedText2kkk",
+            textField3: "savedText3kkk",
+            textField4: "savedText4kkk",
+            textField5: "savedText5kkk",
                
            ]
            textFieldKeyPairs.forEach { textField, key in
@@ -212,39 +219,40 @@ class FallProtectionWorkPlanVCFP: UIViewController {
         super.viewWillDisappear(animated)
         let textViewsToSave = [
 
-            competentPTextView: "savedText1vv",
-            phoneOrEmaliTextView: "savedText2vv",
-            badgeTextView: "savedText3vv",
-            deptTextView: "savedText4vv",
-            subTextView: "savedText5vv",
-            addressOrArerTextView: "savedText6vv",
-            dateTextView: "savedText7vv",
-            durationTextView: "savedText8vv",
-            describeFallHazardsTextView: "savedText9vv",
-            employeeAndBadTextView1: "savedText10vv",
-            employeeAndBadTextView2: "savedText11vv",
-            employeeAndBadTextView3: "savedText12vv",
-            employeeAndBadTextView4: "savedText13vv",
-            employeeAndBadTextView5: "savedText14vv",
-            employeeAndBadTextView6: "savedText15vv",
-            employeeAndBadTextView7: "savedText16vv",
-            employeeAndBadTextView8: "savedText17vv",
-            employeeAndBadTextView9: "savedText18vv",
-            employeeAndBadTextView10: "savedText19vv",
-            employeeAndBadTextView11: "savedText20vv",
-            employeeAndBadTextView12: "savedText21vv",
-            
+            competentPTextView: "savedText1jjj",
+            companyTextView: "savedText2jjj",
+            phoneTextView: "savedText3jjj",
+            emailTextView: "savedText4jjj",
+            planTextView: "savedText5jjj",
+            addressOrArerTextView: "savedText6jjj",
+            dateTextView: "savedText7jjj",
+            describeFallHazardsTextView: "savedText9jjj",
+            employeeAndBadTextView1: "savedText10jjj",
+            employeeAndBadTextView2: "savedText11jjj",
+            employeeAndBadTextView3: "savedText12jjj",
+            employeeAndBadTextView4: "savedText13jjj",
+            employeeAndBadTextView5: "savedText14jjj",
+            employeeAndBadTextView6: "savedText15jjj",
+            employeeAndBadTextView7: "savedText16jjj",
+            employeeAndBadTextView8: "savedText17jjj",
+            employeeAndBadTextView9: "savedText18jjj",
+            employeeAndBadTextView10: "savedText19jjj",
+            employeeAndBadTextView11: "savedText20jjj",
+            employeeAndBadTextView12: "savedText21jjj",
+            textView1: "savedText22jjj",
+            textView2: "savedText23jjj",
+            textView3: "savedText24jjj",
         ]
         textViewsToSave.forEach { textView, key in
             UserDefaults.standard.set(textView?.text, forKey: key)
         }
         
         let textFieldKeyPairs = [
-                textField1: "savedText1vv",
-                textField2: "savedText2vv",
-                textField3: "savedText3vv",
-                textField4: "savedText4vv",
-               
+            textField1: "savedText1kkk",
+            textField2: "savedText2kkk",
+            textField3: "savedText3kkk",
+            textField4: "savedText4kkk",
+            textField5: "savedText5kkk",
             ]
             textFieldKeyPairs.forEach { textField, key in
                 UserDefaults.standard.set(textField?.text, forKey: key)
@@ -259,224 +267,220 @@ class FallProtectionWorkPlanVCFP: UIViewController {
     }
     func setInfoDefault() {
         competentPTextView.text = appDelegate.name
-        phoneOrEmaliTextView.text = "\(appDelegate.phoneNumber)- \(appDelegate.email)"
-        badgeTextView.text = appDelegate.badgeNumber
-        deptTextView.text = appDelegate.department
-        subTextView.text = appDelegate.subgroup
-        addressOrArerTextView.text = "\(appDelegate.workLocation) \(appDelegate.facility)"
+        companyTextView.text = appDelegate.company
+        phoneTextView.text = appDelegate.phoneNumber
+        emailTextView.text = appDelegate.email
         dateTextView.text = appDelegate.todayDate
     }
     
     func setSignatures() {
-        cpSingbtn.setImage(appDelegate.signDicVehicle16.image, for: .normal)
+        cpSingbtn.setImage(appDelegate.imgSign5.image, for: .normal)
     }
     
     
-    @IBAction func clickOnBackButton(_ sender: UIButton) {
-        
+    @IBAction func backTapBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-    @IBAction func loginMenuBtn(_ sender: UIButton) {
-        
-        self.navigationController?.popToRootViewController(animated: false)
+    @IBAction func loginMenuTapBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
-    
-    @IBAction func programMenuButton(_ sender: UIButton) {
-        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuVC }) {
-               navigationController?.popToViewController(menuVC, animated: true)
+    @IBAction func programMenuTapBtn(_ sender: UIButton) {
+        if let programMenuVC = navigationController?.viewControllers.first(where: { $0 is ProgramMenuVC }) {
+               navigationController?.popToViewController(programMenuVC, animated: true)
            }
     }
-    @IBAction func clickOnShareTButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8171", tim: true, controller: self)
+    @IBAction func shareTapBtn(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1511-PLAN-FP", tim: true, controller: self)
     }
     
-    @IBAction func clickOnSaveButton(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "8171")
-        AlertHelper.shared.alertController(title: "TriMet Safety Solutions", message: "This form has been saved successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    @IBAction func saveTapBtn(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1511-PLAN-FP")
+        AlertHelper.shared.alertController(title: "Forum Safety Solutions", message: "This form has been saved successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
+    
     
     @IBAction func cpSingTapbtn(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC
-        vc.isWorkingOn = 189
+        vc.isWorkingOn = 5
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnTap1(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img1s)
+        KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img1e)
     }
     @IBAction func btnTap2(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img2s)
+        KosHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img2e)
     }
     @IBAction func btnTap3(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img3s)
+        KosHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img3e)
     }
     @IBAction func btnTap4(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img4s)
+        KosHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img4e)
     }
     @IBAction func btnTap5(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img5s)
+        KosHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img5e)
     }
     @IBAction func btnTap6(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img6s)
+        KosHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img6e)
     }
     @IBAction func btnTap7(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img7s)
+        KosHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img7e)
     }
     @IBAction func btnTap8(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img8s)
+        KosHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img8e)
     }
     @IBAction func btnTap9(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img9s)
+        KosHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img9e)
     }
     @IBAction func btnTap10(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img10s)
+        KosHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img10e)
     }
     @IBAction func btnTap11(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img11s)
+        KosHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img11e)
     }
     @IBAction func btnTap12(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img12s)
+        KosHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img12e)
     }
     @IBAction func btnTap13(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img13s)
+        KosHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img13e)
     }
     @IBAction func btnTap14(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img14s)
+        KosHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img14e)
     }
     @IBAction func btnTap15(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img15s)
+        KosHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img15e)
     }
     @IBAction func btnTap16(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img16, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img16s)
+        KosHelper.shared.selectedUnseleted(img: img16, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img16e)
     }
     @IBAction func btnTap17(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img17, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img17s)
+        KosHelper.shared.selectedUnseleted(img: img17, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img17e)
     }
     @IBAction func btnTap18(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img18, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img18s)
+        KosHelper.shared.selectedUnseleted(img: img18, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img18e)
     }
     @IBAction func btnTap19(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img19, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img19s)
+        KosHelper.shared.selectedUnseleted(img: img19, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img19e)
     }
     @IBAction func btnTap20(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img20, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img20s)
+        KosHelper.shared.selectedUnseleted(img: img20, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img20e)
     }
     @IBAction func btnTap21(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img21, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img21s)
+        KosHelper.shared.selectedUnseleted(img: img21, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img21e)
     }
     @IBAction func btnTap22(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img22, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img22s)
+        KosHelper.shared.selectedUnseleted(img: img22, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img22e)
     }
     @IBAction func btnTap23(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img23, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img23s)
+        KosHelper.shared.selectedUnseleted(img: img23, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img23e)
     }
     @IBAction func btnTap24(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img24, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img24s)
+        KosHelper.shared.selectedUnseleted(img: img24, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img24e)
     }
     @IBAction func btnTap25(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img25, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img25s)
+        KosHelper.shared.selectedUnseleted(img: img25, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img25e)
     }
     @IBAction func btnTap26(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img26, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img26s)
+        KosHelper.shared.selectedUnseleted(img: img26, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img26e)
     }
     @IBAction func btnTap27(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img27, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img27s)
+        KosHelper.shared.selectedUnseleted(img: img27, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img27e)
     }
     @IBAction func btnTap28(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img28, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img28s)
+        KosHelper.shared.selectedUnseleted(img: img28, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img28e)
     }
     @IBAction func btnTap29(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img29, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img29s)
+        KosHelper.shared.selectedUnseleted(img: img29, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img29e)
     }
     @IBAction func btnTap30(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img30, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img30s)
+        KosHelper.shared.selectedUnseleted(img: img30, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img30e)
     }
     @IBAction func btnTap31(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img31, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img31s)
+        KosHelper.shared.selectedUnseleted(img: img31, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img31e)
     }
     @IBAction func btnTap32(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img32, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img32s)
+        KosHelper.shared.selectedUnseleted(img: img32, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img32e)
     }
     @IBAction func btnTap33(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img33, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img33s)
+        KosHelper.shared.selectedUnseleted(img: img33, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img33e)
     }
     @IBAction func btnTap34(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img34, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img34s)
+        KosHelper.shared.selectedUnseleted(img: img34, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img34e)
     }
     @IBAction func btnTap35(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img35, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img35s)
+        KosHelper.shared.selectedUnseleted(img: img35, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img35e)
     }
     @IBAction func btnTap36(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img36, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img36s)
+        KosHelper.shared.selectedUnseleted(img: img36, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img36e)
     }
     @IBAction func btnTap37(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img37, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img37s)
+        KosHelper.shared.selectedUnseleted(img: img37, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img37e)
     }
     @IBAction func btnTap38(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img38, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img38s)
+        KosHelper.shared.selectedUnseleted(img: img38, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img38e)
     }
     @IBAction func btnTap39(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img39, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img39s)
+        KosHelper.shared.selectedUnseleted(img: img39, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img39e)
     }
     @IBAction func btnTap40(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img40, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img40s)
+        KosHelper.shared.selectedUnseleted(img: img40, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img40e)
     }
     @IBAction func btnTap41(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img41, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img41s)
+        KosHelper.shared.selectedUnseleted(img: img41, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img41e)
     }
     @IBAction func btnTap42(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img42, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img42s)
+        KosHelper.shared.selectedUnseleted(img: img42, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img42e)
     }
     @IBAction func btnTap43(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img43, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img43s)
+        KosHelper.shared.selectedUnseleted(img: img43, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img43e)
     }
     @IBAction func btnTap44(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img44, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img44s)
+        KosHelper.shared.selectedUnseleted(img: img44, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img44e)
     }
     @IBAction func btnTap45(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img45, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img45s)
+        KosHelper.shared.selectedUnseleted(img: img45, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img45e)
     }
     @IBAction func btnTap46(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img46, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img46s)
+        KosHelper.shared.selectedUnseleted(img: img46, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img46e)
     }
     @IBAction func btnTap47(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img47, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img47s)
+        KosHelper.shared.selectedUnseleted(img: img47, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img47e)
     }
     @IBAction func btnTap48(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img48, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img48s)
+        KosHelper.shared.selectedUnseleted(img: img48, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img48e)
     }
     @IBAction func btnTap49(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img49, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img49s)
+        KosHelper.shared.selectedUnseleted(img: img49, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img49e)
     }
     @IBAction func btnTap50(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img50, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img50s)
+        KosHelper.shared.selectedUnseleted(img: img50, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img50e)
     }
     @IBAction func btnTap51(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img51, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img51s)
+        KosHelper.shared.selectedUnseleted(img: img51, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img51e)
     }
     @IBAction func btnTap52(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img52, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img52s)
+        KosHelper.shared.selectedUnseleted(img: img52, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img52e)
     }
     @IBAction func btnTap53(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img53, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img53s)
+        KosHelper.shared.selectedUnseleted(img: img53, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img53e)
     }
     @IBAction func btnTap54(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img54, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img54s)
+        KosHelper.shared.selectedUnseleted(img: img54, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img54e)
     }
     @IBAction func btnTap55(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img55, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img55s)
+        KosHelper.shared.selectedUnseleted(img: img55, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img55e)
     }
     @IBAction func btnTap56(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img56, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img56s)
+        KosHelper.shared.selectedUnseleted(img: img56, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img56e)
     }
     @IBAction func btnTap57(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img57, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img57s)
+        KosHelper.shared.selectedUnseleted(img: img57, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img57e)
     }
     @IBAction func btnTap58(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img58, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img58s)
+        KosHelper.shared.selectedUnseleted(img: img58, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img58e)
     }
     @IBAction func btnTap59(_ sender: UIButton) {
-        NitHelper.shared.selectedUnseleted(img: img59, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img59s)
+        KosHelper.shared.selectedUnseleted(img: img59, sender: sender, vc: "FallProtectionWorkPlanVCFP", key: KeysPermitVC.img59e)
     }
     
     func checkSelectedImages(){
@@ -544,8 +548,8 @@ class FallProtectionWorkPlanVCFP: UIViewController {
             img59,
         ]
         
-        for key in 0..<KeysPermitVC.selectUnselectAllKeys20.count {
-            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys20[key]) as? Int ?? -1 {
+        for key in 0..<KeysPermitVC.selectUnselectAllKeys6.count {
+            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys6[key]) as? Int ?? -1 {
             case 0:
                 switch key {
                 case 0:

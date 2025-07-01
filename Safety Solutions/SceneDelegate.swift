@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Safety Solutions
+//  Forum Safety Solution
 //
 //  Created by koshal singh shekhawat on 11/01/24.
 //
