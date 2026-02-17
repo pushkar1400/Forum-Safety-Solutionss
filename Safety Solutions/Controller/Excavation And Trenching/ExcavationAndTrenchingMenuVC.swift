@@ -10,39 +10,10 @@ import PDFKit
 
 class ExcavationAndTrenchingMenuVC: UIViewController, UIDocumentInteractionControllerDelegate {
 
-    @IBOutlet weak var saf8250BackgroundView: UIView!
-    @IBOutlet weak var saf8250BackgroundViewS: UIView!
-    
-    @IBOutlet weak var saf8251BackgroundView: UIView!
-    @IBOutlet weak var saf8251BackgroundViewS: UIView!
-    
-    @IBOutlet weak var saf8252BackgroundView: UIView!
-    @IBOutlet weak var saf8252BackgroundViewS: UIView!
-    
-    @IBOutlet weak var saf8253BackgroundView: UIView!
-    @IBOutlet weak var saf8253BackgroundViewS: UIView!
-    
-    @IBOutlet weak var test1534BackgroundView: UIView!
-    @IBOutlet weak var test1534BackgroundViewS: UIView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        saf8250BackgroundView.layer.cornerRadius = 18
-        saf8250BackgroundViewS.layer.cornerRadius = 15
-
-        saf8251BackgroundView.layer.cornerRadius = 18
-        saf8251BackgroundViewS.layer.cornerRadius = 15
-
-        saf8252BackgroundView.layer.cornerRadius = 18
-        saf8252BackgroundViewS.layer.cornerRadius = 15
-
-        saf8253BackgroundView.layer.cornerRadius = 18
-        saf8253BackgroundViewS.layer.cornerRadius = 15
-        
-        test1534BackgroundView.layer.cornerRadius = 18
-        test1534BackgroundViewS.layer.cornerRadius = 15
 
         navigationController?.isNavigationBarHidden = true
     }

@@ -257,7 +257,7 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
     @IBOutlet weak var radioeTextField: UITextField!
     
     @IBOutlet weak var rescueTeamLeaderTextView: UITextView!
-    @IBOutlet weak var dateTimeTextView: UITextView!
+   // @IBOutlet weak var dateTimeTextView: UITextView!
     @IBOutlet weak var rescueCommunicationsRadioeTextField: UITextField!
     @IBOutlet weak var rescueCommunicationsPhoneTextField: UITextField!
 
@@ -272,8 +272,8 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
     @IBOutlet weak var attendantsTextView3: UITextView!
     @IBOutlet weak var attendantsTextView4: UITextView!
     @IBOutlet weak var attendantsTextView5: UITextView!
-    @IBOutlet weak var attendantsTextView6: UITextView!
-    @IBOutlet weak var attendantsTextView7: UITextView!
+//    @IBOutlet weak var attendantsTextView6: UITextView!
+//    @IBOutlet weak var attendantsTextView7: UITextView!
     @IBOutlet weak var attendantsTextView8: UITextView!
     @IBOutlet weak var attendantsTextView9: UITextView!
     @IBOutlet weak var attendantsTextView10: UITextView!
@@ -596,443 +596,443 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         super.viewDidLoad()
         checkSelectedImages()
         
-        if let savedText1ggg = UserDefaults.standard.string(forKey: "savedText1ggg") {
-            csSupervisorTextView.text = savedText1ggg
+        if let savedText1 = UserDefaults.standard.string(forKey: "savedText1-1501-PER-CS") {
+            csSupervisorTextView.text = savedText1
         }
-        if let savedText2ggg = UserDefaults.standard.string(forKey: "savedText2ggg") {
-            phoneTextView.text = savedText2ggg
+        if let savedText2 = UserDefaults.standard.string(forKey: "savedText2-1501-PER-CS") {
+            phoneTextView.text = savedText2
         }
-        if let savedText3ggg = UserDefaults.standard.string(forKey: "savedText3ggg") {
-            emailTextView.text = savedText3ggg
+        if let savedText3 = UserDefaults.standard.string(forKey: "savedText3-1501-PER-CS") {
+            emailTextView.text = savedText3
         }
-        if let savedText4ggg = UserDefaults.standard.string(forKey: "savedText4ggg") {
-            permitTextView.text = savedText4ggg
+        if let savedText4 = UserDefaults.standard.string(forKey: "savedText4-1501-PER-CS") {
+            permitTextView.text = savedText4
         }
-        if let savedText5ggg = UserDefaults.standard.string(forKey: "savedText5ggg") {
-            dateTextView.text = savedText5ggg
+        if let savedText5 = UserDefaults.standard.string(forKey: "savedText5-1501-PER-CS") {
+            dateTextView.text = savedText5
         }
-        if let savedText6ggg = UserDefaults.standard.string(forKey: "savedText6ggg") {
-            companyTextView.text = savedText6ggg
+        if let savedText6 = UserDefaults.standard.string(forKey: "savedText6-1501-PER-CS") {
+            companyTextView.text = savedText6
         }
-        if let savedText7ggg = UserDefaults.standard.string(forKey: "savedText7ggg") {
-            buildingTextView.text = savedText7ggg
+        if let savedText7 = UserDefaults.standard.string(forKey: "savedText7-1501-PER-CS") {
+            buildingTextView.text = savedText7
         }
-        if let savedText8ggg = UserDefaults.standard.string(forKey: "savedText8ggg") {
-            textField1.text = savedText8ggg
+        if let savedText8 = UserDefaults.standard.string(forKey: "savedText8-1501-PER-CS") {
+            textField1.text = savedText8
         }
-        if let savedText9ggg = UserDefaults.standard.string(forKey: "savedText9ggg") {
-            addressOrAreaTextView.text = savedText9ggg
+        if let savedText9 = UserDefaults.standard.string(forKey: "savedText9-1501-PER-CS") {
+            addressOrAreaTextView.text = savedText9
         }
-        if let savedText10ggg = UserDefaults.standard.string(forKey: "savedText10ggg") {
-            ciCdaTextView.text = savedText10ggg
+        if let savedText10 = UserDefaults.standard.string(forKey: "savedText10-1501-PER-CS") {
+            ciCdaTextView.text = savedText10
         }
-        if let savedText11ggg = UserDefaults.standard.string(forKey: "savedText11ggg") {
-            textField2.text = savedText11ggg
+        if let savedText11 = UserDefaults.standard.string(forKey: "savedText11-1501-PER-CS") {
+            textField2.text = savedText11
         }
-        if let savedText12ggg = UserDefaults.standard.string(forKey: "savedText12ggg") {
-            textField3.text = savedText12ggg
+        if let savedText12 = UserDefaults.standard.string(forKey: "savedText12-1501-PER-CS") {
+            textField3.text = savedText12
         }
-        if let savedText13ggg = UserDefaults.standard.string(forKey: "savedText13ggg") {
-            purposeOfEntryTextView.text = savedText13ggg
+        if let savedText13 = UserDefaults.standard.string(forKey: "savedText13-1501-PER-CS") {
+            purposeOfEntryTextView.text = savedText13
         }
-        if let savedText14ggg = UserDefaults.standard.string(forKey: "savedText14ggg") {
-            gasMonitorModelTextView.text = savedText14ggg
+        if let savedText14 = UserDefaults.standard.string(forKey: "savedText14-1501-PER-CS") {
+            gasMonitorModelTextView.text = savedText14
         }
-        if let savedText15ggg = UserDefaults.standard.string(forKey: "savedText15ggg") {
-            daysSinceCalibrationTextView.text = savedText15ggg
+        if let savedText15 = UserDefaults.standard.string(forKey: "savedText15-1501-PER-CS") {
+            daysSinceCalibrationTextView.text = savedText15
         }
-        if let savedText16ggg = UserDefaults.standard.string(forKey: "savedText16ggg") {
-            timeTextField1.text = savedText16ggg
+        if let savedText16 = UserDefaults.standard.string(forKey: "savedText16-1501-PER-CS") {
+            timeTextField1.text = savedText16
         }
-        if let savedText17ggg = UserDefaults.standard.string(forKey: "savedText17ggg") {
-            timeTextField2.text = savedText17ggg
+        if let savedText17 = UserDefaults.standard.string(forKey: "savedText17-1501-PER-CS") {
+            timeTextField2.text = savedText17
         }
-        if let savedText18ggg = UserDefaults.standard.string(forKey: "savedText18ggg") {
-            timeTextField3.text = savedText18ggg
+        if let savedText18 = UserDefaults.standard.string(forKey: "savedText18-1501-PER-CS") {
+            timeTextField3.text = savedText18
         }
-        if let savedText19ggg = UserDefaults.standard.string(forKey: "savedText19ggg") {
-            timeTextField4.text = savedText19ggg
+        if let savedText19 = UserDefaults.standard.string(forKey: "savedText19-1501-PER-CS") {
+            timeTextField4.text = savedText19
         }
-        if let savedText20ggg = UserDefaults.standard.string(forKey: "savedText20ggg") {
-            timeTextField5.text = savedText20ggg
+        if let savedText20 = UserDefaults.standard.string(forKey: "savedText20-1501-PER-CS") {
+            timeTextField5.text = savedText20
         }
-        if let savedText21ggg = UserDefaults.standard.string(forKey: "savedText21ggg") {
-            timeTextField6.text = savedText21ggg
+        if let savedText21 = UserDefaults.standard.string(forKey: "savedText21-1501-PER-CS") {
+            timeTextField6.text = savedText21
         }
-        if let savedText22ggg = UserDefaults.standard.string(forKey: "savedText22ggg") {
-            timeTextField7.text = savedText22ggg
+        if let savedText22 = UserDefaults.standard.string(forKey: "savedText22-1501-PER-CS") {
+            timeTextField7.text = savedText22
         }
-        if let savedText23ggg = UserDefaults.standard.string(forKey: "savedText23ggg") {
-            timeTextField8.text = savedText23ggg
+        if let savedText23 = UserDefaults.standard.string(forKey: "savedText23-1501-PER-CS") {
+            timeTextField8.text = savedText23
         }
-        if let savedText24ggg = UserDefaults.standard.string(forKey: "savedText24ggg") {
-            timeTextField9.text = savedText24ggg
+        if let savedText24 = UserDefaults.standard.string(forKey: "savedText24-1501-PER-CS") {
+            timeTextField9.text = savedText24
         }
-        if let savedText25ggg = UserDefaults.standard.string(forKey: "savedText25ggg") {
-            timeTextField10.text = savedText25ggg
+        if let savedText25 = UserDefaults.standard.string(forKey: "savedText25-1501-PER-CS") {
+            timeTextField10.text = savedText25
         }
-        if let savedText26ggg = UserDefaults.standard.string(forKey: "savedText26ggg") {
-            timeTextField11.text = savedText26ggg
+        if let savedText26 = UserDefaults.standard.string(forKey: "savedText26-1501-PER-CS") {
+            timeTextField11.text = savedText26
         }
-        if let savedText27ggg = UserDefaults.standard.string(forKey: "savedText27ggg") {
-            timeTextField12.text = savedText27ggg
+        if let savedText27 = UserDefaults.standard.string(forKey: "savedText27-1501-PER-CS") {
+            timeTextField12.text = savedText27
         }
-        if let savedText28ggg = UserDefaults.standard.string(forKey: "savedText28ggg") {
-            timeTextField13.text = savedText28ggg
+        if let savedText28 = UserDefaults.standard.string(forKey: "savedText28-1501-PER-CS") {
+            timeTextField13.text = savedText28
         }
-        if let savedText29ggg = UserDefaults.standard.string(forKey: "savedText29ggg") {
-            timeTextField14.text = savedText29ggg
+        if let savedText29 = UserDefaults.standard.string(forKey: "savedText29-1501-PER-CS") {
+            timeTextField14.text = savedText29
         }
-        if let savedText30ggg = UserDefaults.standard.string(forKey: "savedText30ggg") {
-            timeTextField15.text = savedText30ggg
+        if let savedText30 = UserDefaults.standard.string(forKey: "savedText30-1501-PER-CS") {
+            timeTextField15.text = savedText30
         }
-        if let savedText31ggg = UserDefaults.standard.string(forKey: "savedText31ggg") {
-            timeTextField16.text = savedText31ggg
+        if let savedText31 = UserDefaults.standard.string(forKey: "savedText31-1501-PER-CS") {
+            timeTextField16.text = savedText31
         }
-        if let savedText32ggg = UserDefaults.standard.string(forKey: "savedText32ggg") {
-            timeTextField17.text = savedText32ggg
+        if let savedText32 = UserDefaults.standard.string(forKey: "savedText32-1501-PER-CS") {
+            timeTextField17.text = savedText32
         }
-        if let savedText33ggg = UserDefaults.standard.string(forKey: "savedText33ggg") {
-            timeTextField18.text = savedText33ggg
+        if let savedText33 = UserDefaults.standard.string(forKey: "savedText33-1501-PER-CS") {
+            timeTextField18.text = savedText33
         }
-        if let savedText34ggg = UserDefaults.standard.string(forKey: "savedText34ggg") {
-            timeTextField19.text = savedText34ggg
+        if let savedText34 = UserDefaults.standard.string(forKey: "savedText34-1501-PER-CS") {
+            timeTextField19.text = savedText34
         }
-        if let savedText35ggg = UserDefaults.standard.string(forKey: "savedText35ggg") {
-            timeTextField20.text = savedText35ggg
+        if let savedText35 = UserDefaults.standard.string(forKey: "savedText35-1501-PER-CS") {
+            timeTextField20.text = savedText35
         }
-        if let savedText36ggg = UserDefaults.standard.string(forKey: "savedText36ggg") {
-            timeTextField21.text = savedText36ggg
+        if let savedText36 = UserDefaults.standard.string(forKey: "savedText36-1501-PER-CS") {
+            timeTextField21.text = savedText36
         }
-        if let savedText38ggg = UserDefaults.standard.string(forKey: "savedText37ggg") {
-            timeTextField22.text = savedText38ggg
+        if let savedText37 = UserDefaults.standard.string(forKey: "savedText37-1501-PER-CS") {
+            timeTextField22.text = savedText37
         }
-        if let savedText39ggg = UserDefaults.standard.string(forKey: "savedText38ggg") {
-            timeTextField23.text = savedText39ggg
+        if let savedText38 = UserDefaults.standard.string(forKey: "savedText38-1501-PER-CS") {
+            timeTextField23.text = savedText38
         }
-        if let savedText40ggg = UserDefaults.standard.string(forKey: "savedText39ggg") {
-            timeTextField24.text = savedText40ggg
+        if let savedText39 = UserDefaults.standard.string(forKey: "savedText39-1501-PER-CS") {
+            timeTextField24.text = savedText39
         }
-        if let savedText41ggg = UserDefaults.standard.string(forKey: "savedText40ggg") {
-            timeTextField25.text = savedText41ggg
+        if let savedText40 = UserDefaults.standard.string(forKey: "savedText40-1501-PER-CS") {
+            timeTextField25.text = savedText40
         }
-        if let savedText42ggg = UserDefaults.standard.string(forKey: "savedText41ggg") {
-            timeTextField26.text = savedText42ggg
+        if let savedText41 = UserDefaults.standard.string(forKey: "savedText41-1501-PER-CS") {
+            timeTextField26.text = savedText41
         }
-        if let savedText41ggg = UserDefaults.standard.string(forKey: "savedText42ggg") {
-            timeTextField27.text = savedText41ggg
+        if let savedText42 = UserDefaults.standard.string(forKey: "savedText42-1501-PER-CS") {
+            timeTextField27.text = savedText42
         }
-        if let savedText42ggg = UserDefaults.standard.string(forKey: "savedText43ggg") {
-            timeTextField28.text = savedText42ggg
+        if let savedText43 = UserDefaults.standard.string(forKey: "savedText43-1501-PER-CS") {
+            timeTextField28.text = savedText43
         }
-        if let savedText43ggg = UserDefaults.standard.string(forKey: "savedText44ggg") {
-            timeTextField29.text = savedText43ggg
+        if let savedText44 = UserDefaults.standard.string(forKey: "savedText44-1501-PER-CS") {
+            timeTextField29.text = savedText44
         }
-        if let savedText44ggg = UserDefaults.standard.string(forKey: "savedText45ggg") {
-            timeTextField30.text = savedText44ggg
+        if let savedText45 = UserDefaults.standard.string(forKey: "savedText45-1501-PER-CS") {
+            timeTextField30.text = savedText45
         }
-        if let savedText45ggg = UserDefaults.standard.string(forKey: "savedText46ggg") {
-            timeTextField31.text = savedText45ggg
+        if let savedText46 = UserDefaults.standard.string(forKey: "savedText46-1501-PER-CS") {
+            timeTextField31.text = savedText46
         }
-        if let savedText46ggg = UserDefaults.standard.string(forKey: "savedText47ggg") {
-            timeTextField32.text = savedText46ggg
+        if let savedText47 = UserDefaults.standard.string(forKey: "savedText47-1501-PER-CS") {
+            timeTextField32.text = savedText47
         }
-        if let savedText47ggg = UserDefaults.standard.string(forKey: "savedText48ggg") {
-            timeTextField33.text = savedText47ggg
+        if let savedText48 = UserDefaults.standard.string(forKey: "savedText48-1501-PER-CS") {
+            timeTextField33.text = savedText48
         }
-        if let savedText49ggg = UserDefaults.standard.string(forKey: "savedText49ggg") {
-            timeTextField34.text = savedText49ggg
+        if let savedText49 = UserDefaults.standard.string(forKey: "savedText49-1501-PER-CS") {
+            timeTextField34.text = savedText49
         }
-        if let savedText50ggg = UserDefaults.standard.string(forKey: "savedText50ggg") {
-            timeTextField35.text = savedText50ggg
+        if let savedText50 = UserDefaults.standard.string(forKey: "savedText50-1501-PER-CS") {
+            timeTextField35.text = savedText50
         }
-        if let savedText51ggg = UserDefaults.standard.string(forKey: "savedText51ggg") {
-            timeTextField36.text = savedText51ggg
+        if let savedText51 = UserDefaults.standard.string(forKey: "savedText51-1501-PER-CS") {
+            timeTextField36.text = savedText51
         }
-        if let savedText52ggg = UserDefaults.standard.string(forKey: "savedText52ggg") {
-            timeTextField37.text = savedText52ggg
+        if let savedText52 = UserDefaults.standard.string(forKey: "savedText52-1501-PER-CS") {
+            timeTextField37.text = savedText52
         }
-        if let savedText53ggg = UserDefaults.standard.string(forKey: "savedText53ggg") {
-            timeTextField38.text = savedText53ggg
+        if let savedText53 = UserDefaults.standard.string(forKey: "savedText53-1501-PER-CS") {
+            timeTextField38.text = savedText53
         }
-        if let savedText54ggg = UserDefaults.standard.string(forKey: "savedText54ggg") {
-            timeTextField39.text = savedText54ggg
+        if let savedText54 = UserDefaults.standard.string(forKey: "savedText54-1501-PER-CS") {
+            timeTextField39.text = savedText54
         }
-        if let savedText55ggg = UserDefaults.standard.string(forKey: "savedText55ggg") {
-            timeTextField40.text = savedText55ggg
+        if let savedText55 = UserDefaults.standard.string(forKey: "savedText55-1501-PER-CS") {
+            timeTextField40.text = savedText55
         }
-        if let savedText56ggg = UserDefaults.standard.string(forKey: "savedText56ggg") {
-            timeTextField41.text = savedText56ggg
+        if let savedText56 = UserDefaults.standard.string(forKey: "savedText56-1501-PER-CS") {
+            timeTextField41.text = savedText56
         }
-        if let savedText57ggg = UserDefaults.standard.string(forKey: "savedText57ggg") {
-            timeTextField42.text = savedText57ggg
+        if let savedText57 = UserDefaults.standard.string(forKey: "savedText57-1501-PER-CS") {
+            timeTextField42.text = savedText57
         }
-        if let savedText58ggg = UserDefaults.standard.string(forKey: "savedText58ggg") {
-            timeTextField43.text = savedText58ggg
+        if let savedText58 = UserDefaults.standard.string(forKey: "savedText58-1501-PER-CS") {
+            timeTextField43.text = savedText58
         }
-        if let savedText59ggg = UserDefaults.standard.string(forKey: "savedText59ggg") {
-            timeTextField44.text = savedText59ggg
+        if let savedText59 = UserDefaults.standard.string(forKey: "savedText59-1501-PER-CS") {
+            timeTextField44.text = savedText59
         }
-        if let savedText60ggg = UserDefaults.standard.string(forKey: "savedText60ggg") {
-            timeTextField45.text = savedText60ggg
+        if let savedText60 = UserDefaults.standard.string(forKey: "savedText60-1501-PER-CS") {
+            timeTextField45.text = savedText60
         }
-        if let savedText61ggg = UserDefaults.standard.string(forKey: "savedText61ggg") {
-            timeTextField46.text = savedText61ggg
+        if let savedText61 = UserDefaults.standard.string(forKey: "savedText61-1501-PER-CS") {
+            timeTextField46.text = savedText61
         }
-        if let savedText62ggg = UserDefaults.standard.string(forKey: "savedText61ggg") {
-            timeTextField47.text = savedText62ggg
+        if let savedText62 = UserDefaults.standard.string(forKey: "savedText62-1501-PER-CS") {
+            timeTextField47.text = savedText62
         }
-        if let savedText63ggg = UserDefaults.standard.string(forKey: "savedText63ggg") {
-            timeTextField48.text = savedText63ggg
+        if let savedText63 = UserDefaults.standard.string(forKey: "savedText63-1501-PER-CS") {
+            timeTextField48.text = savedText63
         }
-        if let savedText64ggg = UserDefaults.standard.string(forKey: "savedText64ggg") {
-            timeTextField49.text = savedText64ggg
+        if let savedText64 = UserDefaults.standard.string(forKey: "savedText64-1501-PER-CS") {
+            timeTextField49.text = savedText64
         }
-        if let savedText65ggg = UserDefaults.standard.string(forKey: "savedText65ggg") {
-            timeTextField50.text = savedText65ggg
+        if let savedText65 = UserDefaults.standard.string(forKey: "savedText65-1501-PER-CS") {
+            timeTextField50.text = savedText65
         }
-        if let savedText66ggg = UserDefaults.standard.string(forKey: "savedText66ggg") {
-            timeTextField51.text = savedText66ggg
+        if let savedText66 = UserDefaults.standard.string(forKey: "savedText66-1501-PER-CS") {
+            timeTextField51.text = savedText66
         }
-        if let savedText67ggg = UserDefaults.standard.string(forKey: "savedText67ggg") {
-            timeTextField52.text = savedText67ggg
+        if let savedText67 = UserDefaults.standard.string(forKey: "savedText67-1501-PER-CS") {
+            timeTextField52.text = savedText67
         }
-        if let savedText68ggg = UserDefaults.standard.string(forKey: "savedText68ggg") {
-            timeTextField53.text = savedText68ggg
+        if let savedText68 = UserDefaults.standard.string(forKey: "savedText68-1501-PER-CS") {
+            timeTextField53.text = savedText68
         }
-        if let savedText69ggg = UserDefaults.standard.string(forKey: "savedText69ggg") {
-            timeTextField54.text = savedText69ggg
+        if let savedText69 = UserDefaults.standard.string(forKey: "savedText69-1501-PER-CS") {
+            timeTextField54.text = savedText69
         }
-        if let savedText70ggg = UserDefaults.standard.string(forKey: "savedText70ggg") {
-            timeTextField55.text = savedText70ggg
+        if let savedText70 = UserDefaults.standard.string(forKey: "savedText70-1501-PER-CS") {
+            timeTextField55.text = savedText70
         }
-        if let savedText71ggg = UserDefaults.standard.string(forKey: "savedText71ggg") {
-            timeTextField56.text = savedText71ggg
+        if let savedText71 = UserDefaults.standard.string(forKey: "savedText71-1501-PER-CS") {
+            timeTextField56.text = savedText71
         }
-        if let savedText72ggg = UserDefaults.standard.string(forKey: "savedText72ggg") {
-            timeTextField57.text = savedText72ggg
+        if let savedText72 = UserDefaults.standard.string(forKey: "savedText72-1501-PER-CS") {
+            timeTextField57.text = savedText72
         }
-        if let savedText73ggg = UserDefaults.standard.string(forKey: "savedText73ggg") {
-            timeTextField58.text = savedText73ggg
+        if let savedText73 = UserDefaults.standard.string(forKey: "savedText73-1501-PER-CS") {
+            timeTextField58.text = savedText73
         }
-        if let savedText74ggg = UserDefaults.standard.string(forKey: "savedText74ggg") {
-            timeTextField59.text = savedText74ggg
+        if let savedText74 = UserDefaults.standard.string(forKey: "savedText74-1501-PER-CS") {
+            timeTextField59.text = savedText74
         }
-        if let savedText75ggg = UserDefaults.standard.string(forKey: "savedText75ggg") {
-            timeTextField60.text = savedText75ggg
+        if let savedText75 = UserDefaults.standard.string(forKey: "savedText75-1501-PER-CS") {
+            timeTextField60.text = savedText75
         }
-        if let savedText76ggg = UserDefaults.standard.string(forKey: "savedText76ggg") {
-            timeTextField61.text = savedText76ggg
+        if let savedText76 = UserDefaults.standard.string(forKey: "savedText76-1501-PER-CS") {
+            timeTextField61.text = savedText76
         }
-        if let savedText77ggg = UserDefaults.standard.string(forKey: "savedText77ggg") {
-            timeTextField62.text = savedText77ggg
+        if let savedText77 = UserDefaults.standard.string(forKey: "savedText77-1501-PER-CS") {
+            timeTextField62.text = savedText77
         }
-        if let savedText78ggg = UserDefaults.standard.string(forKey: "savedText78ggg") {
-            timeTextField63.text = savedText78ggg
+        if let savedText78 = UserDefaults.standard.string(forKey: "savedText78-1501-PER-CS") {
+            timeTextField63.text = savedText78
         }
-        if let savedText79ggg = UserDefaults.standard.string(forKey: "savedText79ggg") {
-            timeTextField64.text = savedText79ggg
+        if let savedText79 = UserDefaults.standard.string(forKey: "savedText79-1501-PER-CS") {
+            timeTextField64.text = savedText79
         }
-        if let savedText80ggg = UserDefaults.standard.string(forKey: "savedText80ggg") {
-            timeTextField65.text = savedText80ggg
+        if let savedText80 = UserDefaults.standard.string(forKey: "savedText80-1501-PER-CS") {
+            timeTextField65.text = savedText80
         }
-        if let savedText81ggg = UserDefaults.standard.string(forKey: "savedText81ggg") {
-            timeTextField66.text = savedText81ggg
+        if let savedText81 = UserDefaults.standard.string(forKey: "savedText81-1501-PER-CS") {
+            timeTextField66.text = savedText81
         }
-        if let savedText82ggg = UserDefaults.standard.string(forKey: "savedText82ggg") {
-            timeTextField67.text = savedText82ggg
+        if let savedText82 = UserDefaults.standard.string(forKey: "savedText82-1501-PER-CS") {
+            timeTextField67.text = savedText82
         }
-        if let savedText83ggg = UserDefaults.standard.string(forKey: "savedText83ggg") {
-            timeTextField68.text = savedText83ggg
+        if let savedText83 = UserDefaults.standard.string(forKey: "savedText83-1501-PER-CS") {
+            timeTextField68.text = savedText83
         }
-        if let savedText84ggg = UserDefaults.standard.string(forKey: "savedText84ggg") {
-            timeTextField69.text = savedText84ggg
+        if let savedText84 = UserDefaults.standard.string(forKey: "savedText84-1501-PER-CS") {
+            timeTextField69.text = savedText84
         }
-        if let savedText85ggg = UserDefaults.standard.string(forKey: "savedText85ggg") {
-            timeTextField70.text = savedText85ggg
+        if let savedText85 = UserDefaults.standard.string(forKey: "savedText85-1501-PER-CS") {
+            timeTextField70.text = savedText85
         }
-        if let savedText86ggg = UserDefaults.standard.string(forKey: "savedText86ggg") {
-            timeTextField71.text = savedText86ggg
+        if let savedText86 = UserDefaults.standard.string(forKey: "savedText86-1501-PER-CS") {
+            timeTextField71.text = savedText86
         }
-        if let savedText87ggg = UserDefaults.standard.string(forKey: "savedText87ggg") {
-            timeTextField72.text = savedText87ggg
+        if let savedText87 = UserDefaults.standard.string(forKey: "savedText87-1501-PER-CS") {
+            timeTextField72.text = savedText87
         }
-        if let savedText88ggg = UserDefaults.standard.string(forKey: "savedText88ggg") {
-            timeTextField73.text = savedText88ggg
+        if let savedText88 = UserDefaults.standard.string(forKey: "savedText88-1501-PER-CS") {
+            timeTextField73.text = savedText88
         }
-        if let savedText89ggg = UserDefaults.standard.string(forKey: "savedText89ggg") {
-            timeTextField74.text = savedText89ggg
+        if let savedText89 = UserDefaults.standard.string(forKey: "savedText89-1501-PER-CS") {
+            timeTextField74.text = savedText89
         }
-        if let savedText90ggg = UserDefaults.standard.string(forKey: "savedText90ggg") {
-            timeTextField75.text = savedText90ggg
+        if let savedText90 = UserDefaults.standard.string(forKey: "savedText90-1501-PER-CS") {
+            timeTextField75.text = savedText90
         }
-        if let savedText91ggg = UserDefaults.standard.string(forKey: "savedText91ggg") {
-            timeTextField76.text = savedText91ggg
+        if let savedText91 = UserDefaults.standard.string(forKey: "savedText91-1501-PER-CS") {
+            timeTextField76.text = savedText91
         }
-        if let savedText92ggg = UserDefaults.standard.string(forKey: "savedText92ggg") {
-            timeTextField77.text = savedText92ggg
+        if let savedText92 = UserDefaults.standard.string(forKey: "savedText92-1501-PER-CS") {
+            timeTextField77.text = savedText92
         }
-        if let savedText93ggg = UserDefaults.standard.string(forKey: "savedText93ggg") {
-            timeTextField78.text = savedText93ggg
+        if let savedText93 = UserDefaults.standard.string(forKey: "savedText93-1501-PER-CS") {
+            timeTextField78.text = savedText93
         }
-        if let savedText94ggg = UserDefaults.standard.string(forKey: "savedText94ggg") {
-            timeTextField79.text = savedText94ggg
+        if let savedText94 = UserDefaults.standard.string(forKey: "savedText94-1501-PER-CS") {
+            timeTextField79.text = savedText94
         }
-        if let savedText95ggg = UserDefaults.standard.string(forKey: "savedText95ggg") {
-            timeTextField80.text = savedText95ggg
+        if let savedText95 = UserDefaults.standard.string(forKey: "savedText95-1501-PER-CS") {
+            timeTextField80.text = savedText95
         }
-        if let savedText96ggg = UserDefaults.standard.string(forKey: "savedText96ggg") {
-            timeTextField81.text = savedText96ggg
+        if let savedText96 = UserDefaults.standard.string(forKey: "savedText96-1501-PER-CS") {
+            timeTextField81.text = savedText96
         }
-        if let savedText97ggg = UserDefaults.standard.string(forKey: "savedText97ggg") {
-            timeTextField82.text = savedText97ggg
+        if let savedText97 = UserDefaults.standard.string(forKey: "savedText97-1501-PER-CS") {
+            timeTextField82.text = savedText97
         }
-        if let savedText98ggg = UserDefaults.standard.string(forKey: "savedText98ggg") {
-            timeTextField83.text = savedText98ggg
+        if let savedText98 = UserDefaults.standard.string(forKey: "savedText98-1501-PER-CS") {
+            timeTextField83.text = savedText98
         }
-        if let savedText99ggg = UserDefaults.standard.string(forKey: "savedText99ggg") {
-            timeTextField84.text = savedText99ggg
+        if let savedText99 = UserDefaults.standard.string(forKey: "savedText99-1501-PER-CS") {
+            timeTextField84.text = savedText99
         }
-        if let savedText100ggg = UserDefaults.standard.string(forKey: "savedText100ggg") {
-            alternateEntryDateField.text = savedText100ggg
+        if let savedText100 = UserDefaults.standard.string(forKey: "savedText100-1501-PER-CS") {
+            alternateEntryDateField.text = savedText100
         }
-        if let savedText104ggg = UserDefaults.standard.string(forKey: "savedText104ggg") {
-            phoneTextField.text = savedText104ggg
+        if let savedText104 = UserDefaults.standard.string(forKey: "savedText104-1501-PER-CS") {
+            phoneTextField.text = savedText104
         }
-        if let savedText105ggg = UserDefaults.standard.string(forKey: "savedText105ggg") {
-            radioeTextField.text = savedText105ggg
+        if let savedText105 = UserDefaults.standard.string(forKey: "savedText105-1501-PER-CS") {
+            radioeTextField.text = savedText105
         }
-        if let savedText106ggg = UserDefaults.standard.string(forKey: "savedText106ggg") {
-            rescueTeamLeaderTextView.text = savedText106ggg
+        if let savedText106 = UserDefaults.standard.string(forKey: "savedText106-1501-PER-CS") {
+            rescueTeamLeaderTextView.text = savedText106
         }
-        if let savedText107ggg = UserDefaults.standard.string(forKey: "savedText107ggg") {
-            dateTimeTextView.text = savedText107ggg
+//        if let savedText107 = UserDefaults.standard.string(forKey: "savedText107-1501-PER-CS") {
+//            dateTimeTextView.text = savedText107
+//        }
+        if let savedText108 = UserDefaults.standard.string(forKey: "savedText108-1501-PER-CS") {
+            rescueCommunicationsRadioeTextField.text = savedText108
         }
-        if let savedText108ggg = UserDefaults.standard.string(forKey: "savedText108ggg") {
-            rescueCommunicationsRadioeTextField.text = savedText108ggg
+        if let savedText109 = UserDefaults.standard.string(forKey: "savedText109-1501-PER-CS") {
+            rescueCommunicationsPhoneTextField.text = savedText109
         }
-        if let savedText109ggg = UserDefaults.standard.string(forKey: "savedText109ggg") {
-            rescueCommunicationsPhoneTextField.text = savedText109ggg
+        if let savedText110 = UserDefaults.standard.string(forKey: "savedText110-1501-PER-CS") {
+            textField4.text = savedText110
         }
-        if let savedText110ggg = UserDefaults.standard.string(forKey: "savedText110ggg") {
-            textField4.text = savedText110ggg
+        if let savedText111 = UserDefaults.standard.string(forKey: "savedText111-1501-PER-CS") {
+            textField5.text = savedText111
         }
-        if let savedText111ggg = UserDefaults.standard.string(forKey: "savedText111ggg") {
-            textField5.text = savedText111ggg
+        if let savedText112 = UserDefaults.standard.string(forKey: "savedText112-1501-PER-CS") {
+            rescueEntrantsNamTextView.text = savedText112
         }
-        if let savedText112ggg = UserDefaults.standard.string(forKey: "savedText112ggg") {
-            rescueEntrantsNamTextView.text = savedText112ggg
+        if let savedText113 = UserDefaults.standard.string(forKey: "savedText113-1501-PER-CS") {
+            specialhazardsTextView.text = savedText113
         }
-        if let savedText113ggg = UserDefaults.standard.string(forKey: "savedText113ggg") {
-            specialhazardsTextView.text = savedText113ggg
+        if let savedText114 = UserDefaults.standard.string(forKey: "savedText114-1501-PER-CS") {
+            hotWorkTextView.text = savedText114
         }
-        if let savedText114ggg = UserDefaults.standard.string(forKey: "savedText114ggg") {
-            hotWorkTextView.text = savedText114ggg
+        if let savedText115 = UserDefaults.standard.string(forKey: "savedText115-1501-PER-CS") {
+            fireWatchTextView.text = savedText115
         }
-        if let savedText115ggg = UserDefaults.standard.string(forKey: "savedText115ggg") {
-            fireWatchTextView.text = savedText115ggg
+        if let savedText116 = UserDefaults.standard.string(forKey: "savedText116-1501-PER-CS") {
+            attendantsTextView1.text = savedText116
         }
-        if let savedText116ggg = UserDefaults.standard.string(forKey: "savedText116ggg") {
-            attendantsTextView1.text = savedText116ggg
+        if let savedText117 = UserDefaults.standard.string(forKey: "savedText117-1501-PER-CS") {
+            attendantsTextView2.text = savedText117
         }
-        if let savedText117ggg = UserDefaults.standard.string(forKey: "savedText117ggg") {
-            attendantsTextView2.text = savedText117ggg
+        if let savedText118 = UserDefaults.standard.string(forKey: "savedText118-1501-PER-CS") {
+            attendantsTextView3.text = savedText118
         }
-        if let savedText118ggg = UserDefaults.standard.string(forKey: "savedText118ggg") {
-            attendantsTextView3.text = savedText118ggg
+        if let savedText119 = UserDefaults.standard.string(forKey: "savedText119-1501-PER-CS") {
+            attendantsTextView4.text = savedText119
         }
-        if let savedText119ggg = UserDefaults.standard.string(forKey: "savedText119ggg") {
-            attendantsTextView4.text = savedText119ggg
+        if let savedText120 = UserDefaults.standard.string(forKey: "savedText120-1501-PER-CS") {
+            attendantsTextView5.text = savedText120
         }
-        if let savedText120ggg = UserDefaults.standard.string(forKey: "savedText120ggg") {
-            attendantsTextView5.text = savedText120ggg
+//        if let savedText121 = UserDefaults.standard.string(forKey: "savedText121-1501-PER-CS") {
+//            attendantsTextView6.text = savedText121
+//        }
+//        if let savedText122 = UserDefaults.standard.string(forKey: "savedText122-1501-PER-CS") {
+//            attendantsTextView7.text = savedText122
+//        }
+        if let savedText123 = UserDefaults.standard.string(forKey: "savedText123-1501-PER-CS") {
+            attendantsTextView8.text = savedText123
         }
-        if let savedText121ggg = UserDefaults.standard.string(forKey: "savedText121ggg") {
-            attendantsTextView6.text = savedText121ggg
+        if let savedText124 = UserDefaults.standard.string(forKey: "savedText124-1501-PER-CS") {
+            attendantsTextView9.text = savedText124
         }
-        if let savedText122ggg = UserDefaults.standard.string(forKey: "savedText122ggg") {
-            attendantsTextView7.text = savedText122ggg
+        if let savedText125 = UserDefaults.standard.string(forKey: "savedText125-1501-PER-CS") {
+            attendantsTextView10.text = savedText125
         }
-        if let savedText123ggg = UserDefaults.standard.string(forKey: "savedText123ggg") {
-            attendantsTextView8.text = savedText123ggg
+        if let savedText126 = UserDefaults.standard.string(forKey: "savedText126-1501-PER-CS") {
+            attendantsTextView11.text = savedText126
         }
-        if let savedText124ggg = UserDefaults.standard.string(forKey: "savedText124ggg") {
-            attendantsTextView9.text = savedText124ggg
+        if let savedText127 = UserDefaults.standard.string(forKey: "savedText127-1501-PER-CS") {
+            attendantsTextView12.text = savedText127
         }
-        if let savedText125ggg = UserDefaults.standard.string(forKey: "savedText125ggg") {
-            attendantsTextView10.text = savedText125ggg
+        if let savedText128 = UserDefaults.standard.string(forKey: "savedText128-1501-PER-CS") {
+            attendantsTextView13.text = savedText128
         }
-        if let savedText126ggg = UserDefaults.standard.string(forKey: "savedText126ggg") {
-            attendantsTextView11.text = savedText126ggg
+        if let savedText129 = UserDefaults.standard.string(forKey: "savedText129-1501-PER-CS") {
+            attendantsTextView14.text = savedText129
         }
-        if let savedText127ggg = UserDefaults.standard.string(forKey: "savedText127ggg") {
-            attendantsTextView12.text = savedText127ggg
+        if let savedText130 = UserDefaults.standard.string(forKey: "savedText130-1501-PER-CS") {
+            attendantsTextView15.text = savedText130
         }
-        if let savedText128ggg = UserDefaults.standard.string(forKey: "savedText128ggg") {
-            attendantsTextView13.text = savedText128ggg
+        if let savedText131 = UserDefaults.standard.string(forKey: "savedText131-1501-PER-CS") {
+            attendantsTextView16.text = savedText131
         }
-        if let savedText129ggg = UserDefaults.standard.string(forKey: "savedText129ggg") {
-            attendantsTextView14.text = savedText129ggg
+        if let savedText132 = UserDefaults.standard.string(forKey: "savedText132-1501-PER-CS") {
+            attendantsTextView17.text = savedText132
         }
-        if let savedText130ggg = UserDefaults.standard.string(forKey: "savedText130ggg") {
-            attendantsTextView15.text = savedText130ggg
+        if let savedText133 = UserDefaults.standard.string(forKey: "savedText133-1501-PER-CS") {
+            attendantsTextView18.text = savedText133
         }
-        if let savedText131ggg = UserDefaults.standard.string(forKey: "savedText131ggg") {
-            attendantsTextView16.text = savedText131ggg
+        if let savedText134 = UserDefaults.standard.string(forKey: "savedText134-1501-PER-CS") {
+            attendantsTextView19.text = savedText134
         }
-        if let savedText132ggg = UserDefaults.standard.string(forKey: "savedText132ggg") {
-            attendantsTextView17.text = savedText132ggg
+        if let savedText135 = UserDefaults.standard.string(forKey: "savedText135-1501-PER-CS") {
+            attendantsTextView20.text = savedText135
         }
-        if let savedText133ggg = UserDefaults.standard.string(forKey: "savedText133ggg") {
-            attendantsTextView18.text = savedText133ggg
+        if let savedText136 = UserDefaults.standard.string(forKey: "savedText136-1501-PER-CS") {
+            attendantsTextView21.text = savedText136
         }
-        if let savedText134ggg = UserDefaults.standard.string(forKey: "savedText134ggg") {
-            attendantsTextView19.text = savedText134ggg
+        if let savedText137 = UserDefaults.standard.string(forKey: "savedText137-1501-PER-CS") {
+            attendantsTextView22.text = savedText137
         }
-        if let savedText135ggg = UserDefaults.standard.string(forKey: "savedText135ggg") {
-            attendantsTextView20.text = savedText135ggg
+        if let savedText138 = UserDefaults.standard.string(forKey: "savedText138-1501-PER-CS") {
+            attendantsTextView23.text = savedText138
         }
-        if let savedText136ggg = UserDefaults.standard.string(forKey: "savedText136ggg") {
-            attendantsTextView21.text = savedText136ggg
+        if let savedText139 = UserDefaults.standard.string(forKey: "savedText139-1501-PER-CS") {
+            attendantsTextView24.text = savedText139
         }
-        if let savedText137ggg = UserDefaults.standard.string(forKey: "savedText137ggg") {
-            attendantsTextView22.text = savedText137ggg
+        if let savedText140 = UserDefaults.standard.string(forKey: "savedText140-1501-PER-CS") {
+            attendantsTextView25.text = savedText140
         }
-        if let savedText138ggg = UserDefaults.standard.string(forKey: "savedText138ggg") {
-            attendantsTextView23.text = savedText138ggg
+        if let savedText141 = UserDefaults.standard.string(forKey: "savedText141-1501-PER-CS") {
+            attendantsTextView26.text = savedText141
         }
-        if let savedText139ggg = UserDefaults.standard.string(forKey: "savedText139ggg") {
-            attendantsTextView24.text = savedText139ggg
+        if let savedText142 = UserDefaults.standard.string(forKey: "savedText142-1501-PER-CS") {
+            supervisorTextView1.text = savedText142
         }
-        if let savedText140ggg = UserDefaults.standard.string(forKey: "savedText140ggg") {
-            attendantsTextView25.text = savedText140ggg
+        if let savedText143 = UserDefaults.standard.string(forKey: "savedText143-1501-PER-CS") {
+            supervisorTextView2.text = savedText143
         }
-        if let savedText141ggg = UserDefaults.standard.string(forKey: "savedText141ggg") {
-            attendantsTextView26.text = savedText141ggg
+        if let savedText144 = UserDefaults.standard.string(forKey: "savedText144-1501-PER-CS") {
+            supervisorTextView3.text = savedText144
         }
-        if let savedText142ggg = UserDefaults.standard.string(forKey: "savedText142ggg") {
-            supervisorTextView1.text = savedText142ggg
+        if let savedText145 = UserDefaults.standard.string(forKey: "savedText145-1501-PER-CS") {
+            textField6.text = savedText145
         }
-        if let savedText143ggg = UserDefaults.standard.string(forKey: "savedText143ggg") {
-            supervisorTextView2.text = savedText143ggg
+        if let savedText146 = UserDefaults.standard.string(forKey: "savedText146-1501-PER-CS") {
+            timeField.text = savedText146
         }
-        if let savedText144ggg = UserDefaults.standard.string(forKey: "savedText144ggg") {
-            supervisorTextView3.text = savedText144ggg
+        if let savedText147 = UserDefaults.standard.string(forKey: "savedText147-1501-PER-CS") {
+            attendantsTextView27.text = savedText147
         }
-        if let savedText145ggg = UserDefaults.standard.string(forKey: "savedText145ggg") {
-            textField6.text = savedText145ggg
+        if let savedText148 = UserDefaults.standard.string(forKey: "savedText148-1501-PER-CS") {
+            attendantsTextView28.text = savedText148
         }
-        if let savedText146ggg = UserDefaults.standard.string(forKey: "savedText146ggg") {
-            timeField.text = savedText146ggg
-        }
-        if let savedText147ggg = UserDefaults.standard.string(forKey: "savedText147ggg") {
-            attendantsTextView27.text = savedText147ggg
-        }
-        if let savedText148ggg = UserDefaults.standard.string(forKey: "savedText148ggg") {
-            attendantsTextView28.text = savedText148ggg
-        }
-        if let savedText149ggg = UserDefaults.standard.string(forKey: "savedText149ggg") {
-            textField7.text = savedText149ggg
+        if let savedText149 = UserDefaults.standard.string(forKey: "savedText149-1501-PER-CS") {
+            textField7.text = savedText149
         }
         
     }
@@ -1041,152 +1041,152 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
         
-        UserDefaults.standard.set(csSupervisorTextView.text, forKey: "savedText1ggg")
-        UserDefaults.standard.set(phoneTextView.text, forKey: "savedText2ggg")
-        UserDefaults.standard.set(emailTextView.text, forKey: "savedText3ggg")
-        UserDefaults.standard.set(permitTextView.text, forKey: "savedText4ggg")
-        UserDefaults.standard.set(dateTextView.text, forKey: "savedText5ggg")
-        UserDefaults.standard.set(companyTextView.text, forKey: "savedText6ggg")
-        UserDefaults.standard.set(buildingTextView.text, forKey: "savedText7ggg")
-        UserDefaults.standard.set(textField1.text, forKey: "savedText8ggg")
-        UserDefaults.standard.set(addressOrAreaTextView.text, forKey: "savedText9ggg")
-        UserDefaults.standard.set(ciCdaTextView.text, forKey: "savedText10ggg")
-        UserDefaults.standard.set(textField2.text, forKey: "savedText11ggg")
-        UserDefaults.standard.set(textField3.text, forKey: "savedText12ggg")
-        UserDefaults.standard.set(purposeOfEntryTextView.text, forKey: "savedText13ggg")
-        UserDefaults.standard.set(gasMonitorModelTextView.text, forKey: "savedText14ggg")
-        UserDefaults.standard.set(daysSinceCalibrationTextView.text, forKey: "savedText15ggg")
-        UserDefaults.standard.set(timeTextField1.text, forKey: "savedText16ggg")
-        UserDefaults.standard.set(timeTextField2.text, forKey: "savedText17ggg")
-        UserDefaults.standard.set(timeTextField3.text, forKey: "savedText18ggg")
-        UserDefaults.standard.set(timeTextField4.text, forKey: "savedText19ggg")
-        UserDefaults.standard.set(timeTextField5.text, forKey: "savedText20ggg")
-        UserDefaults.standard.set(timeTextField6.text, forKey: "savedText21ggg")
-        UserDefaults.standard.set(timeTextField7.text, forKey: "savedText22ggg")
-        UserDefaults.standard.set(timeTextField8.text, forKey: "savedText23ggg")
-        UserDefaults.standard.set(timeTextField9.text, forKey: "savedText24ggg")
-        UserDefaults.standard.set(timeTextField10.text, forKey: "savedText25ggg")
-        UserDefaults.standard.set(timeTextField11.text, forKey: "savedText26ggg")
-        UserDefaults.standard.set(timeTextField12.text, forKey: "savedText27ggg")
-        UserDefaults.standard.set(timeTextField13.text, forKey: "savedText28ggg")
-        UserDefaults.standard.set(timeTextField14.text, forKey: "savedText29ggg")
-        UserDefaults.standard.set(timeTextField15.text, forKey: "savedText30ggg")
-        UserDefaults.standard.set(timeTextField16.text, forKey: "savedText31ggg")
-        UserDefaults.standard.set(timeTextField17.text, forKey: "savedText32ggg")
-        UserDefaults.standard.set(timeTextField18.text, forKey: "savedText33ggg")
-        UserDefaults.standard.set(timeTextField19.text, forKey: "savedText34ggg")
-        UserDefaults.standard.set(timeTextField20.text, forKey: "savedText35ggg")
-        UserDefaults.standard.set(timeTextField21.text, forKey: "savedText36ggg")
-        UserDefaults.standard.set(timeTextField22.text, forKey: "savedText37ggg")
-        UserDefaults.standard.set(timeTextField23.text, forKey: "savedText38ggg")
-        UserDefaults.standard.set(timeTextField24.text, forKey: "savedText39ggg")
-        UserDefaults.standard.set(timeTextField25.text, forKey: "savedText40ggg")
-        UserDefaults.standard.set(timeTextField26.text, forKey: "savedText41ggg")
-        UserDefaults.standard.set(timeTextField27.text, forKey: "savedText42ggg")
-        UserDefaults.standard.set(timeTextField28.text, forKey: "savedText43ggg")
-        UserDefaults.standard.set(timeTextField29.text, forKey: "savedText44ggg")
-        UserDefaults.standard.set(timeTextField30.text, forKey: "savedText45ggg")
-        UserDefaults.standard.set(timeTextField31.text, forKey: "savedText46ggg")
-        UserDefaults.standard.set(timeTextField32.text, forKey: "savedText47ggg")
-        UserDefaults.standard.set(timeTextField33.text, forKey: "savedText48ggg")
-        UserDefaults.standard.set(timeTextField34.text, forKey: "savedText49ggg")
-        UserDefaults.standard.set(timeTextField35.text, forKey: "savedText50ggg")
-        UserDefaults.standard.set(timeTextField36.text, forKey: "savedText51ggg")
-        UserDefaults.standard.set(timeTextField37.text, forKey: "savedText52ggg")
-        UserDefaults.standard.set(timeTextField38.text, forKey: "savedText53ggg")
-        UserDefaults.standard.set(timeTextField39.text, forKey: "savedText54ggg")
-        UserDefaults.standard.set(timeTextField40.text, forKey: "savedText55ggg")
-        UserDefaults.standard.set(timeTextField41.text, forKey: "savedText56ggg")
-        UserDefaults.standard.set(timeTextField42.text, forKey: "savedText57ggg")
-        UserDefaults.standard.set(timeTextField43.text, forKey: "savedText58ggg")
-        UserDefaults.standard.set(timeTextField44.text, forKey: "savedText59ggg")
-        UserDefaults.standard.set(timeTextField45.text, forKey: "savedText60ggg")
-        UserDefaults.standard.set(timeTextField46.text, forKey: "savedText61ggg")
-        UserDefaults.standard.set(timeTextField47.text, forKey: "savedText62ggg")
-        UserDefaults.standard.set(timeTextField48.text, forKey: "savedText63ggg")
-        UserDefaults.standard.set(timeTextField49.text, forKey: "savedText64ggg")
-        UserDefaults.standard.set(timeTextField50.text, forKey: "savedText65ggg")
-        UserDefaults.standard.set(timeTextField51.text, forKey: "savedText66ggg")
-        UserDefaults.standard.set(timeTextField52.text, forKey: "savedText67ggg")
-        UserDefaults.standard.set(timeTextField53.text, forKey: "savedText68ggg")
-        UserDefaults.standard.set(timeTextField54.text, forKey: "savedText69ggg")
-        UserDefaults.standard.set(timeTextField55.text, forKey: "savedText70ggg")
-        UserDefaults.standard.set(timeTextField56.text, forKey: "savedText71ggg")
-        UserDefaults.standard.set(timeTextField57.text, forKey: "savedText72ggg")
-        UserDefaults.standard.set(timeTextField58.text, forKey: "savedText73ggg")
-        UserDefaults.standard.set(timeTextField59.text, forKey: "savedText74ggg")
-        UserDefaults.standard.set(timeTextField60.text, forKey: "savedText75ggg")
-        UserDefaults.standard.set(timeTextField61.text, forKey: "savedText76ggg")
-        UserDefaults.standard.set(timeTextField62.text, forKey: "savedText77ggg")
-        UserDefaults.standard.set(timeTextField63.text, forKey: "savedText78ggg")
-        UserDefaults.standard.set(timeTextField64.text, forKey: "savedText79ggg")
-        UserDefaults.standard.set(timeTextField65.text, forKey: "savedText80ggg")
-        UserDefaults.standard.set(timeTextField66.text, forKey: "savedText81ggg")
-        UserDefaults.standard.set(timeTextField67.text, forKey: "savedText82ggg")
-        UserDefaults.standard.set(timeTextField68.text, forKey: "savedText83ggg")
-        UserDefaults.standard.set(timeTextField69.text, forKey: "savedText84ggg")
-        UserDefaults.standard.set(timeTextField70.text, forKey: "savedText85ggg")
-        UserDefaults.standard.set(timeTextField71.text, forKey: "savedText86ggg")
-        UserDefaults.standard.set(timeTextField72.text, forKey: "savedText87ggg")
-        UserDefaults.standard.set(timeTextField73.text, forKey: "savedText88ggg")
-        UserDefaults.standard.set(timeTextField74.text, forKey: "savedText89ggg")
-        UserDefaults.standard.set(timeTextField75.text, forKey: "savedText90ggg")
-        UserDefaults.standard.set(timeTextField76.text, forKey: "savedText91ggg")
-        UserDefaults.standard.set(timeTextField77.text, forKey: "savedText92ggg")
-        UserDefaults.standard.set(timeTextField78.text, forKey: "savedText93ggg")
-        UserDefaults.standard.set(timeTextField79.text, forKey: "savedText94ggg")
-        UserDefaults.standard.set(timeTextField80.text, forKey: "savedText95ggg")
-        UserDefaults.standard.set(timeTextField81.text, forKey: "savedText96ggg")
-        UserDefaults.standard.set(timeTextField82.text, forKey: "savedText97ggg")
-        UserDefaults.standard.set(timeTextField83.text, forKey: "savedText98ggg")
-        UserDefaults.standard.set(timeTextField84.text, forKey: "savedText99ggg")
-        UserDefaults.standard.set(alternateEntryDateField.text, forKey: "savedText100ggg")
-        UserDefaults.standard.set(phoneTextField.text, forKey: "savedText104ggg")
-        UserDefaults.standard.set(radioeTextField.text, forKey: "savedText105ggg")
-        UserDefaults.standard.set(rescueTeamLeaderTextView.text, forKey: "savedText106ggg")
-        UserDefaults.standard.set(dateTimeTextView.text, forKey: "savedText107ggg")
-        UserDefaults.standard.set(rescueCommunicationsRadioeTextField.text, forKey: "savedText108ggg")
-        UserDefaults.standard.set(rescueCommunicationsPhoneTextField.text, forKey: "savedText109ggg")
-        UserDefaults.standard.set(textField4.text, forKey: "savedText110ggg")
-        UserDefaults.standard.set(textField5.text, forKey: "savedText111ggg")
-        UserDefaults.standard.set(rescueEntrantsNamTextView.text, forKey: "savedText112ggg")
-        UserDefaults.standard.set(specialhazardsTextView.text, forKey: "savedText113ggg")
-        UserDefaults.standard.set(hotWorkTextView.text, forKey: "savedText114ggg")
-        UserDefaults.standard.set(fireWatchTextView.text, forKey: "savedText115ggg")
-        UserDefaults.standard.set(attendantsTextView1.text, forKey: "savedText116ggg")
-        UserDefaults.standard.set(attendantsTextView2.text, forKey: "savedText117ggg")
-        UserDefaults.standard.set(attendantsTextView3.text, forKey: "savedText118ggg")
-        UserDefaults.standard.set(attendantsTextView4.text, forKey: "savedText119ggg")
-        UserDefaults.standard.set(attendantsTextView5.text, forKey: "savedText120ggg")
-        UserDefaults.standard.set(attendantsTextView6.text, forKey: "savedText121ggg")
-        UserDefaults.standard.set(attendantsTextView7.text, forKey: "savedText122ggg")
-        UserDefaults.standard.set(attendantsTextView8.text, forKey: "savedText123ggg")
-        UserDefaults.standard.set(attendantsTextView9.text, forKey: "savedText124ggg")
-        UserDefaults.standard.set(attendantsTextView10.text, forKey: "savedText125ggg")
-        UserDefaults.standard.set(attendantsTextView11.text, forKey: "savedText126ggg")
-        UserDefaults.standard.set(attendantsTextView12.text, forKey: "savedText127ggg")
-        UserDefaults.standard.set(attendantsTextView13.text, forKey: "savedText128ggg")
-        UserDefaults.standard.set(attendantsTextView14.text, forKey: "savedText129ggg")
-        UserDefaults.standard.set(attendantsTextView15.text, forKey: "savedText130ggg")
-        UserDefaults.standard.set(attendantsTextView16.text, forKey: "savedText131ggg")
-        UserDefaults.standard.set(attendantsTextView17.text, forKey: "savedText132ggg")
-        UserDefaults.standard.set(attendantsTextView18.text, forKey: "savedText133ggg")
-        UserDefaults.standard.set(attendantsTextView19.text, forKey: "savedText134ggg")
-        UserDefaults.standard.set(attendantsTextView20.text, forKey: "savedText135ggg")
-        UserDefaults.standard.set(attendantsTextView21.text, forKey: "savedText136ggg")
-        UserDefaults.standard.set(attendantsTextView22.text, forKey: "savedText137ggg")
-        UserDefaults.standard.set(attendantsTextView23.text, forKey: "savedText138ggg")
-        UserDefaults.standard.set(attendantsTextView24.text, forKey: "savedText139ggg")
-        UserDefaults.standard.set(attendantsTextView25.text, forKey: "savedText140ggg")
-        UserDefaults.standard.set(attendantsTextView26.text, forKey: "savedText141ggg")
-        UserDefaults.standard.set(supervisorTextView1.text, forKey: "savedText142ggg")
-        UserDefaults.standard.set(supervisorTextView2.text, forKey: "savedText143ggg")
-        UserDefaults.standard.set(supervisorTextView3.text, forKey: "savedText144ggg")
-        UserDefaults.standard.set(textField6.text, forKey: "savedText145ggg")
-        UserDefaults.standard.set(timeField.text, forKey: "savedText146ggg")
-        UserDefaults.standard.set(attendantsTextView27.text, forKey: "savedText147ggg")
-        UserDefaults.standard.set(attendantsTextView28.text, forKey: "savedText148ggg")
-        UserDefaults.standard.set(textField7.text, forKey: "savedText149ggg")
+        UserDefaults.standard.set(csSupervisorTextView.text, forKey: "savedText1-1501-PER-CS")
+        UserDefaults.standard.set(phoneTextView.text, forKey: "savedText2-1501-PER-CS")
+        UserDefaults.standard.set(emailTextView.text, forKey: "savedText3-1501-PER-CS")
+        UserDefaults.standard.set(permitTextView.text, forKey: "savedText4-1501-PER-CS")
+        UserDefaults.standard.set(dateTextView.text, forKey: "savedText5-1501-PER-CS")
+        UserDefaults.standard.set(companyTextView.text, forKey: "savedText6-1501-PER-CS")
+        UserDefaults.standard.set(buildingTextView.text, forKey: "savedText7-1501-PER-CS")
+        UserDefaults.standard.set(textField1.text, forKey: "savedText8-1501-PER-CS")
+        UserDefaults.standard.set(addressOrAreaTextView.text, forKey: "savedText9-1501-PER-CS")
+        UserDefaults.standard.set(ciCdaTextView.text, forKey: "savedText10-1501-PER-CS")
+        UserDefaults.standard.set(textField2.text, forKey: "savedText11-1501-PER-CS")
+        UserDefaults.standard.set(textField3.text, forKey: "savedText12-1501-PER-CS")
+        UserDefaults.standard.set(purposeOfEntryTextView.text, forKey: "savedText13-1501-PER-CS")
+        UserDefaults.standard.set(gasMonitorModelTextView.text, forKey: "savedText14-1501-PER-CS")
+        UserDefaults.standard.set(daysSinceCalibrationTextView.text, forKey: "savedText15-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField1.text, forKey: "savedText16-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField2.text, forKey: "savedText17-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField3.text, forKey: "savedText18-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField4.text, forKey: "savedText19-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField5.text, forKey: "savedText20-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField6.text, forKey: "savedText21-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField7.text, forKey: "savedText22-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField8.text, forKey: "savedText23-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField9.text, forKey: "savedText24-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField10.text, forKey: "savedText25-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField11.text, forKey: "savedText26-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField12.text, forKey: "savedText27-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField13.text, forKey: "savedText28-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField14.text, forKey: "savedText29-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField15.text, forKey: "savedText30-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField16.text, forKey: "savedText31-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField17.text, forKey: "savedText32-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField18.text, forKey: "savedText33-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField19.text, forKey: "savedText34-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField20.text, forKey: "savedText35-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField21.text, forKey: "savedText36-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField22.text, forKey: "savedText37-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField23.text, forKey: "savedText38-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField24.text, forKey: "savedText39-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField25.text, forKey: "savedText40-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField26.text, forKey: "savedText41-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField27.text, forKey: "savedText42-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField28.text, forKey: "savedText43-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField29.text, forKey: "savedText44-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField30.text, forKey: "savedText45-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField31.text, forKey: "savedText46-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField32.text, forKey: "savedText47-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField33.text, forKey: "savedText48-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField34.text, forKey: "savedText49-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField35.text, forKey: "savedText50-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField36.text, forKey: "savedText51-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField37.text, forKey: "savedText52-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField38.text, forKey: "savedText53-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField39.text, forKey: "savedText54-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField40.text, forKey: "savedText55-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField41.text, forKey: "savedText56-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField42.text, forKey: "savedText57-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField43.text, forKey: "savedText58-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField44.text, forKey: "savedText59-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField45.text, forKey: "savedText60-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField46.text, forKey: "savedText61-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField47.text, forKey: "savedText62-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField48.text, forKey: "savedText63-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField49.text, forKey: "savedText64-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField50.text, forKey: "savedText65-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField51.text, forKey: "savedText66-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField52.text, forKey: "savedText67-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField53.text, forKey: "savedText68-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField54.text, forKey: "savedText69-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField55.text, forKey: "savedText70-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField56.text, forKey: "savedText71-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField57.text, forKey: "savedText72-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField58.text, forKey: "savedText73-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField59.text, forKey: "savedText74-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField60.text, forKey: "savedText75-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField61.text, forKey: "savedText76-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField62.text, forKey: "savedText77-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField63.text, forKey: "savedText78-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField64.text, forKey: "savedText79-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField65.text, forKey: "savedText80-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField66.text, forKey: "savedText81-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField67.text, forKey: "savedText82-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField68.text, forKey: "savedText83-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField69.text, forKey: "savedText84-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField70.text, forKey: "savedText85-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField71.text, forKey: "savedText86-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField72.text, forKey: "savedText87-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField73.text, forKey: "savedText88-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField74.text, forKey: "savedText89-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField75.text, forKey: "savedText90-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField76.text, forKey: "savedText91-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField77.text, forKey: "savedText92-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField78.text, forKey: "savedText93-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField79.text, forKey: "savedText94-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField80.text, forKey: "savedText95-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField81.text, forKey: "savedText96-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField82.text, forKey: "savedText97-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField83.text, forKey: "savedText98-1501-PER-CS")
+        UserDefaults.standard.set(timeTextField84.text, forKey: "savedText99-1501-PER-CS")
+        UserDefaults.standard.set(alternateEntryDateField.text, forKey: "savedText100-1501-PER-CS")
+        UserDefaults.standard.set(phoneTextField.text, forKey: "savedText104-1501-PER-CS")
+        UserDefaults.standard.set(radioeTextField.text, forKey: "savedText105-1501-PER-CS")
+        UserDefaults.standard.set(rescueTeamLeaderTextView.text, forKey: "savedText106-1501-PER-CS")
+       // UserDefaults.standard.set(dateTimeTextView.text, forKey: "savedText107-1501-PER-CS")
+        UserDefaults.standard.set(rescueCommunicationsRadioeTextField.text, forKey: "savedText108-1501-PER-CS")
+        UserDefaults.standard.set(rescueCommunicationsPhoneTextField.text, forKey: "savedText109-1501-PER-CS")
+        UserDefaults.standard.set(textField4.text, forKey: "savedText110-1501-PER-CS")
+        UserDefaults.standard.set(textField5.text, forKey: "savedText111-1501-PER-CS")
+        UserDefaults.standard.set(rescueEntrantsNamTextView.text, forKey: "savedText112-1501-PER-CS")
+        UserDefaults.standard.set(specialhazardsTextView.text, forKey: "savedText113-1501-PER-CS")
+        UserDefaults.standard.set(hotWorkTextView.text, forKey: "savedText114-1501-PER-CS")
+        UserDefaults.standard.set(fireWatchTextView.text, forKey: "savedText115-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView1.text, forKey: "savedText116-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView2.text, forKey: "savedText117-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView3.text, forKey: "savedText118-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView4.text, forKey: "savedText119-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView5.text, forKey: "savedText120-1501-PER-CS")
+//        UserDefaults.standard.set(attendantsTextView6.text, forKey: "savedText121-1501-PER-CS")
+//        UserDefaults.standard.set(attendantsTextView7.text, forKey: "savedText122-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView8.text, forKey: "savedText123-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView9.text, forKey: "savedText124-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView10.text, forKey: "savedText125-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView11.text, forKey: "savedText126-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView12.text, forKey: "savedText127-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView13.text, forKey: "savedText128-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView14.text, forKey: "savedText129-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView15.text, forKey: "savedText130-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView16.text, forKey: "savedText131-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView17.text, forKey: "savedText132-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView18.text, forKey: "savedText133-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView19.text, forKey: "savedText134-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView20.text, forKey: "savedText135-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView21.text, forKey: "savedText136-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView22.text, forKey: "savedText137-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView23.text, forKey: "savedText138-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView24.text, forKey: "savedText139-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView25.text, forKey: "savedText140-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView26.text, forKey: "savedText141-1501-PER-CS")
+        UserDefaults.standard.set(supervisorTextView1.text, forKey: "savedText142-1501-PER-CS")
+        UserDefaults.standard.set(supervisorTextView2.text, forKey: "savedText143-1501-PER-CS")
+        UserDefaults.standard.set(supervisorTextView3.text, forKey: "savedText144-1501-PER-CS")
+        UserDefaults.standard.set(textField6.text, forKey: "savedText145-1501-PER-CS")
+        UserDefaults.standard.set(timeField.text, forKey: "savedText146-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView27.text, forKey: "savedText147-1501-PER-CS")
+        UserDefaults.standard.set(attendantsTextView28.text, forKey: "savedText148-1501-PER-CS")
+        UserDefaults.standard.set(textField7.text, forKey: "savedText149-1501-PER-CS")
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -1197,7 +1197,7 @@ class ConfinedSpaceEvaluationAlternateEntryVC: UIViewController {
     }
     
     func setInfoDefault() {
-        csSupervisorTextView.text = appDelegate.name
+        csSupervisorTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
         dateTextView.text = appDelegate.todayDate

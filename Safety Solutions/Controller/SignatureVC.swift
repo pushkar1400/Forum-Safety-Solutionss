@@ -66,8 +66,35 @@ class SignatureVC: UIViewController,SwiftSignatureViewDelegate {
             appDelegate?.imgSign11.image = signView.getCroppedSignature()
         }else if isWorkingOn == 12{
             appDelegate?.imgSign12.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 13{
+            appDelegate?.imgSign13.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 14{
+            appDelegate?.imgSign14.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 15{
+            appDelegate?.imgSign15.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 16{
+            appDelegate?.imgSign16.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 17{
+            appDelegate?.imgSign17.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 18{
+            appDelegate?.imgSign18.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 19{
+            appDelegate?.imgSign19.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 20{
+            appDelegate?.imgSign20.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 21{
+            appDelegate?.imgSign21.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 22{
+            appDelegate?.imgSign22.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 23{
+            appDelegate?.imgSign23.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 24{
+            appDelegate?.imgSign24.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 25{
+            appDelegate?.imgSign25.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 26{
+            appDelegate?.imgSign26.image = signView.getCroppedSignature()
         }
-        
         
         self.navigationController?.popViewController(animated: true)
     }

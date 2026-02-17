@@ -235,7 +235,7 @@ class SafetyObservationVC: UIViewController {
         setInfoDefault()
     }
     func setInfoDefault() {
-        nameTextView.text = appDelegate.name
+        nameTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
         deptTextView.text = appDelegate.todayDate

@@ -187,7 +187,7 @@ class LadderInspectionFormVC: UIViewController {
     }
 
     func setInfoDefault() {
-        cpTextView.text = appDelegate.name
+        cpTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
         companyTextView.text = appDelegate.company

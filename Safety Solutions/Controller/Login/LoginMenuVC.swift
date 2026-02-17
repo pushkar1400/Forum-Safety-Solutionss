@@ -9,9 +9,9 @@ import UIKit
 
 class LoginMenuVC: UIViewController {
 
-    
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var deptLocationTextField: UITextField!
@@ -24,12 +24,13 @@ class LoginMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        nameTextField.text =  "Name"
+//        nameTextField.text =  "First Name"
+//        lastNameTextField.text = "Last Name"
 //        emailTextField.text =  "Name@gmail.com"
 //        phoneTextField.text =  "1234567890"
 //        deptLocationTextField.text =  "Dept Location"
 //        companyTextField.text =  "Company"
-        
+      
         
         dateTextField.text = appDelegate.todayDate
         nextBtn.layer.cornerRadius = 8
@@ -39,7 +40,11 @@ class LoginMenuVC: UIViewController {
     @IBAction func nextTapBtn(_ sender: UIButton) {
             
         if nameTextField.text == "" {
-            alert(message: "Please enter Name")
+            alert(message: "Please enter First Name")
+            return
+        }
+        if lastNameTextField.text == "" {
+            alert(message: "Please enter Last Name")
             return
         }
         if emailTextField.text == "" {
@@ -66,6 +71,7 @@ class LoginMenuVC: UIViewController {
             
         appDelegate.todayDate        = dateTextField.text ?? ""
         appDelegate.name             = nameTextField.text ?? ""
+        appDelegate.lastName         = lastNameTextField.text ?? ""
         appDelegate.email            = emailTextField.text ?? ""
         appDelegate.phoneNumber      = phoneTextField.text ?? ""
         appDelegate.deptLocation     = deptLocationTextField.text ?? ""
@@ -78,7 +84,7 @@ class LoginMenuVC: UIViewController {
             DispatchQueue.main.async { [self] in
                 let programMenuVC = self.storyboard?.instantiateViewController(identifier: "ProgramMenuVC") as! ProgramMenuVC
                 UserDefaults.standard.setValue(appDelegate.todayDate, forKey: "todayDate")
-                UserDefaults.standard.setValue(nameTextField.text, forKey: "lastname")
+                UserDefaults.standard.setValue(lastNameTextField.text, forKey: "lastname")
                 navigationController?.pushViewController(programMenuVC, animated: true)
             }
         }

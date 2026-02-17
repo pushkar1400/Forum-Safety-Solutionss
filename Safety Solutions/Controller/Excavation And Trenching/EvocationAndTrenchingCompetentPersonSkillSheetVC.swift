@@ -85,7 +85,7 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
           checkSelectedImages()
     }
     func setInfoDefault() {
-        sNmaetextView.text = appDelegate.name
+        sNmaetextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         datetextView.text = appDelegate.todayDate
         depttextView.text = appDelegate.company
     }

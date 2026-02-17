@@ -78,9 +78,9 @@ final class SaveDataToICloudAndShareSheet {
     func createFolderPath(txtStr: String) -> (URL, String) {
         UserDefaults.incrementIntegerForKey(key: txtStr)
         let int = UserDefaults.standard.integer(forKey: txtStr)
-        let filename = "\(appDelegate.todayDate)-\(appDelegate.name)-\(txtStr)-\(int)"
+        let filename = "\(appDelegate.todayDate)-\(appDelegate.lastName)-\(txtStr)-\(int)"
         let documentDirectoryPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let folderName = "\(appDelegate.todayDate) \(appDelegate.name)"
+        let folderName = "\(appDelegate.todayDate) \(appDelegate.lastName)"
         // create the custom folder path
         let FolderDirectoryPath = (documentDirectoryPath.path as NSString).appending("/\(folderName)")
         let fileManager = FileManager.default
@@ -110,13 +110,49 @@ final class SaveDataToICloudAndShareSheet {
     
     //Create PDF
     func createPDF(image: UIImage) -> NSData? {
+
         let pdfData = NSMutableData()
-        let pdfConsumer = CGDataConsumer(data: pdfData as CFMutableData)!
-        var mediaBox = CGRect.init(x: 0, y: 0, width: image.size.width, height: image.size.height)
-        let pdfContext = CGContext(consumer: pdfConsumer, mediaBox: &mediaBox, nil)!
-        pdfContext.beginPage(mediaBox: &mediaBox)
-        pdfContext.draw(image.cgImage!, in: mediaBox)
-        pdfContext.endPage()
+
+        // 8.5 x 11 inch (Letter)
+        let pageSize = CGSize(width: 612, height: 792)
+
+        // FORM STYLE MARGINS
+        let topMargin: CGFloat = 50
+        let bottomMargin: CGFloat = 60   // thoda zyada for last page space
+        let sideMargin: CGFloat = 30
+
+        let contentWidth = pageSize.width - (sideMargin * 2)
+        let contentHeight = pageSize.height - topMargin - bottomMargin
+
+        let renderer = UIGraphicsPDFRenderer(
+            bounds: CGRect(origin: .zero, size: pageSize)
+        )
+
+        let scale = contentWidth / image.size.width
+        let scaledImageHeight = image.size.height * scale
+
+        let totalPages = Int(ceil(scaledImageHeight / contentHeight))
+
+        let data = renderer.pdfData { context in
+
+            for page in 0..<totalPages {
+                context.beginPage()
+
+                let yOffset = CGFloat(page) * contentHeight
+
+                let drawRect = CGRect(
+                    x: sideMargin,
+                    y: topMargin - yOffset,
+                    width: contentWidth,
+                    height: scaledImageHeight
+                )
+
+                image.draw(in: drawRect)
+            }
+        }
+
+        pdfData.append(data)
         return pdfData
     }
+    
 }

@@ -443,10 +443,146 @@ class JobHazardAnalysisVC: UIViewController {
         checkSelectedImages()
         setInfoDefault()
         
-        
-//        if let savedText1l = UserDefaults.standard.string(forKey: "savedText1l") {
-//            competentPTextView.text = savedText1l
-//        }
+        if let savedText1ab = UserDefaults.standard.string(forKey: "savedText1ab") {
+            competentPTextView.text = savedText1ab
+        }
+        if let savedText2ab = UserDefaults.standard.string(forKey: "savedText2ab") {
+            phoneTextView.text = savedText2ab
+        }
+        if let savedText3ab = UserDefaults.standard.string(forKey: "savedText3ab") {
+            emailTextView.text = savedText3ab
+        }
+        if let savedText4ab = UserDefaults.standard.string(forKey: "savedText4ab") {
+            deptTextView.text = savedText4ab
+        }
+        if let savedText5ab = UserDefaults.standard.string(forKey: "savedText5ab") {
+            jhaTextView.text = savedText5ab
+        }
+        if let savedText6ab = UserDefaults.standard.string(forKey: "savedText6ab") {
+            companyTextView.text = savedText6ab
+        }
+        if let savedText7ab = UserDefaults.standard.string(forKey: "savedText7ab") {
+            addressOrAreaTextView.text = savedText7ab
+        }
+        if let savedText8ab = UserDefaults.standard.string(forKey: "savedText8ab") {
+            projectOrFacilityTextView.text = savedText8ab
+        }
+        if let savedText9ab = UserDefaults.standard.string(forKey: "savedText9ab") {
+            emergencyPlanTextView.text = savedText9ab
+        }
+        if let savedText10ab = UserDefaults.standard.string(forKey: "savedText10ab") {
+            nearestHospltalTextView.text = savedText10ab
+        }
+        if let savedText11ab = UserDefaults.standard.string(forKey: "savedText11ab") {
+            descriptionOfWorkTextView.text = savedText11ab
+        }
+        if let savedText12ab = UserDefaults.standard.string(forKey: "savedText12ab") {
+            highestHazardTextView.text = savedText12ab
+        }
+        if let savedText13ab = UserDefaults.standard.string(forKey: "savedText13ab") {
+            highestHazardTextViewSecond.text = savedText13ab
+        }
+        if let savedText14ab = UserDefaults.standard.string(forKey: "savedText14ab") {
+            textView1.text = savedText14ab
+        }
+        if let savedText15ab = UserDefaults.standard.string(forKey: "savedText15ab") {
+            textView2.text = savedText15ab
+        }
+        if let savedText16ab = UserDefaults.standard.string(forKey: "savedText16ab") {
+            textView3.text = savedText16ab
+        }
+        if let savedText17ab = UserDefaults.standard.string(forKey: "savedText17ab") {
+            textView4.text = savedText17ab
+        }
+        if let savedText18ab = UserDefaults.standard.string(forKey: "savedText18ab") {
+            textView5.text = savedText18ab
+        }
+        if let savedText19ab = UserDefaults.standard.string(forKey: "savedText19ab") {
+            textView6.text = savedText19ab
+        }
+        if let savedText20ab = UserDefaults.standard.string(forKey: "savedText20ab") {
+            textView7.text = savedText20ab
+        }
+        if let savedText21ab = UserDefaults.standard.string(forKey: "savedText21ab") {
+            textView8.text = savedText21ab
+        }
+        if let savedText22ab = UserDefaults.standard.string(forKey: "savedText22ab") {
+            textView9.text = savedText22ab
+        }
+        if let savedText23ab = UserDefaults.standard.string(forKey: "savedText23ab") {
+            textView10.text = savedText23ab
+        }
+        if let savedText24ab = UserDefaults.standard.string(forKey: "savedText24ab") {
+            textView11.text = savedText24ab
+        }
+        if let savedText25ab = UserDefaults.standard.string(forKey: "savedText25ab") {
+            textView12.text = savedText25ab
+        }
+        if let savedText26ab = UserDefaults.standard.string(forKey: "savedText26ab") {
+            textView13.text = savedText26ab
+        }
+        if let savedText27ab = UserDefaults.standard.string(forKey: "savedText27ab") {
+            textView14.text = savedText27ab
+        }
+        if let savedText28ab = UserDefaults.standard.string(forKey: "savedText28ab") {
+            textView15.text = savedText28ab
+        }
+        if let savedText29ab = UserDefaults.standard.string(forKey: "savedText29ab") {
+            textView16.text = savedText29ab
+        }
+        if let savedText30ab = UserDefaults.standard.string(forKey: "savedText30ab") {
+            textField1.text = savedText30ab
+        }
+        if let savedText31ab = UserDefaults.standard.string(forKey: "savedText31ab") {
+            textField2.text = savedText31ab
+        }
+        if let savedText32ab = UserDefaults.standard.string(forKey: "savedText32ab") {
+            textField3.text = savedText32ab
+        }
+        if let savedText33ab = UserDefaults.standard.string(forKey: "savedText33ab") {
+            textField4.text = savedText33ab
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        competentPTextView.text = UserDefaults.standard.string(forKey: "savedText1-1006-JHA")
+          phoneTextView.text = UserDefaults.standard.string(forKey: "savedText2-1006-JHA")
+          emailTextView.text = UserDefaults.standard.string(forKey: "savedText3-1006-JHA")
+          deptTextView.text = UserDefaults.standard.string(forKey: "savedText4-1006-JHA")
+          jhaTextView.text = UserDefaults.standard.string(forKey: "savedText5-1006-JHA")
+          companyTextView.text = UserDefaults.standard.string(forKey: "savedText6-1006-JHA")
+          addressOrAreaTextView.text = UserDefaults.standard.string(forKey: "savedText7-1006-JHA")
+          projectOrFacilityTextView.text = UserDefaults.standard.string(forKey: "savedText8-1006-JHA")
+          emergencyPlanTextView.text = UserDefaults.standard.string(forKey: "savedText9-1006-JHA")
+          nearestHospltalTextView.text = UserDefaults.standard.string(forKey: "savedText10-1006-JHA")
+          descriptionOfWorkTextView.text = UserDefaults.standard.string(forKey: "savedText11-1006-JHA")
+          highestHazardTextView.text = UserDefaults.standard.string(forKey: "savedText12-1006-JHA")
+          highestHazardTextViewSecond.text = UserDefaults.standard.string(forKey: "savedText13-1006-JHA")
+
+          textView1.text = UserDefaults.standard.string(forKey: "savedText14-1006-JHA")
+          textView2.text = UserDefaults.standard.string(forKey: "savedText15-1006-JHA")
+          textView3.text = UserDefaults.standard.string(forKey: "savedText16-1006-JHA")
+          textView4.text = UserDefaults.standard.string(forKey: "savedText17-1006-JHA")
+          textView5.text = UserDefaults.standard.string(forKey: "savedText18-1006-JHA")
+          textView6.text = UserDefaults.standard.string(forKey: "savedText19-1006-JHA")
+          textView7.text = UserDefaults.standard.string(forKey: "savedText20-1006-JHA")
+          textView8.text = UserDefaults.standard.string(forKey: "savedText21-1006-JHA")
+          textView9.text = UserDefaults.standard.string(forKey: "savedText22-1006-JHA")
+          textView10.text = UserDefaults.standard.string(forKey: "savedText23-1006-JHA")
+          textView11.text = UserDefaults.standard.string(forKey: "savedText24-1006-JHA")
+          textView12.text = UserDefaults.standard.string(forKey: "savedText25-1006-JHA")
+          textView13.text = UserDefaults.standard.string(forKey: "savedText26-1006-JHA")
+          textView14.text = UserDefaults.standard.string(forKey: "savedText27-1006-JHA")
+          textView15.text = UserDefaults.standard.string(forKey: "savedText28-1006-JHA")
+          textView16.text = UserDefaults.standard.string(forKey: "savedText29-1006-JHA")
+
+          // UITextFields
+          textField1.text = UserDefaults.standard.string(forKey: "savedText30-1006-JHA")
+          textField2.text = UserDefaults.standard.string(forKey: "savedText31-1006-JHA")
+          textField3.text = UserDefaults.standard.string(forKey: "savedText32-1006-JHA")
+          textField4.text = UserDefaults.standard.string(forKey: "savedText33-1006-JHA")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -455,15 +591,8 @@ class JobHazardAnalysisVC: UIViewController {
         navigationItem.hidesBackButton = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-        
-       // UserDefaults.standard.set(competentPTextView.text, forKey: "savedText1l")
-    }
-    
     func setInfoDefault() {
-        competentPTextView.text = appDelegate.name
+        competentPTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
         companyTextView.text = appDelegate.company

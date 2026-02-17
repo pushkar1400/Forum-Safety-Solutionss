@@ -364,7 +364,7 @@ class ConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDe
     
     func setInfoDefault() {
         dateTextView.text = appDelegate.todayDate
-        csSupervisorTextView.text = appDelegate.name
+        csSupervisorTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
         companyTextView.text = appDelegate.company

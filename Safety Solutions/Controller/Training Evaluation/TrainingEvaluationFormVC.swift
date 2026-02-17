@@ -16,9 +16,9 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var sNmaeTextView: UITextView!
     @IBOutlet weak var jobTextView: UITextView!
     @IBOutlet weak var companyTextView: UITextView!
-    @IBOutlet weak var courseNameTextView: UITextView!
-    @IBOutlet weak var instructorTextView: UITextView!
-    @IBOutlet weak var instructorTextViewS: UITextView!
+//    @IBOutlet weak var courseNameTextView: UITextView!
+//    @IBOutlet weak var instructorTextView: UITextView!
+//    @IBOutlet weak var instructorTextViewS: UITextView!
     @IBOutlet weak var datetextView: UITextView!
     
     //stronglyAgree
@@ -29,6 +29,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var stronglyAgreeBtn5: UIButton!
     @IBOutlet weak var stronglyAgreeBtn6: UIButton!
     @IBOutlet weak var stronglyAgreeBtn7: UIButton!
+    @IBOutlet weak var stronglyAgreeBtn8: UIButton!
     
     @IBOutlet weak var stronglyAgreeImg1: UIImageView!
     @IBOutlet weak var stronglyAgreeImg2: UIImageView!
@@ -37,6 +38,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var stronglyAgreeImg5: UIImageView!
     @IBOutlet weak var stronglyAgreeImg6: UIImageView!
     @IBOutlet weak var stronglyAgreeImg7: UIImageView!
+    @IBOutlet weak var stronglyAgreeImg8: UIImageView!
   
     //Agree
     @IBOutlet weak var agreeBtn1: UIButton!
@@ -46,6 +48,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var agreeBtn5: UIButton!
     @IBOutlet weak var agreeBtn6: UIButton!
     @IBOutlet weak var agreeBtn7: UIButton!
+    @IBOutlet weak var agreeBtn8: UIButton!
     
     @IBOutlet weak var agreeImg1: UIImageView!
     @IBOutlet weak var agreeImg2: UIImageView!
@@ -54,6 +57,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var agreeImg5: UIImageView!
     @IBOutlet weak var agreeImg6: UIImageView!
     @IBOutlet weak var agreeImg7: UIImageView!
+    @IBOutlet weak var agreeImg8: UIImageView!
     
     //Neutral
     @IBOutlet weak var neutralBtn1: UIButton!
@@ -63,6 +67,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var neutralBtn5: UIButton!
     @IBOutlet weak var neutralBtn6: UIButton!
     @IBOutlet weak var neutralBtn7: UIButton!
+    @IBOutlet weak var neutralBtn8: UIButton!
     
     @IBOutlet weak var neutralImg1: UIImageView!
     @IBOutlet weak var neutralImg2: UIImageView!
@@ -71,6 +76,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var neutralImg5: UIImageView!
     @IBOutlet weak var neutralImg6: UIImageView!
     @IBOutlet weak var neutralImg7: UIImageView!
+    @IBOutlet weak var neutralImg8: UIImageView!
     
     //Disagree
     @IBOutlet weak var disagreeBtn1: UIButton!
@@ -80,6 +86,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var disagreeBtn5: UIButton!
     @IBOutlet weak var disagreeBtn6: UIButton!
     @IBOutlet weak var disagreeBtn7: UIButton!
+    @IBOutlet weak var disagreeBtn8: UIButton!
     
     @IBOutlet weak var disagreeImg1: UIImageView!
     @IBOutlet weak var disagreeImg2: UIImageView!
@@ -88,6 +95,7 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var disagreeImg5: UIImageView!
     @IBOutlet weak var disagreeImg6: UIImageView!
     @IBOutlet weak var disagreeImg7: UIImageView!
+    @IBOutlet weak var disagreeImg8: UIImageView!
     
     
     //N/A
@@ -98,6 +106,8 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var naBtn5: UIButton!
     @IBOutlet weak var naBtn6: UIButton!
     @IBOutlet weak var naBtn7: UIButton!
+    @IBOutlet weak var naBtn8: UIButton!
+    
     
     @IBOutlet weak var naImg1: UIImageView!
     @IBOutlet weak var naImg2: UIImageView!
@@ -106,6 +116,37 @@ class TrainingEvaluationFormVC: UIViewController {
     @IBOutlet weak var naImg5: UIImageView!
     @IBOutlet weak var naImg6: UIImageView!
     @IBOutlet weak var naImg7: UIImageView!
+    @IBOutlet weak var naImg8: UIImageView!
+    
+    
+    @IBOutlet weak var btn1: UIButton!
+    @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var btn3: UIButton!
+    @IBOutlet weak var btn4: UIButton!
+    @IBOutlet weak var btn5: UIButton!
+    @IBOutlet weak var btn6: UIButton!
+    @IBOutlet weak var btn7: UIButton!
+    @IBOutlet weak var btn8: UIButton!
+    @IBOutlet weak var btn9: UIButton!
+    @IBOutlet weak var btn10: UIButton!
+    @IBOutlet weak var btn11: UIButton!
+    @IBOutlet weak var btn12: UIButton!
+    @IBOutlet weak var btn13: UIButton!
+
+    @IBOutlet weak var Img1: UIImageView!
+    @IBOutlet weak var Img2: UIImageView!
+    @IBOutlet weak var Img3: UIImageView!
+    @IBOutlet weak var Img4: UIImageView!
+    @IBOutlet weak var Img5: UIImageView!
+    @IBOutlet weak var Img6: UIImageView!
+    @IBOutlet weak var Img7: UIImageView!
+    @IBOutlet weak var Img8: UIImageView!
+    @IBOutlet weak var Img9: UIImageView!
+    @IBOutlet weak var Img10: UIImageView!
+    @IBOutlet weak var Img11: UIImageView!
+    @IBOutlet weak var Img12: UIImageView!
+    @IBOutlet weak var Img13: UIImageView!
+
     
     var validation5 = false
     var Pipe = false
@@ -173,124 +214,199 @@ class TrainingEvaluationFormVC: UIViewController {
         KosHelper.shared.selectedUnseleted(img: stronglyAgreeImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img7k)
     }
     
+    @IBAction func stronglyAgreeTapBtn8(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: stronglyAgreeImg8, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img8k)
+    }
+    
     //Agree
     @IBAction func agreeTapBtn1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img8k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img9k)
     }
 
     @IBAction func agreeTapBtn2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img9k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img10k)
     }
 
     @IBAction func agreeTapBtn3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img10k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img11k)
     }
 
     @IBAction func agreeTapBtn4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img11k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img12k)
     }
 
     @IBAction func agreeTapBtn5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img12k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img13k)
     }
 
     @IBAction func agreeTapBtn6(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img13k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img14k)
     }
 
     @IBAction func agreeTapBtn7(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: agreeImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img14k)
+        KosHelper.shared.selectedUnseleted(img: agreeImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img15k)
+    }
+    
+    @IBAction func agreeTapBtn8(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: agreeImg8, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img16k)
     }
 
     
     //Neutral
     @IBAction func neutralTapBtn1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img15k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img17k)
     }
 
     @IBAction func neutralTapBtn2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img16k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img18k)
     }
 
     @IBAction func neutralTapBtn3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img17k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img19k)
     }
 
     @IBAction func neutralTapBtn4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img18k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img20k)
     }
 
     @IBAction func neutralTapBtn5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img19k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img21k)
     }
 
     @IBAction func neutralTapBtn6(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img20k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img22k)
     }
 
     @IBAction func neutralTapBtn7(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: neutralImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img21k)
+        KosHelper.shared.selectedUnseleted(img: neutralImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img23k)
+    }
+    
+    @IBAction func neutralTapBtn8(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: neutralImg8, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img24k)
     }
 
    
     //Disagree
     @IBAction func disagreeTapBtn1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img22k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img25k)
     }
 
     @IBAction func disagreeTapBtn2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img23k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img26k)
     }
 
     @IBAction func disagreeTapBtn3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img24k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img27k)
     }
 
     @IBAction func disagreeTapBtn4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img25k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img28k)
     }
 
     @IBAction func disagreeTapBtn5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img26k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img29k)
     }
 
     @IBAction func disagreeTapBtn6(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img27k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img30k)
     }
 
     @IBAction func disagreeTapBtn7(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: disagreeImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img28k)
+        KosHelper.shared.selectedUnseleted(img: disagreeImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img31k)
+    }
+    
+    @IBAction func disagreeTapBtn8(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: disagreeImg8, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img32k)
     }
 
     
     //N/A
     @IBAction func naTapBtn1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img29k)
+        KosHelper.shared.selectedUnseleted(img: naImg1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img33k)
     }
 
     @IBAction func naTapBtn2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img30k)
+        KosHelper.shared.selectedUnseleted(img: naImg2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img34k)
     }
 
     @IBAction func naTapBtn3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img31k)
+        KosHelper.shared.selectedUnseleted(img: naImg3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img35k)
     }
 
     @IBAction func naTapBtn4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img32k)
+        KosHelper.shared.selectedUnseleted(img: naImg4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img36k)
     }
 
     @IBAction func naTapBtn5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img33k)
+        KosHelper.shared.selectedUnseleted(img: naImg5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img37k)
     }
 
     @IBAction func naTapBtn6(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img34k)
+        KosHelper.shared.selectedUnseleted(img: naImg6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img38k)
     }
 
     @IBAction func naTapBtn7(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: naImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img35k)
+        KosHelper.shared.selectedUnseleted(img: naImg7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img39k)
     }
+    
+    @IBAction func naTapBtn8(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: naImg8, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img40k)
+    }
+    
+    
+    
+    @IBAction func btnTap1(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img1, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img41k)
+    }
+
+    @IBAction func btnTap2(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img2, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img42k)
+    }
+
+    @IBAction func btnTap3(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img3, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img43k)
+    }
+
+    @IBAction func btnTap4(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img4, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img44k)
+    }
+
+    @IBAction func btnTap5(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img5, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img45k)
+    }
+
+    @IBAction func btnTap6(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img6, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img46k)
+    }
+
+    @IBAction func btnTap7(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img7, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img47k)
+    }
+
+    @IBAction func btnTap8(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img8, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img48k)
+    }
+
+    @IBAction func btnTap9(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img9, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img49k)
+    }
+    
+    @IBAction func btnTap10(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img10, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img50k)
+    }
+    
+    @IBAction func btnTap11(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img11, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img51k)
+    }
+    
+    @IBAction func btnTap12(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img12, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img52k)
+    }
+    @IBAction func btnTap13(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: Img13, sender: sender, vc: "TrainingEvaluationFormVC", key: KeysPermitVC.img53k)
+    }
+    
+
 
     func checkSelectedImages(){
         
@@ -298,23 +414,26 @@ class TrainingEvaluationFormVC: UIViewController {
         let nR = [
             // Strongly Agree
             stronglyAgreeImg1, stronglyAgreeImg2, stronglyAgreeImg3, stronglyAgreeImg4,
-            stronglyAgreeImg5, stronglyAgreeImg6, stronglyAgreeImg7,
+            stronglyAgreeImg5, stronglyAgreeImg6, stronglyAgreeImg7, stronglyAgreeImg8,
             
             // Agree
             agreeImg1, agreeImg2, agreeImg3, agreeImg4,
-            agreeImg5, agreeImg6, agreeImg7,
+            agreeImg5, agreeImg6, agreeImg7, agreeImg8,
             
             // Neutral
             neutralImg1, neutralImg2, neutralImg3, neutralImg4,
-            neutralImg5, neutralImg6, neutralImg7,
+            neutralImg5, neutralImg6, neutralImg7, neutralImg8,
             
             // Disagree
             disagreeImg1, disagreeImg2, disagreeImg3, disagreeImg4,
-            disagreeImg5, disagreeImg6, disagreeImg7,
+            disagreeImg5, disagreeImg6, disagreeImg7, disagreeImg8,
             
             // N/A
             naImg1, naImg2, naImg3, naImg4,
-            naImg5, naImg6, naImg7
+            naImg5, naImg6, naImg7, naImg8,
+            
+            Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9,
+            Img10, Img11, Img12, Img13
         ]
 
         for key in 0..<KeysPermitVC.selectUnselectAllKeys12.count {
@@ -391,6 +510,42 @@ class TrainingEvaluationFormVC: UIViewController {
                     naBtn6.isSelected = false
                 case 34:
                     naBtn7.isSelected = false
+                case 35:
+                    btn1.isSelected = false
+                case 36:
+                    btn2.isSelected = false
+                case 37:
+                    btn3.isSelected = false
+                case 38:
+                    btn4.isSelected = false
+                case 39:
+                    btn5.isSelected = false
+                case 40:
+                    btn6.isSelected = false
+                case 41:
+                    btn7.isSelected = false
+                case 42:
+                    btn8.isSelected = false
+                case 43:
+                    btn9.isSelected = false
+                case 44:
+                    btn10.isSelected = false
+                case 45:
+                    btn11.isSelected = false
+                case 46:
+                    btn12.isSelected = false
+                case 47:
+                    btn13.isSelected = false
+                case 48:
+                    stronglyAgreeBtn8.isSelected = false
+                case 49:
+                    agreeBtn8.isSelected = false
+                case 50:
+                    neutralBtn8.isSelected = false
+                case 51:
+                    disagreeBtn8.isSelected = false
+                case 52:
+                    naBtn8.isSelected = false
                 default:
                     break
                 }
@@ -468,6 +623,42 @@ class TrainingEvaluationFormVC: UIViewController {
                     naBtn6.isSelected = true
                 case 34:
                     naBtn7.isSelected = true
+                case 35:
+                    btn1.isSelected = true
+                case 36:
+                    btn2.isSelected = true
+                case 37:
+                    btn3.isSelected = true
+                case 38:
+                    btn4.isSelected = true
+                case 39:
+                    btn5.isSelected = true
+                case 40:
+                    btn6.isSelected = true
+                case 41:
+                    btn7.isSelected = true
+                case 42:
+                    btn8.isSelected = true
+                case 43:
+                    btn9.isSelected = true
+                case 44:
+                    btn10.isSelected = true
+                case 45:
+                    btn11.isSelected = true
+                case 46:
+                    btn12.isSelected = true
+                case 47:
+                    btn13.isSelected = true
+                case 48:
+                    stronglyAgreeBtn8.isSelected = true
+                case 49:
+                    agreeBtn8.isSelected = true
+                case 50:
+                    neutralBtn8.isSelected = true
+                case 51:
+                    disagreeBtn8.isSelected = true
+                case 52:
+                    naBtn8.isSelected = true
                 default:
                     break
                 }

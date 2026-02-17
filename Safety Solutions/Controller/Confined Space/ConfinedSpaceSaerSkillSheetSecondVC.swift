@@ -13,7 +13,7 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
     @IBOutlet weak var sNmaetextView: UITextView!
     @IBOutlet weak var jobtextView: UITextView!
     @IBOutlet weak var depttextView: UITextView!
-    @IBOutlet weak var instructortextView: UITextView!
+   // @IBOutlet weak var instructortextView: UITextView!
     @IBOutlet weak var datetextView: UITextView!
     
     
@@ -46,6 +46,25 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
     @IBOutlet weak var img25: UIImageView!
     @IBOutlet weak var img26: UIImageView!
     @IBOutlet weak var img27: UIImageView!
+    @IBOutlet weak var img28: UIImageView!
+    @IBOutlet weak var img29: UIImageView!
+    @IBOutlet weak var img30: UIImageView!
+    @IBOutlet weak var img31: UIImageView!
+    @IBOutlet weak var img32: UIImageView!
+    @IBOutlet weak var img33: UIImageView!
+    @IBOutlet weak var img34: UIImageView!
+    @IBOutlet weak var img35: UIImageView!
+    @IBOutlet weak var img36: UIImageView!
+    @IBOutlet weak var img37: UIImageView!
+    @IBOutlet weak var img38: UIImageView!
+    @IBOutlet weak var img39: UIImageView!
+    @IBOutlet weak var img40: UIImageView!
+    @IBOutlet weak var img41: UIImageView!
+    @IBOutlet weak var img42: UIImageView!
+    @IBOutlet weak var img43: UIImageView!
+    @IBOutlet weak var img44: UIImageView!
+    @IBOutlet weak var img45: UIImageView!
+
  
     
     
@@ -76,6 +95,25 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
     @IBOutlet weak var btn25: UIButton!
     @IBOutlet weak var btn26: UIButton!
     @IBOutlet weak var btn27: UIButton!
+    @IBOutlet weak var btn28: UIButton!
+    @IBOutlet weak var btn29: UIButton!
+    @IBOutlet weak var btn30: UIButton!
+    @IBOutlet weak var btn31: UIButton!
+    @IBOutlet weak var btn32: UIButton!
+    @IBOutlet weak var btn33: UIButton!
+    @IBOutlet weak var btn34: UIButton!
+    @IBOutlet weak var btn35: UIButton!
+    @IBOutlet weak var btn36: UIButton!
+    @IBOutlet weak var btn37: UIButton!
+    @IBOutlet weak var btn38: UIButton!
+    @IBOutlet weak var btn39: UIButton!
+    @IBOutlet weak var btn40: UIButton!
+    @IBOutlet weak var btn41: UIButton!
+    @IBOutlet weak var btn42: UIButton!
+    @IBOutlet weak var btn43: UIButton!
+    @IBOutlet weak var btn44: UIButton!
+    @IBOutlet weak var btn45: UIButton!
+
     
     
     @IBOutlet weak var studentPhotoImageView: UIImageView!
@@ -98,9 +136,9 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
         if let savedText4hhh = UserDefaults.standard.string(forKey: "savedText4hhh") {
             depttextView.text = savedText4hhh
         }
-        if let savedText6hhh = UserDefaults.standard.string(forKey: "savedText6hhh") {
-            instructortextView.text = savedText6hhh
-        }
+//        if let savedText6hhh = UserDefaults.standard.string(forKey: "savedText6hhh") {
+//            instructortextView.text = savedText6hhh
+//        }
         if let savedText7hhh = UserDefaults.standard.string(forKey: "savedText7hhh") {
             datetextView.text = savedText7hhh
         }
@@ -114,7 +152,7 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
           checkSelectedImages()
     }
     func setInfoDefault() {
-        sNmaetextView.text = appDelegate.name
+        sNmaetextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         datetextView.text = appDelegate.todayDate
         depttextView.text = appDelegate.company
     }
@@ -128,7 +166,7 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
         UserDefaults.standard.set(sNmaetextView.text, forKey: "savedText1hhh")
         UserDefaults.standard.set(jobtextView.text, forKey: "savedText2hhh")
         UserDefaults.standard.set(depttextView.text, forKey: "savedText4hhh")
-        UserDefaults.standard.set(instructortextView.text, forKey: "savedText6hhh")
+       // UserDefaults.standard.set(instructortextView.text, forKey: "savedText6hhh")
         UserDefaults.standard.set(datetextView.text, forKey: "savedText7hhh")
         
         appDelegate.dicFPDOHSSkillSeet.setValue(studentPhotoImageView.image, forKey: "studentPhotoImageView")
@@ -290,11 +328,81 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
     @IBAction func btnTap27(_ sender: UIButton) {
         KosHelper.shared.selectedUnseleted(img: img27, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img27c)
     }
+
+    @IBAction func btnTap28(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img28, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img28c)
+    }
+
+    @IBAction func btnTap29(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img29, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img29c)
+    }
+
+    @IBAction func btnTap30(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img30, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img30c)
+    }
+
+    @IBAction func btnTap31(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img31, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img31c)
+    }
+
+    @IBAction func btnTap32(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img32, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img32c)
+    }
+
+    @IBAction func btnTap33(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img33, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img33c)
+    }
+
+    @IBAction func btnTap34(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img34, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img34c)
+    }
+
+    @IBAction func btnTap35(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img35, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img35c)
+    }
+
+    @IBAction func btnTap36(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img36, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img36c)
+    }
+
+    @IBAction func btnTap37(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img37, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img37c)
+    }
+
+    @IBAction func btnTap38(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img38, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img38c)
+    }
+
+    @IBAction func btnTap39(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img39, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img39c)
+    }
+
+    @IBAction func btnTap40(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img40, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img40c)
+    }
+
+    @IBAction func btnTap41(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img41, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img41c)
+    }
+
+    @IBAction func btnTap42(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img42, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img42c)
+    }
+
+    @IBAction func btnTap43(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img43, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img43c)
+    }
+
+    @IBAction func btnTap44(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img44, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img44c)
+    }
+
+    @IBAction func btnTap45(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img45, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img45c)
+    }
+
     
-    
-    func checkSelectedImages(){
-        
-        
+    func checkSelectedImages() {
         let nR = [
             img1,
             img2,
@@ -323,7 +431,24 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
             img25,
             img26,
             img27,
-            
+            img28,
+            img29,
+            img30,
+            img31,
+            img32,
+            img33,
+            img34,
+            img35,
+            img36,
+            img37,
+            img38,
+            img39,
+            img40,
+            img41,
+            img42,
+            img43,
+            img44,
+            img45
         ]
         
         for key in 0..<KeysPermitVC.selectUnselectAllKeys4.count {
@@ -384,6 +509,43 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
                     btn26.isSelected = false
                 case 26:
                     btn27.isSelected = false
+                case 27:
+                    btn28.isSelected = false
+                case 28:
+                    btn29.isSelected = false
+                case 29:
+                    btn30.isSelected = false
+                case 30:
+                    btn31.isSelected = false
+                case 31:
+                    btn32.isSelected = false
+                case 32:
+                    btn33.isSelected = false
+                case 33:
+                    btn34.isSelected = false
+                case 34:
+                    btn35.isSelected = false
+                case 35:
+                    btn36.isSelected = false
+                case 36:
+                    btn37.isSelected = false
+                case 37:
+                    btn38.isSelected = false
+                case 38:
+                    btn39.isSelected = false
+                case 39:
+                    btn40.isSelected = false
+                case 40:
+                    btn41.isSelected = false
+                case 41:
+                    btn42.isSelected = false
+                case 42:
+                    btn43.isSelected = false
+                case 43:
+                    btn44.isSelected = false
+                case 44:
+                    btn45.isSelected = false
+
                     
                 default:
                     break
@@ -446,6 +608,43 @@ class ConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UIImagePickerContro
                     btn26.isSelected = true
                 case 26:
                     btn27.isSelected = true
+                case 27:
+                    btn28.isSelected = true
+                case 28:
+                    btn29.isSelected = true
+                case 29:
+                    btn30.isSelected = true
+                case 30:
+                    btn31.isSelected = true
+                case 31:
+                    btn32.isSelected = true
+                case 32:
+                    btn33.isSelected = true
+                case 33:
+                    btn34.isSelected = true
+                case 34:
+                    btn35.isSelected = true
+                case 35:
+                    btn36.isSelected = true
+                case 36:
+                    btn37.isSelected = true
+                case 37:
+                    btn38.isSelected = true
+                case 38:
+                    btn39.isSelected = true
+                case 39:
+                    btn40.isSelected = true
+                case 40:
+                    btn41.isSelected = true
+                case 41:
+                    btn42.isSelected = true
+                case 42:
+                    btn43.isSelected = true
+                case 43:
+                    btn44.isSelected = true
+                case 44:
+                    btn45.isSelected = true
+
                
                 default:
                     break

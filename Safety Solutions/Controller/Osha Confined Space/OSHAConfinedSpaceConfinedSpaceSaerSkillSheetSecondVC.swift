@@ -65,6 +65,9 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
     @IBOutlet weak var img44: UIImageView!
     @IBOutlet weak var img45: UIImageView!
     @IBOutlet weak var img46: UIImageView!
+    @IBOutlet weak var img47: UIImageView!
+    @IBOutlet weak var img48: UIImageView!
+    @IBOutlet weak var img49: UIImageView!
 
     
     
@@ -114,12 +117,22 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
     @IBOutlet weak var btn44: UIButton!
     @IBOutlet weak var btn45: UIButton!
     @IBOutlet weak var btn46: UIButton!
+    @IBOutlet weak var btn47: UIButton!
+    @IBOutlet weak var btn48: UIButton!
+    @IBOutlet weak var btn49: UIButton!
+    
 
     
     @IBOutlet weak var studentPhotoImageView: UIImageView!
     @IBOutlet weak var studentPhotoButton: UIButton!
     
+    @IBOutlet weak var expirationDateTextView: UITextView!
+    @IBOutlet weak var expirationDateBtn: UIButton!
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    var autoDate: Date = Date()
+    var selectedExpirationDate: Date?
     
     var countN: Int = 0
     var isFromJHA = false
@@ -142,7 +155,21 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
         if let savedText7ccc = UserDefaults.standard.string(forKey: "savedText7lll") {
             datetextView.text = savedText7ccc
         }
-        
+        // अगर पहले से selectedExpirationDate nil है तो auto set करो
+           if selectedExpirationDate == nil {
+               let currentDate = Date()
+               let expirationDate = Calendar.current.date(byAdding: .day, value: 364, to: currentDate)!
+               selectedExpirationDate = expirationDate
+               
+               let formatter = DateFormatter()
+               formatter.dateStyle = .medium
+               expirationDateTextView.text = formatter.string(from: expirationDate)
+           } else {
+               // अगर user ने कभी तारीख बदली थी तो वही दिखाओ
+               let formatter = DateFormatter()
+               formatter.dateStyle = .medium
+               expirationDateTextView.text = formatter.string(from: selectedExpirationDate!)
+           }
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -192,6 +219,50 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    
+    @IBAction func expirationDateTapBtn(_ sender: UIButton) {
+        // Fallback if selectedExpirationDate is nil
+           let defaultDate = selectedExpirationDate ?? Date()
+           
+           // Date Picker
+           let datePicker = UIDatePicker()
+           datePicker.datePickerMode = .date
+           if #available(iOS 13.4, *) {
+               datePicker.preferredDatePickerStyle = .wheels
+           }
+           datePicker.minimumDate = Date()
+           datePicker.setDate(defaultDate, animated: false)
+           
+           // ViewController to hold DatePicker
+           let vc = UIViewController()
+           vc.preferredContentSize = CGSize(width: 250,height: 300)
+           datePicker.frame = CGRect(x: 0, y: 0, width: 250, height: 300)
+           vc.view.addSubview(datePicker)
+           
+           // Alert Controller
+           let alert = UIAlertController(title: "Select Expiration Date", message: nil, preferredStyle: .alert)
+           alert.setValue(vc, forKey: "contentViewController")
+           
+           // OK Button
+           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+               let selectedDate = datePicker.date
+               let formatter = DateFormatter()
+               formatter.dateStyle = .medium
+               self.expirationDateTextView.text = formatter.string(from: selectedDate)
+               
+               // Save selected date
+               self.selectedExpirationDate = selectedDate
+           }))
+           
+           // Cancel Button
+           alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+           
+           // Present Alert
+           self.present(alert, animated: true)
+    }
+
+    
     
     @IBAction func backTapBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -431,6 +502,19 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
     @IBAction func btnTap46(_ sender: UIButton) {
         KosHelper.shared.selectedUnseleted(img: img46, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img46l)
     }
+    
+    @IBAction func btnTap47(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img47, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img47l)
+    }
+    
+    @IBAction func btnTap48(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img48, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img48l)
+    }
+    
+    @IBAction func btnTap49(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img49, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img49l)
+    }
+    
 
     
     
@@ -483,7 +567,10 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
             img43,
             img44,
             img45,
-            img46
+            img46,
+            img47,
+            img48,
+            img49,
         ]
 
         
@@ -583,6 +670,12 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
                     btn45.isSelected = false
                 case 45:
                     btn46.isSelected = false
+                case 46:
+                    btn47.isSelected = false
+                case 47:
+                    btn48.isSelected = false
+                case 48:
+                    btn49.isSelected = false
                 default:
                     break
                 }
@@ -682,6 +775,12 @@ class OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC: UIViewController, UI
                     btn45.isSelected = true
                 case 45:
                     btn46.isSelected = true
+                case 46:
+                    btn47.isSelected = true
+                case 47:
+                    btn48.isSelected = true
+                case 48:
+                    btn49.isSelected = true
                 default:
                     break
                 }

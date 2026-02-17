@@ -70,7 +70,7 @@ class ExcavationAndTrenchingCompetentPersonTestTestVC: UIViewController, UITable
         
         let dic4 = NSMutableDictionary()
         dic4.setValue("Option", forKey: "Type")
-        dic4.setValue("Workers must be protected in Washington State at what depth ?", forKey: "question")
+        dic4.setValue("Workers must be protected in Washington State at what depth?", forKey: "question")
         dic4.setValue("A. 4’", forKey: "option1")
         dic4.setValue("B. 5’", forKey: "option2")
         dic4.setValue("C. 6’", forKey: "option3")
@@ -80,7 +80,7 @@ class ExcavationAndTrenchingCompetentPersonTestTestVC: UIViewController, UITable
         
         let dic5 = NSMutableDictionary()
         dic5.setValue("Option", forKey: "Type")
-        dic5.setValue("Workers must be protected in Washington State at what depth ?", forKey: "question")
+        dic5.setValue("Trenches must be Inspected how often?", forKey: "question")
         dic5.setValue("A. once a day", forKey: "option1")
         dic5.setValue("B. at the start of each shift", forKey: "option2")
         dic5.setValue("C. at the start of each shift and as any conditions change", forKey: "option3")
@@ -219,10 +219,18 @@ class ExcavationAndTrenchingCompetentPersonTestTestVC: UIViewController, UITable
         arrExcavationTest.add(dic18)
         
         let dic19 = NSMutableDictionary()
-        dic19.setValue("TrueFalse", forKey: "Type")
+        dic19.setValue("Option", forKey: "Type")
         dic19.setValue("Are you allowed to bench C type soil?", forKey: "question")
+        dic19.setValue("A. Yes", forKey: "option1")
+        dic19.setValue("B. No", forKey: "option2")
         dic19.setValue(1, forKey: "Answer")
         arrExcavationTest.add(dic19)
+        
+//        let dic19 = NSMutableDictionary()
+//        dic19.setValue("TrueFalse", forKey: "Type")
+//        dic19.setValue("Are you allowed to bench C type soil?", forKey: "question")
+//        dic19.setValue(1, forKey: "Answer")
+//        arrExcavationTest.add(dic19)
         
         let dic20 = NSMutableDictionary()
         dic20.setValue("Option", forKey: "Type")
@@ -375,7 +383,7 @@ class ExcavationAndTrenchingCompetentPersonTestTestVC: UIViewController, UITable
             if dicTest.value(forKey: "option4") != nil {
                 return 4
             } else {
-                return 3
+                return 2
             }
         }
     }
@@ -392,10 +400,10 @@ class ExcavationAndTrenchingCompetentPersonTestTestVC: UIViewController, UITable
         if testType == "TrueFalse"{
             
             if indexPath.row == 0{
-                TFCell.lblOption.text = "A. True"
+                TFCell.lblOption.text = "A. Yes"
             }
             else{
-                TFCell.lblOption.text = "B. False"
+                TFCell.lblOption.text = "B. No"
             }
             
             if dicSelectedAnswer.object(forKey: indexPath.section) != nil{

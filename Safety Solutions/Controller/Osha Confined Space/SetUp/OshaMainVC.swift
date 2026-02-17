@@ -129,7 +129,7 @@ class OshaMainVC: UIViewController,didFinishWithSubmit,/*didFinishCSTransformerV
 //        let vc = sb.instantiateViewController(withIdentifier: "OshaAssessmentNitVC")as! OshaAssessmentNitVC
 //        self.navigationController?.pushViewController(vc, animated: true)
         
-        let confined = self.storyboard?.instantiateViewController(withIdentifier: "OshaAssessmentNitVC") as! OshaAssessmentNitVC
+        let confined = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceAssessmentVC") as! ConfinedSpaceAssessmentVC
         self.navigationController?.pushViewController(confined, animated: true)
 
     }

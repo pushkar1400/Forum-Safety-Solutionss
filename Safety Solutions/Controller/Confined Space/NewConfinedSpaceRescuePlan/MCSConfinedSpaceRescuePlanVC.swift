@@ -10,7 +10,6 @@ import UniformTypeIdentifiers
 import MessageUI
 
 class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControllerDelegate, UIScrollViewDelegate {
-
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var csSupervisorTextView: UITextView!
@@ -227,9 +226,7 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
     
     
     @IBOutlet weak var drawButton: UIButton!
-    
-//    @IBOutlet weak var drawView: UIView!
-//    private var drawingView: DrawingView!
+
     //MARK: - Bool Value
     var isDraw:Bool = true
     var drawing = Bool()
@@ -240,10 +237,6 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        setupDrawingView()
-//        setupScrollView()
-        
         
         if let savedText1ddd = UserDefaults.standard.string(forKey: "savedText1ddd") {
             csSupervisorTextView.text = savedText1ddd
@@ -306,53 +299,6 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
           checkSelectedImages()
           setInfoDefault()
     }
-    
-
-//    func getDrawingImage() -> UIImage? {
-//        UIGraphicsBeginImageContextWithOptions(drawingView.bounds.size, false, 0.0)
-//        defer { UIGraphicsEndImageContext() }
-//        drawingView.layer.render(in: UIGraphicsGetCurrentContext()!)
-//        return UIGraphicsGetImageFromCurrentImageContext()
-//    }
-//    
-//    private func setupDrawingView() {
-//        drawingView = DrawingView()
-//        drawingView.frame = drawView.bounds
-//        drawingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        drawView.addSubview(drawingView)
-//        
-//        // Drawing view के लिए टच रिकॉग्निशन सेटअप
-//        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleDrawingPan(_:)))
-//        panGesture.delegate = self
-//        drawingView.addGestureRecognizer(panGesture)
-//    }
-
-//    private func setupScrollView() {
-//        scrollView.delegate = self
-//        scrollView.delaysContentTouches = false
-//    }
-
-//    @objc private func handleDrawingPan(_ gesture: UIPanGestureRecognizer) {
-//        let location = gesture.location(in: drawingView)
-//        
-//        switch gesture.state {
-//        case .began:
-//            drawingView.touchesBegan([UITouch()], with: nil)
-//        case .changed:
-//            drawingView.touchesMoved([UITouch()], with: nil)
-//        case .ended, .cancelled:
-//            drawingView.touchesEnded([UITouch()], with: nil)
-//        default:
-//            break
-//        }
-//    }
-
-    
-
-    
-//    @IBAction func clearDrawing(_ sender: UIButton) {
-//        drawingView.clear()
-//    }
 
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
@@ -364,7 +310,7 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
     
     func setInfoDefault() {
         dateTextView.text = appDelegate.todayDate
-        csSupervisorTextView.text = appDelegate.name
+        csSupervisorTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
         companyTextView.text = appDelegate.company
@@ -438,214 +384,214 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
     }
     
     func setSignatures() {
-        drawButton.setImage(appDelegate.imgSign4.image, for: .normal)
+        drawButton.setImage(appDelegate.imgSign19.image, for: .normal)
     }
     
     @IBAction func drawTapBtn(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC
-        vc.isWorkingOn = 4
+        vc.isWorkingOn = 19
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
     @IBAction func btnTap1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img1d)
+        KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img1aa)
     }
     @IBAction func btnTap2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img2d)
+        KosHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img2aa)
     }
     @IBAction func btnTap3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img3d)
+        KosHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img3aa)
     }
     @IBAction func btnTap4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img4d)
+        KosHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img4aa)
     }
     @IBAction func btnTap5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img5d)
+        KosHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img5aa)
     }
   
     @IBAction func btnTap8(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img8d)
+        KosHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img6aa)
     }
     @IBAction func btnTap9(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img9d)
+        KosHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img7aa)
     }
     @IBAction func btnTap10(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img10d)
+        KosHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img8aa)
     }
     @IBAction func btnTap11(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img11d)
+        KosHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img9aa)
     }
     @IBAction func btnTap12(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img12d)
+        KosHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img10aa)
     }
     @IBAction func btnTap13(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img13d)
+        KosHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img11aa)
     }
     @IBAction func btnTap14(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img14d)
+        KosHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img12aa)
     }
     @IBAction func btnTap15(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img15d)
+        KosHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img13aa)
     }
     @IBAction func btnTap16(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img16, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img16d)
+        KosHelper.shared.selectedUnseleted(img: img16, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img14aa)
     }
     @IBAction func btnTap17(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img17, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img17d)
+        KosHelper.shared.selectedUnseleted(img: img17, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img15aa)
     }
     @IBAction func btnTap18(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img18, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img18d)
+        KosHelper.shared.selectedUnseleted(img: img18, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img16aa)
     }
     @IBAction func btnTap19(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img19, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img19d)
+        KosHelper.shared.selectedUnseleted(img: img19, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img17aa)
     }
     @IBAction func btnTap20(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img20, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img20d)
+        KosHelper.shared.selectedUnseleted(img: img20, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img18aa)
     }
     @IBAction func btnTap21(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img21, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img21d)
+        KosHelper.shared.selectedUnseleted(img: img21, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img19aa)
     }
     @IBAction func btnTap22(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img22, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img22d)
+        KosHelper.shared.selectedUnseleted(img: img22, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img20aa)
     }
     @IBAction func btnTap23(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img23, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img23d)
+        KosHelper.shared.selectedUnseleted(img: img23, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img21aa)
     }
     @IBAction func btnTap24(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img24, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img24d)
+        KosHelper.shared.selectedUnseleted(img: img24, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img22aa)
     }
     @IBAction func btnTap25(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img25, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img25d)
+        KosHelper.shared.selectedUnseleted(img: img25, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img23aa)
     }
     @IBAction func btnTap26(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img26, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img26d)
+        KosHelper.shared.selectedUnseleted(img: img26, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img24aa)
     }
     @IBAction func btnTap27(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img27, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img27d)
+        KosHelper.shared.selectedUnseleted(img: img27, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img25aa)
     }
     @IBAction func btnTap28(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img28, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img28d)
+        KosHelper.shared.selectedUnseleted(img: img28, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img26aa)
     }
     @IBAction func btnTap29(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img29, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img29d)
+        KosHelper.shared.selectedUnseleted(img: img29, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img27aa)
     }
     @IBAction func btnTap30(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img30, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img30d)
+        KosHelper.shared.selectedUnseleted(img: img30, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img28aa)
     }
     @IBAction func btnTap31(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img31, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img31d)
+        KosHelper.shared.selectedUnseleted(img: img31, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img29aa)
     }
     @IBAction func btnTap32(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img32, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img32d)
+        KosHelper.shared.selectedUnseleted(img: img32, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img30aa)
     }
     @IBAction func btnTap33(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img33, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img33d)
+        KosHelper.shared.selectedUnseleted(img: img33, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img31aa)
     }
     @IBAction func btnTap34(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img34, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img34d)
+        KosHelper.shared.selectedUnseleted(img: img34, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img32aa)
     }
     @IBAction func btnTap35(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img35, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img35d)
+        KosHelper.shared.selectedUnseleted(img: img35, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img33aa)
     }
     @IBAction func btnTap36(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img36, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img36d)
+        KosHelper.shared.selectedUnseleted(img: img36, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img34aa)
     }
     @IBAction func btnTap37(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img37, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img37d)
+        KosHelper.shared.selectedUnseleted(img: img37, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img35aa)
     }
     
     @IBAction func btnTap38(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img38, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img38d)
+        KosHelper.shared.selectedUnseleted(img: img38, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img36aa)
     }
     
     
     @IBAction func equipmentNeededbtnTap1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img39d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img37aa)
     }
     @IBAction func equipmentNeededbtnTap2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg2, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img40d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg2, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img38aa)
     }
     @IBAction func equipmentNeededbtnTap3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg3, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img41d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg3, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img39aa)
     }
     @IBAction func equipmentNeededbtnTap4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg4, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img42d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg4, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img40aa)
     }
     @IBAction func equipmentNeededbtnTap5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg5, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img43d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg5, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img41aa)
     }
     @IBAction func equipmentNeededbtnTap6(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg6, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img44d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg6, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img42aa)
     }
     @IBAction func equipmentNeededbtnTap7(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg7, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img45d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg7, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img43aa)
     }
     @IBAction func equipmentNeededbtnTap8(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg8, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img46d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg8, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img44aa)
     }
     @IBAction func equipmentNeededbtnTap9(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg9, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img47d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg9, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img45aa)
     }
     @IBAction func equipmentNeededbtnTap10(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg10, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img48d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg10, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img46aa)
     }
     @IBAction func equipmentNeededbtnTap11(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg11, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img49d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg11, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img47aa)
     }
     @IBAction func equipmentNeededbtnTap12(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg12, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img50d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg12, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img48aa)
     }
     @IBAction func equipmentNeededbtnTap13(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg13, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img51d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg13, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img49aa)
     }
     @IBAction func equipmentNeededbtnTap14(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg14, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img52d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg14, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img50aa)
     }
     @IBAction func equipmentNeededbtnTap15(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg15, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img53d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg15, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img51aa)
     }
     @IBAction func equipmentNeededbtnTap16(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg16, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img54d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg16, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img52aa)
     }
     @IBAction func equipmentNeededbtnTap17(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg17, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img55d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg17, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img53aa)
     }
     @IBAction func equipmentNeededbtnTap18(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg18, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img56d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg18, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img54aa)
     }
     @IBAction func equipmentNeededbtnTap19(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg19, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img57d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg19, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img55aa)
     }
     @IBAction func equipmentNeededbtnTap20(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg20, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img58d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg20, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img56aa)
     }
     @IBAction func equipmentNeededbtnTap21(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg21, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img59d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg21, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img57aa)
     }
     @IBAction func equipmentNeededbtnTap22(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg22, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img60d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg22, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img58aa)
     }
     @IBAction func equipmentNeededbtnTap23(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg23, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img61d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg23, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img59aa)
     }
     @IBAction func equipmentNeededbtnTap24(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg24, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img62d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg24, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img60aa)
     }
     @IBAction func equipmentNeededbtnTap25(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg25, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img63d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg25, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img61aa)
     }
     @IBAction func equipmentNeededbtnTap26(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg26, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img64d)
+        KosHelper.shared.selectedUnseleted(img: equipmentNeededimg26, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img62aa)
     }
     @IBAction func btnTapN1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: imgN1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img65d)
+        KosHelper.shared.selectedUnseleted(img: imgN1, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img63aa)
     }
     @IBAction func btnTapN2(_ sender: UIButton) {
-       KosHelper.shared.selectedUnseleted(img: imgN2, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img66d)
+       KosHelper.shared.selectedUnseleted(img: imgN2, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img64aa)
     }
     @IBAction func btnTapN3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: imgN3, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img67d)
+        KosHelper.shared.selectedUnseleted(img: imgN3, sender: sender, vc: "ConfinedSpaceRescuePlanVC", key: KeysPermitVC.img65aa)
     }
     
     
@@ -720,8 +666,8 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
             imgN3,
         ]
         
-        for key in 0..<KeysPermitVC.selectUnselectAllKeys5.count {
-            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys5[key]) as? Int ?? -1 {
+        for key in 0..<KeysPermitVC.selectUnselectAllKeys26.count {
+            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys26[key]) as? Int ?? -1 {
             case 0:
                 switch key {
                 case 0:
@@ -1001,26 +947,4 @@ class MCSConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControlle
         }
     }
 }
-//extension DrawingView {
-//    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if gestureRecognizer is UIPanGestureRecognizer {
-//            return !isDrawing
-//        }
-//        return true
-//    }
-//}
 
-//extension ConfinedSpaceRescuePlanVC: UIGestureRecognizerDelegate {
-//    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-//        return true
-//    }
-//    
-//    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if let panGesture = gestureRecognizer as? UIPanGestureRecognizer,
-//           panGesture == scrollView.panGestureRecognizer,
-//           let drawingView = drawingView, drawingView.isDrawing {
-//            return false
-//        }
-//        return true
-//    }
-//}

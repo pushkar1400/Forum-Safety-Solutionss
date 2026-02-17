@@ -39,10 +39,19 @@ class OshaConfinedSpaceMenuVC: UIViewController, UIDocumentInteractionController
     }
     
     @IBAction func btnTap1(_ sender: UIButton) {
-        
+        if let pdfUrl = Bundle.main.url(forResource: "3000-CS Program", withExtension: "pdf", subdirectory: nil, localization: nil) {
+            do {
+                DispatchQueue.main.async {
+                    let docOpener = UIDocumentInteractionController.init(url: pdfUrl)
+                    docOpener.delegate = self
+                    docOpener.presentPreview(animated: true)
+                }
+            }
+            return
+        }
     }
     @IBAction func btnTap2(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OshaAssessmentNitVC") as! OshaAssessmentNitVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ConfinedSpaceAssessmentVC") as! ConfinedSpaceAssessmentVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func btnTap3(_ sender: UIButton) {
@@ -66,6 +75,8 @@ class OshaConfinedSpaceMenuVC: UIViewController, UIDocumentInteractionController
         }
     }
     @IBAction func btnTap6(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OshaConfinedSpaceRescuePlanNewVC") as! OshaConfinedSpaceRescuePlanNewVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func btnTap7(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC") as! OSHAConfinedSpaceConfinedSpaceSaerSkillSheetSecondVC

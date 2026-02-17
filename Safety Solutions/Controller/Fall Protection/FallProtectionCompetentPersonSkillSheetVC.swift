@@ -13,7 +13,7 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
     @IBOutlet weak var sNmaetextView: UITextView!
     @IBOutlet weak var jobtextView: UITextView!
     @IBOutlet weak var depttextView: UITextView!
-    @IBOutlet weak var instructortextView: UITextView!
+   // @IBOutlet weak var instructortextView: UITextView!
     @IBOutlet weak var datetextView: UITextView!
     
     
@@ -39,6 +39,14 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
     @IBOutlet weak var img18: UIImageView!
     @IBOutlet weak var img19: UIImageView!
     @IBOutlet weak var img20: UIImageView!
+    @IBOutlet weak var img21: UIImageView!
+    @IBOutlet weak var img22: UIImageView!
+    @IBOutlet weak var img23: UIImageView!
+    @IBOutlet weak var img24: UIImageView!
+    @IBOutlet weak var img25: UIImageView!
+    @IBOutlet weak var img26: UIImageView!
+    @IBOutlet weak var img27: UIImageView!
+    @IBOutlet weak var img28: UIImageView!
 
     
    
@@ -62,6 +70,15 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
     @IBOutlet weak var btn18: UIButton!
     @IBOutlet weak var btn19: UIButton!
     @IBOutlet weak var btn20: UIButton!
+    @IBOutlet weak var btn21: UIButton!
+    @IBOutlet weak var btn22: UIButton!
+    @IBOutlet weak var btn23: UIButton!
+    @IBOutlet weak var btn24: UIButton!
+    @IBOutlet weak var btn25: UIButton!
+    @IBOutlet weak var btn26: UIButton!
+    @IBOutlet weak var btn27: UIButton!
+    @IBOutlet weak var btn28: UIButton!
+
 
    
     
@@ -86,9 +103,9 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
         if let savedText4bbb = UserDefaults.standard.string(forKey: "savedText4bbb") {
             depttextView.text = savedText4bbb
         }
-        if let savedText6bb = UserDefaults.standard.string(forKey: "savedText6bb") {
-            instructortextView.text = savedText6bb
-        }
+//        if let savedText6bb = UserDefaults.standard.string(forKey: "savedText6bb") {
+//            instructortextView.text = savedText6bb
+//        }
         if let savedText7bbb = UserDefaults.standard.string(forKey: "savedText7bbb") {
             datetextView.text = savedText7bbb
         }
@@ -102,7 +119,7 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
           checkSelectedImages()
     }
     func setInfoDefault() {
-        sNmaetextView.text = appDelegate.name
+        sNmaetextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         datetextView.text = appDelegate.todayDate
         depttextView.text = appDelegate.company
     }
@@ -116,7 +133,7 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
         UserDefaults.standard.set(sNmaetextView.text, forKey: "savedText1bbb")
         UserDefaults.standard.set(jobtextView.text, forKey: "savedText2bbb")
         UserDefaults.standard.set(depttextView.text, forKey: "savedText4bbb")
-        UserDefaults.standard.set(instructortextView.text, forKey: "savedText6bbb")
+       // UserDefaults.standard.set(instructortextView.text, forKey: "savedText6bbb")
         UserDefaults.standard.set(datetextView.text, forKey: "savedText7bbb")
         
         appDelegate.dicFPDOHSSkillSeet.setValue(studentPhotoImageView.image, forKey: "studentPhotoImageView")
@@ -257,8 +274,38 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
         KosHelper.shared.selectedUnseleted(img: img20, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img20f)
     }
 
-   
-    
+    @IBAction func btnTap21(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img21, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img21f)
+    }
+
+    @IBAction func btnTap22(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img22, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img22f)
+    }
+
+    @IBAction func btnTap23(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img23, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img23f)
+    }
+
+    @IBAction func btnTap24(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img24, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img24f)
+    }
+
+    @IBAction func btnTap25(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img25, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC",key: KeysPermitVC.img25f)
+    }
+
+    @IBAction func btnTap26(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img26, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC",key: KeysPermitVC.img26f)
+    }
+
+    @IBAction func btnTap27(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img27, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC",key: KeysPermitVC.img27f)
+    }
+
+    @IBAction func btnTap28(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img28, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC",key: KeysPermitVC.img28f)
+    }
+
     func checkSelectedImages(){
         
         
@@ -266,8 +313,11 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
             img1, img2, img3, img4, img5,
             img6, img7, img8, img9, img10,
             img11, img12, img13, img14, img15,
-            img16, img17, img18, img19, img20
+            img16, img17, img18, img19, img20,
+            img21, img22, img23, img24, img25,
+            img26, img27, img28
         ]
+
 
         
         for key in 0..<KeysPermitVC.selectUnselectAllKeys7.count {
@@ -314,6 +364,22 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
                     btn19.isSelected = false
                 case 19:
                     btn20.isSelected = false
+                case 20:
+                    btn21.isSelected = false
+                case 21:
+                    btn22.isSelected = false
+                case 22:
+                    btn23.isSelected = false
+                case 23:
+                    btn24.isSelected = false
+                case 24:
+                    btn25.isSelected = false
+                case 25:
+                    btn26.isSelected = false
+                case 26:
+                    btn27.isSelected = false
+                case 27:
+                    btn28.isSelected = false
                     
                 default:
                     break
@@ -362,6 +428,23 @@ class FallProtectionCompetentPersonSkillSheetVC: UIViewController, UIImagePicker
                     btn19.isSelected = true
                 case 19:
                     btn20.isSelected = true
+                case 20:
+                    btn21.isSelected = true
+                case 21:
+                    btn22.isSelected = true
+                case 22:
+                    btn23.isSelected = true
+                case 23:
+                    btn24.isSelected = true
+                case 24:
+                    btn25.isSelected = true
+                case 25:
+                    btn26.isSelected = true
+                case 26:
+                    btn27.isSelected = true
+                case 27:
+                    btn28.isSelected = true
+
                 default:
                     break
                 }

@@ -15,8 +15,11 @@
 		1CB2F67A2B6CE7AE002C0F53 /* KeysPermitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2F6792B6CE7AE002C0F53 /* KeysPermitVC.swift */; };
 		1CBCA5452B6D0F910067C068 /* Extensions+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */; };
 		1CE2AA5A2B6BD9F400AE709A /* KosHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2AA592B6BD9F400AE709A /* KosHelper.swift */; };
+		830828662EB3578900A1E0F6 /* 3043-NOTES-RAFA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 830828652EB3578900A1E0F6 /* 3043-NOTES-RAFA.pdf */; };
 		83260A092D97CCF6003FE65E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83260A082D97CCF6003FE65E /* Toast.swift */; };
+		83319F2A2E549A0300042571 /* 3000-CS Program.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83319F292E549A0300042571 /* 3000-CS Program.pdf */; };
 		8362FEC22D97E033002F749F /* Screenshots in Frameworks */ = {isa = PBXBuildFile; productRef = 8362FEC12D97E033002F749F /* Screenshots */; };
+		838337962E26518F007599A6 /* 3010-BPA-FP-Handbook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 838337952E26518F007599A6 /* 3010-BPA-FP-Handbook.pdf */; };
 		83A151BB2E004786003BF0DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A151BA2E004786003BF0DB /* Extensions.swift */; };
 		83B445972B4FC9E100AFA1F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */; };
 		83B445992B4FC9E100AFA1F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B445982B4FC9E100AFA1F2 /* SceneDelegate.swift */; };
@@ -71,9 +74,12 @@
 		1CB2F6792B6CE7AE002C0F53 /* KeysPermitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysPermitVC.swift; sourceTree = "<group>"; };
 		1CBCA5442B6D0F910067C068 /* Extensions+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UserDefaults.swift"; sourceTree = "<group>"; };
 		1CE2AA592B6BD9F400AE709A /* KosHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosHelper.swift; sourceTree = "<group>"; };
+		830828652EB3578900A1E0F6 /* 3043-NOTES-RAFA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3043-NOTES-RAFA.pdf"; sourceTree = "<group>"; };
 		83260A082D97CCF6003FE65E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		83319F292E549A0300042571 /* 3000-CS Program.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3000-CS Program.pdf"; sourceTree = "<group>"; };
 		833B13682B59531300CBBA89 /* Safety Solutions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Safety Solutions.entitlements"; sourceTree = "<group>"; };
 		83469EB12B5A8E3500D3F464 /* Safety Solutions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Safety Solutions-Bridging-Header.h"; sourceTree = "<group>"; };
+		838337952E26518F007599A6 /* 3010-BPA-FP-Handbook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "3010-BPA-FP-Handbook.pdf"; sourceTree = "<group>"; };
 		83A151BA2E004786003BF0DB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		83B445932B4FC9E100AFA1F2 /* Forum Safety Solutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forum Safety Solutions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B445962B4FC9E100AFA1F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +109,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		832E7D052DD6FB6500722BAA /* Controller */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controller; sourceTree = "<group>"; };
+		830828252EB3557500A1E0F6 /* Controller */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controller; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,9 +203,12 @@
 				83D66F712B5FE82C004E8BDE /* EPSignature */,
 				83D66F6E2B5FD822004E8BDE /* Model */,
 				83FFC3292DE48FEE00CB4D30 /* DrawingView.swift */,
-				832E7D052DD6FB6500722BAA /* Controller */,
+				830828252EB3557500A1E0F6 /* Controller */,
 				83D66F6D2B5FD819004E8BDE /* View */,
 				83B4459F2B4FC9E300AFA1F2 /* Assets.xcassets */,
+				830828652EB3578900A1E0F6 /* 3043-NOTES-RAFA.pdf */,
+				83319F292E549A0300042571 /* 3000-CS Program.pdf */,
+				838337952E26518F007599A6 /* 3010-BPA-FP-Handbook.pdf */,
 				83B5E9C32DEECA240046F33F /* 1530-HO-ETCP.pdf */,
 				83C2AEF72DEEBCCF001DFC3C /* 1510-HO-FPCP.pdf */,
 				83FFC3212DE48C2300CB4D30 /* 1504-EQUIPMENT.pdf */,
@@ -285,7 +294,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				832E7D052DD6FB6500722BAA /* Controller */,
+				830828252EB3557500A1E0F6 /* Controller */,
 			);
 			name = "Forum Safety Solutions";
 			productName = "Safety Solutions";
@@ -382,9 +391,12 @@
 			files = (
 				83FFC3232DE48C2300CB4D30 /* 1504-EQUIPMENT.pdf in Resources */,
 				83BF71D22E02E1F3008E78D9 /* 3006-EQUIP-CS.pdf in Resources */,
+				830828662EB3578900A1E0F6 /* 3043-NOTES-RAFA.pdf in Resources */,
 				83C2AEF82DEEBCCF001DFC3C /* 1510-HO-FPCP.pdf in Resources */,
 				83BF71D42E02E2A7008E78D9 /* 3006-SCRIPT-SAER.pdf in Resources */,
 				83B445A32B4FC9E300AFA1F2 /* LaunchScreen.storyboard in Resources */,
+				838337962E26518F007599A6 /* 3010-BPA-FP-Handbook.pdf in Resources */,
+				83319F2A2E549A0300042571 /* 3000-CS Program.pdf in Resources */,
 				83B5E9C42DEECA250046F33F /* 1530-HO-ETCP.pdf in Resources */,
 				83B445A02B4FC9E300AFA1F2 /* Assets.xcassets in Resources */,
 				83B4459E2B4FC9E100AFA1F2 /* Main.storyboard in Resources */,
@@ -615,7 +627,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.2;
+				CURRENT_PROJECT_VERSION = 2.37;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";
@@ -626,6 +638,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,7 +667,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.2;
+				CURRENT_PROJECT_VERSION = 2.37;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";
@@ -665,6 +678,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

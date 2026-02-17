@@ -215,7 +215,7 @@ class PersonalFallProtectionEquipmentInspectionVC: UIViewController {
           checkSelectedImages()
     }
     func setInfoDefault() {
-        competentpersonTextView.text = appDelegate.name
+        competentpersonTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         companyTextView.text = appDelegate.company
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email

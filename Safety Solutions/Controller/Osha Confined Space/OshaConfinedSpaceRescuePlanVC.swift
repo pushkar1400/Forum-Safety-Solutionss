@@ -437,12 +437,12 @@ class OshaConfinedSpaceRescuePlanVC: UIViewController, MFMailComposeViewControll
     }
     
     func setSignatures() {
-        drawButton.setImage(appDelegate.imgSign4.image, for: .normal)
+        drawButton.setImage(appDelegate.imgSign18.image, for: .normal)
     }
     
     @IBAction func drawTapBtn(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC
-        vc.isWorkingOn = 4
+        vc.isWorkingOn = 18
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

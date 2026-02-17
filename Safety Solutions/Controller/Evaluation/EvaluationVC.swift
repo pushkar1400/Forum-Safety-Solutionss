@@ -73,13 +73,13 @@ class EvaluationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let NextIteam = UIBarButtonItem.init(title: "Submit", style: .plain, target: self, action: #selector(self.clickOnNext))
-        let HomeIteam = UIBarButtonItem.init(title: "Home", style: .plain, target: self, action: #selector(self.clickOnHome))
-        self.navigationItem.rightBarButtonItems = [NextIteam, HomeIteam]
+//        let NextIteam = UIBarButtonItem.init(title: "Submit", style: .plain, target: self, action: #selector(self.clickOnNext))
+//        let HomeIteam = UIBarButtonItem.init(title: "Home", style: .plain, target: self, action: #selector(self.clickOnHome))
+//        self.navigationItem.rightBarButtonItems = [NextIteam, HomeIteam]
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        self.navigationController?.isNavigationBarHidden = true
         let appDElate = UIApplication.shared.delegate as? AppDelegate
         self.setUpEvaluation()
 //        txtCompetent.text = "\(appDelegate.firstName) \(appDelegate.lastName)"
@@ -305,6 +305,28 @@ class EvaluationVC: UIViewController {
         
         
     }
+    
+    
+    @IBAction func backTapBtn(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func loginMenuTapBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    @IBAction func programMenuTapBtn(_ sender: UIButton) {
+        if let programMenuVC = navigationController?.viewControllers.first(where: { $0 is ProgramMenuVC }) {
+               navigationController?.popToViewController(programMenuVC, animated: true)
+           }
+    }
+    @IBAction func shareTapBtn(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrlView, vie: self.view, txtStr: "BPA Class Evaluation", tim: true, controller: self)
+    }
+    
+    @IBAction func saveTapBtn(_ sender: UIButton) {
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrlView, vie: self.view, txtStr: "BPA Class Evaluation")
+        AlertHelper.shared.alertController(title: "Forum Safety Solutions", message: "This form has been saved successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
+    }
+    
     
     //MARK: - Bar Button functions
     

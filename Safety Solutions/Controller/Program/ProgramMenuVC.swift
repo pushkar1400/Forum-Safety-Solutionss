@@ -52,14 +52,14 @@ class ProgramMenuVC: UIViewController {
     }
     
     @IBAction func fceTapBtn(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TrainingEvaluationMenu") as! TrainingEvaluationMenu
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TrainingEvaluationFormVC") as! TrainingEvaluationFormVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
     @IBAction func eTapBtn(_ sender: UIButton) {
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EvaluationVC") as! EvaluationVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EvaluationVC") as! EvaluationVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func ocsTapBtn(_ sender: UIButton) {
@@ -68,9 +68,37 @@ class ProgramMenuVC: UIViewController {
     }
     
     @IBAction func ofpTapBtn(_ sender: UIButton) {
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OshaConfinedSpaceMenuVC") as! OshaConfinedSpaceMenuVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "OSHAFallProtectionMenu") as! OSHAFallProtectionMenu
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func rafaTapBtn(_ sender: UIButton) {
+        // 1️⃣ Dusra storyboard load karo
+        let storyboard = UIStoryboard(name: "KosSB", bundle: nil)
+        
+        // 2️⃣ Us storyboard me se ViewController instantiate karo
+        let vc = storyboard.instantiateViewController(withIdentifier: "RemoteAccessFirstAidProgramMenuVC") as! RemoteAccessFirstAidProgramMenuVC
+        
+        // 3️⃣ Navigation controller se push karo
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
+    @IBAction func fssDoshCraneMenuTapBtn(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "KosSB", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FssDoshCraneMenuVC") as! FssDoshCraneMenuVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    
+    @IBAction func ForkliftOperatorMenuTapBtn(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "KosSB", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ForkliftOperatorProgramMenuVC") as! ForkliftOperatorProgramMenuVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func MewpsProgramTapBtn(_ sender: UIButton) {
+//        let storyboard = UIStoryboard(name: "KosSB", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "FssDoshCraneMenuVC") as! FssDoshCraneMenuVC
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

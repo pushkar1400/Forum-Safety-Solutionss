@@ -14,20 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var todayDate = ""
 
     var name = ""
+    var lastName = ""
     var email = ""
     var phoneNumber = ""
     var deptLocation = ""
     var company = ""
-    
-    
-    
-  
-    
+
     var dicVehicleEquipmentVC = NSMutableDictionary()
     var dicPermitWorkVC = NSMutableDictionary()
     var imgSignExcavation = UIImageView()
     var imgSign = UIImageView()
-    
     
     var imgSign1 = UIImageView()
     var imgSign2 = UIImageView()
@@ -41,16 +37,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var imgSign10 = UIImageView()
     var imgSign11 = UIImageView()
     var imgSign12 = UIImageView()
+    var imgSign13 = UIImageView()
+    var imgSign14 = UIImageView()
+    var imgSign15 = UIImageView()
+    var imgSign16 = UIImageView()
+    var imgSign17 = UIImageView()
+    var imgSign18 = UIImageView()
+    var imgSign19 = UIImageView()
+    var imgSign20 = UIImageView()
+    var imgSign21 = UIImageView()
+    var imgSign22 = UIImageView()
+    var imgSign23 = UIImageView()
+    var imgSign24 = UIImageView()
+    var imgSign25 = UIImageView()
+    var imgSign26 = UIImageView()
     
     var dicFPDOHSSkillSeet = NSMutableDictionary()
     var dicEvaluation = NSMutableDictionary()
     var dicDOSHConfinedSkillSeet = NSMutableDictionary()
     var dicConfinedSkillSeet = NSMutableDictionary()
     
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         HomeScreen()
+        if let appDomain = Bundle.main.bundleIdentifier {
+        UserDefaults.standard.removePersistentDomain(forName: appDomain)
+        }
         return true
+    }
+
+    func clearConfinedSpaceFormData() {
+        let keysToRemove = (1...21).map { "savedText\($0)r" }
+        for key in keysToRemove {
+            UserDefaults.standard.removeObject(forKey: key)
+        }
     }
 
     func HomeScreen() {
@@ -66,18 +85,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {}
 }
 
 extension Date {

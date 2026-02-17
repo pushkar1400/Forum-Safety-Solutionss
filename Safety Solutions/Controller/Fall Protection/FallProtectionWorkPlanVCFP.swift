@@ -174,40 +174,40 @@ class FallProtectionWorkPlanVCFP: UIViewController {
 
         let textViewsToLoad = [
             
-            competentPTextView: "savedText1jjj",
-            companyTextView: "savedText2jjj",
-            phoneTextView: "savedText3jjj",
-            emailTextView: "savedText4jjj",
-            planTextView: "savedText5jjj",
-            addressOrArerTextView: "savedText6jjj",
-            dateTextView: "savedText7jjj",
-            describeFallHazardsTextView: "savedText9jjj",
-            employeeAndBadTextView1: "savedText10jjj",
-            employeeAndBadTextView2: "savedText11jjj",
-            employeeAndBadTextView3: "savedText12jjj",
-            employeeAndBadTextView4: "savedText13jjj",
-            employeeAndBadTextView5: "savedText14jjj",
-            employeeAndBadTextView6: "savedText15jjj",
-            employeeAndBadTextView7: "savedText16jjj",
-            employeeAndBadTextView8: "savedText17jjj",
-            employeeAndBadTextView9: "savedText18jjj",
-            employeeAndBadTextView10: "savedText19jjj",
-            employeeAndBadTextView11: "savedText20jjj",
-            employeeAndBadTextView12: "savedText21jjj",
-            textView1: "savedText22jjj",
-            textView2: "savedText23jjj",
-            textView3: "savedText24jjj",
+            competentPTextView: "savedText1-1511-PLAN-FP",
+            companyTextView: "savedText2-1511-PLAN-FP",
+            phoneTextView: "savedText3-1511-PLAN-FP",
+            emailTextView: "savedText4-1511-PLAN-FP",
+            planTextView: "savedText5-1511-PLAN-FP",
+            addressOrArerTextView: "savedText6-1511-PLAN-FP",
+            dateTextView: "savedText7-1511-PLAN-FP",
+            describeFallHazardsTextView: "savedText9-1511-PLAN-FP",
+            employeeAndBadTextView1: "savedText10-1511-PLAN-FP",
+            employeeAndBadTextView2: "savedText11-1511-PLAN-FP",
+            employeeAndBadTextView3: "savedText12-1511-PLAN-FP",
+            employeeAndBadTextView4: "savedText13-1511-PLAN-FP",
+            employeeAndBadTextView5: "savedText14-1511-PLAN-FP",
+            employeeAndBadTextView6: "savedText15-1511-PLAN-FP",
+            employeeAndBadTextView7: "savedText16-1511-PLAN-FP",
+            employeeAndBadTextView8: "savedText17-1511-PLAN-FP",
+            employeeAndBadTextView9: "savedText18-1511-PLAN-FP",
+            employeeAndBadTextView10: "savedText19-1511-PLAN-FP",
+            employeeAndBadTextView11: "savedText20-1511-PLAN-FP",
+            employeeAndBadTextView12: "savedText21-1511-PLAN-FP",
+            textView1: "savedText22-1511-PLAN-FP",
+            textView2: "savedText23-1511-PLAN-FP",
+            textView3: "savedText24-1511-PLAN-FP",
         ]
         textViewsToLoad.forEach { textView, key in
             textView?.text = UserDefaults.standard.string(forKey: key)
         }
         
         let textFieldKeyPairs = [
-            textField1: "savedText1kkk",
-            textField2: "savedText2kkk",
-            textField3: "savedText3kkk",
-            textField4: "savedText4kkk",
-            textField5: "savedText5kkk",
+            textField1: "savedText25-1511-PLAN-FP",
+            textField2: "savedText26-1511-PLAN-FP",
+            textField3: "savedText27-1511-PLAN-FP",
+            textField4: "savedText28-1511-PLAN-FP",
+            textField5: "savedText29-1511-PLAN-FP",
                
            ]
            textFieldKeyPairs.forEach { textField, key in
@@ -219,40 +219,40 @@ class FallProtectionWorkPlanVCFP: UIViewController {
         super.viewWillDisappear(animated)
         let textViewsToSave = [
 
-            competentPTextView: "savedText1jjj",
-            companyTextView: "savedText2jjj",
-            phoneTextView: "savedText3jjj",
-            emailTextView: "savedText4jjj",
-            planTextView: "savedText5jjj",
-            addressOrArerTextView: "savedText6jjj",
-            dateTextView: "savedText7jjj",
-            describeFallHazardsTextView: "savedText9jjj",
-            employeeAndBadTextView1: "savedText10jjj",
-            employeeAndBadTextView2: "savedText11jjj",
-            employeeAndBadTextView3: "savedText12jjj",
-            employeeAndBadTextView4: "savedText13jjj",
-            employeeAndBadTextView5: "savedText14jjj",
-            employeeAndBadTextView6: "savedText15jjj",
-            employeeAndBadTextView7: "savedText16jjj",
-            employeeAndBadTextView8: "savedText17jjj",
-            employeeAndBadTextView9: "savedText18jjj",
-            employeeAndBadTextView10: "savedText19jjj",
-            employeeAndBadTextView11: "savedText20jjj",
-            employeeAndBadTextView12: "savedText21jjj",
-            textView1: "savedText22jjj",
-            textView2: "savedText23jjj",
-            textView3: "savedText24jjj",
+            competentPTextView: "savedText1-1511-PLAN-FP",
+            companyTextView: "savedText2-1511-PLAN-FP",
+            phoneTextView: "savedText3-1511-PLAN-FP",
+            emailTextView: "savedText4-1511-PLAN-FP",
+            planTextView: "savedText5-1511-PLAN-FP",
+            addressOrArerTextView: "savedText6-1511-PLAN-FP",
+            dateTextView: "savedText7-1511-PLAN-FP",
+            describeFallHazardsTextView: "savedText9-1511-PLAN-FP",
+            employeeAndBadTextView1: "savedText10-1511-PLAN-FP",
+            employeeAndBadTextView2: "savedText11-1511-PLAN-FP",
+            employeeAndBadTextView3: "savedText12-1511-PLAN-FP",
+            employeeAndBadTextView4: "savedText13-1511-PLAN-FP",
+            employeeAndBadTextView5: "savedText14-1511-PLAN-FP",
+            employeeAndBadTextView6: "savedText15-1511-PLAN-FP",
+            employeeAndBadTextView7: "savedText16-1511-PLAN-FP",
+            employeeAndBadTextView8: "savedText17-1511-PLAN-FP",
+            employeeAndBadTextView9: "savedText18-1511-PLAN-FP",
+            employeeAndBadTextView10: "savedText19-1511-PLAN-FP",
+            employeeAndBadTextView11: "savedText20-1511-PLAN-FP",
+            employeeAndBadTextView12: "savedText21-1511-PLAN-FP",
+            textView1: "savedText22-1511-PLAN-FP",
+            textView2: "savedText23-1511-PLAN-FP",
+            textView3: "savedText24-1511-PLAN-FP",
         ]
         textViewsToSave.forEach { textView, key in
             UserDefaults.standard.set(textView?.text, forKey: key)
         }
         
         let textFieldKeyPairs = [
-            textField1: "savedText1kkk",
-            textField2: "savedText2kkk",
-            textField3: "savedText3kkk",
-            textField4: "savedText4kkk",
-            textField5: "savedText5kkk",
+            textField1: "savedText25-1511-PLAN-FP",
+            textField2: "savedText26-1511-PLAN-FP",
+            textField3: "savedText27-1511-PLAN-FP",
+            textField4: "savedText28-1511-PLAN-FP",
+            textField5: "savedText29-1511-PLAN-FP",
             ]
             textFieldKeyPairs.forEach { textField, key in
                 UserDefaults.standard.set(textField?.text, forKey: key)
@@ -266,7 +266,7 @@ class FallProtectionWorkPlanVCFP: UIViewController {
           checkSelectedImages()
     }
     func setInfoDefault() {
-        competentPTextView.text = appDelegate.name
+        competentPTextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
         companyTextView.text = appDelegate.company
         phoneTextView.text = appDelegate.phoneNumber
         emailTextView.text = appDelegate.email
