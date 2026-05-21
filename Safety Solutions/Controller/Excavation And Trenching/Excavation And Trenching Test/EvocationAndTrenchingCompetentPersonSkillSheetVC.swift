@@ -31,7 +31,12 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
     @IBOutlet weak var img10: UIImageView!
     @IBOutlet weak var img11: UIImageView!
     @IBOutlet weak var img12: UIImageView!
-   
+    @IBOutlet weak var img13: UIImageView!
+    @IBOutlet weak var img14: UIImageView!
+    @IBOutlet weak var img15: UIImageView!
+    @IBOutlet weak var img16: UIImageView!
+    @IBOutlet weak var img17: UIImageView!
+    @IBOutlet weak var img18: UIImageView!
  
     
     @IBOutlet weak var btn1: UIButton!
@@ -46,7 +51,12 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
     @IBOutlet weak var btn10: UIButton!
     @IBOutlet weak var btn11: UIButton!
     @IBOutlet weak var btn12: UIButton!
-   
+    @IBOutlet weak var btn13: UIButton!
+    @IBOutlet weak var btn14: UIButton!
+    @IBOutlet weak var btn15: UIButton!
+    @IBOutlet weak var btn16: UIButton!
+    @IBOutlet weak var btn17: UIButton!
+    @IBOutlet weak var btn18: UIButton!
     
     
     @IBOutlet weak var studentPhotoImageView: UIImageView!
@@ -180,45 +190,68 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
     
     
     @IBAction func btnTap1(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img1c)
+        KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img1dd)
     }
     @IBAction func btnTap2(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img2c)
+        KosHelper.shared.selectedUnseleted(img: img2, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img2dd)
     }
     @IBAction func btnTap3(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img3c)
+        KosHelper.shared.selectedUnseleted(img: img3, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img3dd)
     }
     @IBAction func btnTap4(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img4c)
+        KosHelper.shared.selectedUnseleted(img: img4, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img4dd)
     }
     @IBAction func btnTap5(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img5c)
+        KosHelper.shared.selectedUnseleted(img: img5, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img5dd)
     }
     @IBAction func btnTap6(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img6c)
+        KosHelper.shared.selectedUnseleted(img: img6, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img6dd)
     }
     @IBAction func btnTap7(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img7c)
+        KosHelper.shared.selectedUnseleted(img: img7, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img7dd)
     }
     @IBAction func btnTap8(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img8c)
+        KosHelper.shared.selectedUnseleted(img: img8, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img8dd)
     }
     @IBAction func btnTap9(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img9c)
+        KosHelper.shared.selectedUnseleted(img: img9, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img9dd)
     }
     @IBAction func btnTap10(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img10c)
+        KosHelper.shared.selectedUnseleted(img: img10, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img10dd)
     }
     @IBAction func btnTap11(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img11c)
+        KosHelper.shared.selectedUnseleted(img: img11, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img11dd)
     }
     @IBAction func btnTap12(_ sender: UIButton) {
-        KosHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "ConfinedSpaceSaerSkillSheetSecondVC", key: KeysPermitVC.img12c)
+        KosHelper.shared.selectedUnseleted(img: img12, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img12dd)
     }
    
+    @IBAction func btnTap13(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img13, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img13dd)
+    }
+    
+    @IBAction func btnTap14(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img14, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img14dd)
+    }
+    
+    @IBAction func btnTap15(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img15, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img15dd)
+    }
+    
+    @IBAction func btnTap16(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img16, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img16dd)
+    }
+    
+    @IBAction func btnTap17(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img17, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img17dd)
+    }
+    
+    @IBAction func btnTap18(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img18, sender: sender, vc: "EvocationAndTrenchingCompetentPersonSkillSheetVC", key: KeysPermitVC.img18dd)
+    }
+    
     
     func checkSelectedImages(){
-        
         
         let nR = [
             img1,
@@ -233,12 +266,16 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
             img10,
             img11,
             img12,
-            
-            
+            img13,
+            img14,
+            img15,
+            img16,
+            img17,
+            img18,
         ]
         
-        for key in 0..<KeysPermitVC.selectUnselectAllKeys4.count {
-            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys4[key]) as? Int ?? -1 {
+        for key in 0..<KeysPermitVC.selectUnselectAllKeys29.count {
+            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys29[key]) as? Int ?? -1 {
             case 0:
                 switch key {
                 case 0:
@@ -265,6 +302,18 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
                     btn11.isSelected = false
                 case 11:
                     btn12.isSelected = false
+                case 12:
+                    btn13.isSelected = false
+                case 13:
+                    btn14.isSelected = false
+                case 14:
+                    btn15.isSelected = false
+                case 15:
+                    btn16.isSelected = false
+                case 16:
+                    btn17.isSelected = false
+                case 17:
+                    btn18.isSelected = false
                     
                 default:
                     break
@@ -297,7 +346,19 @@ class EvocationAndTrenchingCompetentPersonSkillSheetVC: UIViewController, UIImag
                     btn11.isSelected = true
                 case 11:
                     btn12.isSelected = true
-               
+                case 12:
+                    btn13.isSelected = true
+                case 13:
+                    btn14.isSelected = true
+                case 14:
+                    btn15.isSelected = true
+                case 15:
+                    btn16.isSelected = true
+                case 16:
+                    btn17.isSelected = true
+                case 17:
+                    btn18.isSelected = true
+                    
                 default:
                     break
                 }

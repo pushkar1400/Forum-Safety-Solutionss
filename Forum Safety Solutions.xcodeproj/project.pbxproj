@@ -627,7 +627,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.37;
+				CURRENT_PROJECT_VERSION = 2.38;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";
@@ -667,7 +667,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Safety Solutions/Safety Solutions.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.37;
+				CURRENT_PROJECT_VERSION = 2.38;
 				DEVELOPMENT_TEAM = Z5LBKJP9MP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Safety Solutions/Info.plist";

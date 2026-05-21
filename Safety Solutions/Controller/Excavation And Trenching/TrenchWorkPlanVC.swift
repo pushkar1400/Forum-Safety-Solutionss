@@ -34,7 +34,7 @@ class TrenchWorkPlanVC: UIViewController {
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
-   // @IBOutlet weak var textField4: UITextField!
+    @IBOutlet weak var textField4: UITextField!
     @IBOutlet weak var textField5: UITextField!
     @IBOutlet weak var textField6: UITextField!
     @IBOutlet weak var textField7: UITextField!
@@ -59,110 +59,13 @@ class TrenchWorkPlanVC: UIViewController {
     @IBOutlet weak var textField26: UITextField!
     @IBOutlet weak var textField27: UITextField!
     @IBOutlet weak var textField28: UITextField!
+    @IBOutlet weak var textField29: UITextField!
+    @IBOutlet weak var textField30: UITextField!
+    @IBOutlet weak var textField31: UITextField!
+    @IBOutlet weak var textField32: UITextField!
    
-    
-    @IBOutlet weak var rescueTeamLeaderTextView: UITextView!
-    @IBOutlet weak var rescueTeamLeaderContactInformationTextView: UITextView!
-    @IBOutlet weak var rescueInformationTextView: UITextView!
-    @IBOutlet weak var describeTextView: UITextView!
-    
-    @IBOutlet weak var gasMoniterModelTextView: UITextView!
-    @IBOutlet weak var daysToCalibrationTextView: UITextView!
     @IBOutlet weak var textView1: UITextView!
     @IBOutlet weak var textView2: UITextView!
-    @IBOutlet weak var textView3: UITextView!
-    @IBOutlet weak var testersInitalsTextView: UITextView!
-   
-  
-    @IBOutlet weak var periodicTimeTextView1: UITextView!
-    @IBOutlet weak var periodicTimeTextView2: UITextView!
-    @IBOutlet weak var periodicTimeTextView3: UITextView!
-    @IBOutlet weak var periodicTimeTextView4: UITextView!
-    @IBOutlet weak var periodicTimeTextView5: UITextView!
-    @IBOutlet weak var periodicTimeTextView6: UITextView!
-    @IBOutlet weak var periodicTimeTextView7: UITextView!
-    @IBOutlet weak var periodicTimeTextView8: UITextView!
-    @IBOutlet weak var periodicTimeTextView9: UITextView!
-    @IBOutlet weak var periodicTimeTextView10: UITextView!
-    @IBOutlet weak var periodicTimeTextView11: UITextView!
-    @IBOutlet weak var periodicTimeTextView12: UITextView!
-    @IBOutlet weak var periodicTimeTextView13: UITextView!
-    @IBOutlet weak var periodicTimeTextView14: UITextView!
-    @IBOutlet weak var periodicTimeTextView15: UITextView!
-    @IBOutlet weak var periodicTimeTextView16: UITextView!
-    @IBOutlet weak var periodicTimeTextView17: UITextView!
-    @IBOutlet weak var periodicTimeTextView18: UITextView!
-    @IBOutlet weak var periodicTimeTextView19: UITextView!
-    @IBOutlet weak var periodicTimeTextView20: UITextView!
-    @IBOutlet weak var periodicTimeTextView21: UITextView!
-    @IBOutlet weak var periodicTimeTextView22: UITextView!
-    @IBOutlet weak var periodicTimeTextView23: UITextView!
-    @IBOutlet weak var periodicTimeTextView24: UITextView!
-    @IBOutlet weak var periodicTimeTextView25: UITextView!
-    @IBOutlet weak var periodicTimeTextView26: UITextView!
-    @IBOutlet weak var periodicTimeTextView27: UITextView!
-    @IBOutlet weak var periodicTimeTextView28: UITextView!
-    @IBOutlet weak var periodicTimeTextView29: UITextView!
-    @IBOutlet weak var periodicTimeTextView30: UITextView!
-    @IBOutlet weak var periodicTimeTextView31: UITextView!
-    @IBOutlet weak var periodicTimeTextView32: UITextView!
-    @IBOutlet weak var periodicTimeTextView33: UITextView!
-    @IBOutlet weak var periodicTimeTextView34: UITextView!
-    @IBOutlet weak var periodicTimeTextView35: UITextView!
-    @IBOutlet weak var periodicTimeTextView36: UITextView!
-    @IBOutlet weak var periodicTimeTextView37: UITextView!
-    @IBOutlet weak var periodicTimeTextView38: UITextView!
-    @IBOutlet weak var periodicTimeTextView39: UITextView!
-    @IBOutlet weak var periodicTimeTextView40: UITextView!
-    @IBOutlet weak var periodicTimeTextView41: UITextView!
-    @IBOutlet weak var periodicTimeTextView42: UITextView!
-    @IBOutlet weak var periodicTimeTextView43: UITextView!
-    @IBOutlet weak var periodicTimeTextView44: UITextView!
-    @IBOutlet weak var periodicTimeTextView45: UITextView!
-    @IBOutlet weak var periodicTimeTextView46: UITextView!
-    @IBOutlet weak var periodicTimeTextView47: UITextView!
-    @IBOutlet weak var periodicTimeTextView48: UITextView!
-    @IBOutlet weak var periodicTimeTextView49: UITextView!
-    @IBOutlet weak var periodicTimeTextView50: UITextView!
-    @IBOutlet weak var periodicTimeTextView51: UITextView!
-    @IBOutlet weak var periodicTimeTextView52: UITextView!
-    @IBOutlet weak var periodicTimeTextView53: UITextView!
-    @IBOutlet weak var periodicTimeTextView54: UITextView!
-    @IBOutlet weak var periodicTimeTextView55: UITextView!
-    @IBOutlet weak var periodicTimeTextView56: UITextView!
-    @IBOutlet weak var periodicTimeTextView57: UITextView!
-    @IBOutlet weak var periodicTimeTextView58: UITextView!
-    @IBOutlet weak var periodicTimeTextView59: UITextView!
-    @IBOutlet weak var periodicTimeTextView60: UITextView!
-    @IBOutlet weak var periodicTimeTextView61: UITextView!
-    @IBOutlet weak var periodicTimeTextView62: UITextView!
-    @IBOutlet weak var periodicTimeTextView63: UITextView!
-    @IBOutlet weak var periodicTimeTextView64: UITextView!
-    @IBOutlet weak var periodicTimeTextView65: UITextView!
-    @IBOutlet weak var periodicTimeTextView66: UITextView!
-    @IBOutlet weak var periodicTimeTextView67: UITextView!
-    @IBOutlet weak var periodicTimeTextView68: UITextView!
-    @IBOutlet weak var periodicTimeTextView69: UITextView!
-    @IBOutlet weak var periodicTimeTextView70: UITextView!
-    @IBOutlet weak var periodicTimeTextView71: UITextView!
-    @IBOutlet weak var periodicTimeTextView72: UITextView!
-    @IBOutlet weak var periodicTimeTextView73: UITextView!
-    @IBOutlet weak var periodicTimeTextView74: UITextView!
-    @IBOutlet weak var periodicTimeTextView75: UITextView!
-    @IBOutlet weak var periodicTimeTextView76: UITextView!
-    @IBOutlet weak var periodicTimeTextView77: UITextView!
-    @IBOutlet weak var periodicTimeTextView78: UITextView!
-    @IBOutlet weak var periodicTimeTextView79: UITextView!
-    @IBOutlet weak var periodicTimeTextView80: UITextView!
-    @IBOutlet weak var periodicTimeTextView81: UITextView!
-    @IBOutlet weak var periodicTimeTextView82: UITextView!
-    @IBOutlet weak var periodicTimeTextView83: UITextView!
-    @IBOutlet weak var periodicTimeTextView84: UITextView!
-    @IBOutlet weak var periodicTimeTextView85: UITextView!
-    @IBOutlet weak var periodicTimeTextView86: UITextView!
-    @IBOutlet weak var periodicTimeTextView87: UITextView!
-    @IBOutlet weak var periodicTimeTextView88: UITextView!
-
     
     @IBOutlet weak var trenchTimeTextView1: UITextView!
     @IBOutlet weak var trenchTimeTextView2: UITextView!
@@ -175,81 +78,9 @@ class TrenchWorkPlanVC: UIViewController {
     @IBOutlet weak var trenchTimeTextView9: UITextView!
     @IBOutlet weak var trenchTimeTextView10: UITextView!
     @IBOutlet weak var trenchTimeTextView11: UITextView!
-//    @IBOutlet weak var trenchTimeTextView12: UITextView!
-//    @IBOutlet weak var trenchTimeTextView13: UITextView!
-//    @IBOutlet weak var trenchTimeTextView14: UITextView!
-//    @IBOutlet weak var trenchTimeTextView15: UITextView!
-//    @IBOutlet weak var trenchTimeTextView16: UITextView!
-//    @IBOutlet weak var trenchTimeTextView17: UITextView!
-//    @IBOutlet weak var trenchTimeTextView18: UITextView!
-//    @IBOutlet weak var trenchTimeTextView19: UITextView!
-//    @IBOutlet weak var trenchTimeTextView20: UITextView!
-//    @IBOutlet weak var trenchTimeTextView21: UITextView!
-//    @IBOutlet weak var trenchTimeTextView22: UITextView!
-//    @IBOutlet weak var trenchTimeTextView23: UITextView!
-//    @IBOutlet weak var trenchTimeTextView24: UITextView!
-//    @IBOutlet weak var trenchTimeTextView25: UITextView!
-//    @IBOutlet weak var trenchTimeTextView26: UITextView!
-//    @IBOutlet weak var trenchTimeTextView27: UITextView!
-//    @IBOutlet weak var trenchTimeTextView28: UITextView!
-//    @IBOutlet weak var trenchTimeTextView29: UITextView!
-//    @IBOutlet weak var trenchTimeTextView30: UITextView!
-//    @IBOutlet weak var trenchTimeTextView31: UITextView!
-//    @IBOutlet weak var trenchTimeTextView32: UITextView!
-//    @IBOutlet weak var trenchTimeTextView33: UITextView!
-//    @IBOutlet weak var trenchTimeTextView34: UITextView!
-//    @IBOutlet weak var trenchTimeTextView35: UITextView!
-//    @IBOutlet weak var trenchTimeTextView36: UITextView!
-//    @IBOutlet weak var trenchTimeTextView37: UITextView!
-//    @IBOutlet weak var trenchTimeTextView38: UITextView!
-//    @IBOutlet weak var trenchTimeTextView39: UITextView!
-//    @IBOutlet weak var trenchTimeTextView40: UITextView!
-//    @IBOutlet weak var trenchTimeTextView41: UITextView!
-//    @IBOutlet weak var trenchTimeTextView42: UITextView!
-//    @IBOutlet weak var trenchTimeTextView43: UITextView!
-//    @IBOutlet weak var trenchTimeTextView44: UITextView!
-//    @IBOutlet weak var trenchTimeTextView45: UITextView!
-//    @IBOutlet weak var trenchTimeTextView46: UITextView!
-//    @IBOutlet weak var trenchTimeTextView47: UITextView!
-//    @IBOutlet weak var trenchTimeTextView48: UITextView!
-//    @IBOutlet weak var trenchTimeTextView49: UITextView!
-//    @IBOutlet weak var trenchTimeTextView50: UITextView!
-//    @IBOutlet weak var trenchTimeTextView51: UITextView!
-//    @IBOutlet weak var trenchTimeTextView52: UITextView!
-//    @IBOutlet weak var trenchTimeTextView53: UITextView!
-//    @IBOutlet weak var trenchTimeTextView54: UITextView!
-//    @IBOutlet weak var trenchTimeTextView55: UITextView!
-//    @IBOutlet weak var trenchTimeTextView56: UITextView!
-//    @IBOutlet weak var trenchTimeTextView57: UITextView!
-//    @IBOutlet weak var trenchTimeTextView58: UITextView!
-//    @IBOutlet weak var trenchTimeTextView59: UITextView!
-//    @IBOutlet weak var trenchTimeTextView60: UITextView!
-//    @IBOutlet weak var trenchTimeTextView61: UITextView!
-//    @IBOutlet weak var trenchTimeTextView62: UITextView!
-//    @IBOutlet weak var trenchTimeTextView63: UITextView!
-//    @IBOutlet weak var trenchTimeTextView64: UITextView!
-//    @IBOutlet weak var trenchTimeTextView65: UITextView!
-//    @IBOutlet weak var trenchTimeTextView66: UITextView!
-//    @IBOutlet weak var trenchTimeTextView67: UITextView!
-//    @IBOutlet weak var trenchTimeTextView68: UITextView!
-//    @IBOutlet weak var trenchTimeTextView69: UITextView!
-//    @IBOutlet weak var trenchTimeTextView70: UITextView!
-//    @IBOutlet weak var trenchTimeTextView71: UITextView!
-//    @IBOutlet weak var trenchTimeTextView72: UITextView!
-//    @IBOutlet weak var trenchTimeTextView73: UITextView!
-//    @IBOutlet weak var trenchTimeTextView74: UITextView!
-//    @IBOutlet weak var trenchTimeTextView75: UITextView!
-//    @IBOutlet weak var trenchTimeTextView76: UITextView!
-//    @IBOutlet weak var trenchTimeTextView77: UITextView!
 
     @IBOutlet weak var noteTextView1: UITextView!
-    
-    @IBOutlet weak var competentPersonNameTextView: UITextView!
-    @IBOutlet weak var dateTimeSignedTextView: UITextView!
-    @IBOutlet weak var dateTimeCompletedTextView: UITextView!
 
-    @IBOutlet weak var competentPersonSignBtn: UIButton!
-    
 
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var img1: UIImageView!
@@ -752,496 +583,392 @@ class TrenchWorkPlanVC: UIViewController {
     @IBOutlet weak var btn167: UIButton!
     @IBOutlet weak var img167: UIImageView!
 
+    @IBOutlet weak var btn168: UIButton!
+    @IBOutlet weak var img168: UIImageView!
     
+    @IBOutlet weak var btn169: UIButton!
+    @IBOutlet weak var img169: UIImageView!
     
+    @IBOutlet weak var btn170: UIButton!
+    @IBOutlet weak var img170: UIImageView!
+    
+    @IBOutlet weak var btn171: UIButton!
+    @IBOutlet weak var img171: UIImageView!
+    
+    @IBOutlet weak var btn172: UIButton!
+    @IBOutlet weak var img172: UIImageView!
+    
+    @IBOutlet weak var btn173: UIButton!
+    @IBOutlet weak var img173: UIImageView!
+    
+    @IBOutlet weak var btn174: UIButton!
+    @IBOutlet weak var img174: UIImageView!
+    
+    @IBOutlet weak var btn175: UIButton!
+    @IBOutlet weak var img175: UIImageView!
+    
+    @IBOutlet weak var btn176: UIButton!
+    @IBOutlet weak var img176: UIImageView!
+    
+    @IBOutlet weak var btn177: UIButton!
+    @IBOutlet weak var img177: UIImageView!
+    
+    @IBOutlet weak var btn178: UIButton!
+    @IBOutlet weak var img178: UIImageView!
+    
+    @IBOutlet weak var btn179: UIButton!
+    @IBOutlet weak var img179: UIImageView!
+    
+    @IBOutlet weak var btn180: UIButton!
+    @IBOutlet weak var img180: UIImageView!
+    
+    @IBOutlet weak var btn181: UIButton!
+    @IBOutlet weak var img181: UIImageView!
+    
+    @IBOutlet weak var btn182: UIButton!
+    @IBOutlet weak var img182: UIImageView!
+    
+    @IBOutlet weak var btn183: UIButton!
+    @IBOutlet weak var img183: UIImageView!
+    
+    @IBOutlet weak var btn184: UIButton!
+    @IBOutlet weak var img184: UIImageView!
+    
+    @IBOutlet weak var btn185: UIButton!
+    @IBOutlet weak var img185: UIImageView!
+    
+    @IBOutlet weak var btn186: UIButton!
+    @IBOutlet weak var img186: UIImageView!
+  
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let savedText1 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-1") {
+            cpTextView.text = savedText1
+        }
 
-//        let textViewKeyPairs = [
-//            cpTextView: "savedText1-1531-PLAN-TRENCH",
-//            companyTextView: "savedText2-1531-PLAN-TRENCH",
-//            phoneTextView: "savedText3-1531-PLAN-TRENCH",
-//            emailTextView: "savedText4-1531-PLAN-TRENCH",
-//            planTextView: "savedText5-1531-PLAN-TRENCH",
-//            addressOrAreaTextView: "savedText6-1531-PLAN-TRENCH",
-//            dateTextView: "savedText7-1531-PLAN-TRENCH",
-//            describeTrenchTextView: "savedText8-1531-PLAN-TRENCH",
-//            employeeNameTextView1: "savedText9-1531-PLAN-TRENCH",
-//            employeeNameTextView2: "savedText10-1531-PLAN-TRENCH",
-//            employeeNameTextView3: "savedText11-1531-PLAN-TRENCH",
-//            employeeNameTextView4: "savedText12-1531-PLAN-TRENCH",
-//            employeeNameTextView5: "savedText13-1531-PLAN-TRENCH",
-//            employeeNameTextView6: "savedText14-1531-PLAN-TRENCH",
-//            employeeNameTextView7: "savedText15-1531-PLAN-TRENCH",
-//            employeeNameTextView8: "savedText16-1531-PLAN-TRENCH",
-//            employeeNameTextView9: "savedText17-1531-PLAN-TRENCH",
-//            rescueTeamLeaderTextView: "savedText18-1531-PLAN-TRENCH",
-//            rescueTeamLeaderContactInformationTextView: "savedText19-1531-PLAN-TRENCH",
-//            rescueInformationTextView: "savedText20-1531-PLAN-TRENCH",
-//            describeTextView: "savedText21-1531-PLAN-TRENCH",
-//            gasMoniterModelTextView: "savedText22-1531-PLAN-TRENCH",
-//            daysToCalibrationTextView: "savedText23-1531-PLAN-TRENCH",
-//            textView1: "savedText24-1531-PLAN-TRENCH",
-//            textView2: "savedText25-1531-PLAN-TRENCH",
-//            textView3: "savedText26-1531-PLAN-TRENCH",
-//            testersInitalsTextView: "savedText27-1531-PLAN-TRENCH",
-//            competentPersonNameTextView: "savedText28-1531-PLAN-TRENCH",
-//            dateTimeSignedTextView: "savedText29-1531-PLAN-TRENCH",
-//            dateTimeCompletedTextView: "savedText30-1531-PLAN-TRENCH",
-//            noteTextView1: "savedText31-1531-PLAN-TRENCH",
-//            periodicTimeTextView1: "savedText32-1531-PLAN-TRENCH",
-//            periodicTimeTextView2: "savedText33-1531-PLAN-TRENCH",
-//            periodicTimeTextView3: "savedText34-1531-PLAN-TRENCH",
-//            periodicTimeTextView4: "savedText35-1531-PLAN-TRENCH",
-//            periodicTimeTextView5: "savedText36-1531-PLAN-TRENCH",
-//            periodicTimeTextView6: "savedText37-1531-PLAN-TRENCH",
-//            periodicTimeTextView7: "savedText38-1531-PLAN-TRENCH",
-//            periodicTimeTextView8: "savedText39-1531-PLAN-TRENCH",
-//            periodicTimeTextView9: "savedText40-1531-PLAN-TRENCH",
-//            periodicTimeTextView10: "savedText41-1531-PLAN-TRENCH",
-//            periodicTimeTextView11: "savedText42-1531-PLAN-TRENCH",
-//            periodicTimeTextView12: "savedText43-1531-PLAN-TRENCH",
-//            periodicTimeTextView13: "savedText44-1531-PLAN-TRENCH",
-//            periodicTimeTextView14: "savedText45-1531-PLAN-TRENCH",
-//            periodicTimeTextView15: "savedText46-1531-PLAN-TRENCH",
-//            periodicTimeTextView16: "savedText47-1531-PLAN-TRENCH",
-//            periodicTimeTextView17: "savedText48-1531-PLAN-TRENCH",
-//            periodicTimeTextView18: "savedText49-1531-PLAN-TRENCH",
-//            periodicTimeTextView19: "savedText50-1531-PLAN-TRENCH",
-//            periodicTimeTextView20: "savedText51-1531-PLAN-TRENCH",
-//            periodicTimeTextView21: "savedText52-1531-PLAN-TRENCH",
-//            periodicTimeTextView22: "savedText53-1531-PLAN-TRENCH",
-//            periodicTimeTextView23: "savedText54-1531-PLAN-TRENCH",
-//            periodicTimeTextView24: "savedText55-1531-PLAN-TRENCH",
-//            periodicTimeTextView25: "savedText56-1531-PLAN-TRENCH",
-//            periodicTimeTextView26: "savedText57-1531-PLAN-TRENCH",
-//            periodicTimeTextView27: "savedText58-1531-PLAN-TRENCH",
-//            periodicTimeTextView28: "savedText59-1531-PLAN-TRENCH",
-//            periodicTimeTextView29: "savedText60-1531-PLAN-TRENCH",
-//            periodicTimeTextView30: "savedText61-1531-PLAN-TRENCH",
-//            periodicTimeTextView31: "savedText62-1531-PLAN-TRENCH",
-//            periodicTimeTextView32: "savedText63-1531-PLAN-TRENCH",
-//            periodicTimeTextView33: "savedText64-1531-PLAN-TRENCH",
-//            periodicTimeTextView34: "savedText65-1531-PLAN-TRENCH",
-//            periodicTimeTextView35: "savedText66-1531-PLAN-TRENCH",
-//            periodicTimeTextView36: "savedText67-1531-PLAN-TRENCH",
-//            periodicTimeTextView37: "savedText68-1531-PLAN-TRENCH",
-//            periodicTimeTextView38: "savedText69-1531-PLAN-TRENCH",
-//            periodicTimeTextView39: "savedText70-1531-PLAN-TRENCH",
-//            periodicTimeTextView40: "savedText71-1531-PLAN-TRENCH",
-//            periodicTimeTextView41: "savedText72-1531-PLAN-TRENCH",
-//            periodicTimeTextView42: "savedText73-1531-PLAN-TRENCH",
-//            periodicTimeTextView43: "savedText74-1531-PLAN-TRENCH",
-//            periodicTimeTextView44: "savedText75-1531-PLAN-TRENCH",
-//            periodicTimeTextView45: "savedText76-1531-PLAN-TRENCH",
-//            periodicTimeTextView46: "savedText77-1531-PLAN-TRENCH",
-//            periodicTimeTextView47: "savedText78-1531-PLAN-TRENCH",
-//            periodicTimeTextView48: "savedText79-1531-PLAN-TRENCH",
-//            periodicTimeTextView49: "savedText80-1531-PLAN-TRENCH",
-//            periodicTimeTextView50: "savedText81-1531-PLAN-TRENCH",
-//            periodicTimeTextView51: "savedText82-1531-PLAN-TRENCH",
-//            periodicTimeTextView52: "savedText83-1531-PLAN-TRENCH",
-//            periodicTimeTextView53: "savedText84-1531-PLAN-TRENCH",
-//            periodicTimeTextView54: "savedText85-1531-PLAN-TRENCH",
-//            periodicTimeTextView55: "savedText86-1531-PLAN-TRENCH",
-//            periodicTimeTextView56: "savedText87-1531-PLAN-TRENCH",
-//            periodicTimeTextView57: "savedText88-1531-PLAN-TRENCH",
-//            periodicTimeTextView58: "savedText89-1531-PLAN-TRENCH",
-//            periodicTimeTextView59: "savedText90-1531-PLAN-TRENCH",
-//            periodicTimeTextView60: "savedText91-1531-PLAN-TRENCH",
-//            periodicTimeTextView61: "savedText92-1531-PLAN-TRENCH",
-//            periodicTimeTextView62: "savedText93-1531-PLAN-TRENCH",
-//            periodicTimeTextView63: "savedText94-1531-PLAN-TRENCH",
-//            periodicTimeTextView64: "savedText95-1531-PLAN-TRENCH",
-//            periodicTimeTextView65: "savedText96-1531-PLAN-TRENCH",
-//            periodicTimeTextView66: "savedText97-1531-PLAN-TRENCH",
-//            periodicTimeTextView67: "savedText98-1531-PLAN-TRENCH",
-//            periodicTimeTextView68: "savedText99-1531-PLAN-TRENCH",
-//            periodicTimeTextView69: "savedText100-1531-PLAN-TRENCH",
-//            periodicTimeTextView70: "savedText101-1531-PLAN-TRENCH",
-//            periodicTimeTextView71: "savedText102-1531-PLAN-TRENCH",
-//            periodicTimeTextView72: "savedText103-1531-PLAN-TRENCH",
-//            periodicTimeTextView73: "savedText104-1531-PLAN-TRENCH",
-//            periodicTimeTextView74: "savedText105-1531-PLAN-TRENCH",
-//            periodicTimeTextView75: "savedText106-1531-PLAN-TRENCH",
-//            periodicTimeTextView76: "savedText107-1531-PLAN-TRENCH",
-//            periodicTimeTextView77: "savedText108-1531-PLAN-TRENCH",
-//            periodicTimeTextView78: "savedText109-1531-PLAN-TRENCH",
-//            periodicTimeTextView79: "savedText110-1531-PLAN-TRENCH",
-//            periodicTimeTextView80: "savedText111-1531-PLAN-TRENCH",
-//            periodicTimeTextView81: "savedText112-1531-PLAN-TRENCH",
-//            periodicTimeTextView82: "savedText113-1531-PLAN-TRENCH",
-//            periodicTimeTextView83: "savedText114-1531-PLAN-TRENCH",
-//            periodicTimeTextView84: "savedText115-1531-PLAN-TRENCH",
-//            periodicTimeTextView85: "savedText116-1531-PLAN-TRENCH",
-//            periodicTimeTextView86: "savedText117-1531-PLAN-TRENCH",
-//            periodicTimeTextView87: "savedText118-1531-PLAN-TRENCH",
-////            periodicTimeTextView88: "savedText119-1531-PLAN-TRENCH",
-//            trenchTimeTextView1: "savedText119-1531-PLAN-TRENCH",
-//            trenchTimeTextView2: "savedText120-1531-PLAN-TRENCH",
-//            trenchTimeTextView3: "savedText121-1531-PLAN-TRENCH",
-//            trenchTimeTextView4: "savedText122-1531-PLAN-TRENCH",
-//            trenchTimeTextView5: "savedText123-1531-PLAN-TRENCH",
-//            trenchTimeTextView6: "savedText124-1531-PLAN-TRENCH",
-//            trenchTimeTextView7: "savedText125-1531-PLAN-TRENCH",
-//            trenchTimeTextView8: "savedText126-1531-PLAN-TRENCH",
-//            trenchTimeTextView9: "savedText127-1531-PLAN-TRENCH",
-//            trenchTimeTextView10: "savedText128-1531-PLAN-TRENCH",
-//            trenchTimeTextView11: "savedText129-1531-PLAN-TRENCH",
-//            trenchTimeTextView12: "savedText130-1531-PLAN-TRENCH",
-//            trenchTimeTextView13: "savedText131-1531-PLAN-TRENCH",
-//            trenchTimeTextView14: "savedText132-1531-PLAN-TRENCH",
-//            trenchTimeTextView15: "savedText133-1531-PLAN-TRENCH",
-//            trenchTimeTextView16: "savedText134-1531-PLAN-TRENCH",
-//            trenchTimeTextView17: "savedText135-1531-PLAN-TRENCH",
-//            trenchTimeTextView18: "savedText136-1531-PLAN-TRENCH",
-//            trenchTimeTextView19: "savedText137-1531-PLAN-TRENCH",
-//            trenchTimeTextView20: "savedText138-1531-PLAN-TRENCH",
-//            trenchTimeTextView21: "savedText139-1531-PLAN-TRENCH",
-//            trenchTimeTextView22: "savedText140-1531-PLAN-TRENCH",
-//            trenchTimeTextView23: "savedText141-1531-PLAN-TRENCH",
-//            trenchTimeTextView24: "savedText142-1531-PLAN-TRENCH",
-//            trenchTimeTextView25: "savedText143-1531-PLAN-TRENCH",
-//            trenchTimeTextView26: "savedText144-1531-PLAN-TRENCH",
-//            trenchTimeTextView27: "savedText145-1531-PLAN-TRENCH",
-//            trenchTimeTextView28: "savedText146-1531-PLAN-TRENCH",
-//            trenchTimeTextView29: "savedText147-1531-PLAN-TRENCH",
-//            trenchTimeTextView30: "savedText148-1531-PLAN-TRENCH",
-//            trenchTimeTextView31: "savedText149-1531-PLAN-TRENCH",
-//            trenchTimeTextView32: "savedText150-1531-PLAN-TRENCH",
-//            trenchTimeTextView33: "savedText151-1531-PLAN-TRENCH",
-//            trenchTimeTextView34: "savedText152-1531-PLAN-TRENCH",
-//            trenchTimeTextView35: "savedText153-1531-PLAN-TRENCH",
-//            trenchTimeTextView36: "savedText154-1531-PLAN-TRENCH",
-//            trenchTimeTextView37: "savedText155-1531-PLAN-TRENCH",
-//            trenchTimeTextView38: "savedText156-1531-PLAN-TRENCH",
-//            trenchTimeTextView39: "savedText157-1531-PLAN-TRENCH",
-//            trenchTimeTextView40: "savedText158-1531-PLAN-TRENCH",
-//            trenchTimeTextView41: "savedText159-1531-PLAN-TRENCH",
-//            trenchTimeTextView42: "savedText160-1531-PLAN-TRENCH",
-//            trenchTimeTextView43: "savedText161-1531-PLAN-TRENCH",
-//            trenchTimeTextView44: "savedText162-1531-PLAN-TRENCH",
-//            trenchTimeTextView45: "savedText163-1531-PLAN-TRENCH",
-//            trenchTimeTextView46: "savedText164-1531-PLAN-TRENCH",
-//            trenchTimeTextView47: "savedText165-1531-PLAN-TRENCH",
-//            trenchTimeTextView48: "savedText166-1531-PLAN-TRENCH",
-//            trenchTimeTextView49: "savedText167-1531-PLAN-TRENCH",
-//            trenchTimeTextView50: "savedText168-1531-PLAN-TRENCH",
-//            trenchTimeTextView51: "savedText169-1531-PLAN-TRENCH",
-//            trenchTimeTextView52: "savedText170-1531-PLAN-TRENCH",
-//            trenchTimeTextView53: "savedText171-1531-PLAN-TRENCH",
-//            trenchTimeTextView54: "savedText172-1531-PLAN-TRENCH",
-//            trenchTimeTextView55: "savedText173-1531-PLAN-TRENCH",
-//            trenchTimeTextView56: "savedText174-1531-PLAN-TRENCH",
-//            trenchTimeTextView57: "savedText175-1531-PLAN-TRENCH",
-//            trenchTimeTextView58: "savedText176-1531-PLAN-TRENCH",
-//            trenchTimeTextView59: "savedText177-1531-PLAN-TRENCH",
-//            trenchTimeTextView60: "savedText178-1531-PLAN-TRENCH",
-//            trenchTimeTextView61: "savedText179-1531-PLAN-TRENCH",
-//            trenchTimeTextView62: "savedText180-1531-PLAN-TRENCH",
-//            trenchTimeTextView63: "savedText181-1531-PLAN-TRENCH",
-//            trenchTimeTextView64: "savedText182-1531-PLAN-TRENCH",
-//            trenchTimeTextView65: "savedText183-1531-PLAN-TRENCH",
-//            trenchTimeTextView66: "savedText184-1531-PLAN-TRENCH",
-//            trenchTimeTextView67: "savedText185-1531-PLAN-TRENCH",
-//            trenchTimeTextView68: "savedText186-1531-PLAN-TRENCH",
-//            trenchTimeTextView69: "savedText187-1531-PLAN-TRENCH",
-//            trenchTimeTextView70: "savedText188-1531-PLAN-TRENCH",
-//            trenchTimeTextView71: "savedText189-1531-PLAN-TRENCH",
-//            trenchTimeTextView72: "savedText190-1531-PLAN-TRENCH",
-//            trenchTimeTextView73: "savedText191-1531-PLAN-TRENCH",
-//            trenchTimeTextView74: "savedText192-1531-PLAN-TRENCH",
-//            trenchTimeTextView75: "savedText193-1531-PLAN-TRENCH",
-//            trenchTimeTextView76: "savedText194-1531-PLAN-TRENCH",
-//            trenchTimeTextView77: "savedText195-1531-PLAN-TRENCH",
-//        ]
-//        let textFieldKeyPairs = [
-//            textField1: "savedText196-1531-PLAN-TRENCH",
-//            textField2: "savedText197-1531-PLAN-TRENCH",
-//            textField3: "savedText198-1531-PLAN-TRENCHvv",
-//            textField4: "savedText199-1531-PLAN-TRENCHvv",
-//            textField5: "savedText200-1531-PLAN-TRENCHvv",
-//            textField6: "savedText201-1531-PLAN-TRENCHvv",
-//            textField7: "savedText202-1531-PLAN-TRENCHvv",
-//            textField8: "savedText203-1531-PLAN-TRENCHvv",
-//            textField9: "savedText204-1531-PLAN-TRENCHvv",
-//            textField10: "savedText205-1531-PLAN-TRENCHvv",
-//            textField11: "savedText206-1531-PLAN-TRENCHvv",
-//            textField12: "savedText207-1531-PLAN-TRENCHvv",
-//            textField13: "savedText208-1531-PLAN-TRENCHvv",
-//            textField14: "savedText209-1531-PLAN-TRENCHvv",
-//            textField15: "savedText210-1531-PLAN-TRENCHvv",
-//            textField16: "savedText211-1531-PLAN-TRENCHvv",
-//            textField17: "savedText212-1531-PLAN-TRENCHvv",
-//            textField18: "savedText213-1531-PLAN-TRENCHvv",
-//            textField19: "savedText214-1531-PLAN-TRENCHvv",
-//            textField20: "savedText215-1531-PLAN-TRENCHvv",
-//            textField21: "savedText216-1531-PLAN-TRENCHvv",
-//            textField22: "savedText217-1531-PLAN-TRENCHvv",
-//            textField23: "savedText218-1531-PLAN-TRENCHvv",
-//            textField24: "savedText219-1531-PLAN-TRENCHvv",
-//            textField25: "savedText220-1531-PLAN-TRENCHvv",
-//            textField26: "savedText221-1531-PLAN-TRENCHvv",
-//            textField27: "savedText222-1531-PLAN-TRENCHvv",
-//            textField28: "savedText223-1531-PLAN-TRENCHvv"
-//        ]
-//           textFieldKeyPairs.forEach { textField, key in
-//               textField?.text = UserDefaults.standard.string(forKey: key)
-//           }
-//        
-//        textViewKeyPairs.forEach { textView, key in
-//            textView?.text = UserDefaults.standard.string(forKey: key)
-//        }
-//        
+        if let savedText2 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-2") {
+            companyTextView.text = savedText2
+        }
 
+        if let savedText3 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-3") {
+            phoneTextView.text = savedText3
+        }
+
+        if let savedText4 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-4") {
+            emailTextView.text = savedText4
+        }
+
+        if let savedText5 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-5") {
+            planTextView.text = savedText5
+        }
+
+        if let savedText6 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-6") {
+            addressOrAreaTextView.text = savedText6
+        }
+
+        if let savedText7 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-7") {
+            dateTextView.text = savedText7
+        }
+
+        if let savedText8 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-8") {
+            describeTrenchTextView.text = savedText8
+        }
+
+        if let savedText9 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-9") {
+            employeeNameTextView1.text = savedText9
+        }
+
+        if let savedText10 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-10") {
+            employeeNameTextView2.text = savedText10
+        }
+
+        if let savedText11 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-11") {
+            employeeNameTextView3.text = savedText11
+        }
+
+        if let savedText12 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-12") {
+            employeeNameTextView4.text = savedText12
+        }
+
+        if let savedText13 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-13") {
+            employeeNameTextView5.text = savedText13
+        }
+
+        if let savedText14 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-14") {
+            employeeNameTextView6.text = savedText14
+        }
+
+        if let savedText15 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-15") {
+            employeeNameTextView7.text = savedText15
+        }
+
+        if let savedText16 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-16") {
+            employeeNameTextView8.text = savedText16
+        }
+
+        if let savedText17 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-17") {
+            employeeNameTextView9.text = savedText17
+        }
+        if let savedText18 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-18") {
+            textField1.text = savedText18
+        }
+
+        if let savedText19 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-19") {
+            textField2.text = savedText19
+        }
+
+        if let savedText20 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-20") {
+            textField3.text = savedText20
+        }
+
+        if let savedText21 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-21") {
+            textField4.text = savedText21
+        }
+
+        if let savedText22 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-22") {
+            textField5.text = savedText22
+        }
+
+        if let savedText23 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-23") {
+            textField6.text = savedText23
+        }
+
+        if let savedText24 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-24") {
+            textField7.text = savedText24
+        }
+
+        if let savedText25 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-25") {
+            textField8.text = savedText25
+        }
+
+        if let savedText26 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-26") {
+            textField9.text = savedText26
+        }
+
+        if let savedText27 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-27") {
+            textField10.text = savedText27
+        }
+
+        if let savedText28 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-28") {
+            textField11.text = savedText28
+        }
+
+        if let savedText29 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-29") {
+            textField12.text = savedText29
+        }
+
+        if let savedText30 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-30") {
+            textField13.text = savedText30
+        }
+
+        if let savedText31 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-31") {
+            textField14.text = savedText31
+        }
+
+        if let savedText32 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-32") {
+            textField15.text = savedText32
+        }
+
+        if let savedText33 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-33") {
+            textField16.text = savedText33
+        }
+
+        if let savedText34 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-34") {
+            textField17.text = savedText34
+        }
+
+        if let savedText35 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-35") {
+            textField18.text = savedText35
+        }
+
+        if let savedText36 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-36") {
+            textField19.text = savedText36
+        }
+
+        if let savedText37 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-37") {
+            textField20.text = savedText37
+        }
+
+        if let savedText38 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-38") {
+            textField21.text = savedText38
+        }
+
+        if let savedText39 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-39") {
+            textField22.text = savedText39
+        }
+
+        if let savedText40 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-40") {
+            textField23.text = savedText40
+        }
+
+        if let savedText41 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-41") {
+            textField24.text = savedText41
+        }
+
+        if let savedText42 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-42") {
+            textField25.text = savedText42
+        }
+
+        if let savedText43 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-43") {
+            textField26.text = savedText43
+        }
+
+        if let savedText44 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-44") {
+            textField27.text = savedText44
+        }
+
+        if let savedText45 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-45") {
+            textField28.text = savedText45
+        }
+
+        if let savedText46 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-46") {
+            textField29.text = savedText46
+        }
+
+        if let savedText47 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-47") {
+            textField30.text = savedText47
+        }
+
+        if let savedText48 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-48") {
+            textField31.text = savedText48
+        }
+
+        if let savedText49 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-49") {
+            textField32.text = savedText49
+        }
+
+        if let savedText50 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-50") {
+            textView1.text = savedText50
+        }
+
+        if let savedText51 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-51") {
+            textView2.text = savedText51
+        }
+
+        if let savedText52 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-52") {
+            trenchTimeTextView1.text = savedText52
+        }
+
+        if let savedText53 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-53") {
+            trenchTimeTextView2.text = savedText53
+        }
+
+        if let savedText54 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-54") {
+            trenchTimeTextView3.text = savedText54
+        }
+
+        if let savedText55 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-55") {
+            trenchTimeTextView4.text = savedText55
+        }
+
+        if let savedText56 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-56") {
+            trenchTimeTextView5.text = savedText56
+        }
+
+        if let savedText57 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-57") {
+            trenchTimeTextView6.text = savedText57
+        }
+
+        if let savedText58 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-58") {
+            trenchTimeTextView7.text = savedText58
+        }
+
+        if let savedText59 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-59") {
+            trenchTimeTextView8.text = savedText59
+        }
+
+        if let savedText60 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-60") {
+            trenchTimeTextView9.text = savedText60
+        }
+
+        if let savedText61 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-61") {
+            trenchTimeTextView10.text = savedText61
+        }
+
+        if let savedText62 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-62") {
+            trenchTimeTextView11.text = savedText62
+        }
+
+        if let savedText63 = UserDefaults.standard.string(forKey: "1531-PLAN-TRENCH-63") {
+            noteTextView1.text = savedText63
+        }
+      
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
-//        let textViewKeyPairs = [
-//            cpTextView: "savedText1-1531-PLAN-TRENCH",
-//            companyTextView: "savedText2-1531-PLAN-TRENCH",
-//            phoneTextView: "savedText3-1531-PLAN-TRENCH",
-//            emailTextView: "savedText4-1531-PLAN-TRENCH",
-//            planTextView: "savedText5-1531-PLAN-TRENCH",
-//            addressOrAreaTextView: "savedText6-1531-PLAN-TRENCH",
-//            dateTextView: "savedText7-1531-PLAN-TRENCH",
-//            describeTrenchTextView: "savedText8-1531-PLAN-TRENCH",
-//            employeeNameTextView1: "savedText9-1531-PLAN-TRENCH",
-//            employeeNameTextView2: "savedText10-1531-PLAN-TRENCH",
-//            employeeNameTextView3: "savedText11-1531-PLAN-TRENCH",
-//            employeeNameTextView4: "savedText12-1531-PLAN-TRENCH",
-//            employeeNameTextView5: "savedText13-1531-PLAN-TRENCH",
-//            employeeNameTextView6: "savedText14-1531-PLAN-TRENCH",
-//            employeeNameTextView7: "savedText15-1531-PLAN-TRENCH",
-//            employeeNameTextView8: "savedText16-1531-PLAN-TRENCH",
-//            employeeNameTextView9: "savedText17-1531-PLAN-TRENCH",
-//            rescueTeamLeaderTextView: "savedText18-1531-PLAN-TRENCH",
-//            rescueTeamLeaderContactInformationTextView: "savedText19-1531-PLAN-TRENCH",
-//            rescueInformationTextView: "savedText20-1531-PLAN-TRENCH",
-//            describeTextView: "savedText21-1531-PLAN-TRENCH",
-//            gasMoniterModelTextView: "savedText22-1531-PLAN-TRENCH",
-//            daysToCalibrationTextView: "savedText23-1531-PLAN-TRENCH",
-//            textView1: "savedText24-1531-PLAN-TRENCH",
-//            textView2: "savedText25-1531-PLAN-TRENCH",
-//            textView3: "savedText26-1531-PLAN-TRENCH",
-//            testersInitalsTextView: "savedText27-1531-PLAN-TRENCH",
-//            competentPersonNameTextView: "savedText28-1531-PLAN-TRENCH",
-//            dateTimeSignedTextView: "savedText29-1531-PLAN-TRENCH",
-//            dateTimeCompletedTextView: "savedText30-1531-PLAN-TRENCH",
-//            noteTextView1: "savedText31-1531-PLAN-TRENCH",
-//            periodicTimeTextView1: "savedText32-1531-PLAN-TRENCH",
-//            periodicTimeTextView2: "savedText33-1531-PLAN-TRENCH",
-//            periodicTimeTextView3: "savedText34-1531-PLAN-TRENCH",
-//            periodicTimeTextView4: "savedText35-1531-PLAN-TRENCH",
-//            periodicTimeTextView5: "savedText36-1531-PLAN-TRENCH",
-//            periodicTimeTextView6: "savedText37-1531-PLAN-TRENCH",
-//            periodicTimeTextView7: "savedText38-1531-PLAN-TRENCH",
-//            periodicTimeTextView8: "savedText39-1531-PLAN-TRENCH",
-//            periodicTimeTextView9: "savedText40-1531-PLAN-TRENCH",
-//            periodicTimeTextView10: "savedText41-1531-PLAN-TRENCH",
-//            periodicTimeTextView11: "savedText42-1531-PLAN-TRENCH",
-//            periodicTimeTextView12: "savedText43-1531-PLAN-TRENCH",
-//            periodicTimeTextView13: "savedText44-1531-PLAN-TRENCH",
-//            periodicTimeTextView14: "savedText45-1531-PLAN-TRENCH",
-//            periodicTimeTextView15: "savedText46-1531-PLAN-TRENCH",
-//            periodicTimeTextView16: "savedText47-1531-PLAN-TRENCH",
-//            periodicTimeTextView17: "savedText48-1531-PLAN-TRENCH",
-//            periodicTimeTextView18: "savedText49-1531-PLAN-TRENCH",
-//            periodicTimeTextView19: "savedText50-1531-PLAN-TRENCH",
-//            periodicTimeTextView20: "savedText51-1531-PLAN-TRENCH",
-//            periodicTimeTextView21: "savedText52-1531-PLAN-TRENCH",
-//            periodicTimeTextView22: "savedText53-1531-PLAN-TRENCH",
-//            periodicTimeTextView23: "savedText54-1531-PLAN-TRENCH",
-//            periodicTimeTextView24: "savedText55-1531-PLAN-TRENCH",
-//            periodicTimeTextView25: "savedText56-1531-PLAN-TRENCH",
-//            periodicTimeTextView26: "savedText57-1531-PLAN-TRENCH",
-//            periodicTimeTextView27: "savedText58-1531-PLAN-TRENCH",
-//            periodicTimeTextView28: "savedText59-1531-PLAN-TRENCH",
-//            periodicTimeTextView29: "savedText60-1531-PLAN-TRENCH",
-//            periodicTimeTextView30: "savedText61-1531-PLAN-TRENCH",
-//            periodicTimeTextView31: "savedText62-1531-PLAN-TRENCH",
-//            periodicTimeTextView32: "savedText63-1531-PLAN-TRENCH",
-//            periodicTimeTextView33: "savedText64-1531-PLAN-TRENCH",
-//            periodicTimeTextView34: "savedText65-1531-PLAN-TRENCH",
-//            periodicTimeTextView35: "savedText66-1531-PLAN-TRENCH",
-//            periodicTimeTextView36: "savedText67-1531-PLAN-TRENCH",
-//            periodicTimeTextView37: "savedText68-1531-PLAN-TRENCH",
-//            periodicTimeTextView38: "savedText69-1531-PLAN-TRENCH",
-//            periodicTimeTextView39: "savedText70-1531-PLAN-TRENCH",
-//            periodicTimeTextView40: "savedText71-1531-PLAN-TRENCH",
-//            periodicTimeTextView41: "savedText72-1531-PLAN-TRENCH",
-//            periodicTimeTextView42: "savedText73-1531-PLAN-TRENCH",
-//            periodicTimeTextView43: "savedText74-1531-PLAN-TRENCH",
-//            periodicTimeTextView44: "savedText75-1531-PLAN-TRENCH",
-//            periodicTimeTextView45: "savedText76-1531-PLAN-TRENCH",
-//            periodicTimeTextView46: "savedText77-1531-PLAN-TRENCH",
-//            periodicTimeTextView47: "savedText78-1531-PLAN-TRENCH",
-//            periodicTimeTextView48: "savedText79-1531-PLAN-TRENCH",
-//            periodicTimeTextView49: "savedText80-1531-PLAN-TRENCH",
-//            periodicTimeTextView50: "savedText81-1531-PLAN-TRENCH",
-//            periodicTimeTextView51: "savedText82-1531-PLAN-TRENCH",
-//            periodicTimeTextView52: "savedText83-1531-PLAN-TRENCH",
-//            periodicTimeTextView53: "savedText84-1531-PLAN-TRENCH",
-//            periodicTimeTextView54: "savedText85-1531-PLAN-TRENCH",
-//            periodicTimeTextView55: "savedText86-1531-PLAN-TRENCH",
-//            periodicTimeTextView56: "savedText87-1531-PLAN-TRENCH",
-//            periodicTimeTextView57: "savedText88-1531-PLAN-TRENCH",
-//            periodicTimeTextView58: "savedText89-1531-PLAN-TRENCH",
-//            periodicTimeTextView59: "savedText90-1531-PLAN-TRENCH",
-//            periodicTimeTextView60: "savedText91-1531-PLAN-TRENCH",
-//            periodicTimeTextView61: "savedText92-1531-PLAN-TRENCH",
-//            periodicTimeTextView62: "savedText93-1531-PLAN-TRENCH",
-//            periodicTimeTextView63: "savedText94-1531-PLAN-TRENCH",
-//            periodicTimeTextView64: "savedText95-1531-PLAN-TRENCH",
-//            periodicTimeTextView65: "savedText96-1531-PLAN-TRENCH",
-//            periodicTimeTextView66: "savedText97-1531-PLAN-TRENCH",
-//            periodicTimeTextView67: "savedText98-1531-PLAN-TRENCH",
-//            periodicTimeTextView68: "savedText99-1531-PLAN-TRENCH",
-//            periodicTimeTextView69: "savedText100-1531-PLAN-TRENCH",
-//            periodicTimeTextView70: "savedText101-1531-PLAN-TRENCH",
-//            periodicTimeTextView71: "savedText102-1531-PLAN-TRENCH",
-//            periodicTimeTextView72: "savedText103-1531-PLAN-TRENCH",
-//            periodicTimeTextView73: "savedText104-1531-PLAN-TRENCH",
-//            periodicTimeTextView74: "savedText105-1531-PLAN-TRENCH",
-//            periodicTimeTextView75: "savedText106-1531-PLAN-TRENCH",
-//            periodicTimeTextView76: "savedText107-1531-PLAN-TRENCH",
-//            periodicTimeTextView77: "savedText108-1531-PLAN-TRENCH",
-//            periodicTimeTextView78: "savedText109-1531-PLAN-TRENCH",
-//            periodicTimeTextView79: "savedText110-1531-PLAN-TRENCH",
-//            periodicTimeTextView80: "savedText111-1531-PLAN-TRENCH",
-//            periodicTimeTextView81: "savedText112-1531-PLAN-TRENCH",
-//            periodicTimeTextView82: "savedText113-1531-PLAN-TRENCH",
-//            periodicTimeTextView83: "savedText114-1531-PLAN-TRENCH",
-//            periodicTimeTextView84: "savedText115-1531-PLAN-TRENCH",
-//            periodicTimeTextView85: "savedText116-1531-PLAN-TRENCH",
-//            periodicTimeTextView86: "savedText117-1531-PLAN-TRENCH",
-//            periodicTimeTextView87: "savedText118-1531-PLAN-TRENCH",
-////            periodicTimeTextView88: "savedText119-1531-PLAN-TRENCH",
-//            trenchTimeTextView1: "savedText119-1531-PLAN-TRENCH",
-//            trenchTimeTextView2: "savedText120-1531-PLAN-TRENCH",
-//            trenchTimeTextView3: "savedText121-1531-PLAN-TRENCH",
-//            trenchTimeTextView4: "savedText122-1531-PLAN-TRENCH",
-//            trenchTimeTextView5: "savedText123-1531-PLAN-TRENCH",
-//            trenchTimeTextView6: "savedText124-1531-PLAN-TRENCH",
-//            trenchTimeTextView7: "savedText125-1531-PLAN-TRENCH",
-//            trenchTimeTextView8: "savedText126-1531-PLAN-TRENCH",
-//            trenchTimeTextView9: "savedText127-1531-PLAN-TRENCH",
-//            trenchTimeTextView10: "savedText128-1531-PLAN-TRENCH",
-//            trenchTimeTextView11: "savedText129-1531-PLAN-TRENCH",
-//            trenchTimeTextView12: "savedText130-1531-PLAN-TRENCH",
-//            trenchTimeTextView13: "savedText131-1531-PLAN-TRENCH",
-//            trenchTimeTextView14: "savedText132-1531-PLAN-TRENCH",
-//            trenchTimeTextView15: "savedText133-1531-PLAN-TRENCH",
-//            trenchTimeTextView16: "savedText134-1531-PLAN-TRENCH",
-//            trenchTimeTextView17: "savedText135-1531-PLAN-TRENCH",
-//            trenchTimeTextView18: "savedText136-1531-PLAN-TRENCH",
-//            trenchTimeTextView19: "savedText137-1531-PLAN-TRENCH",
-//            trenchTimeTextView20: "savedText138-1531-PLAN-TRENCH",
-//            trenchTimeTextView21: "savedText139-1531-PLAN-TRENCH",
-//            trenchTimeTextView22: "savedText140-1531-PLAN-TRENCH",
-//            trenchTimeTextView23: "savedText141-1531-PLAN-TRENCH",
-//            trenchTimeTextView24: "savedText142-1531-PLAN-TRENCH",
-//            trenchTimeTextView25: "savedText143-1531-PLAN-TRENCH",
-//            trenchTimeTextView26: "savedText144-1531-PLAN-TRENCH",
-//            trenchTimeTextView27: "savedText145-1531-PLAN-TRENCH",
-//            trenchTimeTextView28: "savedText146-1531-PLAN-TRENCH",
-//            trenchTimeTextView29: "savedText147-1531-PLAN-TRENCH",
-//            trenchTimeTextView30: "savedText148-1531-PLAN-TRENCH",
-//            trenchTimeTextView31: "savedText149-1531-PLAN-TRENCH",
-//            trenchTimeTextView32: "savedText150-1531-PLAN-TRENCH",
-//            trenchTimeTextView33: "savedText151-1531-PLAN-TRENCH",
-//            trenchTimeTextView34: "savedText152-1531-PLAN-TRENCH",
-//            trenchTimeTextView35: "savedText153-1531-PLAN-TRENCH",
-//            trenchTimeTextView36: "savedText154-1531-PLAN-TRENCH",
-//            trenchTimeTextView37: "savedText155-1531-PLAN-TRENCH",
-//            trenchTimeTextView38: "savedText156-1531-PLAN-TRENCH",
-//            trenchTimeTextView39: "savedText157-1531-PLAN-TRENCH",
-//            trenchTimeTextView40: "savedText158-1531-PLAN-TRENCH",
-//            trenchTimeTextView41: "savedText159-1531-PLAN-TRENCH",
-//            trenchTimeTextView42: "savedText160-1531-PLAN-TRENCH",
-//            trenchTimeTextView43: "savedText161-1531-PLAN-TRENCH",
-//            trenchTimeTextView44: "savedText162-1531-PLAN-TRENCH",
-//            trenchTimeTextView45: "savedText163-1531-PLAN-TRENCH",
-//            trenchTimeTextView46: "savedText164-1531-PLAN-TRENCH",
-//            trenchTimeTextView47: "savedText165-1531-PLAN-TRENCH",
-//            trenchTimeTextView48: "savedText166-1531-PLAN-TRENCH",
-//            trenchTimeTextView49: "savedText167-1531-PLAN-TRENCH",
-//            trenchTimeTextView50: "savedText168-1531-PLAN-TRENCH",
-//            trenchTimeTextView51: "savedText169-1531-PLAN-TRENCH",
-//            trenchTimeTextView52: "savedText170-1531-PLAN-TRENCH",
-//            trenchTimeTextView53: "savedText171-1531-PLAN-TRENCH",
-//            trenchTimeTextView54: "savedText172-1531-PLAN-TRENCH",
-//            trenchTimeTextView55: "savedText173-1531-PLAN-TRENCH",
-//            trenchTimeTextView56: "savedText174-1531-PLAN-TRENCH",
-//            trenchTimeTextView57: "savedText175-1531-PLAN-TRENCH",
-//            trenchTimeTextView58: "savedText176-1531-PLAN-TRENCH",
-//            trenchTimeTextView59: "savedText177-1531-PLAN-TRENCH",
-//            trenchTimeTextView60: "savedText178-1531-PLAN-TRENCH",
-//            trenchTimeTextView61: "savedText179-1531-PLAN-TRENCH",
-//            trenchTimeTextView62: "savedText180-1531-PLAN-TRENCH",
-//            trenchTimeTextView63: "savedText181-1531-PLAN-TRENCH",
-//            trenchTimeTextView64: "savedText182-1531-PLAN-TRENCH",
-//            trenchTimeTextView65: "savedText183-1531-PLAN-TRENCH",
-//            trenchTimeTextView66: "savedText184-1531-PLAN-TRENCH",
-//            trenchTimeTextView67: "savedText185-1531-PLAN-TRENCH",
-//            trenchTimeTextView68: "savedText186-1531-PLAN-TRENCH",
-//            trenchTimeTextView69: "savedText187-1531-PLAN-TRENCH",
-//            trenchTimeTextView70: "savedText188-1531-PLAN-TRENCH",
-//            trenchTimeTextView71: "savedText189-1531-PLAN-TRENCH",
-//            trenchTimeTextView72: "savedText190-1531-PLAN-TRENCH",
-//            trenchTimeTextView73: "savedText191-1531-PLAN-TRENCH",
-//            trenchTimeTextView74: "savedText192-1531-PLAN-TRENCH",
-//            trenchTimeTextView75: "savedText193-1531-PLAN-TRENCH",
-//            trenchTimeTextView76: "savedText194-1531-PLAN-TRENCH",
-//            trenchTimeTextView77: "savedText195-1531-PLAN-TRENCH",
-//
-//            
-//        ]
-//        textViewKeyPairs.forEach { textView, key in
-//            UserDefaults.standard.set(textView?.text, forKey: key)
-//        }
-//        
-//        let textFieldKeyPairs = [
-//            textField1: "savedText196-1531-PLAN-TRENCH",
-//            textField2: "savedText197-1531-PLAN-TRENCH",
-//            textField3: "savedText198-1531-PLAN-TRENCHvv",
-//            textField4: "savedText199-1531-PLAN-TRENCHvv",
-//            textField5: "savedText200-1531-PLAN-TRENCHvv",
-//            textField6: "savedText201-1531-PLAN-TRENCHvv",
-//            textField7: "savedText202-1531-PLAN-TRENCHvv",
-//            textField8: "savedText203-1531-PLAN-TRENCHvv",
-//            textField9: "savedText204-1531-PLAN-TRENCHvv",
-//            textField10: "savedText205-1531-PLAN-TRENCHvv",
-//            textField11: "savedText206-1531-PLAN-TRENCHvv",
-//            textField12: "savedText207-1531-PLAN-TRENCHvv",
-//            textField13: "savedText208-1531-PLAN-TRENCHvv",
-//            textField14: "savedText209-1531-PLAN-TRENCHvv",
-//            textField15: "savedText210-1531-PLAN-TRENCHvv",
-//            textField16: "savedText211-1531-PLAN-TRENCHvv",
-//            textField17: "savedText212-1531-PLAN-TRENCHvv",
-//            textField18: "savedText213-1531-PLAN-TRENCHvv",
-//            textField19: "savedText214-1531-PLAN-TRENCHvv",
-//            textField20: "savedText215-1531-PLAN-TRENCHvv",
-//            textField21: "savedText216-1531-PLAN-TRENCHvv",
-//            textField22: "savedText217-1531-PLAN-TRENCHvv",
-//            textField23: "savedText218-1531-PLAN-TRENCHvv",
-//            textField24: "savedText219-1531-PLAN-TRENCHvv",
-//            textField25: "savedText220-1531-PLAN-TRENCHvv",
-//            textField26: "savedText221-1531-PLAN-TRENCHvv",
-//            textField27: "savedText222-1531-PLAN-TRENCHvv",
-//            textField28: "savedText223-1531-PLAN-TRENCHvv"
-//        ]
-//            textFieldKeyPairs.forEach { textField, key in
-//                UserDefaults.standard.set(textField?.text, forKey: key)
-//            }
-//      
+        
+        UserDefaults.standard.set(cpTextView.text, forKey: "1531-PLAN-TRENCH-1")
+        UserDefaults.standard.set(companyTextView.text, forKey: "1531-PLAN-TRENCH-2")
+        UserDefaults.standard.set(phoneTextView.text, forKey: "1531-PLAN-TRENCH-3")
+        UserDefaults.standard.set(emailTextView.text, forKey: "1531-PLAN-TRENCH-4")
+        UserDefaults.standard.set(planTextView.text, forKey: "1531-PLAN-TRENCH-5")
+        UserDefaults.standard.set(addressOrAreaTextView.text, forKey: "1531-PLAN-TRENCH-6")
+        UserDefaults.standard.set(dateTextView.text, forKey: "1531-PLAN-TRENCH-7")
+        UserDefaults.standard.set(describeTrenchTextView.text, forKey: "1531-PLAN-TRENCH-8")
+        UserDefaults.standard.set(employeeNameTextView1.text, forKey: "1531-PLAN-TRENCH-9")
+        UserDefaults.standard.set(employeeNameTextView2.text, forKey: "1531-PLAN-TRENCH-10")
+        UserDefaults.standard.set(employeeNameTextView3.text, forKey: "1531-PLAN-TRENCH-11")
+        UserDefaults.standard.set(employeeNameTextView4.text, forKey: "1531-PLAN-TRENCH-12")
+        UserDefaults.standard.set(employeeNameTextView5.text, forKey: "1531-PLAN-TRENCH-13")
+        UserDefaults.standard.set(employeeNameTextView6.text, forKey: "1531-PLAN-TRENCH-14")
+        UserDefaults.standard.set(employeeNameTextView7.text, forKey: "1531-PLAN-TRENCH-15")
+        UserDefaults.standard.set(employeeNameTextView8.text, forKey: "1531-PLAN-TRENCH-16")
+        UserDefaults.standard.set(employeeNameTextView9.text, forKey: "1531-PLAN-TRENCH-17")
 
+        UserDefaults.standard.set(textField1.text, forKey: "1531-PLAN-TRENCH-18")
+        UserDefaults.standard.set(textField2.text, forKey: "1531-PLAN-TRENCH-19")
+        UserDefaults.standard.set(textField3.text, forKey: "1531-PLAN-TRENCH-20")
+        UserDefaults.standard.set(textField4.text, forKey: "1531-PLAN-TRENCH-21")
+        UserDefaults.standard.set(textField5.text, forKey: "1531-PLAN-TRENCH-22")
+        UserDefaults.standard.set(textField6.text, forKey: "1531-PLAN-TRENCH-23")
+        UserDefaults.standard.set(textField7.text, forKey: "1531-PLAN-TRENCH-24")
+        UserDefaults.standard.set(textField8.text, forKey: "1531-PLAN-TRENCH-25")
+        UserDefaults.standard.set(textField9.text, forKey: "1531-PLAN-TRENCH-26")
+        UserDefaults.standard.set(textField10.text, forKey: "1531-PLAN-TRENCH-27")
+        UserDefaults.standard.set(textField11.text, forKey: "1531-PLAN-TRENCH-28")
+        UserDefaults.standard.set(textField12.text, forKey: "1531-PLAN-TRENCH-29")
+        UserDefaults.standard.set(textField13.text, forKey: "1531-PLAN-TRENCH-30")
+        UserDefaults.standard.set(textField14.text, forKey: "1531-PLAN-TRENCH-31")
+        UserDefaults.standard.set(textField15.text, forKey: "1531-PLAN-TRENCH-32")
+        UserDefaults.standard.set(textField16.text, forKey: "1531-PLAN-TRENCH-33")
+        UserDefaults.standard.set(textField17.text, forKey: "1531-PLAN-TRENCH-34")
+        UserDefaults.standard.set(textField18.text, forKey: "1531-PLAN-TRENCH-35")
+        UserDefaults.standard.set(textField19.text, forKey: "1531-PLAN-TRENCH-36")
+        UserDefaults.standard.set(textField20.text, forKey: "1531-PLAN-TRENCH-37")
+        UserDefaults.standard.set(textField21.text, forKey: "1531-PLAN-TRENCH-38")
+        UserDefaults.standard.set(textField22.text, forKey: "1531-PLAN-TRENCH-39")
+        UserDefaults.standard.set(textField23.text, forKey: "1531-PLAN-TRENCH-40")
+        UserDefaults.standard.set(textField24.text, forKey: "1531-PLAN-TRENCH-41")
+        UserDefaults.standard.set(textField25.text, forKey: "1531-PLAN-TRENCH-42")
+        UserDefaults.standard.set(textField26.text, forKey: "1531-PLAN-TRENCH-43")
+        UserDefaults.standard.set(textField27.text, forKey: "1531-PLAN-TRENCH-44")
+        UserDefaults.standard.set(textField28.text, forKey: "1531-PLAN-TRENCH-45")
+        UserDefaults.standard.set(textField29.text, forKey: "1531-PLAN-TRENCH-46")
+        UserDefaults.standard.set(textField30.text, forKey: "1531-PLAN-TRENCH-47")
+        UserDefaults.standard.set(textField31.text, forKey: "1531-PLAN-TRENCH-48")
+        UserDefaults.standard.set(textField32.text, forKey: "1531-PLAN-TRENCH-49")
 
+        UserDefaults.standard.set(textView1.text, forKey: "1531-PLAN-TRENCH-50")
+        UserDefaults.standard.set(textView2.text, forKey: "1531-PLAN-TRENCH-51")
+
+        UserDefaults.standard.set(trenchTimeTextView1.text, forKey: "1531-PLAN-TRENCH-52")
+        UserDefaults.standard.set(trenchTimeTextView2.text, forKey: "1531-PLAN-TRENCH-53")
+        UserDefaults.standard.set(trenchTimeTextView3.text, forKey: "1531-PLAN-TRENCH-54")
+        UserDefaults.standard.set(trenchTimeTextView4.text, forKey: "1531-PLAN-TRENCH-55")
+        UserDefaults.standard.set(trenchTimeTextView5.text, forKey: "1531-PLAN-TRENCH-56")
+        UserDefaults.standard.set(trenchTimeTextView6.text, forKey: "1531-PLAN-TRENCH-57")
+        UserDefaults.standard.set(trenchTimeTextView7.text, forKey: "1531-PLAN-TRENCH-58")
+        UserDefaults.standard.set(trenchTimeTextView8.text, forKey: "1531-PLAN-TRENCH-59")
+        UserDefaults.standard.set(trenchTimeTextView9.text, forKey: "1531-PLAN-TRENCH-60")
+        UserDefaults.standard.set(trenchTimeTextView10.text, forKey: "1531-PLAN-TRENCH-61")
+        UserDefaults.standard.set(trenchTimeTextView11.text, forKey: "1531-PLAN-TRENCH-62")
+
+        UserDefaults.standard.set(noteTextView1.text, forKey: "1531-PLAN-TRENCH-63")
     }
     
 
@@ -1264,7 +991,6 @@ class TrenchWorkPlanVC: UIViewController {
     
     func setSignatures() {
         cpSignBtn.setImage(appDelegate.imgSign7.image, for: .normal)
-        competentPersonSignBtn.setImage(appDelegate.imgSign8.image, for: .normal)
     }
 
     @IBAction func backTapBtn(_ sender: UIButton) {
@@ -1292,11 +1018,7 @@ class TrenchWorkPlanVC: UIViewController {
         vc.isWorkingOn = 7
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    @IBAction func competentPersonSignTapBtn(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC
-        vc.isWorkingOn = 8
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+
     
     @IBAction func btnTap1(_ sender: UIButton) {
         KosHelper.shared.selectedUnseleted(img: img1, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img1h)
@@ -1967,7 +1689,81 @@ class TrenchWorkPlanVC: UIViewController {
         KosHelper.shared.selectedUnseleted(img: img167, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img167h)
     }
 
-   
+    @IBAction func btnTap168(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img168, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img168h)
+    }
+
+    @IBAction func btnTap169(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img169, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img169h)
+    }
+
+    @IBAction func btnTap170(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img170, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img170h)
+    }
+
+    @IBAction func btnTap171(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img171, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img171h)
+    }
+
+    @IBAction func btnTap172(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img172, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img172h)
+    }
+
+    @IBAction func btnTap173(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img173, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img173h)
+    }
+
+    @IBAction func btnTap174(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img174, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img174h)
+    }
+
+    @IBAction func btnTap175(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img175, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img175h)
+    }
+
+    @IBAction func btnTap176(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img176, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img176h)
+    }
+
+    @IBAction func btnTap177(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img177, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img177h)
+    }
+
+    @IBAction func btnTap178(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img178, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img178h)
+    }
+
+    @IBAction func btnTap179(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img179, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img179h)
+    }
+
+    @IBAction func btnTap180(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img180, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img180h)
+    }
+
+    @IBAction func btnTap181(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img181, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img181h)
+    }
+
+    @IBAction func btnTap182(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img182, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img182h)
+    }
+
+    @IBAction func btnTap183(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img183, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img183h)
+    }
+
+    @IBAction func btnTap184(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img184, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img184h)
+    }
+
+    @IBAction func btnTap185(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img185, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img185h)
+    }
+
+    @IBAction func btnTap186(_ sender: UIButton) {
+        KosHelper.shared.selectedUnseleted(img: img186, sender: sender, vc: "TrenchWorkPlanVC", key: KeysPermitVC.img186h)
+    }
 
     func checkSelectedImages(){
         
@@ -2165,7 +1961,25 @@ class TrenchWorkPlanVC: UIViewController {
                     case 164: btn165.isSelected = false
                     case 165: btn166.isSelected = false
                     case 166: btn167.isSelected = false
-
+                    case 167: btn168.isSelected = false
+                    case 168: btn169.isSelected = false
+                    case 169: btn170.isSelected = false
+                    case 170: btn171.isSelected = false
+                    case 171: btn172.isSelected = false
+                    case 172: btn173.isSelected = false
+                    case 173: btn174.isSelected = false
+                    case 174: btn175.isSelected = false
+                    case 175: btn176.isSelected = false
+                    case 176: btn177.isSelected = false
+                    case 177: btn178.isSelected = false
+                    case 178: btn179.isSelected = false
+                    case 179: btn180.isSelected = false
+                    case 180: btn181.isSelected = false
+                    case 181: btn182.isSelected = false
+                    case 182: btn183.isSelected = false
+                    case 183: btn184.isSelected = false
+                    case 184: btn185.isSelected = false
+                    case 185: btn186.isSelected = false
                     
                 default:
                     break
@@ -2341,6 +2155,25 @@ class TrenchWorkPlanVC: UIViewController {
                    case 164: btn165.isSelected = true
                    case 165: btn166.isSelected = true
                    case 166: btn167.isSelected = true
+                   case 167: btn168.isSelected = true
+                   case 168: btn169.isSelected = true
+                   case 169: btn170.isSelected = true
+                   case 170: btn171.isSelected = true
+                   case 171: btn172.isSelected = true
+                   case 172: btn173.isSelected = true
+                   case 173: btn174.isSelected = true
+                   case 174: btn175.isSelected = true
+                   case 175: btn176.isSelected = true
+                   case 176: btn177.isSelected = true
+                   case 177: btn178.isSelected = true
+                   case 178: btn179.isSelected = true
+                   case 179: btn180.isSelected = true
+                   case 180: btn181.isSelected = true
+                   case 181: btn182.isSelected = true
+                   case 182: btn183.isSelected = true
+                   case 183: btn184.isSelected = true
+                   case 184: btn185.isSelected = true
+                   case 185: btn186.isSelected = true
                 default:
                     break
                 }

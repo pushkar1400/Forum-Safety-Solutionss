@@ -1286,6 +1286,25 @@ enum KeysPermitVC {
     static let img166h = "img166h"
     static let img167h = "img167h"
 
+    static let img168h = "img168h"
+    static let img169h = "img169h"
+    static let img170h = "img170h"
+    static let img171h = "img171h"
+    static let img172h = "img172h"
+    static let img173h = "img173h"
+    static let img174h = "img174h"
+    static let img175h = "img175h"
+    static let img176h = "img176h"
+    static let img177h = "img177h"
+    static let img178h = "img178h"
+    static let img179h = "img179h"
+    static let img180h = "img180h"
+    static let img181h = "img181h"
+    static let img182h = "img182h"
+    static let img183h = "img183h"
+    static let img184h = "img184h"
+    static let img185h = "img185h"
+    static let img186h = "img186h"
     
     static let selectUnselectAllKeys9 = [
         "img1h",   "img2h",   "img3h",   "img4h",   "img5h",
@@ -1329,7 +1348,11 @@ enum KeysPermitVC {
         "img156h", "img157h", "img158h", "img159h", "img160h",
         
         "img161h", "img162h", "img163h", "img164h", "img165h",
-        "img166h", "img167h"
+        "img166h", "img167h", "img168h", "img169h", "img170h",
+        "img171h", "img172h", "img173h", "img174h", "img175h",
+        "img176h", "img177h", "img178h", "img179h", "img180h",
+        "img181h", "img182h", "img183h", "img184h", "img185h",
+        "img186h"
     ]
 
 
@@ -3024,6 +3047,48 @@ enum KeysPermitVC {
         "img150cc"
     ]
     
+    
+    
+    static let img1dd = "img1dd"
+    static let img2dd = "img2dd"
+    static let img3dd = "img3dd"
+    static let img4dd = "img4dd"
+    static let img5dd = "img5dd"
+    static let img6dd = "img6dd"
+    static let img7dd = "img7dd"
+    static let img8dd = "img8dd"
+    static let img9dd = "img9dd"
+    static let img10dd = "img10dd"
+    static let img11dd = "img11dd"
+    static let img12dd = "img12dd"
+    static let img13dd = "img13dd"
+    static let img14dd = "img14dd"
+    static let img15dd = "img15dd"
+    static let img16dd = "img16dd"
+    static let img17dd = "img17dd"
+    static let img18dd = "img18dd"
+    
+    
+    static let selectUnselectAllKeys29 = [
+        "img1dd",
+        "img2dd",
+        "img3dd",
+        "img4dd",
+        "img5dd",
+        "img6dd",
+        "img7dd",
+        "img8dd",
+        "img9dd",
+        "img10dd",
+        "img11dd",
+        "img12dd",
+        "img13dd",
+        "img14dd",
+        "img15dd",
+        "img16dd",
+        "img17dd",
+        "img18dd",
+    ]
 }
 
 
