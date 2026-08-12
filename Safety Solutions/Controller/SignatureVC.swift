@@ -94,6 +94,12 @@ class SignatureVC: UIViewController,SwiftSignatureViewDelegate {
             appDelegate?.imgSign25.image = signView.getCroppedSignature()
         }else if isWorkingOn == 26{
             appDelegate?.imgSign26.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 27{
+            appDelegate?.imgSign27.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 28{
+            appDelegate?.imgSign28.image = signView.getCroppedSignature()
+        }else if isWorkingOn == 29{
+            appDelegate?.imgSign29.image = signView.getCroppedSignature()
         }
         
         self.navigationController?.popViewController(animated: true)

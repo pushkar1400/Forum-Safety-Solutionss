@@ -2892,6 +2892,16 @@ enum KeysPermitVC {
     static let img148cc = "img148cc"
     static let img149cc = "img149cc"
     static let img150cc = "img150cc"
+    static let img151cc = "img151cc"
+    static let img152cc = "img152cc"
+    static let img153cc = "img153cc"
+    static let img154cc = "img154cc"
+    static let img155cc = "img155cc"
+    static let img156cc = "img156cc"
+    static let img157cc = "img157cc"
+    static let img158cc = "img158cc"
+    static let img159cc = "img159cc"
+    
     
     
     static let selectUnselectAllKeys28 = [
@@ -3044,7 +3054,17 @@ enum KeysPermitVC {
         "img147cc",
         "img148cc",
         "img149cc",
-        "img150cc"
+        "img150cc",
+        "img151cc",
+        "img152cc",
+        "img153cc",
+        "img154cc",
+        "img155cc",
+        "img156cc",
+        "img157cc",
+        "img158cc",
+        "img159cc",
+        
     ]
     
     
@@ -3088,6 +3108,495 @@ enum KeysPermitVC {
         "img16dd",
         "img17dd",
         "img18dd",
+    ]
+    
+    static let img1ee = "img1ee"
+    static let img2ee = "img2ee"
+    static let img3ee = "img3ee"
+    static let img4ee = "img4ee"
+    static let img5ee = "img5ee"
+    static let img6ee = "img6ee"
+    static let img7ee = "img7ee"
+    static let img8ee = "img8ee"
+    static let img9ee = "img9ee"
+    static let img10ee = "img10ee"
+    static let img11ee = "img11ee"
+    static let img12ee = "img12ee"
+    static let img13ee = "img13ee"
+    static let img14ee = "img14ee"
+    static let img15ee = "img15ee"
+    static let img16ee = "img16ee"
+    static let img17ee = "img17ee"
+    static let img18ee = "img18ee"
+    static let img19ee = "img19ee"
+    static let img20ee = "img20ee"
+    static let img21ee = "img21ee"
+    static let img22ee = "img22ee"
+    static let img23ee = "img23ee"
+    static let img24ee = "img24ee"
+    static let img25ee = "img25ee"
+    static let img26ee = "img26ee"
+    static let img27ee = "img27ee"
+    static let img28ee = "img28ee"
+    static let img29ee = "img29ee"
+    static let img30ee = "img30ee"
+    static let img31ee = "img31ee"
+    static let img32ee = "img32ee"
+    static let img33ee = "img33ee"
+    static let img34ee = "img34ee"
+    static let img35ee = "img35ee"
+    static let img36ee = "img36ee"
+    static let img37ee = "img37ee"
+    static let img38ee = "img38ee"
+    static let img39ee = "img39ee"
+    static let img40ee = "img40ee"
+    static let img41ee = "img41ee"
+    static let img42ee = "img42ee"
+    static let img43ee = "img43ee"
+    static let img44ee = "img44ee"
+    static let img45ee = "img45ee"
+    static let img46ee = "img46ee"
+    static let img47ee = "img47ee"
+    static let img48ee = "img48ee"
+    static let img49ee = "img49ee"
+    static let img50ee = "img50ee"
+    static let img51ee = "img51ee"
+    static let img52ee = "img52ee"
+    static let img53ee = "img53ee"
+    static let img54ee = "img54ee"
+    static let img55ee = "img55ee"
+    static let img56ee = "img56ee"
+    static let img57ee = "img57ee"
+    static let img58ee = "img58ee"
+    static let img59ee = "img59ee"
+    static let img60ee = "img60ee"
+    static let img61ee = "img61ee"
+    static let img62ee = "img62ee"
+    static let img63ee = "img63ee"
+    static let img64ee = "img64ee"
+    static let img65ee = "img65ee"
+    static let img66ee = "img66ee"
+    static let img67ee = "img67ee"
+    static let img68ee = "img68ee"
+    static let img69ee = "img69ee"
+    static let img70ee = "img70ee"
+    static let img71ee = "img71ee"
+    static let img72ee = "img72ee"
+    static let img73ee = "img73ee"
+    static let img74ee = "img74ee"
+    static let img75ee = "img75ee"
+    static let img76ee = "img76ee"
+    static let img77ee = "img77ee"
+    static let img78ee = "img78ee"
+    static let img79ee = "img79ee"
+    static let img80ee = "img80ee"
+    static let img81ee = "img81ee"
+    static let img82ee = "img82ee"
+    static let img83ee = "img83ee"
+    static let img84ee = "img84ee"
+    static let img85ee = "img85ee"
+    static let img86ee = "img86ee"
+    static let img87ee = "img87ee"
+    static let img88ee = "img88ee"
+    static let img89ee = "img89ee"
+    static let img90ee = "img90ee"
+    static let img91ee = "img91ee"
+    static let img92ee = "img92ee"
+    static let img93ee = "img93ee"
+    static let img94ee = "img94ee"
+    static let img95ee = "img95ee"
+    static let img96ee = "img96ee"
+    static let img97ee = "img97ee"
+    static let img98ee = "img98ee"
+    static let img99ee = "img99ee"
+    static let img100ee = "img100ee"
+    static let img101ee = "img101ee"
+    static let img102ee = "img102ee"
+    static let img103ee = "img103ee"
+    static let img104ee = "img104ee"
+    static let img105ee = "img105ee"
+    static let img106ee = "img106ee"
+    static let img107ee = "img107ee"
+    static let img108ee = "img108ee"
+    static let img109ee = "img109ee"
+    static let img110ee = "img110ee"
+    static let img111ee = "img111ee"
+    static let img112ee = "img112ee"
+    static let img113ee = "img113ee"
+    static let img114ee = "img114ee"
+    static let img115ee = "img115ee"
+    static let img116ee = "img116ee"
+    static let img117ee = "img117ee"
+    static let img118ee = "img118ee"
+    static let img119ee = "img119ee"
+    static let img120ee = "img120ee"
+    static let img121ee = "img121ee"
+    static let img122ee = "img122ee"
+    static let img123ee = "img123ee"
+    static let img124ee = "img124ee"
+    static let img125ee = "img125ee"
+    static let img126ee = "img126ee"
+    static let img127ee = "img127ee"
+    static let img128ee = "img128ee"
+    static let img129ee = "img129ee"
+    static let img130ee = "img130ee"
+    static let img131ee = "img131ee"
+    static let img132ee = "img132ee"
+    static let img133ee = "img133ee"
+    static let img134ee = "img134ee"
+    static let img135ee = "img135ee"
+    static let img136ee = "img136ee"
+    static let img137ee = "img137ee"
+    static let img138ee = "img138ee"
+    static let img139ee = "img139ee"
+    static let img140ee = "img140ee"
+    static let img141ee = "img141ee"
+    static let img142ee = "img142ee"
+    static let img143ee = "img143ee"
+    static let img144ee = "img144ee"
+    static let img145ee = "img145ee"
+    static let img146ee = "img146ee"
+    static let img147ee = "img147ee"
+    static let img148ee = "img148ee"
+    static let img149ee = "img149ee"
+    static let img150ee = "img150ee"
+    static let img151ee = "img151ee"
+    static let img152ee = "img152ee"
+    static let img153ee = "img153ee"
+    static let img154ee = "img154ee"
+    static let img155ee = "img155ee"
+    static let img156ee = "img156ee"
+    static let img157ee = "img157ee"
+    static let img158ee = "img158ee"
+    static let img159ee = "img159ee"
+    
+    
+    
+    static let selectUnselectAllKeys30 = [
+        "img1ee",
+        "img2ee",
+        "img3ee",
+        "img4ee",
+        "img5ee",
+        "img6ee",
+        "img7ee",
+        "img8ee",
+        "img9ee",
+        "img10ee",
+        "img11ee",
+        "img12ee",
+        "img13ee",
+        "img14ee",
+        "img15ee",
+        "img16ee",
+        "img17ee",
+        "img18ee",
+        "img19ee",
+        "img20ee",
+        "img21ee",
+        "img22ee",
+        "img23ee",
+        "img24ee",
+        "img25ee",
+        "img26ee",
+        "img27ee",
+        "img28ee",
+        "img29ee",
+        "img30ee",
+        "img31ee",
+        "img32ee",
+        "img33ee",
+        "img34ee",
+        "img35ee",
+        "img36ee",
+        "img37ee",
+        "img38ee",
+        "img39ee",
+        "img40ee",
+        "img41ee",
+        "img42ee",
+        "img43ee",
+        "img44ee",
+        "img45ee",
+        "img46ee",
+        "img47ee",
+        "img48ee",
+        "img49ee",
+        "img50ee",
+        "img51ee",
+        "img52ee",
+        "img53ee",
+        "img54ee",
+        "img55ee",
+        "img56ee",
+        "img57ee",
+        "img58ee",
+        "img59ee",
+        "img60ee",
+        "img61ee",
+        "img62ee",
+        "img63ee",
+        "img64ee",
+        "img65ee",
+        "img66ee",
+        "img67ee",
+        "img68ee",
+        "img69ee",
+        "img70ee",
+        "img71ee",
+        "img72ee",
+        "img73ee",
+        "img74ee",
+        "img75ee",
+        "img76ee",
+        "img77ee",
+        "img78ee",
+        "img79ee",
+        "img80ee",
+        "img81ee",
+        "img82ee",
+        "img83ee",
+        "img84ee",
+        "img85ee",
+        "img86ee",
+        "img87ee",
+        "img88ee",
+        "img89ee",
+        "img90ee",
+        "img91ee",
+        "img92ee",
+        "img93ee",
+        "img94ee",
+        "img95ee",
+        "img96ee",
+        "img97ee",
+        "img98ee",
+        "img99ee",
+        "img100ee",
+        "img101ee",
+        "img102ee",
+        "img103ee",
+        "img104ee",
+        "img105ee",
+        "img106ee",
+        "img107ee",
+        "img108ee",
+        "img109ee",
+        "img110ee",
+        "img111ee",
+        "img112ee",
+        "img113ee",
+        "img114ee",
+        "img115ee",
+        "img116ee",
+        "img117ee",
+        "img118ee",
+        "img119ee",
+        "img120ee",
+        "img121ee",
+        "img122ee",
+        "img123ee",
+        "img124ee",
+        "img125ee",
+        "img126ee",
+        "img127ee",
+        "img128ee",
+        "img129ee",
+        "img130ee",
+        "img131ee",
+        "img132ee",
+        "img133ee",
+        "img134ee",
+        "img135ee",
+        "img136ee",
+        "img137ee",
+        "img138ee",
+        "img139ee",
+        "img140ee",
+        "img141ee",
+        "img142ee",
+        "img143ee",
+        "img144ee",
+        "img145ee",
+        "img146ee",
+        "img147ee",
+        "img148ee",
+        "img149ee",
+        "img150ee",
+        "img151ee",
+        "img152ee",
+        "img153ee",
+        "img154ee",
+        "img155ee",
+        "img156ee",
+        "img157ee",
+        "img158ee",
+        "img159ee",
+    ]
+    
+    
+    static let img1ff = "img1ff"
+    static let img2ff = "img2ff"
+    static let img3ff = "img3ff"
+    static let img4ff = "img4ff"
+    static let img5ff = "img5ff"
+    static let img6ff = "img6ff"
+    static let img7ff = "img7ff"
+    static let img8ff = "img8ff"
+    static let img9ff = "img9ff"
+    
+    static let selectUnselectAllKeys31 = [
+        "img1ff",
+        "img2ff",
+        "img3ff",
+        "img4ff",
+        "img5ff",
+        "img6ff",
+        "img7ff",
+        "img8ff",
+        "img9ff",
+    ]
+    
+    static let img1gg = "img1gg"
+    static let img2gg = "img2gg"
+    static let img3gg = "img3gg"
+    static let img4gg = "img4gg"
+    static let img5gg = "img5gg"
+    static let img6gg = "img6gg"
+    static let img7gg = "img7gg"
+    static let img8gg = "img8gg"
+    static let img9gg = "img9gg"
+    static let img10gg = "img10gg"
+    static let img11gg = "img11gg"
+    static let img12gg = "img12gg"
+    static let img13gg = "img13gg"
+    static let img14gg = "img14gg"
+    static let img15gg = "img15gg"
+    static let img16gg = "img16gg"
+    static let img17gg = "img17gg"
+    static let img18gg = "img18gg"
+    static let img19gg = "img19gg"
+    static let img20gg = "img20gg"
+    static let img21gg = "img21gg"
+    static let img22gg = "img22gg"
+    static let img23gg = "img23gg"
+    static let img24gg = "img24gg"
+    static let img25gg = "img25gg"
+    static let img26gg = "img26gg"
+    static let img27gg = "img27gg"
+    static let img28gg = "img28gg"
+    static let img29gg = "img29gg"
+    static let img30gg = "img30gg"
+    static let img31gg = "img31gg"
+    static let img32gg = "img32gg"
+    static let img33gg = "img33gg"
+    static let img34gg = "img34gg"
+    static let img35gg = "img35gg"
+    static let img36gg = "img36gg"
+    static let img37gg = "img37gg"
+    static let img38gg = "img38gg"
+    static let img39gg = "img39gg"
+    static let img40gg = "img40gg"
+    static let img41gg = "img41gg"
+    static let img42gg = "img42gg"
+    static let img43gg = "img43gg"
+    static let img44gg = "img44gg"
+    static let img45gg = "img45gg"
+    static let img46gg = "img46gg"
+    static let img47gg = "img47gg"
+    static let img48gg = "img48gg"
+    static let img49gg = "img49gg"
+    static let img50gg = "img50gg"
+    static let img51gg = "img51gg"
+    static let img52gg = "img52gg"
+    static let img53gg = "img53gg"
+    static let img54gg = "img54gg"
+    static let img55gg = "img55gg"
+    static let img56gg = "img56gg"
+    static let img57gg = "img57gg"
+    static let img58gg = "img58gg"
+    static let img59gg = "img59gg"
+    static let img60gg = "img60gg"
+    static let img61gg = "img61gg"
+    static let img62gg = "img62gg"
+    static let img63gg = "img63gg"
+    static let img64gg = "img64gg"
+    static let img65gg = "img65gg"
+    static let img66gg = "img66gg"
+    static let img67gg = "img67gg"
+    static let img68gg = "img68gg"
+    static let img69gg = "img69gg"
+    
+    static let selectUnselectAllKeys32 = [
+        "img1gg",
+        "img2gg",
+        "img3gg",
+        "img4gg",
+        "img5gg",
+        "img6gg",
+        "img7gg",
+        "img8gg",
+        "img9gg",
+        "img10gg",
+        "img11gg",
+        "img12gg",
+        "img13gg",
+        "img14gg",
+        "img15gg",
+        "img16gg",
+        "img17gg",
+        "img18gg",
+        "img19gg",
+        "img20gg",
+        "img21gg",
+        "img22gg",
+        "img23gg",
+        "img24gg",
+        "img25gg",
+        "img26gg",
+        "img27gg",
+        "img28gg",
+        "img29gg",
+        "img30gg",
+        "img31gg",
+        "img32gg",
+        "img33gg",
+        "img34gg",
+        "img35gg",
+        "img36gg",
+        "img37gg",
+        "img38gg",
+        "img39gg",
+        "img40gg",
+        "img41gg",
+        "img42gg",
+        "img43gg",
+        "img44gg",
+        "img45gg",
+        "img46gg",
+        "img47gg",
+        "img48gg",
+        "img49gg",
+        "img50gg",
+        "img51gg",
+        "img52gg",
+        "img53gg",
+        "img54gg",
+        "img55gg",
+        "img56gg",
+        "img57gg",
+        "img58gg",
+        "img59gg",
+        "img60gg",
+        "img61gg",
+        "img62gg",
+        "img63gg",
+        "img64gg",
+        "img65gg",
+        "img66gg",
+        "img67gg",
+        "img68gg",
+        "img69gg"
     ]
 }
 

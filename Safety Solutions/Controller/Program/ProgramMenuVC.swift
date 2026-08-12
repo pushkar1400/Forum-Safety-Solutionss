@@ -97,8 +97,8 @@ class ProgramMenuVC: UIViewController {
     }
     
     @IBAction func MewpsProgramTapBtn(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "KosSB", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "FssDoshCraneMenuVC") as! FssDoshCraneMenuVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "KosSB", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MobileElevatingWorkPlatformsMenuVC") as! MobileElevatingWorkPlatformsMenuVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

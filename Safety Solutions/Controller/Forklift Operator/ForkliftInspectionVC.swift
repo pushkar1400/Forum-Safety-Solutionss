@@ -365,8 +365,17 @@ class ForkliftInspectionVC: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationItem.hidesBackButton = true
+          checkSelectedImages()
+    }
+   
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        
         UserDefaults.standard.set(forkliftOperatorTextView.text, forKey: "savedText1-1622-INSP-FORKLIFT")
 
         UserDefaults.standard.set(emailTextView.text, forKey: "savedText2-1622-INSP-FORKLIFT")
@@ -386,11 +395,6 @@ class ForkliftInspectionVC: UIViewController {
         UserDefaults.standard.set(notesTextView.text, forKey: "savedText9-1622-INSP-FORKLIFT")
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
-          checkSelectedImages()
-    }
-   
     func selectInGroup(selectedIndex: Int) {
         
         let groupStart = (selectedIndex / 3) * 3
