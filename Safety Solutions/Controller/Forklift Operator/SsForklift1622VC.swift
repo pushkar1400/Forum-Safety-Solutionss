@@ -103,25 +103,19 @@ class SsForklift1622VC: UIViewController, UIImagePickerControllerDelegate & UINa
         
         
     }
+ 
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationItem.hidesBackButton = true
           setInfoDefault()
           setSignatures()
           checkSelectedImages()
     }
-    func setInfoDefault() {
-        sNmaetextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
-        depLocTextView.text = appDelegate.deptLocation
-        companyTextView.text = appDelegate.company
-        datetextView.text = appDelegate.todayDate
-    }
-    
-    func setSignatures() {
-        sSignBtn.setImage(appDelegate.imgSign26.image, for: .normal)
-    }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        
         UserDefaults.standard.set(sNmaetextView.text, forKey: "savedText1-1622-SS-FORKLIFT")
         UserDefaults.standard.set(depLocTextView.text, forKey: "savedText2-1622-SS-FORKLIFT")
         UserDefaults.standard.set(companyTextView.text, forKey: "savedText3-1622-SS-FORKLIFT")
@@ -153,6 +147,18 @@ class SsForklift1622VC: UIViewController, UIImagePickerControllerDelegate & UINa
             }
             dismiss(animated: true, completion: nil)
         }
+    }
+    
+    
+    func setInfoDefault() {
+        sNmaetextView.text = "\(appDelegate.name) \(appDelegate.lastName)"
+        depLocTextView.text = appDelegate.deptLocation
+        companyTextView.text = appDelegate.company
+        datetextView.text = appDelegate.todayDate
+    }
+    
+    func setSignatures() {
+        sSignBtn.setImage(appDelegate.imgSign26.image, for: .normal)
     }
     
     @IBAction func backTapBtn(_ sender: UIButton) {

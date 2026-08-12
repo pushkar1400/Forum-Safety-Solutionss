@@ -1,24 +1,28 @@
 //
-//  ForkliftInspectionVC.swift
+//  MobileElevatingWorkPlatformsInspectionMenuVC.swift
 //  Forum Safety Solutions
 //
-//  Created by Koshal Singh on 10/02/26.
+//  Created by Koshal Singh on 14/07/26.
 //
 
 import UIKit
 
-class ForkliftInspectionVC: UIViewController {
+class MobileElevatingWorkPlatformsInspectionMenuVC: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var forkliftOperatorTextView: UITextView!
+    @IBOutlet weak var newpOperatorTextView: UITextView!
     @IBOutlet weak var emailTextView: UITextView!
-    @IBOutlet weak var companyTextView: UITextView!
+    @IBOutlet weak var employeeIDTextView: UITextView!
+    @IBOutlet weak var deptTextView: UITextView!
     @IBOutlet weak var dateTextView: UITextView!
+    @IBOutlet weak var formNumberTextView: UITextView!
+    @IBOutlet weak var addressOrFacilityTextView: UITextView!
     @IBOutlet weak var manufacturerTextView: UITextView!
     @IBOutlet weak var modelTextView: UITextView!
-    @IBOutlet weak var classTextView: UITextView!
-    @IBOutlet weak var heightTextView: UITextView!
+    @IBOutlet weak var typeTextView: UITextView!
     @IBOutlet weak var notesTextView: UITextView!
+    
+    @IBOutlet weak var signatureBtn: UIButton!
     
     
     @IBOutlet weak var img1: UIImageView!
@@ -171,6 +175,15 @@ class ForkliftInspectionVC: UIViewController {
     @IBOutlet weak var img148: UIImageView!
     @IBOutlet weak var img149: UIImageView!
     @IBOutlet weak var img150: UIImageView!
+    @IBOutlet weak var img151: UIImageView!
+    @IBOutlet weak var img152: UIImageView!
+    @IBOutlet weak var img153: UIImageView!
+    @IBOutlet weak var img154: UIImageView!
+    @IBOutlet weak var img155: UIImageView!
+    @IBOutlet weak var img156: UIImageView!
+    @IBOutlet weak var img157: UIImageView!
+    @IBOutlet weak var img158: UIImageView!
+    @IBOutlet weak var img159: UIImageView!
    
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
@@ -322,78 +335,103 @@ class ForkliftInspectionVC: UIViewController {
     @IBOutlet weak var btn148: UIButton!
     @IBOutlet weak var btn149: UIButton!
     @IBOutlet weak var btn150: UIButton!
+    @IBOutlet weak var btn151: UIButton!
+    @IBOutlet weak var btn152: UIButton!
+    @IBOutlet weak var btn153: UIButton!
+    @IBOutlet weak var btn154: UIButton!
+    @IBOutlet weak var btn155: UIButton!
+    @IBOutlet weak var btn156: UIButton!
+    @IBOutlet weak var btn157: UIButton!
+    @IBOutlet weak var btn158: UIButton!
+    @IBOutlet weak var btn159: UIButton!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let savedText1 = UserDefaults.standard.string(forKey: "savedText1-1622-INSP-FORKLIFT") {
-            forkliftOperatorTextView.text = savedText1
+        if let savedText1 = UserDefaults.standard.string(forKey: "savedText1-1641-INSP-MEWPS") {
+            newpOperatorTextView.text = savedText1
         }
 
-        if let savedText2 = UserDefaults.standard.string(forKey: "savedText2-1622-INSP-FORKLIFT") {
+        if let savedText2 = UserDefaults.standard.string(forKey: "savedText2-1641-INSP-MEWPS") {
             emailTextView.text = savedText2
         }
 
-        if let savedText3 = UserDefaults.standard.string(forKey: "savedText3-1622-INSP-FORKLIFT") {
-            companyTextView.text = savedText3
+        if let savedText3 = UserDefaults.standard.string(forKey: "savedText3-1641-INSP-MEWPS") {
+            employeeIDTextView.text = savedText3
         }
 
-        if let savedText4 = UserDefaults.standard.string(forKey: "savedText4-1622-INSP-FORKLIFT") {
-            dateTextView.text = savedText4
+        if let savedText4 = UserDefaults.standard.string(forKey: "savedText4-1641-INSP-MEWPS") {
+            deptTextView.text = savedText4
         }
 
-        if let savedText5 = UserDefaults.standard.string(forKey: "savedText5-1622-INSP-FORKLIFT") {
-            manufacturerTextView.text = savedText5
+        if let savedText5 = UserDefaults.standard.string(forKey: "savedText5-1641-INSP-MEWPS") {
+            dateTextView.text = savedText5
         }
 
-        if let savedText6 = UserDefaults.standard.string(forKey: "savedText6-1622-INSP-FORKLIFT") {
-            modelTextView.text = savedText6
+        if let savedText6 = UserDefaults.standard.string(forKey: "savedText6-1641-INSP-MEWPS") {
+            formNumberTextView.text = savedText6
         }
 
-        if let savedText7 = UserDefaults.standard.string(forKey: "savedText7-1622-INSP-FORKLIFT") {
-            classTextView.text = savedText7
+        if let savedText7 = UserDefaults.standard.string(forKey: "savedText7-1641-INSP-MEWPS") {
+            addressOrFacilityTextView.text = savedText7
         }
 
-        if let savedText8 = UserDefaults.standard.string(forKey: "savedText8-1622-INSP-FORKLIFT") {
-            heightTextView.text = savedText8
+        if let savedText8 = UserDefaults.standard.string(forKey: "savedText8-1641-INSP-MEWPS") {
+            manufacturerTextView.text = savedText8
         }
 
-        if let savedText9 = UserDefaults.standard.string(forKey: "savedText9-1622-INSP-FORKLIFT") {
+        if let savedText9 = UserDefaults.standard.string(forKey: "savedText9-1641-INSP-MEWPS") {
+            modelTextView.text = savedText9
+        }
+        
+        if let savedText9 = UserDefaults.standard.string(forKey: "savedText9-1641-INSP-MEWPS") {
+            typeTextView.text = savedText9
+        }
+        
+        if let savedText9 = UserDefaults.standard.string(forKey: "savedText9-1641-INSP-MEWPS") {
             notesTextView.text = savedText9
         }
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
         navigationController?.setNavigationBarHidden(true, animated: false)
         navigationItem.hidesBackButton = true
           checkSelectedImages()
+          setSignatures()
+          setInfoDefault()
     }
-   
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
         
-        UserDefaults.standard.set(forkliftOperatorTextView.text, forKey: "savedText1-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(newpOperatorTextView.text, forKey: "savedText1-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(emailTextView.text, forKey: "savedText2-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(emailTextView.text, forKey: "savedText2-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(companyTextView.text, forKey: "savedText3-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(employeeIDTextView.text, forKey: "savedText3-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(dateTextView.text, forKey: "savedText4-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(deptTextView.text, forKey: "savedText4-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(manufacturerTextView.text, forKey: "savedText5-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(dateTextView.text, forKey: "savedText5-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(modelTextView.text, forKey: "savedText6-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(formNumberTextView.text, forKey: "savedText6-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(classTextView.text, forKey: "savedText7-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(addressOrFacilityTextView.text, forKey: "savedText7-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(heightTextView.text, forKey: "savedText8-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(manufacturerTextView.text, forKey: "savedText8-1641-INSP-MEWPS")
 
-        UserDefaults.standard.set(notesTextView.text, forKey: "savedText9-1622-INSP-FORKLIFT")
+        UserDefaults.standard.set(modelTextView.text, forKey: "savedText9-1641-INSP-MEWPS")
+        
+        UserDefaults.standard.set(typeTextView.text, forKey: "savedText9-1641-INSP-MEWPS")
+        
+        UserDefaults.standard.set(notesTextView.text, forKey: "savedText9-1641-INSP-MEWPS")
     }
+    
     
     func selectInGroup(selectedIndex: Int) {
         
@@ -424,7 +462,9 @@ class ForkliftInspectionVC: UIViewController {
             img127, img128, img129, img130, img131, img132,
             img133, img134, img135, img136, img137, img138,
             img139, img140, img141, img142, img143, img144,
-            img145, img146, img147, img148, img149, img150
+            img145, img146, img147, img148, img149, img150,
+            img151, img152, img153, img154, img155, img156,
+            img157, img158, img159
         ]
 
         let buttons = [
@@ -452,20 +492,31 @@ class ForkliftInspectionVC: UIViewController {
             btn127, btn128, btn129, btn130, btn131, btn132,
             btn133, btn134, btn135, btn136, btn137, btn138,
             btn139, btn140, btn141, btn142, btn143, btn144,
-            btn145, btn146, btn147, btn148, btn149, btn150
+            btn145, btn146, btn147, btn148, btn149, btn150,
+            btn151, btn152, btn153, btn154, btn155, btn156,
+            btn157, btn158, btn159
         ]
 
         // deselect group and save state
         for i in groupStart..<(groupStart + 3) {
             images[i]?.image = UIImage(named: "ic_uncheck")
             buttons[i]?.isSelected = false
-            appDelegate.dicPermitWorkVC.setValue(0, forKey: KeysPermitVC.selectUnselectAllKeys28[i])
+            appDelegate.dicPermitWorkVC.setValue(0, forKey: KeysPermitVC.selectUnselectAllKeys30[i])
         }
 
         // select current and save state
         images[selectedIndex]?.image = UIImage(named: "ic_check")
         buttons[selectedIndex]?.isSelected = true
-        appDelegate.dicPermitWorkVC.setValue(1, forKey: KeysPermitVC.selectUnselectAllKeys28[selectedIndex])
+        appDelegate.dicPermitWorkVC.setValue(1, forKey: KeysPermitVC.selectUnselectAllKeys30[selectedIndex])
+    }
+    
+    func setInfoDefault() {
+        emailTextView.text = appDelegate.email
+        dateTextView.text = appDelegate.todayDate
+    }
+    
+    func setSignatures() {
+        signatureBtn.setImage(appDelegate.imgSign27.image, for: .normal)
     }
     
     @IBAction func backTapBtn(_ sender: UIButton) {
@@ -480,14 +531,22 @@ class ForkliftInspectionVC: UIViewController {
            }
     }
     @IBAction func shareTapBtn(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1622-INSP-FORKLIFT", tim: true, controller: self)
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1641-INSP-MEWPS", tim: true, controller: self)
     }
     
     @IBAction func saveTapBtn(_ sender: UIButton) {
-        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1622-INSP-FORKLIFT")
+        SaveDataToICloudAndShareSheet.shared.captureScreenshot(scrlView: scrollView, vie: self.view, txtStr: "1641-INSP-MEWPS")
         AlertHelper.shared.alertController(title: "Forum Safety Solutions", message: "This form has been saved successfully", okTitle: "OK", controller: self) { _ in self.navigationController?.popViewController(animated: false) }
     }
 
+    @IBAction func signatureTapBtn(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SignatureVC") as! SignatureVC
+        vc.isWorkingOn = 27
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 
     @IBAction func btnTap1(_ sender: UIButton) {
         selectInGroup(selectedIndex: 0)
@@ -1089,6 +1148,43 @@ class ForkliftInspectionVC: UIViewController {
         selectInGroup(selectedIndex: 149)
     }
     
+    @IBAction func btnTap151(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 150)
+    }
+    
+    @IBAction func btnTap152(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 151)
+    }
+    
+    @IBAction func btnTap153(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 152)
+    }
+    
+    @IBAction func btnTap154(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 153)
+    }
+    
+    @IBAction func btnTap155(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 154)
+    }
+    
+    @IBAction func btnTap156(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 155)
+    }
+    
+    @IBAction func btnTap157(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 156)
+    }
+    
+    @IBAction func btnTap158(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 157)
+    }
+    
+    @IBAction func btnTap159(_ sender: UIButton) {
+        selectInGroup(selectedIndex: 158)
+    }
+    
+    
     func checkSelectedImages(){
         
         let nR = [
@@ -1121,11 +1217,13 @@ class ForkliftInspectionVC: UIViewController {
             img131, img132, img133, img134, img135,
             img136, img137, img138, img139, img140,
             img141, img142, img143, img144, img145,
-            img146, img147, img148, img149, img150
+            img146, img147, img148, img149, img150,
+            img151, img152, img153, img154, img155,
+            img156, img157, img158, img159
         ]
 
-        for key in 0..<KeysPermitVC.selectUnselectAllKeys28.count {
-            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys28[key]) as? Int ?? -1 {
+        for key in 0..<KeysPermitVC.selectUnselectAllKeys30.count {
+            switch appDelegate.dicPermitWorkVC.value(forKey: KeysPermitVC.selectUnselectAllKeys30[key]) as? Int ?? -1 {
             case 0:
                 switch key {
                 case 0:
@@ -1428,6 +1526,25 @@ class ForkliftInspectionVC: UIViewController {
                     btn149.isSelected = false
                 case 149:
                     btn150.isSelected = false
+                case 150:
+                    btn151.isSelected = false
+                case 151:
+                    btn152.isSelected = false
+                case 152:
+                    btn153.isSelected = false
+                case 153:
+                    btn154.isSelected = false
+                case 154:
+                    btn155.isSelected = false
+                case 155:
+                    btn156.isSelected = false
+                case 156:
+                    btn157.isSelected = false
+                case 157:
+                    btn158.isSelected = false
+                case 158:
+                    btn159.isSelected = false
+                    
                 default:
                     break
                 }
@@ -1735,6 +1852,25 @@ class ForkliftInspectionVC: UIViewController {
                     btn149.isSelected = true
                 case 149:
                     btn150.isSelected = true
+                case 150:
+                    btn151.isSelected = true
+                case 151:
+                    btn152.isSelected = true
+                case 152:
+                    btn153.isSelected = true
+                case 153:
+                    btn154.isSelected = true
+                case 154:
+                    btn155.isSelected = true
+                case 155:
+                    btn156.isSelected = true
+                case 156:
+                    btn157.isSelected = true
+                case 157:
+                    btn158.isSelected = true
+                case 158:
+                    btn159.isSelected = true
+                    
                 default:
                     break
                 }

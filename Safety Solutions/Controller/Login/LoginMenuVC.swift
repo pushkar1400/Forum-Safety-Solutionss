@@ -24,12 +24,12 @@ class LoginMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameTextField.text =  "First Name"
-        lastNameTextField.text = "Last Name"
-        emailTextField.text =  "Name@gmail.com"
-        phoneTextField.text =  "1234567890"
-        deptLocationTextField.text =  "Dept Location"
-        companyTextField.text =  "Company"
+//        nameTextField.text =  "First Name"
+//        lastNameTextField.text = "Last Name"
+//        emailTextField.text =  "Name@gmail.com"
+//        phoneTextField.text =  "1234567890"
+//        deptLocationTextField.text =  "Dept Location"
+//        companyTextField.text =  "Company"
       
         
         dateTextField.text = appDelegate.todayDate
