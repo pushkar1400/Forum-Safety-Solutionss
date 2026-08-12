@@ -51,6 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var imgSign24 = UIImageView()
     var imgSign25 = UIImageView()
     var imgSign26 = UIImageView()
+    var imgSign27 = UIImageView()
+    var imgSign28 = UIImageView()
+    var imgSign29 = UIImageView()
     
     var dicFPDOHSSkillSeet = NSMutableDictionary()
     var dicEvaluation = NSMutableDictionary()
